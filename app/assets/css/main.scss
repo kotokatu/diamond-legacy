@@ -1,0 +1,46 @@
+:root {
+  font-family: "Nunito Sans", "Roboto", Helvetica, Arial;
+  font-family: "Alethia Pro", sans-serif;
+
+  --font-primary: "Nunito Sans";
+  --font-secondary: "Alethia Pro";
+
+  --color-dark: #30302d;
+  --color-base: #ffffff;
+  --color-accent: #1284a8;
+  --color-accent-hover: #165e74;
+
+  --container-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 32px;
+  width: 100%;
+}
+
+.contained {
+  max-width: var(--container-width);
+  flex-grow: 1;
+}
