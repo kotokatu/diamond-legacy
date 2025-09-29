@@ -4,6 +4,7 @@ export default defineAppConfig({
   nuxtQuasar: {
     brand: {
       accent: "#1284A8",
+      dark: "#30302D",
     },
   },
 });

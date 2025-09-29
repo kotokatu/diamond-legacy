@@ -20,7 +20,7 @@
         </ul>
 
         <div class="header__contact">
-          <AppButton class="btn--accent">
+          <AppButton class="btn--accent" @click="modalOpen = true">
             <span>Написать нам</span>
           </AppButton>
         </div>
@@ -36,6 +36,10 @@
       </Transition>
     </div>
   </div>
+
+  <q-dialog v-model="modalOpen">
+    <AppContactForm color="dark" />
+  </q-dialog>
 </template>
 
 <script setup>
@@ -45,6 +49,7 @@ import { onClickOutside } from "@vueuse/core";
 const targetRef = useTemplateRef("targetRef");
 
 const menuOpen = ref(false);
+const modalOpen = ref(false);
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;

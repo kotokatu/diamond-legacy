@@ -1,8 +1,17 @@
 <template>
-  <q-btn class="btn" no-caps unelevated :ripple="false">
+  <q-btn class="btn" :color="color" no-caps unelevated :ripple="false">
     <slot />
   </q-btn>
 </template>
+
+<script setup>
+defineProps({
+  color: {
+    type: String,
+    default: "accent",
+  },
+});
+</script>
 
 <style lang="scss" scoped>
 .btn {
@@ -16,16 +25,15 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.btn--accent {
-  background-color: var(--color-accent);
+body.desktop .q-hoverable:hover :deep(.q-focus-helper) {
+  background: #000000 !important;
+  opacity: 0.4 !important;
+}
 
-  @media (hover: hover) {
-    &:hover {
-      background-color: var(--color-accent-hover);
-    }
-  }
+:deep(.q-focus-helper:after),
+:deep(.q-focus-helper:before) {
+  background: none !important;
 }
 </style>
