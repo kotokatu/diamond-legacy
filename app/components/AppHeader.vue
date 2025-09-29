@@ -78,7 +78,7 @@ onClickOutside(targetRef, () => {
 .menu {
   width: 100%;
   padding: 0 4px 0 16px;
-  background-color: var(--color-base);
+  background-color: var(--q-base);
   border-radius: 12px;
   border: 4px solid #f8f8f8;
 }

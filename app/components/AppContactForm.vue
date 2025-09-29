@@ -76,7 +76,7 @@ const sendForm = () => {
 <style lang="scss" scoped>
 .form {
   position: relative;
-  background-color: var(--color-base);
+  background-color: var(--q-base);
   border-radius: 12px;
   padding: 32px;
 }
