@@ -1,26 +1,57 @@
 <template>
-  <section ref="heroRef" class="wrapper section hero">
-    <q-parallax :height="760">
-      <template #media>
-        <video autoplay loop muted>
-          <!-- TODO: добавить поддержку webm -->
-          <source type="video/mp4" src="/video/hero.mp4" />
-        </video>
-        <div class="overlay" />
-      </template>
-
+  <section ref="sectionRef" class="wrapper section hero">
+    <AppParallax
+      v-if="videoLoaded"
+      :src="VIDEO_SOURCES"
+      :height="760"
+      :video-width="videoWidth"
+      :video-height="videoHeight"
+    >
       <div class="section__content contained">
         <p class="section__title">{ Diamond Legacy }</p>
-        <h1 class="section__text">
-          Инновационное оборудование для быстрого роста вашего бизнеса в
-          Beauty-сфере
-        </h1>
+        <h1 class="section__text">Инновационное оборудование для быстрого роста вашего бизнеса в Beauty-сфере</h1>
       </div>
-    </q-parallax>
+    </AppParallax>
+
+    <q-resize-observer :debounce="0" @resize="handleResize" />
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const VIDEO_SOURCES = { type: "video/mp4", src: "/video/hero.mp4" };
+
+const videoLoaded = ref(false);
+const videoWidth = ref(0);
+const videoHeight = ref(0);
+const originalVideoWidth = ref(0);
+const originalVideoHeight = ref(0);
+
+const handleResize = ({ width }) => {
+  if (!(originalVideoWidth.value && !originalVideoHeight.value)) {
+    handleVideoLoad(width);
+  } else {
+    calculateVideoSize(width);
+  }
+};
+
+const handleVideoLoad = (width) => {
+  const video = document.createElement("video");
+  video.src = VIDEO_SRC;
+  video.onloadedmetadata = () => {
+    originalVideoWidth.value = video.videoWidth;
+    originalVideoHeight.value = video.videoHeight;
+    calculateVideoSize(width);
+  };
+};
+
+const calculateVideoSize = (width) => {
+  const ratio = originalVideoHeight.value / originalVideoWidth.value;
+  videoWidth.value = width > originalVideoWidth.value ? width : originalVideoWidth.value;
+  videoHeight.value = videoWidth.value * ratio;
+  videoLoaded.value = true;
+};
+</script>
 
 <style lang="scss" scoped>
 .section {
@@ -49,14 +80,5 @@
   line-height: 72px;
   letter-spacing: 0px;
   color: var(--q-base);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(35, 36, 32, 0.5);
 }
 </style>
