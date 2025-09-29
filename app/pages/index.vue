@@ -1,22 +1,24 @@
 <template>
-  <section ref="heroRef" class="wrapper section hero">
-    <q-parallax :height="760">
-      <template #media>
-        <video autoplay loop muted>
-          <!-- TODO: добавить поддержку webm -->
-          <source type="video/mp4" src="/video/hero.mp4" />
-        </video>
-        <div class="overlay" />
-      </template>
+  <section class="wrapper section hero">
+    <div class="section__background">
+      <video
+        class="section__video"
+        type="video/mp4"
+        src="../assets/video/hero.mp4"
+        autoplay
+        loop
+        muted
+      />
+      <div class="overlay" />
+    </div>
 
-      <div class="section__content contained">
-        <p class="section__title">{ Diamond Legacy }</p>
-        <h1 class="section__text">
-          Инновационное оборудование для быстрого роста вашего бизнеса в
-          Beauty-сфере
-        </h1>
-      </div>
-    </q-parallax>
+    <div class="section__content contained">
+      <p class="section__title">{ Diamond Legacy }</p>
+      <h1 class="section__text">
+        Инновационное оборудование для быстрого роста вашего бизнеса в
+        Beauty-сфере
+      </h1>
+    </div>
   </section>
 </template>
 
@@ -29,7 +31,23 @@
   background-color: #efefef;
 }
 
+.section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .section__content {
+  position: relative;
   padding: 128px 40px;
 }
 
