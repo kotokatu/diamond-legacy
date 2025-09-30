@@ -1,15 +1,17 @@
 <template>
   <section class="wrapper section hero">
     <div class="section__background">
-      <video
-        class="section__video"
-        type="video/mp4"
-        src="../assets/video/hero.mp4"
-        autoplay
-        loop
-        muted
-      />
-      <div class="overlay" />
+      <ClientOnly>
+        <video
+          class="section__video"
+          type="video/mp4"
+          src="../assets/video/hero.mp4"
+          autoplay
+          loop
+          muted
+        />
+        <div class="overlay" />
+      </ClientOnly>
     </div>
 
     <div class="section__content contained">
