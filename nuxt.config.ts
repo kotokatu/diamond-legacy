@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'in-out' },
   },
   css: ["~/assets/css/normalize.css", "~/assets/css/reset.css", "quasar/css", "~/assets/css/main.scss"],
-  modules: ["@nuxt/eslint", "nuxt-quasar-ui", "@vueuse/nuxt", "@nuxt/fonts"],
+  modules: ["@nuxt/eslint", "nuxt-quasar-ui", "@vueuse/nuxt", "@nuxt/fonts", "nuxt-svgo"],
   quasar: {
     // string[]: https://quasar.dev/quasar-plugins
     plugins: [],

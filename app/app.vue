@@ -1,8 +1,20 @@
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <div id="app" class="app">
+    <AppHeader @modal:open="modalOpen = true" />
+
+    <main class="main">
+      <NuxtPage />
+    </main>
+
+    <AppFooter />
+
+    <AppModal v-model="modalOpen" />
+  </div>
 </template>
+
+<script setup>
+const modalOpen = ref(false);
+</script>
 
 <style>
 .page-enter-active,

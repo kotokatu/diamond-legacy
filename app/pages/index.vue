@@ -49,8 +49,7 @@
   line-height: 24px;
   letter-spacing: 0px;
   font-style: italic;
-  color: var(--q-base);
-  opacity: 0.5;
+  color: var(--q-base-semi);
 }
 
 .section__text {
