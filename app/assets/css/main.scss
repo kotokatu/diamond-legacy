@@ -5,7 +5,7 @@
   --font-primary: "Nunito Sans";
   --font-secondary: "Alethia Pro";
 
-  --slide-width: 1200px;
+  --slide-width: 1280px;
 }
 
 html {
@@ -36,5 +36,6 @@ body {
 
 .contained {
   max-width: var(--slide-width);
+  padding: 0 40px;
   flex-grow: 1;
 }
