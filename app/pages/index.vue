@@ -2,7 +2,7 @@
   <section class="wrapper section hero">
     <div class="section__background">
       <ClientOnly>
-        <video class="section__video" type="video/mp4" src="../assets/video/hero.mp4" autoplay loop muted />
+        <video class="section__video" type="video/mp4" src="../assets/video/slide_1.mp4" autoplay loop muted />
         <div class="overlay" />
       </ClientOnly>
     </div>
@@ -14,41 +14,7 @@
   </section>
 </template>
 
-<script setup>
-import { ref } from "vue";
-const VIDEO_SOURCES = { type: "video/mp4", src: "/video/hero.mp4" };
-
-const videoLoaded = ref(false);
-const videoWidth = ref(0);
-const videoHeight = ref(0);
-const originalVideoWidth = ref(0);
-const originalVideoHeight = ref(0);
-
-const handleResize = ({ width }) => {
-  if (!(originalVideoWidth.value && !originalVideoHeight.value)) {
-    handleVideoLoad(width);
-  } else {
-    calculateVideoSize(width);
-  }
-};
-
-const handleVideoLoad = (width) => {
-  const video = document.createElement("video");
-  video.src = VIDEO_SRC;
-  video.onloadedmetadata = () => {
-    originalVideoWidth.value = video.videoWidth;
-    originalVideoHeight.value = video.videoHeight;
-    calculateVideoSize(width);
-  };
-};
-
-const calculateVideoSize = (width) => {
-  const ratio = originalVideoHeight.value / originalVideoWidth.value;
-  videoWidth.value = width > originalVideoWidth.value ? width : originalVideoWidth.value;
-  videoHeight.value = videoWidth.value * ratio;
-  videoLoaded.value = true;
-};
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .section {
