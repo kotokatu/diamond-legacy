@@ -1,19 +1,16 @@
 <template>
-  <section ref="sectionRef" class="wrapper section hero">
-    <AppParallax
-      v-if="videoLoaded"
-      :src="VIDEO_SOURCES"
-      :height="760"
-      :video-width="videoWidth"
-      :video-height="videoHeight"
-    >
-      <div class="section__content contained">
-        <p class="section__title">{ Diamond Legacy }</p>
-        <h1 class="section__text">Инновационное оборудование для быстрого роста вашего бизнеса в Beauty-сфере</h1>
-      </div>
-    </AppParallax>
+  <section class="wrapper section hero">
+    <div class="section__background">
+      <ClientOnly>
+        <video class="section__video" type="video/mp4" src="../assets/video/hero.mp4" autoplay loop muted />
+        <div class="overlay" />
+      </ClientOnly>
+    </div>
 
-    <q-resize-observer :debounce="0" @resize="handleResize" />
+    <div class="section__content contained">
+      <p class="section__title">{ Diamond Legacy }</p>
+      <h1 class="section__text">Инновационное оборудование для быстрого роста вашего бизнеса в Beauty-сфере</h1>
+    </div>
   </section>
 </template>
 
@@ -60,7 +57,23 @@ const calculateVideoSize = (width) => {
   background-color: #efefef;
 }
 
+.section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .section__content {
+  position: relative;
   padding: 128px 40px;
 }
 

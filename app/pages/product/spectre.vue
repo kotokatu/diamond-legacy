@@ -1,1 +1,3 @@
-<template>Spectre</template>
+<template>
+  <div>Spectre</div>
+</template>
