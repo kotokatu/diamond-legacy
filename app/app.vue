@@ -16,6 +16,7 @@
 
 <script setup>
 import { provide } from "vue";
+
 const modalOpen = ref(false);
 
 const openModal = () => {

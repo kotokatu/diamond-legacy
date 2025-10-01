@@ -3,20 +3,8 @@
     <div class="contained">
       <div class="header">
         <NuxtLink to="/" class="header__logo">
-          <q-img
-            class="header__logo-img"
-            src="/img/logo_img.svg"
-            no-native-menu
-            no-spinner
-            no-transition
-          />
-          <q-img
-            class="header__logo-text"
-            src="/img/logo_text.svg"
-            no-native-menu
-            no-spinner
-            no-transition
-          />
+          <q-img class="header__logo-img" src="/img/logo_img.svg" no-native-menu no-spinner no-transition />
+          <q-img class="header__logo-text" src="/img/logo_text.svg" no-native-menu no-spinner no-transition />
         </NuxtLink>
 
         <ul class="header__nav" dense>
@@ -24,10 +12,10 @@
             <span role="button" tabindex="0">Каталог</span>
           </li>
           <li class="header__nav-item">
-            <NuxtLink to="/">Преимущества</NuxtLink>
+            <NuxtLink to="/#benefits">Преимущества</NuxtLink>
           </li>
           <li class="header__nav-item">
-            <NuxtLink to="/">Для дистрибьюторов</NuxtLink>
+            <NuxtLink to="/#distributors">Для дистрибьюторов</NuxtLink>
           </li>
         </ul>
 
