@@ -3,13 +3,25 @@
     <div class="contained">
       <div class="header">
         <NuxtLink to="/" class="header__logo">
-          <q-img src="/img/logo_img.svg" class="header__logo-img" />
-          <q-img src="/img/logo_text.svg" class="header__logo-text" />
+          <q-img
+            class="header__logo-img"
+            src="/img/logo_img.svg"
+            no-native-menu
+            no-spinner
+            no-transition
+          />
+          <q-img
+            class="header__logo-text"
+            src="/img/logo_text.svg"
+            no-native-menu
+            no-spinner
+            no-transition
+          />
         </NuxtLink>
 
         <ul class="header__nav" dense>
           <li ref="targetRef" class="header__nav-item" @click="toggleMenu">
-            <span>Каталог</span>
+            <span role="button" tabindex="0">Каталог</span>
           </li>
           <li class="header__nav-item">
             <NuxtLink to="/">Преимущества</NuxtLink>
@@ -20,7 +32,7 @@
         </ul>
 
         <div class="header__contact">
-          <AppButton class="btn--accent" @click="$emit('modal:open')">
+          <AppButton color="accent" @click="openModal">
             <span>Написать нам</span>
           </AppButton>
         </div>
@@ -39,10 +51,10 @@
 </template>
 
 <script setup>
-import { ref, useTemplateRef } from "vue";
+import { ref, inject, useTemplateRef } from "vue";
 import { onClickOutside } from "@vueuse/core";
 
-defineEmits(["modal:open"]);
+const openModal = inject("openModal");
 
 const targetRef = useTemplateRef("targetRef");
 

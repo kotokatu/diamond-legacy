@@ -1,17 +1,41 @@
 <template>
-  <section class="wrapper section hero">
-    <div class="section__background">
-      <ClientOnly>
-        <video class="section__video" type="video/mp4" src="../assets/video/slide_1.mp4" autoplay loop muted />
-        <div class="overlay" />
-      </ClientOnly>
-    </div>
+  <div>
+    <section class="wrapper section slide-1">
+      <div class="section__background">
+        <ClientOnly>
+          <video
+            class="section__video"
+            type="video/mp4"
+            src="../assets/video/slide_1.mp4"
+            autoplay
+            loop
+            muted
+          />
+          <div class="overlay" />
+        </ClientOnly>
+      </div>
 
-    <div class="section__content contained">
-      <p class="section__title">{ Diamond Legacy }</p>
-      <h1 class="section__text">Инновационное оборудование для быстрого роста вашего бизнеса в Beauty-сфере</h1>
-    </div>
-  </section>
+      <div class="section__content contained">
+        <p class="section__title">{ Diamond Legacy }</p>
+        <h1 class="section__text">
+          Инновационное оборудование для быстрого роста вашего бизнеса в
+          Beauty-сфере
+        </h1>
+      </div>
+    </section>
+
+    <section class="wrapper section slide-2">
+      <div class="section__background"></div>
+
+      <div class="section__content contained">
+        <p class="section__title">{ Diamond Legacy }</p>
+        <h1 class="section__text">
+          Инновационное оборудование для быстрого роста вашего бизнеса в
+          Beauty-сфере
+        </h1>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script setup></script>
@@ -20,7 +44,7 @@
 .section {
   position: relative;
   font-family: var(--font-secondary);
-  background-color: #efefef;
+  min-height: 760px;
 }
 
 .section__background {
@@ -30,6 +54,14 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  &.slide-1 {
+    background-color: #efefef;
+  }
+
+  &.slide-2 {
+    background-color: var(--q-base);
+  }
 }
 
 .section__video {

@@ -8,7 +8,7 @@
 defineProps({
   color: {
     type: String,
-    default: "accent",
+    default: "dark",
   },
 });
 </script>
@@ -20,8 +20,6 @@ defineProps({
   font-weight: 600;
   line-height: 100%;
   text-wrap: nowrap;
-  color: var(--color-base);
-  outline: none;
   border: none;
   border-radius: 8px;
   cursor: pointer;

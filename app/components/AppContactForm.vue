@@ -1,7 +1,12 @@
 <template>
   <div class="form">
     <q-form class="column items-center" @submit.prevent="sendForm">
-      <q-input v-model="name" class="form__input" outlined placeholder="Фамилия Имя" />
+      <q-input
+        v-model="name"
+        class="form__input"
+        outlined
+        placeholder="Фамилия Имя"
+      />
 
       <q-input
         v-model="email"
@@ -29,7 +34,9 @@
           {{ msg }}
         </div>
 
-        <AppButton color="dark" class="full-width" type="submit"> Отправить заявку </AppButton>
+        <AppButton class="full-width" type="submit">
+          Отправить заявку
+        </AppButton>
       </div>
     </q-form>
 
