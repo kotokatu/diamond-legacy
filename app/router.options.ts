@@ -18,6 +18,21 @@ export default <RouterConfig>{
     }
 
     // Otherwise, scroll to the top of the page
-    return { top: 0, behavior };
+    if (to.name === from.name) {
+      return {
+        top: 0,
+        behavior
+      };
+    }
+
+    const nuxtApp = useNuxtApp()
+
+    return new Promise((resolve) => {
+      nuxtApp.hooks.hookOnce('page:transition:finish',  () => {
+        resolve({
+          top: 0          
+        })
+      })
+    });
   },
 };
