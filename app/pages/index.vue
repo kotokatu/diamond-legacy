@@ -1,15 +1,24 @@
 <template>
   <div class="page-wrapper">
     <section class="wrapper section hero">
-      <ClientOnly>
-        <div class="section__video-container">
-          <video class="section__video" type="video/mp4" src="../assets/video/hero_video.mp4" autoplay loop muted />
-        </div>
-      </ClientOnly>
+      <!-- <ClientOnly> -->
+      <div class="section__video-container">
+        <video
+          class="section__video"
+          type="video/mp4"
+          src="../assets/video/hero_video.mp4"
+          autoplay
+          loop
+          muted
+        />
+      </div>
+      <!-- </ClientOnly> -->
 
       <div class="section__content contained">
         <p class="section__title">{ Diamond Legacy }</p>
-        <h1 class="section__text">Legacy — косметологические аппараты премиум качества</h1>
+        <h1 class="section__text">
+          Legacy — косметологические аппараты премиум качества
+        </h1>
         <h3 class="section__subtext">
           Уникальный симбиоз многолетнего опыта <br />
           и передовых корейских технологий
@@ -21,16 +30,26 @@
       <div class="section__top">
         <div class="section__content contained">
           <p class="section__title">{ Diamond Legacy }</p>
-          <h1 class="section__text">Инновационное оборудование для быстрого роста вашего бизнеса в Beauty-сфере</h1>
+          <h1 class="section__text">
+            Инновационное оборудование для быстрого роста вашего бизнеса в
+            Beauty-сфере
+          </h1>
         </div>
       </div>
 
       <div class="section__bottom">
-        <ClientOnly>
-          <div class="section__video-container">
-            <video class="section__video" type="video/mp4" src="../assets/video/about_video.mp4" autoplay loop muted />
-          </div>
-        </ClientOnly>
+        <!-- <ClientOnly> -->
+        <div class="section__video-container">
+          <video
+            class="section__video"
+            type="video/mp4"
+            src="../assets/video/about_video.mp4"
+            autoplay
+            loop
+            muted
+          />
+        </div>
+        <!-- </ClientOnly> -->
       </div>
     </section>
 
@@ -40,7 +59,9 @@
 
     <section id="benefits" class="wrapper section benefits">Benefits</section>
 
-    <section id="distributors" class="wrapper section distributors">Distributors</section>
+    <section id="distributors" class="wrapper section distributors">
+      Distributors
+    </section>
   </div>
 </template>
 

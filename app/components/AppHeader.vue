@@ -1,10 +1,22 @@
 <template>
   <div class="wrapper">
     <div class="contained">
-      <div class="header">
+      <header class="header">
         <NuxtLink to="/" class="header__logo">
-          <q-img class="header__logo-img" src="/img/logo_img.svg" no-native-menu no-spinner no-transition />
-          <q-img class="header__logo-text" src="/img/logo_text.svg" no-native-menu no-spinner no-transition />
+          <q-img
+            class="header__logo-img"
+            src="/img/logo_img.svg"
+            no-native-menu
+            no-spinner
+            no-transition
+          />
+          <q-img
+            class="header__logo-text"
+            src="/img/logo_text.svg"
+            no-native-menu
+            no-spinner
+            no-transition
+          />
         </NuxtLink>
 
         <ul class="header__nav" dense>
@@ -24,7 +36,7 @@
             <span>Написать нам</span>
           </AppButton>
         </div>
-      </div>
+      </header>
 
       <Transition name="fade">
         <div v-show="menuOpen" class="menu">
