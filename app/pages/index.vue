@@ -1,24 +1,15 @@
 <template>
   <div class="page-wrapper">
     <section class="wrapper section hero">
-      <!-- <ClientOnly> -->
       <div class="section__video-container">
-        <video
-          class="section__video"
-          type="video/mp4"
-          src="../assets/video/hero_video.mp4"
-          autoplay
-          loop
-          muted
-        />
+        <video class="section__video" type="video/mp4" autoplay loop muted>
+          <source src="../assets/video/hero_video.webm" type="video/mp4" />
+          <source src="../assets/video/hero_video.mp4" type="video/mp4" />
+        </video>
       </div>
-      <!-- </ClientOnly> -->
 
       <div class="section__content contained">
-        <p class="section__title">{ Diamond Legacy }</p>
-        <h1 class="section__text">
-          Legacy — косметологические аппараты премиум качества
-        </h1>
+        <h1 class="section__text">Legacy — косметологические аппараты премиум качества</h1>
         <h3 class="section__subtext">
           Уникальный симбиоз многолетнего опыта <br />
           и передовых корейских технологий
@@ -30,26 +21,17 @@
       <div class="section__top">
         <div class="section__content contained">
           <p class="section__title">{ Diamond Legacy }</p>
-          <h1 class="section__text">
-            Инновационное оборудование для быстрого роста вашего бизнеса в
-            Beauty-сфере
-          </h1>
+          <h1 class="section__text">Инновационное оборудование для быстрого роста вашего бизнеса в Beauty-сфере</h1>
         </div>
       </div>
 
       <div class="section__bottom">
-        <!-- <ClientOnly> -->
         <div class="section__video-container">
-          <video
-            class="section__video"
-            type="video/mp4"
-            src="../assets/video/about_video.mp4"
-            autoplay
-            loop
-            muted
-          />
+          <video class="section__video" type="video/mp4" autoplay loop muted>
+            <source src="../assets/video/about_video.webm" type="video/mp4" />
+            <source src="../assets/video/about_video.mp4" type="video/mp4" />
+          </video>
         </div>
-        <!-- </ClientOnly> -->
       </div>
     </section>
 
@@ -59,9 +41,7 @@
 
     <section id="benefits" class="wrapper section benefits">Benefits</section>
 
-    <section id="distributors" class="wrapper section distributors">
-      Distributors
-    </section>
+    <section id="distributors" class="wrapper section distributors">Distributors</section>
   </div>
 </template>
 
@@ -69,7 +49,7 @@
 
 <style lang="scss" scoped>
 .page-wrapper {
-  background-color: var(--q-base);
+  background-color: $base;
 }
 
 .section {
@@ -89,7 +69,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: var(--q-dark);
+  background-color: $dark;
 
   &::after {
     content: "";
@@ -121,23 +101,19 @@
   line-height: 24px;
   letter-spacing: 0px;
   font-style: italic;
-  color: var(--q-base-semi);
+  color: $base-semi;
 }
 
 .section__text {
-  font-size: 64px;
-  line-height: 72px;
   font-weight: 400;
   letter-spacing: 0px;
-  color: var(--q-base);
+  color: $base;
 }
 
 .section__subtext {
-  font-size: 24px;
-  line-height: 32px;
   font-weight: 400;
   letter-spacing: 0px;
-  color: var(--q-base);
+  color: $base;
 }
 
 .section.about {

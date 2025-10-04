@@ -55,7 +55,7 @@ onMounted(() => {
   width: 120px;
   height: 120px;
   z-index: 1000;
-  background-color: var(--q-base);
+  background-color: $base;
   border-radius: 50%;
   cursor: pointer;
 
@@ -66,7 +66,7 @@ onMounted(() => {
     text {
       font-family: var(--font-secondary);
       vertical-align: middle;
-      fill: var(--q-dark);
+      fill: $dark;
       font-weight: 400;
       font-size: 12px;
       line-height: 12px;
@@ -74,22 +74,12 @@ onMounted(() => {
       transition: transform 0.3s ease-in-out;
       transform-origin: center;
       transition: transform 0.3s ease;
-      // animation: rotate 8s linear infinite;
     }
 
     circle {
-      fill: var(--q-dark);
+      fill: $dark;
     }
   }
-
-  // @media (hover: hover) {
-  //   &:hover {
-  //     & > svg text {
-  //       animation: ;
-  //       // transform: rotate(20deg);
-  //     }
-  //   }
-  // }
 }
 
 @keyframes rotate {

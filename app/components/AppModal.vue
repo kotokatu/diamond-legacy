@@ -6,14 +6,14 @@
         <p class="modal__body">
           Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты наилучшим образом подходят под ваши задачи
         </p>
-        <p class="modal__subtitle">
+        <p class="modal__subtitle text-min">
           Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку персональных данных лиц из формы
         </p>
       </div>
 
       <AppContactForm color="dark" />
 
-      <IconClose class="modal__close" @click="modalOpen = false" />
+      <IconClose class="modal__close icon" @click="modalOpen = false" />
     </div>
   </q-dialog>
 </template>
@@ -35,7 +35,7 @@ const modalOpen = defineModel({
   width: 864px;
   max-width: 80vw;
   padding: 64px;
-  background-color: var(--q-dark);
+  background-color: $dark;
   border-radius: 18px;
 }
 
@@ -47,50 +47,34 @@ const modalOpen = defineModel({
 
 .modal__title {
   font-family: var(--font-secondary);
-  font-size: 24px;
-  line-height: 32px;
   letter-spacing: 0px;
-  color: var(--q-base);
+  color: $base;
 }
 
 .modal__body {
   flex-grow: 1;
-  font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0px;
-  color: var(--q-base-semi);
+  color: $base-semi;
 }
 
 .modal__subtitle {
-  font-size: 12px;
-  line-height: 18px;
   letter-spacing: 0px;
-  color: var(--q-base-semi);
+  color: $base-semi;
 
   a {
-    color: var(--q-base);
+    color: $base;
+    text-decoration: underline;
   }
 }
 
 .modal__close {
   position: absolute;
-  width: 24px;
-  height: 24px;
   top: 24px;
   right: 24px;
   cursor: pointer;
 
   :deep(path) {
-    fill: var(--q-base);
-    transition: all 0.2s ease;
-  }
-
-  @media (hover: hover) {
-    &:hover {
-      :deep(path) {
-        fill: var(--q-base-semi);
-      }
-    }
+    fill: $base;
   }
 }
 </style>

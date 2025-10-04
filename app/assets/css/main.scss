@@ -1,15 +1,60 @@
+@import "quasar/src/css/variables";
+
 :root {
   font-family: "Nunito Sans", "Roboto", Helvetica, Arial;
   font-family: "Alethia Pro", sans-serif;
 
   --font-primary: "Nunito Sans";
   --font-secondary: "Alethia Pro";
-
-  --slide-width: 1280px;
 }
 
 body {
   font-family: var(--font-primary);
+  color: $dark;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 100dvh;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.text-nav {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-menu {
+  font-size: 16px;
+  line-height: auto;
+}
+
+.text-min {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .app {
@@ -29,7 +74,18 @@ body {
 }
 
 .contained {
-  max-width: var(--slide-width);
   padding: 0 40px;
   flex-grow: 1;
+  max-width: calc($breakpoint-md + 1px);
+}
+
+.icon {
+  width: 24px !important;
+  height: 24px !important;
+  cursor: pointer;
+
+  :deep(path) {
+    fill: currentColor;
+    transition: all 0.2s ease;
+  }
 }

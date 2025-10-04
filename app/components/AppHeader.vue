@@ -2,71 +2,117 @@
   <div class="wrapper">
     <div class="contained">
       <header class="header">
-        <NuxtLink to="/" class="header__logo">
-          <q-img
-            class="header__logo-img"
-            src="/img/logo_img.svg"
-            no-native-menu
-            no-spinner
-            no-transition
-          />
-          <q-img
-            class="header__logo-text"
-            src="/img/logo_text.svg"
-            no-native-menu
-            no-spinner
-            no-transition
-          />
+        <NuxtLink to="/">
+          <div class="header__logo">
+            <q-img class="header__logo-img" :src="LogoImg" no-native-menu no-spinner no-transition alt="Logo" />
+            <q-img class="header__logo-text" :src="LogoText" no-native-menu no-spinner no-transition alt="Logo" />
+          </div>
         </NuxtLink>
 
-        <ul class="header__nav" dense>
-          <li ref="targetRef" class="header__nav-item" @click="toggleMenu">
-            <span role="button" tabindex="0">Каталог</span>
-          </li>
-          <li class="header__nav-item">
-            <NuxtLink to="/#benefits">Преимущества</NuxtLink>
-          </li>
-          <li class="header__nav-item">
-            <NuxtLink to="/#distributors">Для дистрибьюторов</NuxtLink>
-          </li>
-        </ul>
+        <AppNavMenu v-if="$q.screen.gt.md" @catalog:toggle="toggleCatalogMenu" />
 
-        <div class="header__contact">
+        <AppMobileMenu v-else v-model="navMenuOpen">
+          <AppNavMenu @catalog:toggle="toggleCatalogMenu" @nav:toggle="toggleNavMenu" />
+        </AppMobileMenu>
+
+        <div class="header__right">
           <AppButton color="accent" @click="openModal">
             <span>Написать нам</span>
           </AppButton>
+
+          <div class="header__menu-btn">
+            <MenuIcon class="icon" @click="toggleNavMenu" />
+          </div>
         </div>
       </header>
 
-      <Transition name="fade">
-        <div v-show="menuOpen" class="menu">
-          <q-list dense>
-            <q-item to="/product/royal" clickable> Royal </q-item>
-            <q-item to="/product/spectre" clickable> Spectre </q-item>
-          </q-list>
-        </div>
-      </Transition>
+      <ClientOnly>
+        <Transition v-if="$q.screen.gt.md" name="fade" @after-leave="setActiveMenuCard(data.catalog[0].id)">
+          <AppCatalogMenu
+            v-show="catalogMenuOpen"
+            ref="catalogMenuRef"
+            :data="data"
+            :active-card="activeMenuCard"
+            @menu:close="closeAllMenus"
+            @menu:active="setActiveMenuCard"
+          />
+        </Transition>
+
+        <AppMobileMenu
+          v-else
+          v-model="catalogMenuOpen"
+          :arrow-icon="true"
+          :title="'Каталог'"
+          @close="closeAllMenus"
+          @back="closeCatalogMenu"
+        >
+          <AppCatalogMenu
+            :data="data"
+            :active-card="activeMenuCard"
+            @menu:close="closeAllMenus"
+            @menu:active="setActiveMenuCard"
+          />
+        </AppMobileMenu>
+      </ClientOnly>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, inject, useTemplateRef } from "vue";
+import { ref, inject } from "vue";
 import { onClickOutside } from "@vueuse/core";
+import { useQuasar } from "quasar";
 
+import MenuIcon from "@/assets/icons/bx-menu.svg";
+import LogoImg from "@/assets/img/logo_img.svg?url_encode";
+import LogoText from "@/assets/img/logo_text.svg?url_encode";
+
+import AppMobileMenu from "./AppMobileMenu.vue";
+
+const $q = useQuasar();
+const data = inject("data");
+const activeMenuCard = ref(data.catalog[0]);
 const openModal = inject("openModal");
+const catalogMenuRef = useTemplateRef("catalogMenuRef");
 
-const targetRef = useTemplateRef("targetRef");
+const catalogMenuOpen = ref(false);
+const navMenuOpen = ref(false);
 
-const menuOpen = ref(false);
-
-const toggleMenu = () => {
-  menuOpen.value = !menuOpen.value;
+const setActiveMenuCard = (id) => {
+  activeMenuCard.value = data.catalog.find((item) => item.id === id);
 };
 
-onClickOutside(targetRef, () => {
-  menuOpen.value = false;
-});
+const toggleCatalogMenu = () => {
+  catalogMenuOpen.value = !catalogMenuOpen.value;
+};
+
+const closeCatalogMenu = () => {
+  catalogMenuOpen.value = false;
+};
+
+const toggleNavMenu = () => {
+  navMenuOpen.value = !navMenuOpen.value;
+};
+
+const closeAllMenus = () => {
+  catalogMenuOpen.value = false;
+  navMenuOpen.value = false;
+};
+
+onClickOutside(
+  catalogMenuRef,
+  () => {
+    closeCatalogMenu();
+  },
+  { ignore: [".nav-item--catalog"] }
+);
+
+watch(
+  () => $q.screen.gt.md,
+  (val) => {
+    navMenuOpen.value = navMenuOpen.value && !!val;
+  }
+);
 </script>
 
 <style lang="scss" scoped>
@@ -81,15 +127,18 @@ onClickOutside(targetRef, () => {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4px;
-}
-
-.header,
-.menu {
+  height: 64px;
   width: 100%;
   padding: 0 4px 0 16px;
-  background-color: var(--q-base);
+  background-color: $base;
   border-radius: 12px;
   border: 4px solid #f8f8f8;
+}
+
+.header__logo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .header__logo-img {
@@ -101,25 +150,27 @@ onClickOutside(targetRef, () => {
 .header__logo-text {
   width: 134px;
   height: 17px;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
-.header__nav {
+.header__right {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
-.header__nav-item {
-  padding: 4px 16px;
-  cursor: pointer;
+.header__menu-btn {
+  display: none;
 
-  a,
-  span {
-    color: #7a7a7a;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 600;
-    text-wrap: nowrap;
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
   }
 }
 
@@ -131,5 +182,22 @@ onClickOutside(targetRef, () => {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.5s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

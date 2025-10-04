@@ -1,21 +1,20 @@
 <template>
-  <div id="app" class="app">
-    <AppHeader />
+  <AppHeader />
 
-    <main class="main">
-      <NuxtPage />
-    </main>
+  <main class="main">
+    <NuxtPage />
+  </main>
 
-    <AppFooter />
+  <AppFooter />
 
-    <AppModal v-model="modalOpen" />
+  <AppModal v-model="modalOpen" />
 
-    <AppContactButton @click="openModal" />
-  </div>
+  <AppContactButton @click="openModal" />
 </template>
 
 <script setup>
 import { provide } from "vue";
+import data from "@/assets/data/data.json";
 
 const modalOpen = ref(false);
 
@@ -24,6 +23,7 @@ const openModal = () => {
 };
 
 provide("openModal", openModal);
+provide("data", data);
 </script>
 
 <style>

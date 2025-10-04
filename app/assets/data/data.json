@@ -1,0 +1,55 @@
+{
+  "catalog": [
+    {
+      "id": 1,
+      "name": "Legacy Royal",
+      "link": "/product/royal",
+      "image": "/img/royal_card.png",
+      "description": "Для коррекции фигуры, омоложения кожи лица и тела",
+      "price": "345 000 ₽"
+    },
+    {
+      "id": 2,
+      "name": "Legacy Spectre",
+      "link": "/product/spectre",
+      "image": "/img/spectre_card.png",
+      "price": "345 000 ₽"
+    },
+    {
+      "id": 3,
+      "name": "Legacy Allure Pro",
+      "link": "/product/allure-pro",
+      "image": "/img/allure-pro_card.png",
+      "price": "345 000 ₽"
+    },
+
+    {
+      "id": 4,
+      "name": "Legacy Allure",
+      "link": "/product/allure",
+      "image": "/img/allure_card.png",
+      "price": "345 000 ₽"
+    },
+    {
+      "id": 5,
+      "name": "Legacy EMS Spectrum",
+      "link": "/product/ems-spectrum",
+      "image": "/img/ems-spectrum_card.png",
+      "price": "345 000 ₽"
+    },
+    {
+      "id": 6,
+      "name": "Legacy Vela",
+      "link": "/product/vela",
+      "image": "/img/vela_card.png",
+      "price": "345 000 ₽"
+    },
+    {
+      "id": 7,
+      "name": "Legacy Laser",
+      "link": "/product/laser",
+      "image": "/img/laser_card.png",
+      "price": "345 000 ₽"
+    }
+  ]
+}

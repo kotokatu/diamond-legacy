@@ -5,7 +5,7 @@
 <script setup></script>
 <style lang="scss" scoped>
 .footer {
-  background-color: var(--q-dark);
+  background-color: $dark;
   height: 1760px;
 }
 </style>

@@ -1,12 +1,7 @@
 <template>
   <div class="form">
     <q-form class="column items-center" @submit.prevent="sendForm">
-      <q-input
-        v-model="name"
-        class="form__input"
-        outlined
-        placeholder="Фамилия Имя"
-      />
+      <q-input v-model="name" class="form__input" outlined placeholder="Фамилия Имя" />
 
       <q-input
         v-model="email"
@@ -34,9 +29,7 @@
           {{ msg }}
         </div>
 
-        <AppButton class="full-width" type="submit">
-          Отправить заявку
-        </AppButton>
+        <AppButton class="full-width" type="submit"> Отправить заявку </AppButton>
       </div>
     </q-form>
 
@@ -76,12 +69,12 @@ const sendForm = () => {
 <style lang="scss" scoped>
 :deep(.q-field--outlined .q-field__control) {
   border-radius: 8px;
-  color: var(--q-accent);
+  color: $accent;
 }
 
 .form {
   position: relative;
-  background-color: var(--q-base);
+  background-color: $base;
   border-radius: 12px;
   padding: 32px;
 }
@@ -91,7 +84,7 @@ const sendForm = () => {
   width: 304px;
 
   :deep(.q-field__native::placeholder) {
-    color: var(--q-border);
+    color: $border;
   }
 }
 
@@ -110,10 +103,10 @@ const sendForm = () => {
 }
 
 .error {
-  color: var(--q-negative);
+  color: $negative;
 }
 
 .success {
-  color: var(--q-accent);
+  color: $accent;
 }
 </style>

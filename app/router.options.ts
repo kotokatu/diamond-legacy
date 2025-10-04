@@ -21,18 +21,18 @@ export default <RouterConfig>{
     if (to.name === from.name) {
       return {
         top: 0,
-        behavior
+        behavior,
       };
     }
 
-    const nuxtApp = useNuxtApp()
+    const nuxtApp = useNuxtApp();
 
     return new Promise((resolve) => {
-      nuxtApp.hooks.hookOnce('page:transition:finish',  () => {
+      nuxtApp.hooks.hookOnce("page:finish", () => {
         resolve({
-          top: 0          
-        })
-      })
+          top: 0,
+        });
+      });
     });
   },
 };
