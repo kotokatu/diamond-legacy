@@ -1,9 +1,9 @@
 <template>
-  <div role="button" tabindex="0" class="btn">
+  <div role="button" tabindex="0" class="btn" @mouseenter="stopAnimation" @mouseleave="startAnimation">
     <svg fill="none" xmlns="http://www.w3.org/2000/svg">
       <path id="circlePath" class="circle-path" d="M56.5 104a48 48 0 1 1 0-96 48 48 0 0 1 0 96z" />
 
-      <text>
+      <text ref="textRef">
         <textPath xlink:href="#circlePath">✦ Написать нам ✦ Написать нам ✦ Написать нам</textPath>
       </text>
 
@@ -18,6 +18,31 @@
     </svg>
   </div>
 </template>
+
+<script setup>
+const textRef = useTemplateRef("textRef");
+const animation = ref(null);
+
+const stopAnimation = () => {
+  animation.value.pause();
+};
+
+const startAnimation = () => {
+  animation.value.play();
+};
+
+onMounted(() => {
+  animation.value = textRef.value.animate(
+    {
+      transform: ["rotate(0deg)", "rotate(360deg)"],
+    },
+    {
+      duration: 8000,
+      iterations: Infinity,
+    }
+  );
+});
+</script>
 
 <style lang="scss" scoped>
 .btn {
@@ -49,6 +74,7 @@
       transition: transform 0.3s ease-in-out;
       transform-origin: center;
       transition: transform 0.3s ease;
+      // animation: rotate 8s linear infinite;
     }
 
     circle {
@@ -56,12 +82,22 @@
     }
   }
 
-  @media (hover: hover) {
-    &:hover {
-      & > svg text {
-        transform: rotate(20deg);
-      }
-    }
+  // @media (hover: hover) {
+  //   &:hover {
+  //     & > svg text {
+  //       animation: ;
+  //       // transform: rotate(20deg);
+  //     }
+  //   }
+  // }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>
