@@ -101,6 +101,11 @@ a {
   line-height: 18px;
 }
 
+.text-sub {
+  font-family: var(--font-secondary);
+  font-style: italic;
+}
+
 .app {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,7 @@
   <div class="contact-card">
     <div class="contact-card__text">
       <h3 class="contact-card__title" :class="[type === 'modal' ? 'text-h3' : 'text-h2']">
-        Поможем подобрать аппарат для вашего <wbr /> бизнеса
+        Поможем подобрать аппарат для вашего бизнеса
       </h3>
       <p class="contact-card__body">
         Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты наилучшим образом подходят под ваши задачи
@@ -34,14 +34,6 @@
         />
 
         <div class="form__submit">
-          <div v-if="error" class="form__message error">
-            {{ error }}
-          </div>
-
-          <div v-else-if="msg" class="form__message success">
-            {{ msg }}
-          </div>
-
           <AppButton class="full-width" type="submit" :color="type === 'modal' ? 'dark' : 'accent'">
             Отправить заявку
           </AppButton>
@@ -52,6 +44,10 @@
         <q-spinner size="50px" color="accent" />
       </q-inner-loading>
     </div>
+
+    <p class="contact-card__subtitle text-min mobile-show">
+      Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку персональных данных лиц из формы
+    </p>
   </div>
 </template>
 
@@ -71,8 +67,6 @@ const name = ref("");
 const email = ref("");
 const phone = ref("");
 const loading = ref(false);
-const msg = ref("");
-const error = ref("");
 
 const sendForm = () => {
   const formData = new FormData();
@@ -83,7 +77,6 @@ const sendForm = () => {
   setTimeout(() => {
     formData.entries().forEach((entry) => console.log(entry));
     loading.value = false;
-    msg.value = "Заявка отправлена";
     emit("submit");
   }, 5000);
 };
@@ -100,6 +93,10 @@ const sendForm = () => {
   gap: 64px;
   background-color: transparent;
   border-radius: 18px;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
 }
 
 .contact-card__text {
@@ -128,6 +125,18 @@ const sendForm = () => {
   a {
     color: $base;
     text-decoration: underline;
+  }
+
+  &.mobile-show {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+
+    &.mobile-show {
+      display: block;
+    }
   }
 }
 
@@ -160,18 +169,5 @@ const sendForm = () => {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.form__message {
-  position: absolute;
-  top: -8px;
-}
-
-.error {
-  color: $negative;
-}
-
-.success {
-  color: $accent;
 }
 </style>

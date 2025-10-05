@@ -14,16 +14,4 @@ export default defineNuxtConfig({
       font: null,
     },
   },
-  image: {
-    // The screen sizes predefined by `@nuxt/image`:
-    screens: {
-      xs: 359,
-      sm: 767,
-      md: 1023,
-      lg: 1279,
-      xl: 1919,
-      xxl: 1919,
-      "2xl": 1919,
-    },
-  },
 });

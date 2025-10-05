@@ -84,14 +84,24 @@ $transition: all 0.3s ease-in-out;
   position: absolute;
   bottom: -30%;
   right: -6%;
+  // object-fit: cover;
+  // object-position: 50% 30%;
   transition: $transition;
+  z-index: 1;
+
+  @media (max-width: $breakpoint-md) {
+    bottom: -25%;
+    right: -30%;
+  }
 }
 
 .card__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px;
+  z-index: 200;
 }
 
 .card__title,
