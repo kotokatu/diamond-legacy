@@ -15,6 +15,14 @@ const modalOpen = defineModel({
 });
 </script>
 
+<style lang="scss">
+@media (max-width: $breakpoint-sm) {
+  .q-dialog__inner--minimized {
+    padding: 8px !important;
+  }
+}
+</style>
+
 <style lang="scss" scoped>
 .modal {
   position: relative;
@@ -22,6 +30,11 @@ const modalOpen = defineModel({
   max-width: 80vw;
   background-color: $dark;
   border-radius: 18px;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .modal__close {

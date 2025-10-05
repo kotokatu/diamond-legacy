@@ -84,15 +84,9 @@ $transition: all 0.3s ease-in-out;
   position: absolute;
   bottom: -30%;
   right: -6%;
-  // object-fit: cover;
-  // object-position: 50% 30%;
   transition: $transition;
   z-index: 1;
-
-  @media (max-width: $breakpoint-md) {
-    bottom: -25%;
-    right: -30%;
-  }
+  overflow: hidden;
 }
 
 .card__content {

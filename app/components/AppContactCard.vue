@@ -90,12 +90,13 @@ const sendForm = () => {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 64px;
+  gap: 32px;
   background-color: transparent;
   border-radius: 18px;
 
   @media (max-width: $breakpoint-sm) {
     flex-direction: column;
+    padding: 24px;
   }
 }
 
@@ -107,6 +108,7 @@ const sendForm = () => {
 }
 
 .contact-card__title {
+  max-width: calc(100% - 24px * 2);
   font-family: var(--font-secondary);
   letter-spacing: 0px;
   color: $base;

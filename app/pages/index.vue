@@ -8,7 +8,7 @@
         </video>
       </div>
 
-      <div class="section__content contained">
+      <div class="section__body contained">
         <h1 class="section__text text-h1">Legacy — косметологические аппараты премиум качества</h1>
         <h3 class="section__subtext text-h3">
           Уникальный симбиоз многолетнего опыта <br />
@@ -40,7 +40,7 @@
           </video>
         </div>
 
-        <div class="section__content contained">
+        <div class="section__body contained">
           <div class="section-item">
             <div class="section-item__title">
               <AppDots :count="1" />
@@ -91,7 +91,7 @@
           </h2>
         </div>
 
-        <div class="section__catalog">
+        <div class="section__body">
           <AppProductCard
             v-for="item in data.catalog"
             :key="item.id"
@@ -125,7 +125,7 @@
           сопровождение по всей России
         </div>
 
-        <div class="section__benefits-list">
+        <div class="section__body">
           <div class="section__benefits-item delivery">
             <div class="item-header text-nav text-sub">{ Доставка }</div>
             <div class="item-body">
@@ -173,7 +173,7 @@
                   всю бюрократию и доводит дело до результата. Консультация по условиям получения
                 </div>
 
-                <ul class="list">
+                <ul class="list--disc">
                   <li>Подбор аппарата под параметры программы</li>
                   <li>Подготовка документов и написание бизнес-плана</li>
                   <li>Подача заявки</li>
@@ -213,7 +213,88 @@
       </div>
     </section>
 
-    <section id="distributors" class="wrapper section distributors">Distributors</section>
+    <section id="distributors" class="wrapper section distributors">
+      <div class="contained">
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__header-index">4.0</span>
+            <div class="lead__header-text">
+              <span class="lead__header-title">{ Для дистрибьюторов }</span>
+              <span class="lead__header-subtitle">Legacy</span>
+            </div>
+          </div>
+
+          <h2 class="lead__text text-h2">Сотрудничество, которое работает</h2>
+        </div>
+
+        <div class="section__body">
+          <q-expansion-item expand-icon="add" expanded-icon="remove" expand-icon-class="text-white" class="accordeon">
+            <template #header>
+              <div class="accordeon-label text-h3">Оптовые скидки</div>
+            </template>
+
+            <p class="accordeon-body text-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus minus commodi atque fugit
+              modi dolores delectus possimus eveniet nam, sunt incidunt et facere accusamus odio illo. Recusandae, atque
+              nostrum.
+            </p>
+          </q-expansion-item>
+
+          <q-expansion-item
+            expand-icon="add"
+            expanded-icon="remove"
+            expand-icon-class="text-white"
+            label="Условия сотрудничества"
+            class="accordeon"
+          >
+            <template #header>
+              <div class="accordeon-label text-h3">Условия сотрудничества</div>
+            </template>
+
+            <div class="accordeon-body text-body">
+              <div class="right">
+                <p class="q-mb-md">Эксклюзивные цены и специальные условия закупки для официальных дистрибьюторов.</p>
+                <p>Пожизненная гарантия на все аппараты для клиентов через партнёров.</p>
+                <p>Индивидуальная поддержка и консультации на каждом этапе сотрудничества.</p>
+                <p>
+                  Обучение работе с оборудованием и маркетинговой стратегией продаж, чтобы вы могли эффективно развивать
+                  свой бизнес.
+                </p>
+                <p>Приоритетный доступ к новинкам линейки Legacy и новым технологиям.</p>
+              </div>
+
+              <div class="left">
+                <p>
+                  Полный набор маркетинговых инструментов: готовые инструкции, фото, видео и пошаговые планы продвижения
+                  для быстрого старта и успешных продаж.
+                </p>
+                <p>
+                  Совместные акции и промо-материалы, которые повышают узнаваемость бренда и привлекают новых
+                  покупателей.
+                </p>
+              </div>
+            </div>
+          </q-expansion-item>
+
+          <q-expansion-item
+            expand-icon="add"
+            expanded-icon="remove"
+            expand-icon-class="text-white"
+            label="Бонусные программы"
+            class="accordeon"
+          >
+            <template #header>
+              <div class="accordeon-label text-h3">Бонусные программы</div>
+            </template>
+            <p class="accordeon-body text-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus minus commodi atque fugit
+              modi dolores delectus possimus eveniet nam, sunt incidunt et facere accusamus odio illo. Recusandae, atque
+              nostrum.
+            </p>
+          </q-expansion-item>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -233,10 +314,6 @@ const data = inject("data");
 
 .section {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .section__video-container {
@@ -265,7 +342,7 @@ const data = inject("data");
   object-fit: cover;
 }
 
-.section__content {
+.section__body {
   position: relative;
   width: 100%;
 }
@@ -291,24 +368,10 @@ const data = inject("data");
   // }
 }
 
-.lead__text {
-  padding: 48px 0;
-  font-family: var(--font-secondary);
-  width: 50%;
-  margin-left: auto;
-
-  @media (max-width: $breakpoint-sm) {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 .lead__header {
   display: flex;
   width: 100%;
   padding: 16px 0;
-  font-family: var(--font-secondary);
-  font-style: italic;
   border-top: 1px solid $border;
 }
 
@@ -335,10 +398,22 @@ const data = inject("data");
   text-wrap: nowrap;
 }
 
+.lead__text {
+  padding: 48px 0;
+  font-family: var(--font-secondary);
+  width: 50%;
+  margin-left: auto;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .section.hero {
   padding: 270px 0px;
 
-  .section__content {
+  .section__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,6 +431,11 @@ const data = inject("data");
 }
 
 .section.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .lead {
     padding-top: 128px;
     padding-bottom: 128px;
@@ -372,7 +452,7 @@ const data = inject("data");
       align-items: center;
     }
 
-    .section__content {
+    .section__body {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
@@ -420,7 +500,7 @@ const data = inject("data");
   padding-top: 128px;
   padding-bottom: 128px;
 
-  .section__catalog {
+  .section__body {
     padding-top: 64px;
     padding-bottom: 64px;
     display: grid;
@@ -453,7 +533,12 @@ const data = inject("data");
   padding-top: 128px;
   padding-bottom: 128px;
 
-  .section__benefits-list {
+  @media (max-width: $breakpoint-sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .section__body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
@@ -547,11 +632,65 @@ const data = inject("data");
     font-family: var(--font-secondary);
     margin-bottom: 16px;
   }
+}
 
-  .item-text {
-    .list {
-      list-style-type: disc;
+.section.distributors {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-color: $dark;
+  color: $base;
+
+  @media (max-width: $breakpoint-sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .lead__header {
+    border-color: $base-semi;
+  }
+
+  .lead__text {
+    width: 100%;
+  }
+
+  .accordeon {
+    border-bottom: 1px solid $base-semi;
+
+    :deep(.q-focus-helper) {
+      display: none;
+    }
+
+    :deep(.q-item) {
+      padding: 0;
     }
   }
+
+  .accordeon-label {
+    width: 100%;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: $base;
+    padding: 24px 32px;
+  }
+
+  .accordeon-body {
+    display: flex;
+    padding: 24px 32px;
+    gap: 32px;
+
+    @media (max-width: $breakpoint-sm) {
+      flex-direction: column;
+    }
+
+    > div {
+      flex: 1 0 0;
+    }
+  }
+}
+
+.list--disc {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 </style>
