@@ -16,7 +16,18 @@ body {
   min-height: 100dvh;
 }
 
-h1 {
+a {
+  text-decoration: none;
+  color: $dark;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.text-h1 {
   font-size: 64px;
   line-height: 72px;
 
@@ -31,7 +42,7 @@ h1 {
   }
 }
 
-h2 {
+.text-h2 {
   font-size: 36px;
   line-height: 44px;
 
@@ -46,7 +57,7 @@ h2 {
   }
 }
 
-h3 {
+.text-h3 {
   font-size: 24px;
   line-height: 32px;
 
@@ -58,17 +69,6 @@ h3 {
   @media (max-width: $breakpoint-sm) {
     font-size: 18px;
     line-height: 26px;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: $dark;
-
-  &:hover,
-  &:active,
-  &:visited {
-    color: inherit;
   }
 }
 

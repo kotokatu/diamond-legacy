@@ -9,8 +9,8 @@
       </div>
 
       <div class="section__content contained">
-        <h1 class="section__text">Legacy — косметологические аппараты премиум качества</h1>
-        <h3 class="section__subtext">
+        <h1 class="section__text text-h1">Legacy — косметологические аппараты премиум качества</h1>
+        <h3 class="section__subtext text-h3">
           Уникальный симбиоз многолетнего опыта <br />
           и передовых корейских технологий
         </h3>
@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="section__content">
-          <h2 class="section__text">
+          <h2 class="section__text text-h2">
             Legacy — это результат реальной практики, экспертизы, стремления дать специалистам лучшее оборудование,
             которое станет эталоном надёжности и качества
           </h2>
@@ -87,7 +87,7 @@
           </div>
         </div>
 
-        <h2 class="section__text">
+        <h2 class="section__text text-h2">
           Производим устройства мирового уровня с фокусом на надежность, удобство и технологичность
         </h2>
 
@@ -97,13 +97,16 @@
             :key="item.id"
             class="catalog__card"
             :data="item"
-            type="catalog"
+            size="md"
+            hover
           />
+        </div>
+
+        <div class="section__contact">
+          <AppContactCard class="section__contact-card" />
         </div>
       </div>
     </section>
-
-    <section class="wrapper section contact">Contact</section>
 
     <section id="benefits" class="wrapper section benefits">Benefits</section>
 
@@ -339,5 +342,12 @@ const data = inject("data");
   .catalog__card {
     height: 600px;
   }
+}
+
+.section__contact-card {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/form_bg.png");
+  background-size: cover;
+  background-position: center;
 }
 </style>

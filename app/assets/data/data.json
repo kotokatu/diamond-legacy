@@ -13,6 +13,7 @@
       "name": "Legacy Spectre",
       "link": "/product/spectre",
       "image": "/img/spectre_card.png",
+      "description": "Аппарат для коррекции фигуры с функциями EMS (две манипулы) и эндосфера для лица и тела",
       "price": "345 000 ₽"
     },
     {
@@ -20,6 +21,7 @@
       "name": "Legacy Allure Pro",
       "link": "/product/allure-pro",
       "image": "/img/allure-pro_card.png",
+      "description": "Аппарат для омоложения кожи RF (профессиональная версия)",
       "price": "345 000 ₽"
     },
 
@@ -28,6 +30,7 @@
       "name": "Legacy Allure",
       "link": "/product/allure",
       "image": "/img/allure_card.png",
+      "description": "Аппарат для омоложения кожи RF (базовая версия)",
       "price": "345 000 ₽"
     },
     {
@@ -35,6 +38,7 @@
       "name": "Legacy EMS Spectrum",
       "link": "/product/ems-spectrum",
       "image": "/img/ems-spectrum_card.png",
+      "description": "Аппарат для коррекции фигуры с функцией EMS (4 манипулы)",
       "price": "345 000 ₽"
     },
     {
@@ -42,6 +46,7 @@
       "name": "Legacy Vela",
       "link": "/product/vela",
       "image": "/img/vela_card.png",
+      "description": "Аппарат для коррекции фигуры с функциями LPG и ENDO",
       "price": "345 000 ₽"
     },
     {
@@ -49,6 +54,15 @@
       "name": "Legacy Laser",
       "link": "/product/laser",
       "image": "/img/laser_card.png",
+      "description": "Аппарат для лазерной эпиляции",
+      "price": "345 000 ₽"
+    },
+    {
+      "id": 8,
+      "name": "Legacy Form",
+      "link": "/product/form",
+      "image": "/img/form_card.png",
+      "description": "Аппарат для коррекции фигуры с функцией вибромассаж",
       "price": "345 000 ₽"
     }
   ]

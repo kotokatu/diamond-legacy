@@ -2,12 +2,12 @@
   <NuxtLink :to="data.link">
     <div class="card" :class="classes">
       <div class="card__content">
-        <h3 class="card__title">{{ data.name }}</h3>
+        <h3 class="card__title text-h3">{{ data.name }}</h3>
         <p class="card__description">{{ data.description }}</p>
-        <h3 class="card__price">{{ data.price }}</h3>
+        <h3 class="card__price text-h3">{{ data.price }}</h3>
       </div>
 
-      <NuxtImg class="card__img" :alt="data.name" :width="IMAGE_WIDTHS[type]" height="auto" :src="data.image" />
+      <img class="card__img" :alt="data.name" :width="IMAGE_WIDTHS[size]" height="auto" :src="src" />
 
       <ArrowIcon class="card__arrow" />
     </div>
@@ -16,28 +16,37 @@
 
 <script setup>
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
+const img = useImage();
+
+const src = computed(() => img(props.data.image, { width: IMAGE_WIDTHS[props.size] }));
+
 const props = defineProps({
   data: {
     type: Object,
     required: true,
   },
-  type: {
+  size: {
     type: String,
-    default: "catalog",
+    default: "sm",
     validator: (value) => {
-      return ["catalog", "nav"].includes(value);
+      return ["xs", "sm", "md"].includes(value);
     },
+  },
+  hover: {
+    type: Boolean,
+    default: false,
   },
 });
 
 const IMAGE_WIDTHS = {
-  catalog: 500,
-  nav: 300,
+  md: 500,
+  sm: 300,
+  xs: 200,
 };
 
 const classes = computed(() => {
   return {
-    hoverable: props.type === "catalog",
+    hoverable: props.hover,
   };
 });
 </script>
@@ -74,7 +83,7 @@ $transition: all 0.3s ease-in-out;
 .card__img {
   position: absolute;
   bottom: -30%;
-  right: -7%;
+  right: -6%;
   transition: $transition;
 }
 

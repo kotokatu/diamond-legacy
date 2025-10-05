@@ -18,7 +18,7 @@
       </ul>
 
       <div class="menu__cards">
-        <AppProductCard class="menu__card" :data="activeCard" type="nav" @click="$emit('menu:close')" />
+        <AppProductCard class="menu__card" :data="activeCard" size="sm" @click="$emit('menu:close')" />
       </div>
     </template>
 
@@ -29,7 +29,7 @@
           :key="item.id"
           class="menu__card"
           :data="item"
-          type="nav"
+          size="xs"
           @click="$emit('menu:close')"
         />
       </div>

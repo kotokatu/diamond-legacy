@@ -26,34 +26,32 @@
         </div>
       </header>
 
-      <ClientOnly>
-        <Transition v-if="$q.screen.gt.md" name="fade" @after-leave="setActiveMenuCard(data.catalog[0].id)">
-          <AppCatalogMenu
-            v-show="catalogMenuOpen"
-            ref="catalogMenuRef"
-            :data="data"
-            :active-card="activeMenuCard"
-            @menu:close="closeAllMenus"
-            @menu:active="setActiveMenuCard"
-          />
-        </Transition>
+      <Transition v-if="$q.screen.gt.md" name="fade" @after-leave="setActiveMenuCard(data.catalog[0].id)">
+        <AppCatalogMenu
+          v-show="catalogMenuOpen"
+          ref="catalogMenuRef"
+          :data="data"
+          :active-card="activeMenuCard"
+          @menu:close="closeAllMenus"
+          @menu:active="setActiveMenuCard"
+        />
+      </Transition>
 
-        <AppMobileMenu
-          v-else
-          v-model="catalogMenuOpen"
-          :arrow-icon="true"
-          :title="'Каталог'"
-          @close="closeAllMenus"
-          @back="closeCatalogMenu"
-        >
-          <AppCatalogMenu
-            :data="data"
-            :active-card="activeMenuCard"
-            @menu:close="closeAllMenus"
-            @menu:active="setActiveMenuCard"
-          />
-        </AppMobileMenu>
-      </ClientOnly>
+      <AppMobileMenu
+        v-else
+        v-model="catalogMenuOpen"
+        :arrow-icon="true"
+        :title="'Каталог'"
+        @close="closeAllMenus"
+        @back="closeCatalogMenu"
+      >
+        <AppCatalogMenu
+          :data="data"
+          :active-card="activeMenuCard"
+          @menu:close="closeAllMenus"
+          @menu:active="setActiveMenuCard"
+        />
+      </AppMobileMenu>
     </div>
   </div>
 </template>
