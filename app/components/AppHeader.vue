@@ -4,31 +4,15 @@
       <header class="header">
         <NuxtLink to="/">
           <div class="logo">
-            <LogoImg
-              class="logo-img"
-              alt="Legacy logo"
-              filled
-              :font-controlled="false"
-            />
-            <LogoText
-              class="logo-text"
-              alt="Legacy"
-              filled
-              :font-controlled="false"
-            />
+            <LogoImg class="logo-img" alt="Legacy logo" filled :font-controlled="false" />
+            <LogoText class="logo-text" alt="Legacy" filled :font-controlled="false" />
           </div>
         </NuxtLink>
 
-        <AppNavMenu
-          v-if="$q.screen.gt.lg"
-          @catalog:toggle="toggleCatalogMenu"
-        />
+        <AppNavMenu v-if="$q.screen.gt.lg" @catalog:toggle="toggleCatalogMenu" />
 
         <AppMobileMenu v-else v-model="navMenuOpen">
-          <AppNavMenu
-            @catalog:toggle="toggleCatalogMenu"
-            @nav:toggle="toggleNavMenu"
-          />
+          <AppNavMenu @catalog:toggle="toggleCatalogMenu" @nav:toggle="toggleNavMenu" />
         </AppMobileMenu>
 
         <div class="header__right">
@@ -42,22 +26,26 @@
         </div>
       </header>
 
-      <Transition
-        v-if="$q.screen.gt.lg"
-        name="fade"
-        @after-leave="setActiveMenuCard(data.catalog[0].id)"
+      <component
+        :is="$q.screen.gt.lg ? AppTransition : AppMobileMenu"
+        v-model="catalogMenuOpen"
+        :arrow-icon="true"
+        :title="'Каталог'"
+        @hide="setActiveMenuCard(data.catalog[0].id)"
+        @close="closeAllMenus"
+        @back="closeCatalogMenu"
       >
         <AppCatalogMenu
           v-show="catalogMenuOpen"
           ref="catalogMenuRef"
           :data="data"
           :active-card="activeMenuCard"
-          @menu:close="closeAllMenus"
-          @menu:active="setActiveMenuCard"
+          @close="closeAllMenus"
+          @card:set-active="setActiveMenuCard"
         />
-      </Transition>
+      </component>
 
-      <AppMobileMenu
+      <!-- <AppMobileMenu
         v-else
         v-model="catalogMenuOpen"
         :arrow-icon="true"
@@ -71,14 +59,13 @@
           @menu:close="closeAllMenus"
           @menu:active="setActiveMenuCard"
         />
-      </AppMobileMenu>
+      </AppMobileMenu> -->
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, inject } from "vue";
-import { onClickOutside } from "@vueuse/core";
 import { useQuasar } from "quasar";
 
 import MenuIcon from "@/assets/icons/bx-menu.svg";
@@ -86,12 +73,12 @@ import LogoImg from "@/assets/img/logo_header_img.svg";
 import LogoText from "@/assets/img/logo_text.svg";
 
 import AppMobileMenu from "./AppMobileMenu.vue";
+import AppTransition from "./AppTransition.vue";
 
 const $q = useQuasar();
 const data = inject("data");
 const activeMenuCard = ref(data.catalog[0]);
 const openModal = inject("openModal");
-const catalogMenuRef = useTemplateRef("catalogMenuRef");
 
 const catalogMenuOpen = ref(false);
 const navMenuOpen = ref(false);
@@ -116,14 +103,6 @@ const closeAllMenus = () => {
   catalogMenuOpen.value = false;
   navMenuOpen.value = false;
 };
-
-onClickOutside(
-  catalogMenuRef,
-  () => {
-    closeCatalogMenu();
-  },
-  { ignore: [".nav-item--catalog"] }
-);
 
 watch(
   () => $q.screen.gt.lg,
@@ -175,32 +154,5 @@ watch(
     padding: 16px;
     cursor: pointer;
   }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.5s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  transform: translateY(-100%);
-}
-
-.slide-enter-to,
-.slide-leave-from {
-  opacity: 1;
-  transform: translateY(0);
 }
 </style>

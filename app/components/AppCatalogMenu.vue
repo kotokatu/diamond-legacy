@@ -1,5 +1,5 @@
 <template>
-  <div class="menu">
+  <div ref="catalogMenuRef" class="menu">
     <ul class="menu__links">
       <NuxtLink
         v-for="item in data.catalog"
@@ -7,8 +7,8 @@
         :to="item.link"
         :class="activeCard.id === item.id ? 'active' : ''"
         class="menu__link"
-        @mouseenter="$emit('menu:active', item.id)"
-        @click="$emit('menu:close')"
+        @mouseenter="$emit('card:set-active', item.id)"
+        @click="$emit('close')"
       >
         <span class="menu__link-text">{{ item.name }}</span>
 
@@ -24,16 +24,17 @@
         :data="item"
         :class="activeCard.id === item.id ? 'active' : ''"
         :size="$q.screen.gt.lg ? 'md' : 'sm'"
-        @click="$emit('menu:close')"
+        @click="$emit('close')"
       />
     </div>
   </div>
 </template>
 
 <script setup>
+import { onClickOutside } from "@vueuse/core";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
 
-defineEmits(["menu:close", "menu:active"]);
+const emit = defineEmits(["close", "card:set-active"]);
 defineProps({
   data: {
     type: Object,
@@ -44,6 +45,16 @@ defineProps({
     required: true,
   },
 });
+
+const catalogMenuRef = useTemplateRef("catalogMenuRef");
+
+onClickOutside(
+  catalogMenuRef,
+  () => {
+    emit("close");
+  },
+  { ignore: [".nav-item--catalog"] }
+);
 </script>
 
 <style lang="scss" scoped>
