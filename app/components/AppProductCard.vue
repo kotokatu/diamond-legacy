@@ -8,7 +8,15 @@
       </div>
 
       <div class="card__img-container">
-        <img class="card__img" :alt="data.name" :src="src" :width="width" />
+        <img
+          class="card__img"
+          :alt="data.name"
+          :srcset="`_ipx/w_${width}${data.image} 1x, _ipx/w_${width * 2}${
+            data.image
+          } 2x`"
+          :src="`_ipx/w_${width}${data.image}`"
+          :width="width"
+        />
       </div>
 
       <ArrowIcon class="card__arrow" />
@@ -18,11 +26,6 @@
 
 <script setup>
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
-const img = useImage();
-
-const src = computed(() =>
-  img(props.data.image, { width: IMAGE_WIDTHS[props.size] })
-);
 
 const props = defineProps({
   data: {
@@ -36,10 +39,6 @@ const props = defineProps({
       return ["sm", "md", "lg"].includes(value);
     },
   },
-  hover: {
-    type: Boolean,
-    default: false,
-  },
 });
 
 const IMAGE_WIDTHS = {
@@ -52,7 +51,6 @@ const width = computed(() => IMAGE_WIDTHS[props.size]);
 
 const classes = computed(() => {
   return {
-    hoverable: props.hover,
     [`card--${props.size}`]: true,
   };
 });
@@ -85,42 +83,11 @@ $transition: all 0.3s ease-in-out;
     }
 
     .card__img {
-      object-fit: cover;
       object-position: 35px 60px;
     }
   }
 
   &--lg {
-    .card__img {
-      position: absolute;
-      top: 15%;
-      left: 40%;
-
-      transform: scale(1.1);
-
-      @container (inline-size < 600px) {
-        top: 20%;
-        left: 30%;
-      }
-
-      @container (inline-size < 450px) {
-        top: 25%;
-        left: 20%;
-      }
-
-      @container (inline-size < 400px) {
-        top: 35%;
-        left: 25%;
-      }
-
-      @container (inline-size < 350px) {
-        top: 40%;
-        transform: scale(1.3);
-      }
-    }
-  }
-
-  &.hoverable {
     @media (hover: hover) {
       &:hover {
         background-color: #eaeaea;
@@ -130,8 +97,32 @@ $transition: all 0.3s ease-in-out;
         }
 
         .card__img {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
+      }
+    }
+
+    .card__img {
+      width: 100%;
+      height: 100%;
+      object-position: 110px 70px;
+      transform-origin: bottom right;
+      transition: $transition;
+
+      @container (inline-size < 00px) {
+        object-position: 110px 100px;
+      }
+
+      @container (inline-size < 500px) {
+        object-position: 110px 120px;
+      }
+
+      @container (inline-size < 400px) {
+        object-position: 90px 130px;
+      }
+
+      @container (inline-size < 350px) {
+        object-position: 40px 130px;
       }
     }
   }
@@ -146,19 +137,7 @@ $transition: all 0.3s ease-in-out;
 }
 
 .card__img {
-  // object-fit: cover;
-  // object-fit: contain;
-
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: auto;
-  // bottom: -10px;
-  // right: -10px;
-  // bottom: -45%;
-  // right: -20%;
-  transition: $transition;
+  object-fit: cover;
   z-index: 1;
   overflow: hidden;
 }

@@ -104,7 +104,6 @@
             class="catalog__card"
             :data="item"
             size="lg"
-            hover
           />
         </div>
 
