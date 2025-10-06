@@ -9,7 +9,9 @@
       </div>
 
       <div class="section__body contained">
-        <h1 class="section__text text-h1">Legacy — косметологические аппараты премиум качества</h1>
+        <h1 class="section__text text-h1">
+          Legacy — косметологические аппараты премиум качества
+        </h1>
         <h3 class="section__subtext text-h3">
           Уникальный симбиоз многолетнего опыта <br />
           и передовых корейских технологий
@@ -27,8 +29,9 @@
           </div>
         </div>
         <h2 class="lead__text text-h2">
-          Legacy — это результат реальной практики, экспертизы, стремления дать специалистам лучшее оборудование,
-          которое станет эталоном надёжности и качества
+          Legacy — это результат реальной практики, экспертизы, стремления дать
+          специалистам лучшее оборудование, которое станет эталоном надёжности и
+          качества
         </h2>
       </div>
 
@@ -47,8 +50,9 @@
               <span class="text-nav text-sub">{ Бренд }</span>
             </div>
             <div class="section-item__text">
-              Legacy создан Diamond Technology — лидером на рынке косметологического оборудования с 5000 клиник и
-              салонов в России и за её пределами
+              Legacy создан Diamond Technology — лидером на рынке
+              косметологического оборудования с 5000 клиник и салонов в России и
+              за её пределами
             </div>
           </div>
           <div class="section-item section-item--last">
@@ -57,8 +61,9 @@
               <span class="text-nav text-sub">{ Подход }</span>
             </div>
             <div class="section-item__text">
-              В аппаратах Legacy нет случайных решений: используются только проверенные комплектующие, удобный интерфейс
-              и передовые технологии
+              В аппаратах Legacy нет случайных решений: используются только
+              проверенные комплектующие, удобный интерфейс и передовые
+              технологии
             </div>
           </div>
           <div class="section-item">
@@ -67,8 +72,8 @@
               <span class="text-nav text-sub">{ Опыт }</span>
             </div>
             <div class="section-item__text">
-              Мы объединили многолетний опыт работы с ведущими заводами Китая, знания собственного сервисного центра и
-              обратную связь клиентов
+              Мы объединили многолетний опыт работы с ведущими заводами Китая,
+              знания собственного сервисного центра и обратную связь клиентов
             </div>
           </div>
         </div>
@@ -87,7 +92,8 @@
           </div>
 
           <h2 class="lead__text text-h2">
-            Производим устройства мирового уровня с фокусом на надежность, удобство и технологичность
+            Производим устройства мирового уровня с фокусом на надежность,
+            удобство и технологичность
           </h2>
         </div>
 
@@ -97,7 +103,7 @@
             :key="item.id"
             class="catalog__card"
             :data="item"
-            size="md"
+            size="lg"
             hover
           />
         </div>
@@ -121,8 +127,9 @@
         </div>
 
         <div class="lead__text text-h2">
-          Берем на себя все этапы — от логистики до настройки оборудования, а также обеспечиваем последующее техническое
-          сопровождение по всей России
+          Берем на себя все этапы — от логистики до настройки оборудования, а
+          также обеспечиваем последующее техническое сопровождение по всей
+          России
         </div>
 
         <div class="section__body">
@@ -131,8 +138,9 @@
             <div class="item-body">
               <div class="item-title text-h3">Бесплатная доставка</div>
               <div class="item-text">
-                Доставка оборудования надёжными транспортными компаниями по России, СНГ и Европе. Аппараты упакованы в
-                алюминиевые кейсы. Сохранность и своевременная доставка гарантированы
+                Доставка оборудования надёжными транспортными компаниями по
+                России, СНГ и Европе. Аппараты упакованы в алюминиевые кейсы.
+                Сохранность и своевременная доставка гарантированы
               </div>
             </div>
           </div>
@@ -146,8 +154,9 @@
             <div class="item-body">
               <div class="item-title text-h3">Оплата при получении</div>
               <div class="item-text">
-                Производится только после получения оборудования, что позволит убедиться в качестве товара. Доступны
-                любые способы: расчётный счёт, наличные, банковский перевод — по удобству клиента
+                Производится только после получения оборудования, что позволит
+                убедиться в качестве товара. Доступны любые способы: расчётный
+                счёт, наличные, банковский перевод — по удобству клиента
               </div>
             </div>
           </div>
@@ -157,8 +166,9 @@
             <div class="item-body">
               <div class="item-title text-h3">Пожизненная гарантия</div>
               <div class="item-text">
-                Обслуживание 24/7. Опытные мастера Legacy обеспечивают круглосуточное сопровождение: консультации,
-                ремонт, гарантийное и постгарантийное обслуживание
+                Обслуживание 24/7. Опытные мастера Legacy обеспечивают
+                круглосуточное сопровождение: консультации, ремонт, гарантийное
+                и постгарантийное обслуживание
               </div>
             </div>
           </div>
@@ -166,11 +176,14 @@
           <div class="section__benefits-item wide support">
             <div class="item-header text-nav text-sub">{ Сопровождение }</div>
             <div class="item-body">
-              <div class="item-title text-h3">Помощь в получении соцконтракта под ключ</div>
+              <div class="item-title text-h3">
+                Помощь в получении соцконтракта под ключ
+              </div>
               <div class="item-text">
                 <div class="q-pb-sm">
-                  Персональный менеджер Legacy сопровождает весь процесс оформления соцконтракта. Legacy берёт на себя
-                  всю бюрократию и доводит дело до результата. Консультация по условиям получения
+                  Персональный менеджер Legacy сопровождает весь процесс
+                  оформления соцконтракта. Legacy берёт на себя всю бюрократию и
+                  доводит дело до результата. Консультация по условиям получения
                 </div>
 
                 <ul class="list--disc">
@@ -189,8 +202,9 @@
             <div class="item-body">
               <div class="item-title text-h3">Бесплатное обучение</div>
               <div class="item-text">
-                При покупке аппарата Legacy предоставляется бесплатное обучение в нашем обучающем центре, онлайн и
-                офлайн. Выдаётся диплом гос. образца или именной сертификат
+                При покупке аппарата Legacy предоставляется бесплатное обучение
+                в нашем обучающем центре, онлайн и офлайн. Выдаётся диплом гос.
+                образца или именной сертификат
               </div>
             </div>
           </div>
@@ -204,8 +218,9 @@
             <div class="item-body">
               <div class="item-title text-h3">Собственное производство</div>
               <div class="item-text">
-                Аппараты Legacy проходят строгий контроль качества на каждом этапе производства. Оборудование имеет
-                официальные сертификаты качества и соответствует международным стандартам
+                Аппараты Legacy проходят строгий контроль качества на каждом
+                этапе производства. Оборудование имеет официальные сертификаты
+                качества и соответствует международным стандартам
               </div>
             </div>
           </div>
@@ -228,15 +243,21 @@
         </div>
 
         <div class="section__body">
-          <q-expansion-item expand-icon="add" expanded-icon="remove" expand-icon-class="text-white" class="accordeon">
+          <q-expansion-item
+            expand-icon="add"
+            expanded-icon="remove"
+            expand-icon-class="text-white"
+            class="accordeon"
+          >
             <template #header>
               <div class="accordeon-label text-h3">Оптовые скидки</div>
             </template>
 
             <p class="accordeon-body text-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus minus commodi atque fugit
-              modi dolores delectus possimus eveniet nam, sunt incidunt et facere accusamus odio illo. Recusandae, atque
-              nostrum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam temporibus minus commodi atque fugit modi dolores
+              delectus possimus eveniet nam, sunt incidunt et facere accusamus
+              odio illo. Recusandae, atque nostrum.
             </p>
           </q-expansion-item>
 
@@ -253,24 +274,37 @@
 
             <div class="accordeon-body text-body">
               <div class="right">
-                <p class="q-mb-md">Эксклюзивные цены и специальные условия закупки для официальных дистрибьюторов.</p>
-                <p>Пожизненная гарантия на все аппараты для клиентов через партнёров.</p>
-                <p>Индивидуальная поддержка и консультации на каждом этапе сотрудничества.</p>
-                <p>
-                  Обучение работе с оборудованием и маркетинговой стратегией продаж, чтобы вы могли эффективно развивать
-                  свой бизнес.
+                <p class="q-mb-md">
+                  Эксклюзивные цены и специальные условия закупки для
+                  официальных дистрибьюторов.
                 </p>
-                <p>Приоритетный доступ к новинкам линейки Legacy и новым технологиям.</p>
+                <p>
+                  Пожизненная гарантия на все аппараты для клиентов через
+                  партнёров.
+                </p>
+                <p>
+                  Индивидуальная поддержка и консультации на каждом этапе
+                  сотрудничества.
+                </p>
+                <p>
+                  Обучение работе с оборудованием и маркетинговой стратегией
+                  продаж, чтобы вы могли эффективно развивать свой бизнес.
+                </p>
+                <p>
+                  Приоритетный доступ к новинкам линейки Legacy и новым
+                  технологиям.
+                </p>
               </div>
 
               <div class="left">
                 <p>
-                  Полный набор маркетинговых инструментов: готовые инструкции, фото, видео и пошаговые планы продвижения
-                  для быстрого старта и успешных продаж.
+                  Полный набор маркетинговых инструментов: готовые инструкции,
+                  фото, видео и пошаговые планы продвижения для быстрого старта
+                  и успешных продаж.
                 </p>
                 <p>
-                  Совместные акции и промо-материалы, которые повышают узнаваемость бренда и привлекают новых
-                  покупателей.
+                  Совместные акции и промо-материалы, которые повышают
+                  узнаваемость бренда и привлекают новых покупателей.
                 </p>
               </div>
             </div>
@@ -287,9 +321,10 @@
               <div class="accordeon-label text-h3">Бонусные программы</div>
             </template>
             <p class="accordeon-body text-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus minus commodi atque fugit
-              modi dolores delectus possimus eveniet nam, sunt incidunt et facere accusamus odio illo. Recusandae, atque
-              nostrum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam temporibus minus commodi atque fugit modi dolores
+              delectus possimus eveniet nam, sunt incidunt et facere accusamus
+              odio illo. Recusandae, atque nostrum.
             </p>
           </q-expansion-item>
         </div>
@@ -522,7 +557,8 @@ const data = inject("data");
 
   .section__contact-card {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/form_bg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/img/form_bg.png");
     background-size: cover;
     background-position: center;
   }

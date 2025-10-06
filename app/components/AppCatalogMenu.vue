@@ -1,39 +1,32 @@
 <template>
   <div class="menu">
-    <template v-if="$q.screen.gt.md">
-      <ul class="menu__links">
-        <NuxtLink
-          v-for="item in data.catalog"
-          :key="item.id"
-          :to="item.link"
-          :class="activeCard.id === item.id ? 'active' : ''"
-          class="menu__link"
-          @mouseenter="$emit('menu:active', item.id)"
-          @click="$emit('menu:close')"
-        >
-          <span class="menu__link-text">{{ item.name }}</span>
+    <ul class="menu__links">
+      <NuxtLink
+        v-for="item in data.catalog"
+        :key="item.id"
+        :to="item.link"
+        :class="activeCard.id === item.id ? 'active' : ''"
+        class="menu__link"
+        @mouseenter="$emit('menu:active', item.id)"
+        @click="$emit('menu:close')"
+      >
+        <span class="menu__link-text">{{ item.name }}</span>
 
-          <ArrowIcon class="menu__link-icon" />
-        </NuxtLink>
-      </ul>
+        <ArrowIcon class="menu__link-icon" />
+      </NuxtLink>
+    </ul>
 
-      <div class="menu__cards">
-        <AppProductCard class="menu__card" :data="activeCard" size="sm" @click="$emit('menu:close')" />
-      </div>
-    </template>
-
-    <template v-else>
-      <div class="menu__cards">
-        <AppProductCard
-          v-for="item in data.catalog"
-          :key="item.id"
-          class="menu__card"
-          :data="item"
-          size="xs"
-          @click="$emit('menu:close')"
-        />
-      </div>
-    </template>
+    <div class="menu__cards">
+      <AppProductCard
+        v-for="item in data.catalog"
+        :key="item.id"
+        class="menu__card"
+        :data="item"
+        :class="activeCard.id === item.id ? 'active' : ''"
+        :size="$q.screen.gt.md ? 'md' : 'sm'"
+        @click="$emit('menu:close')"
+      />
+    </div>
   </div>
 </template>
 
@@ -95,8 +88,16 @@ defineProps({
 }
 
 .menu__card {
+  &:not(.active) {
+    display: none;
+  }
+
   @media (max-width: $breakpoint-md) {
     height: 260px;
+
+    &:not(.active) {
+      display: block;
+    }
   }
 }
 
@@ -106,6 +107,10 @@ defineProps({
   flex-direction: column;
   flex-wrap: wrap;
   padding: 24px;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
 }
 
 .menu__link {
