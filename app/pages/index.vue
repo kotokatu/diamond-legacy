@@ -19,7 +19,7 @@
       </div>
     </section>
 
-    <section class="wrapper section about">
+    <section id="about" class="wrapper section about">
       <div class="lead contained">
         <div class="lead__header text-nav text-sub">
           <span class="lead__header-index">1.0</span>
@@ -80,7 +80,7 @@
       </div>
     </section>
 
-    <section class="wrapper section catalog">
+    <section id="catalog" class="wrapper section catalog">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">

@@ -3,22 +3,18 @@
     <div class="contained">
       <header class="header">
         <NuxtLink to="/">
-          <div class="header__logo">
-            <q-img
-              class="header__logo-img"
-              :src="LogoImg"
-              no-native-menu
-              no-spinner
-              no-transition
-              alt="Logo"
+          <div class="logo">
+            <LogoImg
+              class="logo-img"
+              alt="Legacy logo"
+              filled
+              :font-controlled="false"
             />
-            <q-img
-              class="header__logo-text"
-              :src="LogoText"
-              no-native-menu
-              no-spinner
-              no-transition
-              alt="Logo"
+            <LogoText
+              class="logo-text"
+              alt="Legacy"
+              filled
+              :font-controlled="false"
             />
           </div>
         </NuxtLink>
@@ -86,8 +82,8 @@ import { onClickOutside } from "@vueuse/core";
 import { useQuasar } from "quasar";
 
 import MenuIcon from "@/assets/icons/bx-menu.svg";
-import LogoImg from "@/assets/img/logo_img.svg?url_encode";
-import LogoText from "@/assets/img/logo_text.svg?url_encode";
+import LogoImg from "@/assets/img/logo_header_img.svg";
+import LogoText from "@/assets/img/logo_text.svg";
 
 import AppMobileMenu from "./AppMobileMenu.vue";
 
@@ -157,22 +153,7 @@ watch(
   border: 4px solid #f8f8f8;
 }
 
-.header__logo {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.header__logo-img {
-  width: 30px;
-  height: 28px;
-  margin-right: 10px;
-}
-
-.header__logo-text {
-  width: 134px;
-  height: 17px;
-
+.logo-text {
   @media (max-width: $breakpoint-sm) {
     display: none;
   }
