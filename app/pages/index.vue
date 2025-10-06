@@ -550,7 +550,7 @@ const data = inject("data");
   .catalog__card {
     height: 600px;
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       height: 540px;
     }
   }
@@ -581,7 +581,7 @@ const data = inject("data");
     gap: 16px;
     padding-top: 64px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-md) {
       display: flex;
       flex-wrap: wrap;
       padding-top: 0;
@@ -602,7 +602,7 @@ const data = inject("data");
     backdrop-filter: blur(12px);
     overflow: hidden;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-md) {
       flex-basis: calc(100% / 2 - 16px / 2);
 
       &.delivery {

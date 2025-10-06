@@ -25,7 +25,7 @@ defineEmits(["catalog:toggle", "nav:toggle"]);
   display: flex;
   gap: 8px;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     gap: 0;
     position: fixed;
     top: 0;
@@ -48,7 +48,7 @@ defineEmits(["catalog:toggle", "nav:toggle"]);
   text-decoration: none;
   cursor: pointer;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     color: $base;
     padding: 24px 0;
     border-bottom: 1px solid $base-semi;
@@ -57,7 +57,7 @@ defineEmits(["catalog:toggle", "nav:toggle"]);
   .icon {
     display: none;
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       display: block;
     }
   }
@@ -69,7 +69,7 @@ defineEmits(["catalog:toggle", "nav:toggle"]);
     font-weight: 600;
     text-wrap: nowrap;
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       font-family: var(--font-secondary);
       font-weight: 400;
       font-size: 20px;

@@ -23,7 +23,7 @@
         class="menu__card"
         :data="item"
         :class="activeCard.id === item.id ? 'active' : ''"
-        :size="$q.screen.gt.md ? 'md' : 'sm'"
+        :size="$q.screen.gt.lg ? 'md' : 'sm'"
         @click="$emit('menu:close')"
       />
     </div>
@@ -56,7 +56,7 @@ defineProps({
   border: 4px solid #f8f8f8;
   height: 350px;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     flex-direction: column;
     flex-grow: 1;
     border-radius: 0;
@@ -72,7 +72,7 @@ defineProps({
 }
 
 .menu__cards {
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     padding: 0 24px 24px 24px;
     flex-basis: 100%;
     flex-grow: 1;
@@ -92,7 +92,7 @@ defineProps({
     display: none;
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     height: 260px;
 
     &:not(.active) {
@@ -108,7 +108,7 @@ defineProps({
   flex-wrap: wrap;
   padding: 24px;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }

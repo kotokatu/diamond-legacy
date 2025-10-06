@@ -4,15 +4,35 @@
       <header class="header">
         <NuxtLink to="/">
           <div class="header__logo">
-            <q-img class="header__logo-img" :src="LogoImg" no-native-menu no-spinner no-transition alt="Logo" />
-            <q-img class="header__logo-text" :src="LogoText" no-native-menu no-spinner no-transition alt="Logo" />
+            <q-img
+              class="header__logo-img"
+              :src="LogoImg"
+              no-native-menu
+              no-spinner
+              no-transition
+              alt="Logo"
+            />
+            <q-img
+              class="header__logo-text"
+              :src="LogoText"
+              no-native-menu
+              no-spinner
+              no-transition
+              alt="Logo"
+            />
           </div>
         </NuxtLink>
 
-        <AppNavMenu v-if="$q.screen.gt.md" @catalog:toggle="toggleCatalogMenu" />
+        <AppNavMenu
+          v-if="$q.screen.gt.lg"
+          @catalog:toggle="toggleCatalogMenu"
+        />
 
         <AppMobileMenu v-else v-model="navMenuOpen">
-          <AppNavMenu @catalog:toggle="toggleCatalogMenu" @nav:toggle="toggleNavMenu" />
+          <AppNavMenu
+            @catalog:toggle="toggleCatalogMenu"
+            @nav:toggle="toggleNavMenu"
+          />
         </AppMobileMenu>
 
         <div class="header__right">
@@ -26,7 +46,11 @@
         </div>
       </header>
 
-      <Transition v-if="$q.screen.gt.md" name="fade" @after-leave="setActiveMenuCard(data.catalog[0].id)">
+      <Transition
+        v-if="$q.screen.gt.lg"
+        name="fade"
+        @after-leave="setActiveMenuCard(data.catalog[0].id)"
+      >
         <AppCatalogMenu
           v-show="catalogMenuOpen"
           ref="catalogMenuRef"
@@ -106,7 +130,7 @@ onClickOutside(
 );
 
 watch(
-  () => $q.screen.gt.md,
+  () => $q.screen.gt.lg,
   (val) => {
     navMenuOpen.value = navMenuOpen.value && !!val;
   }
@@ -163,7 +187,7 @@ watch(
 .header__menu-btn {
   display: none;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     display: flex;
     align-items: center;
     justify-content: center;

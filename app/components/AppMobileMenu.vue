@@ -1,15 +1,29 @@
 <template>
-  <q-dialog v-model="modalOpen" maximized persistent transition-show="slide-up" transition-hide="slide-down">
+  <q-dialog
+    v-model="modalOpen"
+    maximized
+    persistent
+    transition-show="slide-up"
+    transition-hide="slide-down"
+  >
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
-          <ArrowIcon v-if="arrowIcon" class="mobile-menu__arrow icon" @click="back" />
+          <ArrowIcon
+            v-if="arrowIcon"
+            class="mobile-menu__arrow icon"
+            @click="back"
+          />
         </div>
         <div>
           <span v-if="title" class="mobile-menu__title">{{ title }}</span>
         </div>
         <div>
-          <CloseIcon v-if="closeIcon" class="mobile-menu__close icon" @click="close" />
+          <CloseIcon
+            v-if="closeIcon"
+            class="mobile-menu__close icon"
+            @click="close"
+          />
         </div>
       </div>
 
@@ -59,7 +73,7 @@ const back = () => {
 };
 
 watch(
-  () => $q.screen.gt.md,
+  () => $q.screen.gt.lg,
   () => {
     close();
   }
