@@ -8,15 +8,7 @@
       </div>
 
       <div class="card__img-container">
-        <img
-          class="card__img"
-          :alt="data.name"
-          :srcset="`_ipx/w_${width}${data.image} 1x, _ipx/w_${width * 2}${
-            data.image
-          } 2x`"
-          :src="`_ipx/w_${width}${data.image}`"
-          :width="width"
-        />
+        <NuxtImg class="card__img" :alt="data.name" :src="data.image" sizes="700px" />
       </div>
 
       <ArrowIcon class="card__arrow" />
@@ -40,14 +32,6 @@ const props = defineProps({
     },
   },
 });
-
-const IMAGE_WIDTHS = {
-  lg: 500,
-  md: 300,
-  sm: 200,
-};
-
-const width = computed(() => IMAGE_WIDTHS[props.size]);
 
 const classes = computed(() => {
   return {
@@ -83,7 +67,7 @@ $transition: all 0.3s ease-in-out;
     }
 
     .card__img {
-      object-position: 35px 60px;
+      object-position: 35px 70px;
     }
   }
 
@@ -109,7 +93,7 @@ $transition: all 0.3s ease-in-out;
       transform-origin: bottom right;
       transition: $transition;
 
-      @container (inline-size < 00px) {
+      @container (inline-size < 600px) {
         object-position: 110px 100px;
       }
 
