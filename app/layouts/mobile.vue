@@ -14,7 +14,7 @@
         @close="closeAllMenus"
         @back="closeCatalogMenu"
       >
-        <AppCatalogMenu :data="data" />
+        <AppCatalogMenu :data="data" @close="closeAllMenus" />
       </AppMobileMenu>
     </template>
   </AppHeader>
@@ -31,18 +31,9 @@
 </template>
 
 <script setup>
-import { inject, watch } from "vue";
-import { useQuasar } from "quasar";
+import { inject } from "vue";
 import { useAutoClose } from "@/composables/useAutoClose";
 
-import AppHeader from "@/components/AppHeader.vue";
-import AppNavMenu from "@/components/AppNavMenu.vue";
-import AppMobileMenu from "@/components/AppMobileMenu.vue";
-import AppFooter from "@/components/AppFooter.vue";
-import AppModal from "@/components/AppModal.vue";
-import AppContactButton from "@/components/AppContactButton.vue";
-
-const $q = useQuasar();
 const data = inject("data");
 
 const { open: modalOpen } = useAutoClose();
@@ -69,11 +60,4 @@ const closeAllMenus = () => {
   catalogMenuOpen.value = false;
   navMenuOpen.value = false;
 };
-
-watch(
-  () => $q.screen.gt.lg,
-  (val) => {
-    navMenuOpen.value = navMenuOpen.value && !!val;
-  }
-);
 </script>

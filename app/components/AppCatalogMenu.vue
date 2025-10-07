@@ -7,8 +7,8 @@
         :to="item.link"
         :class="activeCard?.id === item.id ? 'active' : ''"
         class="menu__link"
-        @mouseenter="$emit('card:set-active', item)"
-        @click="$emit('close')"
+        @mouseenter="setActiveCard(item)"
+        @click="close"
       >
         <span class="menu__link-text">{{ item.name }}</span>
 
@@ -24,7 +24,7 @@
         :data="item"
         :class="activeCard?.id === item.id ? 'active' : ''"
         size="sm"
-        @click="$emit('close')"
+        @click="close"
       />
     </div>
   </div>
@@ -36,22 +36,34 @@ import ArrowIcon from "@/assets/icons/bx-arrow.svg";
 
 const emit = defineEmits(["close", "card:set-active"]);
 
-defineProps({
+const props = defineProps({
   data: {
     type: Object,
     required: true,
-  },
-  activeCard: {
-    type: [Object, null],
-    default: null,
   },
 });
 
 const catalogMenuRef = useTemplateRef("catalogMenuRef");
 
-onClickOutside(catalogMenuRef, () => {
+const activeCard = ref(props.data.catalog[0]);
+const close = () => {
   emit("close");
-});
+  setTimeout(() => {
+    activeCard.value = props.data.catalog[0];
+  }, 300);
+};
+
+const setActiveCard = (card) => {
+  activeCard.value = card;
+};
+
+onClickOutside(
+  catalogMenuRef,
+  () => {
+    close();
+  },
+  { ignore: [".mobile-menu"] }
+);
 </script>
 
 <style lang="scss" scoped>

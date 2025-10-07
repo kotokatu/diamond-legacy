@@ -1,5 +1,5 @@
 <template>
-  <Transition name="fade" @after-leave="$emit('hide')">
+  <Transition name="fade" :duration="300" @after-leave="$emit('hide')">
     <slot />
   </Transition>
 </template>
