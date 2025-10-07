@@ -9,28 +9,27 @@
           </div>
         </NuxtLink>
 
-        <AppNavMenu v-if="$q.screen.gt.lg" @catalog:toggle="toggleCatalogMenu" />
+        <AppNavMenu v-if="$q.screen.gt.lg" @catalog:open="openCatalogMenu" />
 
         <AppMobileMenu v-else v-model="navMenuOpen">
-          <AppNavMenu @catalog:toggle="toggleCatalogMenu" @nav:toggle="toggleNavMenu" />
+          <AppNavMenu @catalog:open="openCatalogMenu" />
         </AppMobileMenu>
 
         <div class="header__right">
-          <AppButton color="accent" @click="openModal">
+          <AppButton color="accent" @click="$emit('modal:open')">
             <span>Написать нам</span>
           </AppButton>
 
           <div class="header__menu-btn">
-            <MenuIcon class="icon" @click="toggleNavMenu" />
+            <MenuIcon class="icon" @click="openNavMenu" />
           </div>
         </div>
       </header>
 
       <component
-        :is="$q.screen.gt.lg ? AppTransition : AppMobileMenu"
+        :is="CATALOL_MENU_WRAPPERS[$q.screen.gt.lg ? 'lg' : 'sm'].component"
         v-model="catalogMenuOpen"
-        :arrow-icon="true"
-        :title="'Каталог'"
+        v-bind="CATALOL_MENU_WRAPPERS[$q.screen.gt.lg ? 'lg' : 'sm'].props"
         @hide="setActiveMenuCard(data.catalog[0].id)"
         @close="closeAllMenus"
         @back="closeCatalogMenu"
@@ -40,7 +39,6 @@
           ref="catalogMenuRef"
           :data="data"
           :active-card="activeMenuCard"
-          @close="closeAllMenus"
           @card:set-active="setActiveMenuCard"
         />
       </component>
@@ -67,6 +65,7 @@
 <script setup>
 import { ref, inject } from "vue";
 import { useQuasar } from "quasar";
+import { useAutoClose } from "@/composables/useAutoClose";
 
 import MenuIcon from "@/assets/icons/bx-menu.svg";
 import LogoImg from "@/assets/img/logo_header_img.svg";
@@ -75,28 +74,34 @@ import LogoText from "@/assets/img/logo_text.svg";
 import AppMobileMenu from "./AppMobileMenu.vue";
 import AppTransition from "./AppTransition.vue";
 
+const CATALOL_MENU_WRAPPERS = {
+  lg: { component: AppTransition, props: {} },
+  sm: { component: AppMobileMenu, props: { arrowIcon: true, title: "Каталог" } },
+};
+
+defineEmits(["modal:open"]);
+
 const $q = useQuasar();
 const data = inject("data");
 const activeMenuCard = ref(data.catalog[0]);
-const openModal = inject("openModal");
 
-const catalogMenuOpen = ref(false);
-const navMenuOpen = ref(false);
+const { open: catalogMenuOpen } = useAutoClose();
+const { open: navMenuOpen } = useAutoClose();
 
 const setActiveMenuCard = (id) => {
   activeMenuCard.value = data.catalog.find((item) => item.id === id);
 };
 
-const toggleCatalogMenu = () => {
-  catalogMenuOpen.value = !catalogMenuOpen.value;
+const openNavMenu = () => {
+  navMenuOpen.value = true;
+};
+
+const openCatalogMenu = () => {
+  catalogMenuOpen.value = true;
 };
 
 const closeCatalogMenu = () => {
   catalogMenuOpen.value = false;
-};
-
-const toggleNavMenu = () => {
-  navMenuOpen.value = !navMenuOpen.value;
 };
 
 const closeAllMenus = () => {

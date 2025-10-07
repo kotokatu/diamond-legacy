@@ -1,14 +1,14 @@
 <template>
   <div class="nav">
-    <div class="nav-item nav-item--catalog" @click="$emit('catalog:toggle')">
+    <div class="nav-item nav-item--catalog" @click="$emit('catalog:open')">
       <span role="button" tabindex="0" class="text-nav">Каталог</span>
       <ArrowIcon class="icon" />
     </div>
-    <NuxtLink to="/#benefits" class="nav-item" @click="$emit('nav:toggle')">
+    <NuxtLink to="/#benefits" class="nav-item">
       <span class="text-nav">Преимущества</span>
       <ArrowIcon class="icon" />
     </NuxtLink>
-    <NuxtLink to="/#distributors" class="nav-item" @click="$emit('nav:toggle')">
+    <NuxtLink to="/#distributors" class="nav-item">
       <span class="text-nav">Для дистрибьюторов</span>
       <ArrowIcon class="icon" />
     </NuxtLink>
@@ -17,7 +17,7 @@
 
 <script setup>
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
-defineEmits(["catalog:toggle", "nav:toggle"]);
+defineEmits(["catalog:open"]);
 </script>
 
 <style lang="scss" scoped>

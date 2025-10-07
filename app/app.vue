@@ -1,5 +1,5 @@
 <template>
-  <AppHeader />
+  <AppHeader @modal:open="openModal" />
 
   <main class="main">
     <NuxtPage />
@@ -13,16 +13,16 @@
 </template>
 
 <script setup>
+import { useAutoClose } from "@/composables/useAutoClose";
 import { provide } from "vue";
 import data from "@/assets/data/data.json";
 
-const modalOpen = ref(false);
+const { open: modalOpen } = useAutoClose();
 
 const openModal = () => {
   modalOpen.value = true;
 };
 
-provide("openModal", openModal);
 provide("data", data);
 </script>
 

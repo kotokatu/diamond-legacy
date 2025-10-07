@@ -8,7 +8,6 @@
         :class="activeCard.id === item.id ? 'active' : ''"
         class="menu__link"
         @mouseenter="$emit('card:set-active', item.id)"
-        @click="$emit('close')"
       >
         <span class="menu__link-text">{{ item.name }}</span>
 
@@ -24,7 +23,6 @@
         :data="item"
         :class="activeCard.id === item.id ? 'active' : ''"
         :size="$q.screen.gt.lg ? 'md' : 'sm'"
-        @click="$emit('close')"
       />
     </div>
   </div>
