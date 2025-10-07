@@ -8,7 +8,12 @@
       </div>
 
       <div class="card__img-container">
-        <NuxtImg class="card__img" :alt="data.name" :src="data.image" sizes="700px" />
+        <NuxtImg
+          class="card__img"
+          :alt="data.name"
+          :src="data.image"
+          sizes="700px"
+        />
       </div>
 
       <ArrowIcon class="card__arrow" />
@@ -28,7 +33,7 @@ const props = defineProps({
     type: String,
     default: "lg",
     validator: (value) => {
-      return ["sm", "md", "lg"].includes(value);
+      return ["sm", "lg"].includes(value);
     },
   },
 });
@@ -54,13 +59,6 @@ $transition: all 0.3s ease-in-out;
   transition: $transition;
 
   &--sm {
-    .card__price {
-      margin-top: auto;
-    }
-  }
-
-  &--md,
-  &--sm {
     .card__img-container {
       display: flex;
       justify-content: flex-end;
@@ -68,6 +66,12 @@ $transition: all 0.3s ease-in-out;
 
     .card__img {
       object-position: 35px 70px;
+    }
+
+    .card__price {
+      @container (inline-size < 400px) {
+        margin-top: auto;
+      }
     }
   }
 

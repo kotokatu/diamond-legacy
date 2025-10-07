@@ -5,9 +5,10 @@
         v-for="item in data.catalog"
         :key="item.id"
         :to="item.link"
-        :class="activeCard.id === item.id ? 'active' : ''"
+        :class="activeCard?.id === item.id ? 'active' : ''"
         class="menu__link"
-        @mouseenter="$emit('card:set-active', item.id)"
+        @mouseenter="$emit('card:set-active', item)"
+        @click="$emit('close')"
       >
         <span class="menu__link-text">{{ item.name }}</span>
 
@@ -21,8 +22,9 @@
         :key="item.id"
         class="menu__card"
         :data="item"
-        :class="activeCard.id === item.id ? 'active' : ''"
-        :size="$q.screen.gt.lg ? 'md' : 'sm'"
+        :class="activeCard?.id === item.id ? 'active' : ''"
+        size="sm"
+        @click="$emit('close')"
       />
     </div>
   </div>
@@ -33,26 +35,23 @@ import { onClickOutside } from "@vueuse/core";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
 
 const emit = defineEmits(["close", "card:set-active"]);
+
 defineProps({
   data: {
     type: Object,
     required: true,
   },
   activeCard: {
-    type: Object,
-    required: true,
+    type: [Object, null],
+    default: null,
   },
 });
 
 const catalogMenuRef = useTemplateRef("catalogMenuRef");
 
-onClickOutside(
-  catalogMenuRef,
-  () => {
-    emit("close");
-  },
-  { ignore: [".nav-item--catalog"] }
-);
+onClickOutside(catalogMenuRef, () => {
+  emit("close");
+});
 </script>
 
 <style lang="scss" scoped>

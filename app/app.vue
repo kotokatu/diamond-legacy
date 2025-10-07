@@ -1,39 +1,15 @@
 <template>
-  <AppHeader @modal:open="openModal" />
-
-  <main class="main">
+  <NuxtLayout :name="layout">
     <NuxtPage />
-  </main>
-
-  <AppFooter />
-
-  <AppModal v-model="modalOpen" />
-
-  <AppContactButton @click="openModal" />
+  </NuxtLayout>
 </template>
 
 <script setup>
-import { useAutoClose } from "@/composables/useAutoClose";
 import { provide } from "vue";
+import { useLayout } from "#imports";
 import data from "@/assets/data/data.json";
 
-const { open: modalOpen } = useAutoClose();
-
-const openModal = () => {
-  modalOpen.value = true;
-};
+const layout = useLayout();
 
 provide("data", data);
 </script>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>
