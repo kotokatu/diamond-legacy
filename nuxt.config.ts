@@ -15,15 +15,17 @@ export default defineNuxtConfig({
     },
   },
   image: {
+    format: ['webp'],
+    quality: 80,
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
       xs: 360,
       sm: 768,
       md: 1024,
       lg: 1280,
-      xl: 1920,
-      xxl: 1920,
-      "2xl": 1920,
+      xl: 1536,
+      xxl: 1536,
+      "2xl": 1536,
     },
   },
 });
