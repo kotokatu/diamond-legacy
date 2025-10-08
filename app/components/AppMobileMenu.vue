@@ -1,5 +1,5 @@
 <template>
-  <q-drawer v-model="modalOpen" side="right" :width="$q.screen.width + 1" no-swipe-open>
+  <q-drawer v-model="isOpen" side="right" :width="$q.screen.width + 1" no-swipe-open>
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
@@ -43,18 +43,18 @@ defineProps({
 const emit = defineEmits(["close", "back"]);
 const $q = useQuasar();
 
-const modalOpen = defineModel({
+const isOpen = defineModel({
   type: Boolean,
   default: false,
 });
 
 const close = () => {
-  modalOpen.value = false;
+  isOpen.value = false;
   emit("close");
 };
 
 const back = () => {
-  modalOpen.value = false;
+  isOpen.value = false;
   emit("back");
 };
 

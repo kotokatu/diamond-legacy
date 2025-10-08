@@ -16,7 +16,7 @@
       </NuxtLink>
     </ul>
 
-    <div class="menu__cards">
+    <div ref="catalogCardsRef" class="menu__cards">
       <AppProductCard
         v-for="item in data.catalog"
         :key="item.id"
@@ -44,10 +44,12 @@ const props = defineProps({
 });
 
 const catalogMenuRef = useTemplateRef("catalogMenuRef");
+const catalogCardsRef = useTemplateRef("catalogCardsRef");
 
 const activeCard = ref(props.data.catalog[0]);
 const close = () => {
   emit("close");
+  catalogCardsRef.value.scrollTop = 0;
   setTimeout(() => {
     activeCard.value = props.data.catalog[0];
   }, 300);
