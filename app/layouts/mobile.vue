@@ -1,4 +1,6 @@
 <template>
+  <q-layout>
+
   <AppHeader @modal:open="openModal" @nav:open="openNavMenu">
     <template #page-nav>
       <AppMobileMenu v-model="navMenuOpen">
@@ -28,6 +30,7 @@
   <AppModal v-model="modalOpen" />
 
   <AppContactButton @click="openModal" />
+  </q-layout>
 </template>
 
 <script setup>

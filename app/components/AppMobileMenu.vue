@@ -1,5 +1,5 @@
 <template>
-  <q-dialog v-model="modalOpen" maximized persistent transition-show="slide-up" transition-hide="slide-down">
+  <q-drawer v-model="modalOpen" :width="$q.screen.width" no-swipe-open>
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
@@ -17,7 +17,7 @@
         <slot />
       </div>
     </div>
-  </q-dialog>
+  </q-drawer>
 </template>
 
 <script setup>
@@ -70,6 +70,7 @@ watch(
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background-color: $dark;
 }
 
