@@ -608,6 +608,8 @@ a {
     padding-top: 128px;
 
     .video-container--rounded {
+      position: sticky;
+      top: 15px;
       height: 800px;
       margin: 0 auto;
       border-radius: 12px;
