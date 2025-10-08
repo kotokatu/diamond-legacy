@@ -9,7 +9,9 @@ import { provide } from "vue";
 import { useLayout } from "#imports";
 import data from "@/assets/data/data.json";
 
-const layout = useLayout();
+const {currentLayout: layout} = useLayout();
 
 provide("data", data);
+
+
 </script>

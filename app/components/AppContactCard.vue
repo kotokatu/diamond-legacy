@@ -142,6 +142,14 @@ const sendForm = () => {
   }
 }
 
+.contact-card--bg {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/img/contact_form_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
 :deep(.q-field--outlined .q-field__control) {
   border-radius: 8px;
   color: $accent;

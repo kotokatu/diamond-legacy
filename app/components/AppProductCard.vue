@@ -1,23 +1,32 @@
 <template>
-  <NuxtLink :to="data.link">
-    <div class="card" :class="classes">
-      <div class="card__content">
-        <h3 class="card__title text-h3">{{ data.name }}</h3>
-        <p class="card__description">{{ data.description }}</p>
-        <h3 class="card__price text-h3">{{ data.price }}</h3>
-      </div>
-
-      <div class="card__img-container">
-        <NuxtImg
-          class="card__img"
-          :alt="data.name"
-          :src="data.image"
-          sizes="700px"
-        />
-      </div>
-
-      <ArrowIcon class="card__arrow" />
+  <NuxtLink 
+    :to="data.link"
+    class="card" 
+    :class="classes"
+    :aria-labelledby="`product-${data.id}-title`"
+    :aria-describedby="`product-${data.id}-desc product-${data.id}-price`"
+  >
+    <div class="card__content">
+      <h3 :id="`product-${data.id}-title`" class="card__title text-h3">{{ data.name }}</h3>
+      <p :id="`product-${data.id}-desc`" class="card__description">{{ data.description }}</p>
+      <p :id="`product-${data.id}-price`" class="card__price text-h3">{{ data.price }}</p>
     </div>
+
+    <div class="card__img-container">
+      <NuxtImg
+        class="card__img"
+        :alt="data.name"
+        :src="data.image"
+        sizes="700px"
+        loading="lazy"
+      />
+    </div>
+
+    <ArrowIcon 
+      class="card__arrow" 
+      aria-hidden="true"
+      role="presentation"
+    />
   </NuxtLink>
 </template>
 

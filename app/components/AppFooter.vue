@@ -69,8 +69,8 @@
 </template>
 
 <script setup>
-import LogoImg from "@/assets/img/logo_footer_img.svg";
-import LogoText from "@/assets/img/logo_text.svg";
+import LogoImg from "@/assets/svg/logo_footer_img.svg";
+import LogoText from "@/assets/svg/logo_text.svg";
 </script>
 
 <style lang="scss" scoped>

@@ -1,20 +1,20 @@
 <template>
   <div class="page page--product">
     <section class="wrapper section hero">
-      <div class="section__background overlayed">
+      <div class="section__background section__background--overlay">
         <NuxtImg
           fit="outside"
           format="webp, avif"
           src="/img/royal/royal_hero.png"
           alt="Legacy Royal"
-          class="section__image"
+          class="section__background-image"
           width="1920"
           height="760"
           quality="80"
         />
       </div>
 
-      <div class="section__body contained">
+      <div class="section__content contained">
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
@@ -29,25 +29,26 @@
 
     <section class="wrapper section description">
       <div class="contained">
-        <div class="section__lead section-lead">
-          <div class="section-lead__header text-nav text-sub">
-            <span class="section-lead__index">1.0</span>
-            <div class="section-lead__text">
-              <span class="section-lead__title">{ Описание }</span>
-              <span class="section-lead__subtitle">Legacy Royal</span>
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">1.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Описание }</span>
+              <span class="lead__subtitle">Legacy Royal</span>
             </div>
           </div>
 
-          <div class="section-lead__body text-h2">
+          <div class="lead__body text-h2">
             Legacy Royal — многофункциональный аппарат для улучшения качества
             кожи, коррекции целлюлита и моделирования контуров тела и лица
           </div>
         </div>
 
-        <div class="section__body">
+        <div class="section__content">
           <div class="section-item section-item--img">
             <NuxtImg
-              quality="100"
+          format="webp, avif"
+
               src="/img/royal/royal_1.png"
               alt="Legacy Royal"
               class="section-item__image"
@@ -55,7 +56,8 @@
           </div>
           <div class="section-item section-item--img">
             <NuxtImg
-              quality="100"
+          format="webp, avif"
+
               src="/img/royal/royal_2.png"
               alt="Legacy Royal"
               class="section-item__image"
@@ -63,7 +65,8 @@
           </div>
           <div class="section-item section-item--img section-item--wide">
             <NuxtImg
-              quality="100"
+          format="webp, avif"
+
               src="/img/royal/royal_3.png"
               alt="Legacy Royal"
               class="section-item__image"
@@ -135,24 +138,24 @@
         </div>
 
         <div class="section__contact">
-          <AppContactCard class="section__contact-card" />
+          <AppContactCard class="contact-card--bg" />
         </div>
       </div>
     </section>
 
     <section class="section wrapper benefits">
       <div class="contained">
-        <div class="section__lead section-lead">
-          <div class="section-lead__header text-nav text-sub">
-            <span class="section-lead__index">2.0</span>
-            <div class="section-lead__text">
-              <span class="section-lead__title">{ Преимущества }</span>
-              <span class="section-lead__subtitle">Legacy</span>
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">2.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Преимущества }</span>
+              <span class="lead__subtitle">Legacy</span>
             </div>
           </div>
         </div>
 
-        <div class="section__body">
+        <div class="section__content">
           <div class="section-item">
             <div class="item-header text-nav text-sub">{ 01 }</div>
             <div class="item-body">
@@ -166,7 +169,7 @@
           </div>
 
           <div class="section-item section-item--img image-1">
-            <img src="/img/royal/royal_4.png" alt="Royal Legacy" />
+            <NuxtImg format="webp, avif" src="/img/royal/royal_4.png" alt="Аппарат Royal Legacy" />
           </div>
 
           <div class="section-item">
@@ -184,7 +187,7 @@
           </div>
 
           <div class="section-item section-item--img image-2">
-            <img src="/img/royal/royal_5.png" alt="Royal Legacy" />
+            <NuxtImg format="webp, avif" src="/img/royal/royal_5.png" alt="Аппарат Royal Legacy" />
           </div>
 
           <div class="section-item">
@@ -202,7 +205,7 @@
           </div>
 
           <div class="section-item section-item--img image-3">
-            <img src="/img/royal/royal_6.png" alt="Royal Legacy" />
+            <NuxtImg format="webp, avif" src="/img/royal/royal_6.png" alt="Аппарат Royal Legacy" />
           </div>
 
           <div class="section-item section-item">
@@ -218,7 +221,7 @@
           </div>
 
           <div class="section-item section-item--img image-4">
-            <img src="/img/royal/royal_7.png" alt="Royal Legacy" />
+            <NuxtImg format="webp, avif" src="/img/royal/royal_7.png" alt="Аппарат Royal Legacy" />
           </div>
 
           <div class="section-item">
@@ -238,19 +241,19 @@
 
     <section class="section wrapper specification">
       <div class="contained">
-        <div class="section__lead section-lead">
-          <div class="section-lead__header text-nav text-sub">
-            <span class="section-lead__index">3.0</span>
-            <div class="section-lead__text">
-              <span class="section-lead__title"
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">3.0</span>
+            <div class="lead__text">
+              <span class="lead__title"
                 >{ Комплектация и характеристики }</span
               >
-              <span class="section-lead__subtitle">Legacy Royal</span>
+              <span class="lead__subtitle">Legacy Royal</span>
             </div>
           </div>
         </div>
 
-        <div class="section__body">
+        <div class="section__content">
           <div class="section-item">
             <h3 class="section-item__title text-h3">Комплектация</h3>
             <table class="table table--specification">
@@ -366,22 +369,5 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-.section__background {
-  display: flex;
-  justify-content: center;
-}
 
-.section__image {
-  object-fit: none;
-  object-position: center 20px;
-
-  @media (max-width: $breakpoint-sm) {
-    object-fit: cover;
-    object-position: center 120px;
-  }
-}
-
-.section.description .section__body {
-  margin-bottom: 128px;
-}
 </style>

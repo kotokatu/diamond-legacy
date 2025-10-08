@@ -28,27 +28,16 @@
 
 <script setup>
 import { inject } from "vue";
-import { useAutoClose } from "@/composables/useAutoClose";
+import { useLayout } from "@/composables/useLayout";
 
 const data = inject("data");
 
-const { open: modalOpen } = useAutoClose();
-const { open: catalogMenuOpen } = useAutoClose();
-const { open: navMenuOpen } = useAutoClose();
-
-const openModal = () => {
-  modalOpen.value = true;
-};
-
-const openNavMenu = () => {
-  navMenuOpen.value = true;
-};
-
-const openCatalogMenu = () => {
-  catalogMenuOpen.value = true;
-};
-
-const closeCatalogMenu = () => {
-  catalogMenuOpen.value = false;
-};
+const {
+  modalOpen,
+  catalogMenuOpen,
+  openModal,
+  openNavMenu,
+  openCatalogMenu,
+  closeCatalogMenu,
+} = useLayout();
 </script>

@@ -1,34 +1,53 @@
 <template>
   <div class="page page--home">
-    <section class="wrapper section hero">
-      <div class="section__background overlayed">
-        <video class="section__video" autoplay loop muted>
-          <source src="@/assets/video/hero_video.webm" type="video/mp4" />
-          <source src="@/assets/video/hero_video.mp4" type="video/mp4" />
+    <section 
+      class="wrapper section hero" 
+      aria-labelledby="hero-title"
+      role="banner"
+    >
+      <div class="section__background section__background--overlay">
+        <video
+          class="section__video"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <source src="/video/hero_video.webm" type="video/webm" />
+          <source src="/video/hero_video.mp4" type="video/mp4" />
+          <!-- Provide text alternative for the background video -->
+          <p>Видео демонстрирует работу косметологических аппаратов Legacy</p>
         </video>
       </div>
 
-      <div class="section__body contained">
-        <h1 class="font-secondary text-h1">
+      <div class="section__content contained">
+        <h1 id="hero-title" class="font-secondary text-h1">
           Legacy — косметологические аппараты премиум качества
         </h1>
-        <h3 class="font-secondary text-h3">
+        <p class="font-secondary text-h3">
           Уникальный симбиоз многолетнего опыта <br />
           и передовых корейских технологий
-        </h3>
+        </p>
       </div>
     </section>
 
-    <section id="about" class="wrapper section about">
-      <div class="section__lead section-lead contained">
-        <div class="section-lead__header text-nav text-sub">
-          <span class="section-lead__index">1.0</span>
-          <div class="section-lead__text">
-            <span class="section-lead__title">{ О компании }</span>
-            <span class="section-lead__subtitle">Legacy</span>
+    <section 
+      id="about" 
+      class="wrapper section about"
+      aria-labelledby="about-title"
+    >
+      <div class="lead contained">
+        <div class="lead__header text-nav text-sub" aria-hidden="true">
+          <span class="lead__index">1.0</span>
+          <div class="lead__text">
+            <span class="lead__title">{ О компании }</span>
+            <span class="lead__subtitle">Legacy</span>
           </div>
         </div>
-        <h2 class="section-lead__body text-h2">
+        <h2 id="about-title" class="lead__body text-h2">
           Legacy — это результат реальной практики, экспертизы, стремления дать
           специалистам лучшее оборудование, которое станет эталоном надёжности и
           качества
@@ -37,13 +56,23 @@
 
       <div class="section__bottom">
         <div class="section__background">
-          <video class="section__video" type="video/mp4" autoplay loop muted>
-            <source src="@/assets/video/about_video.webm" type="video/mp4" />
-            <source src="@/assets/video/about_video.mp4" type="video/mp4" />
+          <video
+            class="section__video"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            aria-hidden="true"
+            tabindex="-1"
+          >
+            <source src="/video/about_video.webm" type="video/webm" />
+            <source src="/video/about_video.mp4" type="video/mp4" />
+            <p>Видео демонстрирует процесс аппарат Legacy</p>
           </video>
         </div>
 
-        <div class="section__body contained">
+        <div class="section__content contained">
           <div class="section-item">
             <div class="section-item__title">
               <AppDots :count="1" />
@@ -80,61 +109,82 @@
       </div>
     </section>
 
-    <section id="catalog" class="wrapper section catalog">
+    <section 
+      id="catalog" 
+      class="wrapper section catalog"
+      aria-labelledby="catalog-title"
+    >
       <div class="contained">
-        <div class="section__lead section-lead">
-          <div class="section-lead__header text-nav text-sub">
-            <span class="section-lead__index">2.0</span>
-            <div class="section-lead__text">
-              <span class="section-lead__title">{ Каталог }</span>
-              <span class="section-lead__subtitle">Legacy</span>
+        <div class="lead">
+          <div class="lead__header text-nav text-sub" aria-hidden="true">
+            <span class="lead__index">2.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Каталог }</span>
+              <span class="lead__subtitle">Legacy</span>
             </div>
           </div>
 
-          <h2 class="section-lead__body text-h2">
+          <h2 id="catalog-title" class="lead__body text-h2">
             Производим устройства мирового уровня с фокусом на надежность,
             удобство и технологичность
           </h2>
         </div>
 
-        <div class="section__body">
+        <div 
+          class="section__content"
+          role="grid"
+          aria-label="Каталог косметологических аппаратов"
+        >
           <AppProductCard
             v-for="item in data.catalog"
             :key="item.id"
             class="catalog__card"
             :data="item"
             size="lg"
+            role="gridcell"
+            :aria-label="item.name"
           />
         </div>
 
         <div class="section__contact">
-          <AppContactCard class="section__contact-card" />
+          <AppContactCard class="contact-card--bg" />
         </div>
       </div>
     </section>
 
-    <section id="benefits" class="wrapper section benefits">
+    <section 
+      id="benefits" 
+      class="wrapper section benefits"
+      aria-labelledby="benefits-title"
+    >
       <div class="contained">
-        <div class="section__lead section-lead">
-          <div class="section-lead__header text-nav text-sub">
-            <span class="section-lead__index">3.0</span>
-            <div class="section-lead__text">
-              <span class="section-lead__title">{ Преимущества }</span>
-              <span class="section-lead__subtitle">Legacy</span>
+        <div class="lead">
+          <div class="lead__header text-nav text-sub" aria-hidden="true">
+            <span class="lead__index">3.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Преимущества }</span>
+              <span class="lead__subtitle">Legacy</span>
             </div>
           </div>
-          <div class="section-lead__body text-h2">
+          <h2 id="benefits-title" class="lead__body text-h2">
             Берем на себя все этапы — от логистики до настройки оборудования, а
             также обеспечиваем последующее техническое сопровождение по всей
             России
-          </div>
+          </h2>
         </div>
 
-        <div class="section__body">
-          <div class="section-item delivery">
-            <div class="item-header text-nav text-sub">{ Доставка }</div>
+        <div 
+          class="section__content"
+          role="list"
+          aria-label="Преимущества работы с Legacy"
+        >
+          <div 
+            class="section-item delivery"
+            role="listitem"
+          >
+            <div class="item-header text-nav text-sub" aria-hidden="true">{ Доставка }</div>
             <div class="item-body">
-              <div class="item-title text-h3">Бесплатная доставка</div>
+              <h3 class="item-title text-h3">Бесплатная доставка</h3>
               <div class="item-text">
                 Доставка оборудования надёжными транспортными компаниями по
                 России, СНГ и Европе. Аппараты упакованы в алюминиевые кейсы.
@@ -144,7 +194,11 @@
           </div>
 
           <div class="section-item section-item--img image-1">
-            <img src="@/assets/img/benefits_1.jpg" alt="" />
+            <NuxtImg 
+              format="webp, avif"
+              src="/img/benefits_1.jpg" 
+              alt="Деталь аппарата Legacy"
+              loading="lazy" />
           </div>
 
           <div class="section-item payment">
@@ -208,7 +262,7 @@
           </div>
 
           <div class="section-item section-item--img image-2">
-            <img src="@/assets/img/benefits_2.jpg" alt="" />
+            <NuxtImg format="webp, avif" src="/img/benefits_2.jpg" alt="Деталь аппарата Legacy" />
           </div>
 
           <div class="section-item production">
@@ -228,32 +282,32 @@
 
     <section id="distributors" class="wrapper section distributors">
       <div class="contained">
-        <div class="section__lead section-lead">
-          <div class="section-lead__header text-nav text-sub">
-            <span class="section-lead__index">4.0</span>
-            <div class="section-lead__text">
-              <span class="section-lead__title">{ Для дистрибьюторов }</span>
-              <span class="section-lead__subtitle">Legacy</span>
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">4.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Для дистрибьюторов }</span>
+              <span class="lead__subtitle">Legacy</span>
             </div>
           </div>
 
-          <h2 class="section-lead__body text-h2">
+          <h2 class="lead__body text-h2">
             Сотрудничество, которое <br />работает
           </h2>
         </div>
 
-        <div class="section__body">
+        <div class="section__content">
           <q-expansion-item
             expand-icon="add"
             expanded-icon="remove"
             expand-icon-class="text-white"
-            class="accordeon"
+            class="accordion"
           >
             <template #header>
-              <div class="accordeon-label text-h3">Оптовые скидки</div>
+              <div class="accordion-label text-h3">Оптовые скидки</div>
             </template>
 
-            <p class="accordeon-body text-body">
+            <p class="accordion-body text-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam temporibus minus commodi atque fugit modi dolores
               delectus possimus eveniet nam, sunt incidunt et facere accusamus
@@ -266,14 +320,14 @@
             expanded-icon="remove"
             expand-icon-class="text-white"
             label="Условия сотрудничества"
-            class="accordeon"
+            class="accordion"
           >
             <template #header>
-              <div class="accordeon-label text-h3">Условия сотрудничества</div>
+              <div class="accordion-label text-h3">Условия сотрудничества</div>
             </template>
 
-            <div class="accordeon-body text-body">
-              <div class="right">
+            <div class="accordion-body text-body">
+              <div class="accordion-body__right">
                 <p class="q-mb-md">
                   Эксклюзивные цены и специальные условия закупки для
                   официальных дистрибьюторов.
@@ -296,7 +350,7 @@
                 </p>
               </div>
 
-              <div class="left">
+              <div class="accordion-body__left">
                 <p>
                   Полный набор маркетинговых инструментов: готовые инструкции,
                   фото, видео и пошаговые планы продвижения для быстрого старта
@@ -315,12 +369,12 @@
             expanded-icon="remove"
             expand-icon-class="text-white"
             label="Бонусные программы"
-            class="accordeon"
+            class="accordion"
           >
             <template #header>
-              <div class="accordeon-label text-h3">Бонусные программы</div>
+              <div class="accordion-label text-h3">Бонусные программы</div>
             </template>
-            <p class="accordeon-body text-body">
+            <p class="accordion-body text-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam temporibus minus commodi atque fugit modi dolores
               delectus possimus eveniet nam, sunt incidunt et facere accusamus
@@ -336,183 +390,9 @@
 <script setup>
 import { inject } from "vue";
 
-import AppDots from "@/components/AppDots.vue";
-import AppProductCard from "@/components/AppProductCard.vue";
-
 const data = inject("data");
 </script>
 
 <style lang="scss" scoped>
-.section.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0px;
 
-  .section__bottom {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 760px;
-
-    @media (max-width: $breakpoint-sm) {
-      align-items: center;
-    }
-
-    .section__body {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      padding-top: 160px;
-      padding-bottom: 160px;
-
-      @media (max-width: $breakpoint-sm) {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    .section-item {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 32px 0;
-
-      &--last {
-        margin-top: auto;
-        transform: translateY(60px);
-
-        @media (max-width: $breakpoint-sm) {
-          margin-top: 0;
-          order: 3;
-          transform: translateY(0);
-        }
-      }
-    }
-
-    .section-item__title {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      color: $base-semi;
-    }
-
-    .section-item__text {
-      color: $base;
-    }
-  }
-}
-
-.section.catalog {
-  .section__body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-bottom: 64px;
-
-    @media (max-width: $breakpoint-sm) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .catalog__card {
-    height: 600px;
-
-    @media (max-width: $breakpoint-lg) {
-      height: 540px;
-    }
-  }
-}
-
-.section.benefits .section-item {
-  @media (max-width: $breakpoint-md) {
-    flex-basis: calc(100% / 2 - 16px / 2);
-
-    &.delivery {
-      order: 1;
-    }
-
-    &.image-1 {
-      order: 2;
-    }
-
-    &.warranty {
-      order: 3;
-    }
-
-    &.payment {
-      order: 4;
-    }
-
-    &.image-2 {
-      order: 5;
-    }
-
-    &.support {
-      order: 6;
-    }
-
-    &.training {
-      order: 7;
-    }
-
-    &.production {
-      order: 8;
-    }
-  }
-}
-
-.section.distributors {
-  background-color: $dark;
-  color: $base;
-
-  .section__lead section-lead {
-    margin-bottom: 40px;
-  }
-
-  .section-lead__header {
-    border-color: $base-semi;
-  }
-
-  .section-lead__body {
-    width: 100%;
-  }
-
-  .accordeon {
-    border-bottom: 1px solid $base-semi;
-
-    :deep(.q-focus-helper) {
-      display: none;
-    }
-
-    :deep(.q-item) {
-      padding: 0;
-    }
-  }
-
-  .accordeon-label {
-    width: 100%;
-    font-family: var(--font-secondary);
-    font-weight: 400;
-    letter-spacing: 0px;
-    color: $base;
-    padding: 24px 32px;
-  }
-
-  .accordeon-body {
-    display: flex;
-    padding: 24px 32px;
-    gap: 32px;
-
-    @media (max-width: $breakpoint-sm) {
-      flex-direction: column;
-    }
-
-    > div {
-      flex: 1 0 0;
-    }
-  }
-}
 </style>

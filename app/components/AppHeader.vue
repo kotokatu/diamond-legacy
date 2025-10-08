@@ -39,8 +39,8 @@
 
 <script setup>
 import MenuIcon from "@/assets/icons/bx-menu.svg";
-import LogoImg from "@/assets/img/logo_header_img.svg";
-import LogoText from "@/assets/img/logo_text.svg";
+import LogoImg from "@/assets/svg/logo_header_img.svg";
+import LogoText from "@/assets/svg/logo_text.svg";
 
 defineEmits(["modal:open", "nav:open"]);
 </script>
