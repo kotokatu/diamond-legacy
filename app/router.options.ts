@@ -18,7 +18,7 @@ export default <RouterConfig>{
     }
 
     // Otherwise, scroll to the top of the page
-    if (to.name === from.name) {
+    if (to.name === 'index') {
       return {
         top: 0,
         behavior,

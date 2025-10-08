@@ -4,11 +4,11 @@
       <span role="button" tabindex="0" class="text-nav">Каталог</span>
       <ArrowIcon class="icon" />
     </div>
-    <NuxtLink to="/#benefits" class="nav-item">
+    <NuxtLink to="/#benefits" class="nav-item" @click="$emit('close')">
       <span class="text-nav">Преимущества</span>
       <ArrowIcon class="icon" />
     </NuxtLink>
-    <NuxtLink to="/#distributors" class="nav-item">
+    <NuxtLink to="/#distributors" class="nav-item" @click="$emit('close')">
       <span class="text-nav">Для дистрибьюторов</span>
       <ArrowIcon class="icon" />
     </NuxtLink>
@@ -17,7 +17,7 @@
 
 <script setup>
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
-defineEmits(["catalog:open"]);
+defineEmits(["catalog:open", "close"]);;
 </script>
 
 <style lang="scss" scoped>

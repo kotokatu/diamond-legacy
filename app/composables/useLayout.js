@@ -21,6 +21,10 @@ export function useLayout() {
     navMenuOpen.value = true;
   };
 
+  const closeNavMenu = () => {
+    navMenuOpen.value = false;
+  }
+
   const openCatalogMenu = () => {
     catalogMenuOpen.value = true;
   };
@@ -48,6 +52,7 @@ export function useLayout() {
     
     openModal,
     openNavMenu,
+    closeNavMenu,
     openCatalogMenu,
     closeCatalogMenu,
     closeAllMenus

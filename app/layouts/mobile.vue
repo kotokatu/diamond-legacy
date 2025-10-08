@@ -4,7 +4,7 @@
   <AppHeader @modal:open="openModal" @nav:open="openNavMenu">
     <template #page-nav>
       <AppMobileMenu v-model="navMenuOpen">
-        <AppNavMenu @catalog:open="openCatalogMenu" />
+        <AppNavMenu @catalog:open="openCatalogMenu" @close="closeNavMenu" />
       </AppMobileMenu>
     </template>
 
@@ -45,6 +45,7 @@ const {
   navMenuOpen,
   openModal,
   openNavMenu,
+  closeNavMenu,
   openCatalogMenu,
   closeCatalogMenu,
   closeAllMenus,

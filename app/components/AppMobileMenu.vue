@@ -1,5 +1,5 @@
 <template>
-  <q-drawer v-model="modalOpen" :width="$q.screen.width" no-swipe-open>
+  <q-drawer v-model="modalOpen" side="right" :width="$q.screen.width + 1" no-swipe-open>
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
