@@ -102,6 +102,110 @@
             </video>
           </div>
         </div>
+
+        <div class="section__contact">
+          <AppContactCard class="section__contact-card" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrapper benefits">
+      <div class="contained">
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__header-index">2.0</span>
+            <div class="lead__header-text">
+              <span class="lead__header-title">{ Преимущества }</span>
+              <span class="lead__header-subtitle">Legacy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__body">
+          <div class="section__benefits-item delivery">
+            <div class="item-header text-nav text-sub">{ 01 }</div>
+            <div class="item-body">
+              <div class="item-title text-h3">Формирует контуры тела</div>
+              <div class="item-text">
+                Эффективно корректирует фигуру, воздействуя на локальные жировые отложения в проблемных зонах: руки,
+                спина, живот, бедра, ягодицы. Помогает достичь более стройного и подтянутого силуэта.
+              </div>
+            </div>
+          </div>
+
+          <div class="section__benefits-item image image-1">
+            <img src="/img/royal/royal_4.png" alt="Royal Legacy" />
+          </div>
+
+          <div class="section__benefits-item payment">
+            <div class="item-header text-nav text-sub">{ 02 }</div>
+            <div class="item-body">
+              <div class="item-title text-h3">Оплата при получении</div>
+              <div class="item-text">
+                Производится только после получения оборудования, что позволит убедиться в качестве товара. Доступны
+                любые способы: расчётный счёт, наличные, банковский перевод — по удобству клиента
+              </div>
+            </div>
+          </div>
+
+          <div class="section__benefits-item warranty">
+            <div class="item-header text-nav text-sub">{ Гарантии }</div>
+            <div class="item-body">
+              <div class="item-title text-h3">Пожизненная гарантия</div>
+              <div class="item-text">
+                Обслуживание 24/7. Опытные мастера Legacy обеспечивают круглосуточное сопровождение: консультации,
+                ремонт, гарантийное и постгарантийное обслуживание
+              </div>
+            </div>
+          </div>
+
+          <div class="section__benefits-item wide support">
+            <div class="item-header text-nav text-sub">{ Сопровождение }</div>
+            <div class="item-body">
+              <div class="item-title text-h3">Помощь в получении соцконтракта под ключ</div>
+              <div class="item-text">
+                <div class="q-pb-sm">
+                  Персональный менеджер Legacy сопровождает весь процесс оформления соцконтракта. Legacy берёт на себя
+                  всю бюрократию и доводит дело до результата. Консультация по условиям получения
+                </div>
+
+                <ul class="list--disc">
+                  <li>Подбор аппарата под параметры программы</li>
+                  <li>Подготовка документов и написание бизнес-плана</li>
+                  <li>Подача заявки</li>
+                  <li>Сопровождение до получения выплаты</li>
+                  <li>Контроль покупки и отчётность</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__benefits-item training">
+            <div class="item-header text-nav text-sub">{ Обучение }</div>
+            <div class="item-body">
+              <div class="item-title text-h3">Бесплатное обучение</div>
+              <div class="item-text">
+                При покупке аппарата Legacy предоставляется бесплатное обучение в нашем обучающем центре, онлайн и
+                офлайн. Выдаётся диплом гос. образца или именной сертификат
+              </div>
+            </div>
+          </div>
+
+          <div class="section__benefits-item image image-2">
+            <img src="@/assets/img/benefits_2.jpg" alt="" />
+          </div>
+
+          <div class="section__benefits-item production">
+            <div class="item-header text-nav text-sub">{ Производство }</div>
+            <div class="item-body">
+              <div class="item-title text-h3">Собственное производство</div>
+              <div class="item-text">
+                Аппараты Legacy проходят строгий контроль качества на каждом этапе производства. Оборудование имеет
+                официальные сертификаты качества и соответствует международным стандартам
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -123,5 +227,9 @@
     object-fit: cover;
     object-position: center 120px;
   }
+}
+
+.section.description .section__body {
+  margin-bottom: 128px;
 }
 </style>

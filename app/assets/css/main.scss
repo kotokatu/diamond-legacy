@@ -202,6 +202,13 @@ a {
   width: 100%;
 }
 
+.section__contact-card {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/form_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .lead {
   width: 100%;
   margin-bottom: 64px;
@@ -262,6 +269,68 @@ a {
 
   @media (max-width: $breakpoint-sm) {
     height: 530px;
+  }
+}
+
+.section.benefits {
+  background-color: #f8f8f8;
+
+  .section__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 16px;
+
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+  }
+
+  .section__benefits-item {
+    flex-basis: calc(100% / 3 - 16px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    min-height: 380px;
+    width: 100%;
+    padding: 32px;
+    background-color: $base;
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+
+    @media (max-width: $breakpoint-sm) {
+      flex-basis: 100%;
+      min-height: 290px;
+    }
+
+    &.wide {
+      grid-column: span 2;
+    }
+
+    &.image {
+      padding: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+    }
+  }
+
+  .item-header {
+    color: #7a7a7a;
+  }
+
+  .item-title {
+    font-family: var(--font-secondary);
+    margin-bottom: 16px;
   }
 }
 

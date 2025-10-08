@@ -381,110 +381,43 @@ const data = inject("data");
       height: 540px;
     }
   }
-
-  .section__contact-card {
-    position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/form_bg.png");
-    background-size: cover;
-    background-position: center;
-  }
 }
 
-.section.benefits {
-  background-color: #f8f8f8;
+.section.benefits .section__benefits-item {
+  @media (max-width: $breakpoint-md) {
+    flex-basis: calc(100% / 2 - 16px / 2);
 
-  .section__body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 16px;
-
-    @media (max-width: $breakpoint-md) {
-      display: flex;
-      flex-wrap: wrap;
-      padding-top: 0;
-    }
-  }
-
-  .section__benefits-item {
-    flex-basis: calc(100% / 3 - 16px);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: space-between;
-    min-height: 380px;
-    width: 100%;
-    padding: 32px;
-    background-color: $base;
-    border-radius: 12px;
-    backdrop-filter: blur(12px);
-    overflow: hidden;
-
-    @media (max-width: $breakpoint-md) {
-      flex-basis: calc(100% / 2 - 16px / 2);
-
-      &.delivery {
-        order: 1;
-      }
-
-      &.image-1 {
-        order: 2;
-      }
-
-      &.warranty {
-        order: 3;
-      }
-
-      &.payment {
-        order: 4;
-      }
-
-      &.image-2 {
-        order: 5;
-      }
-
-      &.support {
-        order: 6;
-      }
-
-      &.training {
-        order: 7;
-      }
-
-      &.production {
-        order: 8;
-      }
+    &.delivery {
+      order: 1;
     }
 
-    @media (max-width: $breakpoint-sm) {
-      flex-basis: 100%;
-      min-height: 290px;
+    &.image-1 {
+      order: 2;
     }
 
-    &.wide {
-      grid-column: span 2;
+    &.warranty {
+      order: 3;
     }
 
-    &.image {
-      padding: 8px;
+    &.payment {
+      order: 4;
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 8px;
+    &.image-2 {
+      order: 5;
     }
-  }
 
-  .item-header {
-    color: #7a7a7a;
-  }
+    &.support {
+      order: 6;
+    }
 
-  .item-title {
-    font-family: var(--font-secondary);
-    margin-bottom: 16px;
+    &.training {
+      order: 7;
+    }
+
+    &.production {
+      order: 8;
+    }
   }
 }
 
