@@ -72,7 +72,6 @@ onClickOutside(
 .menu {
   display: flex;
   width: 100%;
-  padding: 4px;
   background-color: $base;
   border-radius: 12px;
   border: 4px solid #f8f8f8;

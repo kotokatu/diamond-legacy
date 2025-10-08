@@ -1,11 +1,12 @@
 <template>
   <NuxtLink 
     :to="data.link"
-    class="card" 
+    
     :class="classes"
     :aria-labelledby="`product-${data.id}-title`"
     :aria-describedby="`product-${data.id}-desc product-${data.id}-price`"
   >
+  <div class="card" >
     <div class="card__content">
       <h3 :id="`product-${data.id}-title`" class="card__title text-h3">{{ data.name }}</h3>
       <p :id="`product-${data.id}-desc`" class="card__description">{{ data.description }}</p>
@@ -27,6 +28,8 @@
       aria-hidden="true"
       role="presentation"
     />
+
+  </div>
   </NuxtLink>
 </template>
 
