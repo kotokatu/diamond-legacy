@@ -11,7 +11,6 @@
           width="1920"
           height="760"
           quality="80"
-          preload
         />
       </div>
 
@@ -154,7 +153,7 @@
         </div>
 
         <div class="section__content">
-          <div class="section-item">
+          <div class="section-item section-item--text order-1">
             <div class="item-header text-nav text-sub">{ 01 }</div>
             <div class="item-body">
               <div class="item-title text-h3">Формирует контуры тела</div>
@@ -166,15 +165,16 @@
             </div>
           </div>
 
-          <div class="section-item section-item--img image-1">
+          <div class="section-item section-item--img order-2">
             <NuxtImg
               format="webp, avif"
               src="/img/royal/royal_4.png"
               alt="Аппарат Royal Legacy"
+              class="section-item__img"
             />
           </div>
 
-          <div class="section-item">
+          <div class="section-item order-4">
             <div class="item-header text-nav text-sub">{ 02 }</div>
             <div class="item-body">
               <div class="item-title text-h3">
@@ -188,15 +188,16 @@
             </div>
           </div>
 
-          <div class="section-item section-item--img image-2">
+          <div class="section-item section-item--img order-3">
             <NuxtImg
               format="webp, avif"
               src="/img/royal/royal_5.png"
               alt="Аппарат Royal Legacy"
+              class="section-item__img"
             />
           </div>
 
-          <div class="section-item">
+          <div class="section-item order-5">
             <div class="item-header text-nav text-sub">{ 03 }</div>
             <div class="item-body">
               <div class="item-title text-h3">
@@ -210,15 +211,16 @@
             </div>
           </div>
 
-          <div class="section-item section-item--img image-3">
+          <div class="section-item section-item--img order-6">
             <NuxtImg
               format="webp, avif"
               src="/img/royal/royal_6.png"
               alt="Аппарат Royal Legacy"
+              class="section-item__img"
             />
           </div>
 
-          <div class="section-item section-item">
+          <div class="section-item section-item order-7">
             <div class="item-header text-nav text-sub">{ 04 }</div>
             <div class="item-body">
               <div class="item-title text-h3">Тонизирует кожу</div>
@@ -230,15 +232,16 @@
             </div>
           </div>
 
-          <div class="section-item section-item--img image-4">
+          <div class="section-item section-item--img order-none">
             <NuxtImg
               format="webp, avif"
               src="/img/royal/royal_7.png"
               alt="Аппарат Royal Legacy"
+              class="section-item__img"
             />
           </div>
 
-          <div class="section-item">
+          <div class="section-item order-8">
             <div class="item-header text-nav text-sub">{ 05 }</div>
             <div class="item-body">
               <div class="item-title text-h3">Манипула для лица и шеи</div>
