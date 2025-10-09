@@ -80,7 +80,7 @@ defineEmits(["modal:open", "nav:open"]);
 .header__menu-btn {
   display: none;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     display: flex;
     align-items: center;
     justify-content: center;

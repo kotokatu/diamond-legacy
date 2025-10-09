@@ -6,7 +6,7 @@ export function useLayout() {
   const $q = useQuasar();
 
   const currentLayout = computed(() => {
-    return $q.screen.gt.lg ? 'default' : 'mobile';
+    return $q.screen.gt.md ? 'default' : 'mobile';
   });
 
   const { open: modalOpen } = useAutoClose();

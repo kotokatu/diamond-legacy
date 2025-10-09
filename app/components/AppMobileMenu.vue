@@ -1,5 +1,5 @@
 <template>
-  <q-drawer v-model="isOpen" side="right" :width="$q.screen.width + 1" no-swipe-open>
+  <q-drawer v-model="isOpen" side="right" :width="$q.screen.width + 1" no-swipe-open :breakpoint="1024">
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
@@ -22,8 +22,11 @@
 
 <script setup>
 import { useQuasar } from "quasar";
+import { useLayout } from "@/composables/useLayout";
 import CloseIcon from "@/assets/icons/bx-x.svg";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
+
+const { isDefault } = useLayout();
 
 defineProps({
   title: {
@@ -59,9 +62,12 @@ const back = () => {
 };
 
 watch(
-  () => $q.screen.gt.lg,
-  () => {
-    close();
+  isDefault,
+  (val) => {
+    if (val) {
+      console.log("close");
+      close();
+    }
   }
 );
 </script>

@@ -77,7 +77,7 @@ onClickOutside(
   border: 4px solid #f8f8f8;
   height: 350px;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     flex-direction: column;
     flex-grow: 1;
     border-radius: 0;
@@ -93,7 +93,7 @@ onClickOutside(
 }
 
 .menu__cards {
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     padding: 0 24px 24px 24px;
     flex-basis: 100%;
     flex-grow: 1;
@@ -113,7 +113,7 @@ onClickOutside(
     display: none;
   }
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     height: 260px;
 
     &:not(.active) {
@@ -129,7 +129,7 @@ onClickOutside(
   flex-wrap: wrap;
   padding: 24px;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     display: none;
   }
 }

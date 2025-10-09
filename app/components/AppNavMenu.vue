@@ -27,7 +27,7 @@ defineEmits(["catalog:open", "close"]);
   display: flex;
   gap: 8px;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     gap: 0;
     position: fixed;
     top: 0;
@@ -50,7 +50,7 @@ defineEmits(["catalog:open", "close"]);
   text-decoration: none;
   cursor: pointer;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     color: $base;
     padding: 24px 0;
     border-bottom: 1px solid $base-semi;
@@ -59,7 +59,7 @@ defineEmits(["catalog:open", "close"]);
   .icon {
     display: none;
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-md) {
       display: block;
     }
   }
@@ -71,7 +71,7 @@ defineEmits(["catalog:open", "close"]);
     font-weight: 600;
     text-wrap: nowrap;
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-md) {
       font-family: var(--font-secondary);
       font-weight: 400;
       font-size: 20px;
