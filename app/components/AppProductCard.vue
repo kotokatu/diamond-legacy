@@ -58,7 +58,7 @@ const classes = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-$transition: all 0.3s ease-in-out;
+$transition: all 0.2s ease-in-out;
 
 .card {
   container-type: inline-size;
@@ -69,6 +69,20 @@ $transition: all 0.3s ease-in-out;
   background-color: #f8f8f8;
   border-radius: 12px;
   transition: $transition;
+
+  @media (hover: hover) {
+      &:hover {
+        background-color: #eaeaea;
+
+        .card__arrow {
+          opacity: 1;
+        }
+
+        .card__img {
+          transform: scale(1.1);
+        }
+      }
+    }
 
   &--sm {
     .card__img-container {
@@ -88,19 +102,7 @@ $transition: all 0.3s ease-in-out;
   }
 
   &--lg {
-    @media (hover: hover) {
-      &:hover {
-        background-color: #eaeaea;
-
-        .card__arrow {
-          opacity: 1;
-        }
-
-        .card__img {
-          transform: scale(1.1);
-        }
-      }
-    }
+    
 
     .card__img {
       width: 100%;
