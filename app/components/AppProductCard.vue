@@ -108,19 +108,19 @@ $transition: all 0.2s ease-in-out;
       transform-origin: bottom right;
       transition: $transition;
 
-      @container (inline-size < 600px) {
+      @container (width < 600px) {
         object-position: 110px 100px;
       }
 
-      @container (inline-size < 500px) {
+      @container (width < 500px) {
         object-position: 110px 120px;
       }
 
-      @container (inline-size < 400px) {
+      @container (width < 400px) {
         object-position: 90px 130px;
       }
 
-      @container (inline-size < 350px) {
+      @container (width < 350px) {
         object-position: 40px 130px;
       }
     }
@@ -143,15 +143,15 @@ $transition: all 0.2s ease-in-out;
 
 .card__content {
   position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
   gap: 16px;
-  padding: 24px;
+  padding: 16px;
   z-index: 200;
 
-  @media (max-width: $breakpoint-sm) {
-    padding: 16px;
+  @media (min-width: $breakpoint-sm) {
+    padding: 24px;
   }
 }
 
@@ -160,17 +160,13 @@ $transition: all 0.2s ease-in-out;
   font-family: var(--font-secondary);
 }
 
-.card__description,
-.card__price {
-  max-width: 60%;
+.card__description {
+  max-width: 17.5rem;
+  color: #7a7a7a;
 }
 
 .card__price {
   text-wrap: nowrap;
-}
-
-.card__description {
-  color: #7a7a7a;
 }
 
 .card__arrow {

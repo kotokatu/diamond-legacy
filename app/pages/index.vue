@@ -53,8 +53,8 @@
         </h2>
       </div>
 
-      <div class="section__bottom">
-        <div class="section__background">
+      <div class="section__content">
+        <div class="section__background section__background--overlay">
           <video
             class="section__video"
             autoplay
@@ -71,7 +71,7 @@
           </video>
         </div>
 
-        <div class="section__content contained">
+        <div class="section__grid contained">
           <div class="section-item">
             <div class="section-item__title">
               <AppDots :count="1" />
@@ -195,6 +195,7 @@
               src="/img/benefits_1.jpg"
               alt="Деталь аппарата Legacy"
               loading="lazy"
+              class="section-item__img"
             />
           </div>
 
@@ -263,6 +264,8 @@
               format="webp, avif"
               src="/img/benefits_2.jpg"
               alt="Деталь аппарата Legacy"
+              class="section-item__img"
+              loading="lazy"
             />
           </div>
 
@@ -298,90 +301,50 @@
         </div>
 
         <div class="section__content">
-          <q-expansion-item
-            expand-icon="add"
-            expanded-icon="remove"
-            expand-icon-class="text-white"
-            class="accordion"
+          <h3 class="section__title text-h3 font-secondary">
+            Условия сотрудничества
+          </h3>
+
+          <div
+            class="section-item"
+            role="list"
+            aria-label="Условия сотрудничества"
           >
-            <template #header>
-              <div class="accordion-label text-h3">Оптовые скидки</div>
-            </template>
-
-            <p class="accordion-body text-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam temporibus minus commodi atque fugit modi dolores
-              delectus possimus eveniet nam, sunt incidunt et facere accusamus
-              odio illo. Recusandae, atque nostrum.
-            </p>
-          </q-expansion-item>
-
-          <q-expansion-item
-            expand-icon="add"
-            expanded-icon="remove"
-            expand-icon-class="text-white"
-            label="Условия сотрудничества"
-            class="accordion"
-          >
-            <template #header>
-              <div class="accordion-label text-h3">Условия сотрудничества</div>
-            </template>
-
-            <div class="accordion-body text-body">
-              <div class="accordion-body__right">
-                <p class="q-mb-md">
-                  Эксклюзивные цены и специальные условия закупки для
-                  официальных дистрибьюторов.
-                </p>
-                <p>
-                  Пожизненная гарантия на все аппараты для клиентов через
-                  партнёров.
-                </p>
-                <p>
-                  Индивидуальная поддержка и консультации на каждом этапе
-                  сотрудничества.
-                </p>
-                <p>
-                  Обучение работе с оборудованием и маркетинговой стратегией
-                  продаж, чтобы вы могли эффективно развивать свой бизнес.
-                </p>
-                <p>
-                  Приоритетный доступ к новинкам линейки Legacy и новым
-                  технологиям.
-                </p>
-              </div>
-
-              <div class="accordion-body__left">
-                <p>
-                  Полный набор маркетинговых инструментов: готовые инструкции,
-                  фото, видео и пошаговые планы продвижения для быстрого старта
-                  и успешных продаж.
-                </p>
-                <p>
-                  Совместные акции и промо-материалы, которые повышают
-                  узнаваемость бренда и привлекают новых покупателей.
-                </p>
-              </div>
+            <div class="section-item__text">
+              <p>
+                Эксклюзивные цены и специальные условия закупки для официальных
+                дистрибьюторов.
+              </p>
+              <p>
+                Пожизненная гарантия на все аппараты для клиентов через
+                партнёров.
+              </p>
+              <p>
+                Индивидуальная поддержка и консультации на каждом этапе
+                сотрудничества.
+              </p>
+              <p>
+                Обучение работе с оборудованием и маркетинговой стратегией
+                продаж, чтобы вы могли эффективно развивать свой бизнес.
+              </p>
+              <p>
+                Приоритетный доступ к новинкам линейки Legacy и новым
+                технологиям.
+              </p>
             </div>
-          </q-expansion-item>
 
-          <q-expansion-item
-            expand-icon="add"
-            expanded-icon="remove"
-            expand-icon-class="text-white"
-            label="Бонусные программы"
-            class="accordion"
-          >
-            <template #header>
-              <div class="accordion-label text-h3">Бонусные программы</div>
-            </template>
-            <p class="accordion-body text-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam temporibus minus commodi atque fugit modi dolores
-              delectus possimus eveniet nam, sunt incidunt et facere accusamus
-              odio illo. Recusandae, atque nostrum.
-            </p>
-          </q-expansion-item>
+            <div class="section-item__text">
+              <p>
+                Полный набор маркетинговых инструментов: готовые инструкции,
+                фото, видео и пошаговые планы продвижения для быстрого старта и
+                успешных продаж.
+              </p>
+              <p>
+                Совместные акции и промо-материалы, которые повышают
+                узнаваемость бренда и привлекают новых покупателей.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
