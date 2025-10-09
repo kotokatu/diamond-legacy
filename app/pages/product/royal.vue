@@ -11,6 +11,7 @@
           width="1920"
           height="760"
           quality="80"
+          preload
         />
       </div>
 

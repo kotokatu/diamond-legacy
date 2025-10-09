@@ -35,12 +35,9 @@
 </template>
 
 <script setup>
-import { useQuasar } from "quasar";
 import { useLayout } from "@/composables/useLayout";
 import CloseIcon from "@/assets/icons/bx-x.svg";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
-
-const { isDefault } = useLayout();
 
 defineProps({
   title: {
@@ -58,8 +55,8 @@ defineProps({
 });
 
 const emit = defineEmits(["close", "back"]);
-const $q = useQuasar();
 
+const { isDefault } = useLayout();
 const isOpen = defineModel({
   type: Boolean,
   default: false,
@@ -77,7 +74,6 @@ const back = () => {
 
 watch(isDefault, (val) => {
   if (val) {
-    console.log("close");
     close();
   }
 });

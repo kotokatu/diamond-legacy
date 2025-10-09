@@ -393,20 +393,20 @@ a {
   .section.catalog {
     .section__content {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 16px;
       margin-bottom: 64px;
 
-      @media (max-width: $breakpoint-sm) {
-        grid-template-columns: 1fr;
+      @media (min-width: $breakpoint-sm) {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
     .catalog__card {
-      height: 600px;
+      height: 540px;
 
-      @media (max-width: $breakpoint-lg) {
-        height: 540px;
+      @media (min-width: $breakpoint-lg) {
+        height: 600px;
       }
     }
   }
