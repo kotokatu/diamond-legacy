@@ -10,14 +10,14 @@
 
 body {
   font-family: var(--font-primary);
-  color: $dark;
-  font-size: 16px;
-  line-height: 24px;
   min-height: 100dvh;
 
-  @media (max-width: $breakpoint-sm) {
-    font-size: 14px;
-    line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -34,77 +34,82 @@ a {
 
 .text-body {
   font-family: var(--font-primary);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 400;
+
+  @media (min-width: $breakpoint-xs) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .text-h1 {
-  font-size: 64px;
-  line-height: 72px;
+  font-size: 32px;
+  line-height: 42px;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-xs) {
     font-size: 48px;
     line-height: 52px;
   }
 
-  @media (max-width: $breakpoint-sm) {
-    font-size: 32px;
-    line-height: 42px;
+  @media (min-width: $breakpoint-md) {
+    font-size: 64px;
+    line-height: 72px;
   }
 }
 
 .text-h2 {
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 32px;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-xs) {
     font-size: 32px;
     line-height: 40px;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (min-width: $breakpoint-md) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.text-h3 {
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (min-width: $breakpoint-xs) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $breakpoint-md) {
     font-size: 24px;
     line-height: 32px;
   }
 }
 
-.text-h3 {
-  font-size: 24px;
-  line-height: 32px;
-
-  @media (max-width: $breakpoint-lg) {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-
 .text-nav {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 16px;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-xs) {
     font-size: 14px;
     line-height: 22px;
   }
 
-  @media (max-width: $breakpoint-sm) {
-    font-size: 12px;
-    line-height: 16px;
+  @media (min-width: $breakpoint-md) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .text-menu {
-  font-size: 16px;
   line-height: auto;
+  font-size: 14px;
 
-  @media (max-width: $breakpoint-lg) {
-    font-size: 14px;
+  @media (min-width: $breakpoint-lg) {
+    font-size: 16px;
   }
 }
 
@@ -145,14 +150,14 @@ a {
 .contained {
   flex-grow: 1;
 
-  max-width: $breakpoint-lg;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  max-width: $breakpoint-sm;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
 
-  @media (max-width: $breakpoint-sm) {
-    max-width: $breakpoint-sm;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+  @media (min-width: $breakpoint-sm) {
+    max-width: $breakpoint-lg;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 }
 
@@ -204,7 +209,6 @@ a {
 
 .lead {
   width: 100%;
-  margin-bottom: 64px;
 
   &__header {
     display: flex;
@@ -217,7 +221,7 @@ a {
   &__text {
     flex-basis: 50%;
 
-    @media (max-width: $breakpoint-sm) {
+    @media (min-width: $breakpoint-md) {
       flex-basis: unset;
     }
   }
@@ -242,7 +246,7 @@ a {
     width: 50%;
     margin-left: auto;
 
-    @media (max-width: $breakpoint-sm) {
+    @media (max-width: $breakpoint-md) {
       width: 100%;
       margin-left: 0;
     }
@@ -265,7 +269,7 @@ a {
   }
 }
 
-.section.benefits {
+.benefits {
   background-color: #f8f8f8;
 
   .section__content {
@@ -328,34 +332,41 @@ a {
 }
 
 .page--home {
-  .section.about {
+  .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 0px;
 
-    .section__bottom {
+    .section__content {
       position: relative;
       display: flex;
       justify-content: center;
       width: 100%;
-      height: 760px;
+      min-height: 760px;
+      margin-top: 64px;
 
       @media (max-width: $breakpoint-sm) {
         align-items: center;
+        min-height: 530px;
+        margin-top: 0;
       }
 
-      .section__content {
+      .section__grid {
+        z-index: 1;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
-        padding-top: 160px;
-        padding-bottom: 160px;
+        padding: 161px 0;
 
         @media (max-width: $breakpoint-sm) {
           display: flex;
           flex-direction: column;
+        }
+
+        @media (max-width: $breakpoint-xs) {
+          padding: 64px 0;
         }
       }
 
@@ -390,12 +401,12 @@ a {
     }
   }
 
-  .section.catalog {
+  .catalog {
     .section__content {
       display: grid;
       grid-template-columns: 1fr;
       gap: 16px;
-      margin-bottom: 64px;
+      margin: 64px 0;
 
       @media (min-width: $breakpoint-sm) {
         grid-template-columns: repeat(2, 1fr);
@@ -411,91 +422,77 @@ a {
     }
   }
 
-  .section.benefits .section-item {
-    @media (max-width: $breakpoint-md) {
-      flex-basis: calc(100% / 2 - 16px / 2);
+  .benefits {
+    .section__content {
+      margin-top: 64px;
+    }
 
-      &.delivery {
-        order: 1;
-      }
+    .section-item {
+      @media (max-width: $breakpoint-md) {
+        flex-basis: calc(100% / 2 - 16px / 2);
 
-      &.image-1 {
-        order: 2;
-      }
+        &.delivery {
+          order: 1;
+        }
 
-      &.warranty {
-        order: 3;
-      }
+        &.image-1 {
+          order: 2;
+        }
 
-      &.payment {
-        order: 4;
-      }
+        &.warranty {
+          order: 3;
+        }
 
-      &.image-2 {
-        order: 5;
-      }
+        &.payment {
+          order: 4;
+        }
 
-      &.support {
-        order: 6;
-      }
+        &.image-2 {
+          order: 5;
+        }
 
-      &.training {
-        order: 7;
-      }
+        &.support {
+          order: 6;
+        }
 
-      &.production {
-        order: 8;
+        &.training {
+          order: 7;
+        }
+
+        &.production {
+          order: 8;
+        }
       }
     }
   }
 
-  .section.distributors {
+  .distributors {
     background-color: $dark;
     color: $base;
 
     .lead {
       margin-bottom: 40px;
-    }
 
-    .lead__header {
-      border-color: $base-semi;
-    }
-
-    .lead__body {
-      width: 100%;
-    }
-
-    .accordion {
-      border-bottom: 1px solid $base-semi;
-
-      .q-focus-helper {
-        display: none;
+      &__header {
+        border-color: $base-semi;
       }
 
-      .q-item {
-        padding: 0;
+      &__body {
+        width: 100%;
       }
     }
 
-    .accordion-label {
-      width: 100%;
-      font-family: var(--font-secondary);
-      font-weight: 400;
-      letter-spacing: 0px;
-      color: $base;
-      padding: 24px 32px;
-    }
-
-    .accordion-body {
+    .section-item {
       display: flex;
-      padding: 24px 32px;
+      padding: 24px 0;
       gap: 32px;
 
       @media (max-width: $breakpoint-sm) {
         flex-direction: column;
+        gap: 0px;
       }
 
-      > div {
+      &__text {
         flex: 1 0 0;
       }
     }
@@ -503,7 +500,7 @@ a {
 }
 
 .page--product {
-  .section.hero {
+  .hero {
     .section__background {
       display: flex;
       justify-content: center;
@@ -544,7 +541,7 @@ a {
     }
   }
 
-  .section.description .section__content {
+  .description .section__content {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -620,7 +617,7 @@ a {
   }
 }
 
-.section.specification {
+.specification {
   background-color: $dark;
   color: $base;
 
@@ -632,7 +629,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    padding-top: 40px;
+    margin-top: 40px;
   }
 
   .section-item {

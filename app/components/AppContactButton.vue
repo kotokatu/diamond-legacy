@@ -66,10 +66,10 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .btn {
+  display: none;
   position: fixed;
   bottom: 32px;
   right: 32px;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
@@ -79,8 +79,8 @@ onMounted(() => {
   border-radius: 50%;
   cursor: pointer;
 
-  @media (max-width: $breakpoint-sm) {
-    display: none;
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
   }
 
   & > svg {
