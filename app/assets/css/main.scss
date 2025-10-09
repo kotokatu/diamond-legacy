@@ -369,13 +369,13 @@ a {
         gap: 32px;
         padding: 161px 0;
 
-        @media (max-width: $breakpoint-xs) {
-          padding: 24px 0;
-        }
-
         @media (max-width: $breakpoint-sm) {
           grid-template-columns: 1fr;
           gap: 0px;
+        }
+
+        @media (max-width: $breakpoint-xs) {
+          padding: 24px 0;
         }
       }
 
