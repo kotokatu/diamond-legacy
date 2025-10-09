@@ -1,7 +1,7 @@
 <template>
   <div class="page page--home">
-    <section 
-      class="wrapper section hero" 
+    <section
+      class="wrapper section hero"
       aria-labelledby="hero-title"
       role="banner"
     >
@@ -18,7 +18,6 @@
         >
           <source src="/video/hero_video.webm" type="video/webm" />
           <source src="/video/hero_video.mp4" type="video/mp4" />
-          <!-- Provide text alternative for the background video -->
           <p>Видео демонстрирует работу косметологических аппаратов Legacy</p>
         </video>
       </div>
@@ -34,13 +33,13 @@
       </div>
     </section>
 
-    <section 
-      id="about" 
+    <section
+      id="about"
       class="wrapper section about"
       aria-labelledby="about-title"
     >
       <div class="lead contained">
-        <div class="lead__header text-nav text-sub" aria-hidden="true">
+        <div class="lead__header text-nav text-sub">
           <span class="lead__index">1.0</span>
           <div class="lead__text">
             <span class="lead__title">{ О компании }</span>
@@ -68,7 +67,7 @@
           >
             <source src="/video/about_video.webm" type="video/webm" />
             <source src="/video/about_video.mp4" type="video/mp4" />
-            <p>Видео демонстрирует процесс аппарат Legacy</p>
+            <p>Видео демонстрирует аппарат Legacy</p>
           </video>
         </div>
 
@@ -109,14 +108,14 @@
       </div>
     </section>
 
-    <section 
-      id="catalog" 
+    <section
+      id="catalog"
       class="wrapper section catalog"
       aria-labelledby="catalog-title"
     >
       <div class="contained">
         <div class="lead">
-          <div class="lead__header text-nav text-sub" aria-hidden="true">
+          <div class="lead__header text-nav text-sub">
             <span class="lead__index">2.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Каталог }</span>
@@ -130,7 +129,7 @@
           </h2>
         </div>
 
-        <div 
+        <div
           class="section__content"
           role="grid"
           aria-label="Каталог косметологических аппаратов"
@@ -152,14 +151,14 @@
       </div>
     </section>
 
-    <section 
-      id="benefits" 
+    <section
+      id="benefits"
       class="wrapper section benefits"
       aria-labelledby="benefits-title"
     >
       <div class="contained">
         <div class="lead">
-          <div class="lead__header text-nav text-sub" aria-hidden="true">
+          <div class="lead__header text-nav text-sub">
             <span class="lead__index">3.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Преимущества }</span>
@@ -173,16 +172,13 @@
           </h2>
         </div>
 
-        <div 
+        <div
           class="section__content"
           role="list"
           aria-label="Преимущества работы с Legacy"
         >
-          <div 
-            class="section-item delivery"
-            role="listitem"
-          >
-            <div class="item-header text-nav text-sub" aria-hidden="true">{ Доставка }</div>
+          <div class="section-item delivery" role="listitem">
+            <div class="item-header text-nav text-sub">{ Доставка }</div>
             <div class="item-body">
               <h3 class="item-title text-h3">Бесплатная доставка</h3>
               <div class="item-text">
@@ -194,11 +190,12 @@
           </div>
 
           <div class="section-item section-item--img image-1">
-            <NuxtImg 
+            <NuxtImg
               format="webp, avif"
-              src="/img/benefits_1.jpg" 
+              src="/img/benefits_1.jpg"
               alt="Деталь аппарата Legacy"
-              loading="lazy" />
+              loading="lazy"
+            />
           </div>
 
           <div class="section-item payment">
@@ -262,7 +259,11 @@
           </div>
 
           <div class="section-item section-item--img image-2">
-            <NuxtImg format="webp, avif" src="/img/benefits_2.jpg" alt="Деталь аппарата Legacy" />
+            <NuxtImg
+              format="webp, avif"
+              src="/img/benefits_2.jpg"
+              alt="Деталь аппарата Legacy"
+            />
           </div>
 
           <div class="section-item production">
@@ -393,6 +394,4 @@ import { inject } from "vue";
 const data = inject("data");
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
