@@ -1,20 +1,30 @@
 <template>
   <div class="contact-card">
     <div class="contact-card__text">
-      <h3 class="contact-card__title" :class="[type === 'modal' ? 'text-h3' : 'text-h2']">
+      <h3
+        class="contact-card__title"
+        :class="[type === 'modal' ? 'text-h3' : 'text-h2']"
+      >
         Поможем подобрать аппарат для вашего бизнеса
       </h3>
       <p class="contact-card__body">
-        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты наилучшим образом подходят под ваши задачи
+        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты
+        наилучшим образом подходят под ваши задачи
       </p>
       <p class="contact-card__subtitle text-min">
-        Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку персональных данных лиц из формы
+        Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку
+        персональных данных лиц из формы
       </p>
     </div>
 
     <div class="form">
       <q-form class="column items-center" @submit.prevent="sendForm">
-        <q-input v-model="name" class="form__input" outlined placeholder="Фамилия Имя" />
+        <q-input
+          v-model="name"
+          class="form__input"
+          outlined
+          placeholder="Фамилия Имя"
+        />
 
         <q-input
           v-model="email"
@@ -34,7 +44,11 @@
         />
 
         <div class="form__submit">
-          <AppButton class="full-width" type="submit" :color="type === 'modal' ? 'dark' : 'accent'">
+          <AppButton
+            class="full-width"
+            type="submit"
+            :color="type === 'modal' ? 'dark' : 'accent'"
+          >
             Отправить заявку
           </AppButton>
         </div>
@@ -46,7 +60,8 @@
     </div>
 
     <p class="contact-card__subtitle text-min mobile-show">
-      Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку персональных данных лиц из формы
+      Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку
+      персональных данных лиц из формы
     </p>
   </div>
 </template>

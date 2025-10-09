@@ -4,16 +4,31 @@
       <footer class="footer">
         <div class="footer__block footer__block--logo">
           <div>
-            <LogoImg class="logo-img" alt="Legacy logo" filled :font-controlled="false" />
-            <LogoText class="logo-text" alt="Legacy" filled :font-controlled="false" />
+            <LogoImg
+              class="logo-img"
+              alt="Legacy logo"
+              filled
+              :font-controlled="false"
+            />
+            <LogoText
+              class="logo-text"
+              alt="Legacy"
+              filled
+              :font-controlled="false"
+            />
           </div>
         </div>
 
         <div class="footer__block footer__block--info list">
-          <NuxtLink to="/" class="text-min"> Политика конфиденциальности </NuxtLink>
-          <NuxtLink to="/" class="text-min"> Согласие на обработку персональных данных </NuxtLink>
+          <NuxtLink to="/" class="text-min">
+            Политика конфиденциальности
+          </NuxtLink>
+          <NuxtLink to="/" class="text-min">
+            Согласие на обработку персональных данных
+          </NuxtLink>
           <div class="text-min">
-            {{ new Date().getFullYear() }} © Продажа профессиональных аппаратов для косметологии
+            {{ new Date().getFullYear() }} © Продажа профессиональных аппаратов
+            для косметологии
           </div>
         </div>
 
@@ -29,7 +44,9 @@
 
             <ul class="list">
               <li>
-                <NuxtLink href="mailto:legacy-info@mail.ru" class="email"> legacy-info@mail.ru </NuxtLink>
+                <NuxtLink href="mailto:legacy-info@mail.ru" class="email">
+                  legacy-info@mail.ru
+                </NuxtLink>
               </li>
             </ul>
           </div>
@@ -43,10 +60,14 @@
                 <NuxtLink to="/#catalog" class="text-nav">Каталог</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#benefits" class="text-nav"> Преимущества </NuxtLink>
+                <NuxtLink to="/#benefits" class="text-nav">
+                  Преимущества
+                </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#distributors" class="text-nav"> Для дистрибьюторов </NuxtLink>
+                <NuxtLink to="/#distributors" class="text-nav">
+                  Для дистрибьюторов
+                </NuxtLink>
               </li>
             </ul>
 

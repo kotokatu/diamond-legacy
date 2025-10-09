@@ -19,7 +19,6 @@
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
 
 defineEmits(["catalog:open", "close"]);
-
 </script>
 
 <style lang="scss" scoped>

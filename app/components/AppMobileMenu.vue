@@ -1,15 +1,29 @@
 <template>
-  <q-drawer v-model="isOpen" side="right" :width="$q.screen.width + 1" no-swipe-open :breakpoint="1024">
+  <q-drawer
+    v-model="isOpen"
+    side="right"
+    :width="$q.screen.width + 1"
+    no-swipe-open
+    :breakpoint="1024"
+  >
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
-          <ArrowIcon v-if="arrowIcon" class="mobile-menu__arrow icon" @click="back" />
+          <ArrowIcon
+            v-if="arrowIcon"
+            class="mobile-menu__arrow icon"
+            @click="back"
+          />
         </div>
         <div>
           <span v-if="title" class="mobile-menu__title">{{ title }}</span>
         </div>
         <div>
-          <CloseIcon v-if="closeIcon" class="mobile-menu__close icon" @click="close" />
+          <CloseIcon
+            v-if="closeIcon"
+            class="mobile-menu__close icon"
+            @click="close"
+          />
         </div>
       </div>
 
@@ -61,15 +75,12 @@ const back = () => {
   emit("back");
 };
 
-watch(
-  isDefault,
-  (val) => {
-    if (val) {
-      console.log("close");
-      close();
-    }
+watch(isDefault, (val) => {
+  if (val) {
+    console.log("close");
+    close();
   }
-);
+});
 </script>
 
 <style lang="scss" scoped>

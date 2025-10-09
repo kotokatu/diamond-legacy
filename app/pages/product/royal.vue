@@ -47,8 +47,7 @@
         <div class="section__content">
           <div class="section-item section-item--img">
             <NuxtImg
-          format="webp, avif"
-
+              format="webp, avif"
               src="/img/royal/royal_1.png"
               alt="Legacy Royal"
               class="section-item__image"
@@ -56,8 +55,7 @@
           </div>
           <div class="section-item section-item--img">
             <NuxtImg
-          format="webp, avif"
-
+              format="webp, avif"
               src="/img/royal/royal_2.png"
               alt="Legacy Royal"
               class="section-item__image"
@@ -65,8 +63,7 @@
           </div>
           <div class="section-item section-item--img section-item--wide">
             <NuxtImg
-          format="webp, avif"
-
+              format="webp, avif"
               src="/img/royal/royal_3.png"
               alt="Legacy Royal"
               class="section-item__image"
@@ -169,7 +166,11 @@
           </div>
 
           <div class="section-item section-item--img image-1">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_4.png" alt="Аппарат Royal Legacy" />
+            <NuxtImg
+              format="webp, avif"
+              src="/img/royal/royal_4.png"
+              alt="Аппарат Royal Legacy"
+            />
           </div>
 
           <div class="section-item">
@@ -187,7 +188,11 @@
           </div>
 
           <div class="section-item section-item--img image-2">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_5.png" alt="Аппарат Royal Legacy" />
+            <NuxtImg
+              format="webp, avif"
+              src="/img/royal/royal_5.png"
+              alt="Аппарат Royal Legacy"
+            />
           </div>
 
           <div class="section-item">
@@ -205,7 +210,11 @@
           </div>
 
           <div class="section-item section-item--img image-3">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_6.png" alt="Аппарат Royal Legacy" />
+            <NuxtImg
+              format="webp, avif"
+              src="/img/royal/royal_6.png"
+              alt="Аппарат Royal Legacy"
+            />
           </div>
 
           <div class="section-item section-item">
@@ -221,7 +230,11 @@
           </div>
 
           <div class="section-item section-item--img image-4">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_7.png" alt="Аппарат Royal Legacy" />
+            <NuxtImg
+              format="webp, avif"
+              src="/img/royal/royal_7.png"
+              alt="Аппарат Royal Legacy"
+            />
           </div>
 
           <div class="section-item">
@@ -245,9 +258,7 @@
           <div class="lead__header text-nav text-sub">
             <span class="lead__index">3.0</span>
             <div class="lead__text">
-              <span class="lead__title"
-                >{ Комплектация и характеристики }</span
-              >
+              <span class="lead__title">{ Комплектация и характеристики }</span>
               <span class="lead__subtitle">Legacy Royal</span>
             </div>
           </div>
@@ -368,6 +379,4 @@
 
 <script setup></script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

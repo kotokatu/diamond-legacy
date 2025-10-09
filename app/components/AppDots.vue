@@ -1,6 +1,11 @@
 <template>
   <div class="dots">
-    <div v-for="i in 3" :key="i" class="dot" :class="{ 'dot-active': i <= count }"></div>
+    <div
+      v-for="i in 3"
+      :key="i"
+      class="dot"
+      :class="{ 'dot-active': i <= count }"
+    ></div>
   </div>
 </template>
 

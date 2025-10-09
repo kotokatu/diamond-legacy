@@ -1,35 +1,35 @@
 <template>
-  <NuxtLink 
+  <NuxtLink
     :to="data.link"
-    
     :class="classes"
     :aria-labelledby="`product-${data.id}-title`"
     :aria-describedby="`product-${data.id}-desc product-${data.id}-price`"
   >
-  <div class="card" >
-    <div class="card__content">
-      <h3 :id="`product-${data.id}-title`" class="card__title text-h3">{{ data.name }}</h3>
-      <p :id="`product-${data.id}-desc`" class="card__description">{{ data.description }}</p>
-      <p :id="`product-${data.id}-price`" class="card__price text-h3">{{ data.price }}</p>
+    <div class="card">
+      <div class="card__content">
+        <h3 :id="`product-${data.id}-title`" class="card__title text-h3">
+          {{ data.name }}
+        </h3>
+        <p :id="`product-${data.id}-desc`" class="card__description">
+          {{ data.description }}
+        </p>
+        <p :id="`product-${data.id}-price`" class="card__price text-h3">
+          {{ data.price }}
+        </p>
+      </div>
+
+      <div class="card__img-container">
+        <NuxtImg
+          class="card__img"
+          :alt="data.name"
+          :src="data.image"
+          sizes="700px"
+          loading="lazy"
+        />
+      </div>
+
+      <ArrowIcon class="card__arrow" aria-hidden="true" role="presentation" />
     </div>
-
-    <div class="card__img-container">
-      <NuxtImg
-        class="card__img"
-        :alt="data.name"
-        :src="data.image"
-        sizes="700px"
-        loading="lazy"
-      />
-    </div>
-
-    <ArrowIcon 
-      class="card__arrow" 
-      aria-hidden="true"
-      role="presentation"
-    />
-
-  </div>
   </NuxtLink>
 </template>
 
@@ -71,18 +71,18 @@ $transition: all 0.2s ease-in-out;
   transition: $transition;
 
   @media (hover: hover) {
-      &:hover {
-        background-color: #eaeaea;
+    &:hover {
+      background-color: #eaeaea;
 
-        .card__arrow {
-          opacity: 1;
-        }
+      .card__arrow {
+        opacity: 1;
+      }
 
-        .card__img {
-          transform: scale(1.1);
-        }
+      .card__img {
+        transform: scale(1.1);
       }
     }
+  }
 
   &--sm {
     .card__img-container {
@@ -102,8 +102,6 @@ $transition: all 0.2s ease-in-out;
   }
 
   &--lg {
-    
-
     .card__img {
       width: 100%;
       height: 100%;
