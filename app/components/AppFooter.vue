@@ -54,19 +54,23 @@
           <div class="socials">
             <ul class="list">
               <li>
-                <NuxtLink to="/#about" class="text-nav">О компании</NuxtLink>
+                <NuxtLink to="/#about" class="text-nav">
+                  <AppNavItem label="О компании" />
+                </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#catalog" class="text-nav">Каталог</NuxtLink>
+                <NuxtLink to="/#catalog" class="text-nav">
+                  <AppNavItem label="Каталог" />
+                </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/#benefits" class="text-nav">
-                  Преимущества
+                  <AppNavItem label="Преимущества" />
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/#distributors" class="text-nav">
-                  Для дистрибьюторов
+                  <AppNavItem label="Для дистрибьюторов" />
                 </NuxtLink>
               </li>
             </ul>
@@ -139,6 +143,16 @@ import LogoText from "@/assets/svg/logo_text.svg";
 
   * {
     color: $base-semi;
+  }
+
+  a {
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media (hover: hover) {
+    a:hover {
+      color: $base;
+    }
   }
 }
 

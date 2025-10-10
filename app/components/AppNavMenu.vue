@@ -1,22 +1,28 @@
 <template>
   <div class="nav">
     <div class="nav-item nav-item--catalog" @click="$emit('catalog:open')">
-      <span role="button" tabindex="0" class="text-nav">Каталог</span>
-      <ArrowIcon class="icon" />
+      <AppNavItem label="Каталог" role="button" tabindex="0" :class="classes" />
+      <ArrowIcon v-if="isMobile" class="icon" />
     </div>
     <NuxtLink to="/#benefits" class="nav-item" @click="$emit('close')">
-      <span class="text-nav">Преимущества</span>
-      <ArrowIcon class="icon" />
+      <AppNavItem label="Преимущества" :class="classes" />
+      <ArrowIcon v-if="isMobile" class="icon" />
     </NuxtLink>
     <NuxtLink to="/#distributors" class="nav-item" @click="$emit('close')">
-      <span class="text-nav">Для дистрибьюторов</span>
-      <ArrowIcon class="icon" />
+      <AppNavItem label="Дистрибьюторы" :class="classes" />
+      <ArrowIcon v-if="isMobile" class="icon" />
     </NuxtLink>
   </div>
 </template>
 
 <script setup>
+import AppNavItem from "./AppNavItem.vue";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
+
+const { isMobile } = useLayout();
+const classes = computed(() => ({
+  "no-hover": isMobile.value,
+}));
 
 defineEmits(["catalog:open", "close"]);
 </script>
@@ -46,37 +52,23 @@ defineEmits(["catalog:open", "close"]);
   align-items: center;
   justify-content: space-between;
   padding: 4px 16px;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #7a7a7a;
   text-decoration: none;
+  text-wrap: nowrap;
   cursor: pointer;
 
   @media (max-width: $breakpoint-md) {
     color: $base;
     padding: 24px 0;
     border-bottom: 1px solid $base-semi;
-  }
-
-  .icon {
-    display: none;
-
-    @media (max-width: $breakpoint-md) {
-      display: block;
-    }
-  }
-
-  span {
-    color: #7a7a7a;
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 600;
-    text-wrap: nowrap;
-
-    @media (max-width: $breakpoint-md) {
-      font-family: var(--font-secondary);
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 28px;
-      color: $base;
-    }
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $base;
   }
 }
 </style>

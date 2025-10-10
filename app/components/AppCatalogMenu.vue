@@ -5,14 +5,14 @@
         v-for="item in data.catalog"
         :key="item.id"
         :to="item.link"
-        :class="activeCard?.id === item.id ? 'active' : ''"
         class="menu__link"
         @mouseenter="setActiveCard(item)"
         @click="close"
       >
-        <span class="menu__link-text">{{ item.name }}</span>
-
-        <ArrowIcon class="menu__link-icon" />
+        <AppNavItem
+          :label="item.name"
+          :show-icon="activeCard?.id === item.id"
+        />
       </NuxtLink>
     </ul>
 
@@ -32,7 +32,7 @@
 
 <script setup>
 import { onClickOutside } from "@vueuse/core";
-import ArrowIcon from "@/assets/icons/bx-arrow.svg";
+import AppNavItem from "./AppNavItem.vue";
 
 const emit = defineEmits(["close", "card:set-active"]);
 
@@ -135,42 +135,6 @@ onClickOutside(
 }
 
 .menu__link {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  flex-wrap: nowrap;
-  width: fit-content;
-  height: 30px;
-  padding: 4px 8px;
-  text-decoration: none;
   color: $dark;
-  font-size: 16px;
-  line-height: 22px;
-  transition: all 0.2s ease;
-
-  .menu__link-text {
-    font-size: 16px;
-  }
-
-  .menu__link-icon {
-    opacity: 0;
-    width: 22px;
-    height: 22px;
-    transition: all 0.2s ease;
-
-    :deep(path) {
-      fill: $accent;
-    }
-  }
-
-  &.active {
-    .menu__link-text {
-      font-weight: 600;
-    }
-
-    .menu__link-icon {
-      opacity: 1;
-    }
-  }
 }
 </style>
