@@ -48,7 +48,7 @@ defineProps({
     }
   }
 
-  &.active:not(:hover, .no-hover) {
+  &.active:not(.no-hover) {
     .nav-link__text {
       font-weight: 600;
     }

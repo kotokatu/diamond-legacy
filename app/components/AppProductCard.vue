@@ -18,13 +18,7 @@
       </div>
 
       <div class="card__img-container">
-        <NuxtImg
-          class="card__img"
-          :alt="data.name"
-          :src="data.image"
-          sizes="700px"
-          loading="lazy"
-        />
+        <NuxtImg class="card__img" :alt="data.name" :src="data.image" sizes="700px" loading="lazy" />
       </div>
 
       <ArrowIcon class="card__arrow" aria-hidden="true" role="presentation" />
@@ -69,20 +63,6 @@ $transition: all 0.2s ease-in-out;
   border-radius: 12px;
   transition: $transition;
 
-  @media (hover: hover) {
-    &:hover {
-      background-color: #eaeaea;
-
-      .card__arrow {
-        opacity: 1;
-      }
-
-      .card__img {
-        transform: scale(1.1);
-      }
-    }
-  }
-
   &--sm {
     .card__img-container {
       display: flex;
@@ -122,6 +102,20 @@ $transition: all 0.2s ease-in-out;
 
       @container (width < 350px) {
         object-position: 40px 130px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: #eaeaea;
+
+          .card__arrow {
+            opacity: 1;
+          }
+
+          .card__img {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }

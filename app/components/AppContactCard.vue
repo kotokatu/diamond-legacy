@@ -1,30 +1,20 @@
 <template>
   <div class="contact-card">
     <div class="contact-card__text">
-      <h3
-        class="contact-card__title"
-        :class="[type === 'modal' ? 'text-h3' : 'text-h2']"
-      >
+      <p class="contact-card__title" :class="[type === 'modal' ? 'text-h3' : 'text-h2']">
         Поможем подобрать аппарат для вашего бизнеса
-      </h3>
-      <p class="contact-card__body">
-        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты
-        наилучшим образом подходят под ваши задачи
       </p>
-      <p class="contact-card__subtitle text-min">
-        Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку
-        персональных данных лиц из формы
+      <p class="contact-card__description">
+        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты наилучшим образом подходят под ваши задачи
+      </p>
+      <p class="contact-card__caption text-min">
+        Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку персональных данных лиц из формы
       </p>
     </div>
 
-    <div class="form">
+    <div class="contact-card__form form">
       <q-form class="column items-center" @submit.prevent="sendForm">
-        <q-input
-          v-model="name"
-          class="form__input"
-          outlined
-          placeholder="Фамилия Имя"
-        />
+        <q-input v-model="name" class="form__input" outlined placeholder="Фамилия Имя" />
 
         <q-input
           v-model="email"
@@ -44,11 +34,7 @@
         />
 
         <div class="form__submit">
-          <AppButton
-            class="full-width"
-            type="submit"
-            :color="type === 'modal' ? 'dark' : 'accent'"
-          >
+          <AppButton class="full-width" type="submit" :color="type === 'modal' ? 'dark' : 'accent'">
             Отправить заявку
           </AppButton>
         </div>
@@ -59,9 +45,8 @@
       </q-inner-loading>
     </div>
 
-    <p class="contact-card__subtitle text-min mobile-show">
-      Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку
-      персональных данных лиц из формы
+    <p class="contact-card__caption text-min mobile-show">
+      Заполняя форму, вы подтверждаете <a href="#">согласие</a> на обработку персональных данных лиц из формы
     </p>
   </div>
 </template>
@@ -99,19 +84,23 @@ const sendForm = () => {
 
 <style lang="scss" scoped>
 .contact-card {
-  padding: 64px;
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
+  padding: 24px;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 64px;
   background-color: transparent;
   border-radius: 18px;
 
-  @media (max-width: $breakpoint-sm) {
-    flex-direction: column;
-    padding: 24px;
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 64px;
   }
 }
 
@@ -129,13 +118,13 @@ const sendForm = () => {
   color: $base;
 }
 
-.contact-card__body {
+.contact-card__description {
   flex-grow: 1;
   letter-spacing: 0px;
   color: $base-semi;
 }
 
-.contact-card__subtitle {
+.contact-card__caption {
   letter-spacing: 0px;
   color: $base-semi;
 
@@ -159,8 +148,7 @@ const sendForm = () => {
 
 .contact-card--bg {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/contact_form_bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/contact_form_bg.png");
   background-size: cover;
   background-position: center;
 }

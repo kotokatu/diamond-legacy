@@ -9,10 +9,7 @@
         @mouseenter="setActiveCard(item)"
         @click="close"
       >
-        <AppNavItem
-          :label="item.name"
-          :show-icon="activeCard?.id === item.id"
-        />
+        <AppNavItem :label="item.name" :active="activeCard?.id === item.id" />
       </NuxtLink>
     </ul>
 
@@ -20,7 +17,7 @@
       <AppProductCard
         v-for="item in data.catalog"
         :key="item.id"
-        class="menu__card"
+        class="menu__card no-hover"
         :data="item"
         :class="activeCard?.id === item.id ? 'active' : ''"
         size="sm"

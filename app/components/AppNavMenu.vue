@@ -51,7 +51,7 @@ defineEmits(["catalog:open", "close"]);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 16px;
+  padding: 4px 8px;
   font-size: 16px;
   line-height: 100%;
   font-weight: 600;
@@ -59,6 +59,14 @@ defineEmits(["catalog:open", "close"]);
   text-decoration: none;
   text-wrap: nowrap;
   cursor: pointer;
+
+  :deep(.nav-link:not(.no-hover)) {
+    @media (hover: hover) {
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
 
   @media (max-width: $breakpoint-md) {
     color: $base;
