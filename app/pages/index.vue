@@ -195,6 +195,7 @@
               src="/img/benefits_1.jpg"
               alt="Деталь аппарата Legacy"
               loading="lazy"
+              class="section-item__img"
             />
           </div>
 
@@ -263,6 +264,8 @@
               format="webp, avif"
               src="/img/benefits_2.jpg"
               alt="Деталь аппарата Legacy"
+              class="section-item__img"
+              loading="lazy"
             />
           </div>
 

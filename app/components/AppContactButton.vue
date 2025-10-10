@@ -83,6 +83,10 @@ onMounted(() => {
     display: flex;
   }
 
+  @media (min-width: $breakpoint-xl) {
+    right: calc((100vw - 1280px) / 2 - 120px);
+  }
+
   & > svg {
     width: 112px;
     height: 112px;
