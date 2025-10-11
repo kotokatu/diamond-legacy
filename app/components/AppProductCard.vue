@@ -103,18 +103,18 @@ $transition: all 0.2s ease-in-out;
       @container (width < 350px) {
         object-position: 40px 130px;
       }
+    }
 
-      @media (hover: hover) {
-        &:hover {
-          background-color: #eaeaea;
+    @media (hover: hover) {
+      &:hover {
+        background-color: #eaeaea;
 
-          .card__arrow {
-            opacity: 1;
-          }
+        .card__arrow {
+          opacity: 1;
+        }
 
-          .card__img {
-            transform: scale(1.1);
-          }
+        .card__img {
+          transform: scale(1.1);
         }
       }
     }

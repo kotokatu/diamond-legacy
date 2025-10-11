@@ -17,7 +17,7 @@
       <div class="section__content contained">
         <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Royal</h1>
-        <p class="subtitle">
+        <p class="description">
           Для коррекции фигуры, омоложения
           <br />кожи лица и тела
         </p>
@@ -43,70 +43,72 @@
         </div>
 
         <div class="section__content">
-          <div class="section-item section-item--img">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_1.png" alt="Legacy Royal" class="section-item__image" />
-          </div>
-          <div class="section-item section-item--img">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_2.png" alt="Legacy Royal" class="section-item__image" />
-          </div>
-          <div class="section-item section-item--img section-item--wide">
-            <NuxtImg format="webp, avif" src="/img/royal/royal_3.png" alt="Legacy Royal" class="section-item__image" />
-          </div>
-          <div class="section-item section-item--text features">
-            <h2 class="features__title text-h2">Особенности</h2>
-            <h3 class="feature__title text-h3">Технология компрессионной микровибрации</h3>
-            <div class="feature__text">
-              Работа аппарата основана на создании пульсирующего давления с помощью силиконовых шариков, вращающихся по
-              оси ролика на 360°.Такая технология обеспечивает равномерное и глубокое механическое воздействие без
-              травмирования тканей.Она активно стимулирует кровообращение, лимфоток и обменные процессы, способствуя
-              оздоровлению и омоложению кожи.
+          <div class="section__grid grid">
+            <div class="grid-item grid-item--img">
+              <NuxtImg format="webp, avif" src="/img/royal/royal_1.png" alt="Legacy Royal" class="grid-item__image" />
             </div>
-            <h3 class="feature__title text-h3">Интеллектуальная цилиндрическая роликовая ручка</h3>
-            <div class="feature__text">
-              Манипула позволяет точно адаптировать интенсивность и направление воздействия, обеспечивая полный контроль
-              специалиста и максимальный комфорт клиента. Подходит как для интенсивной проработки крупных зон тела, так
-              и для чувствительных участков лица и шеи.
+            <div class="grid-item grid-item--img">
+              <NuxtImg format="webp, avif" src="/img/royal/royal_2.png" alt="Legacy Royal" class="grid-item__image" />
             </div>
-            <h3 class="feature__title text-h3">Насадки для разных зон</h3>
-            <div class="feature__text">
-              В комплект входят:
-              <ul class="list--disc">
-                <li>большая манипула (50 шариков) — для работы по телу</li>
-                <li>малая манипула (60 шариков) — для лица и шеи</li>
-              </ul>
-              Это делает аппарат универсальным решением для комплексного ухода за всем телом.
+            <div class="grid-item grid-item--img grid-item--wide">
+              <NuxtImg format="webp, avif" src="/img/royal/royal_3.png" alt="Legacy Royal" class="grid-item__image" />
             </div>
-            <h3 class="feature__title text-h3">Безопасность и неинвазивность</h3>
-            <div class="feature__text">
-              Процедура не требует периода восстановления и подходит для клиентов с различной чувствительностью кожи.
-              Метод полностью неинвазивен, исключает повреждение тканей и может использоваться как в терапевтических,
-              так и в профилактических целях.
+            <div class="grid-item grid-item--text features">
+              <h2 class="features__title text-h2">Особенности</h2>
+              <h3 class="feature__title text-h3">Технология компрессионной микровибрации</h3>
+              <div class="feature__text">
+                Работа аппарата основана на создании пульсирующего давления с помощью силиконовых шариков, вращающихся
+                по оси ролика на 360°.Такая технология обеспечивает равномерное и глубокое механическое воздействие без
+                травмирования тканей.Она активно стимулирует кровообращение, лимфоток и обменные процессы, способствуя
+                оздоровлению и омоложению кожи.
+              </div>
+              <h3 class="feature__title text-h3">Интеллектуальная цилиндрическая роликовая ручка</h3>
+              <div class="feature__text">
+                Манипула позволяет точно адаптировать интенсивность и направление воздействия, обеспечивая полный
+                контроль специалиста и максимальный комфорт клиента. Подходит как для интенсивной проработки крупных зон
+                тела, так и для чувствительных участков лица и шеи.
+              </div>
+              <h3 class="feature__title text-h3">Насадки для разных зон</h3>
+              <div class="feature__text">
+                В комплект входят:
+                <ul class="list--disc">
+                  <li>большая манипула (50 шариков) — для работы по телу</li>
+                  <li>малая манипула (60 шариков) — для лица и шеи</li>
+                </ul>
+                Это делает аппарат универсальным решением для комплексного ухода за всем телом.
+              </div>
+              <h3 class="feature__title text-h3">Безопасность и неинвазивность</h3>
+              <div class="feature__text">
+                Процедура не требует периода восстановления и подходит для клиентов с различной чувствительностью кожи.
+                Метод полностью неинвазивен, исключает повреждение тканей и может использоваться как в терапевтических,
+                так и в профилактических целях.
+              </div>
+              <h3 class="feature__title text-h3">Применение</h3>
+              <div class="feature__text">
+                Аппарат рекомендуется для:
+                <ul class="list--disc">
+                  <li>моделирования контуров тела</li>
+                  <li>коррекции целлюлита</li>
+                  <li>лифтинга кожи лица и тела</li>
+                  <li>улучшения лимфо- и кровообращения</li>
+                  <li>общего оздоровления тканей</li>
+                </ul>
+              </div>
             </div>
-            <h3 class="feature__title text-h3">Применение</h3>
-            <div class="feature__text">
-              Аппарат рекомендуется для:
-              <ul class="list--disc">
-                <li>моделирования контуров тела</li>
-                <li>коррекции целлюлита</li>
-                <li>лифтинга кожи лица и тела</li>
-                <li>улучшения лимфо- и кровообращения</li>
-                <li>общего оздоровления тканей</li>
-              </ul>
+
+            <div class="grid-item grid-item--vid">
+              <div class="video-container--rounded">
+                <video muted autoplay loop class="grid-item__video">
+                  <source src="/video/royal/royal_360.webm" type="video/webm" />
+                  <source src="/video/royal/royal_360.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
 
-          <div class="section-item section-item--vid">
-            <div class="video-container--rounded">
-              <video muted autoplay loop class="section-item__video">
-                <source src="/video/royal/royal_360.webm" type="video/webm" />
-                <source src="/video/royal/royal_360.mp4" type="video/mp4" />
-              </video>
-            </div>
+          <div class="section__contact">
+            <AppContactCard class="contact-card--bg" />
           </div>
-        </div>
-
-        <div class="section__contact">
-          <AppContactCard class="contact-card--bg" />
         </div>
       </div>
     </section>
@@ -124,93 +126,95 @@
         </div>
 
         <div class="section__content">
-          <div class="section-item section-item--text order-1">
-            <div class="item-header text-nav text-sub">{ 01 }</div>
-            <div class="item-body">
-              <div class="item-title text-h3">Формирует контуры тела</div>
-              <div class="item-text">
-                Эффективно корректирует фигуру, воздействуя на локальные жировые отложения в проблемных зонах: руки,
-                спина, живот, бедра, ягодицы. Помогает достичь более стройного и подтянутого силуэта.
+          <div class="section__grid grid">
+            <div class="grid-item grid-item--text order-1">
+              <div class="grid-item__header text-nav text-sub">{ 01 }</div>
+              <div class="grid-item__body">
+                <div class="griditem__title text-h3">Формирует контуры тела</div>
+                <div class="grid-item__text">
+                  Эффективно корректирует фигуру, воздействуя на локальные жировые отложения в проблемных зонах: руки,
+                  спина, живот, бедра, ягодицы. Помогает достичь более стройного и подтянутого силуэта.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="section-item section-item--img order-2">
-            <NuxtImg
-              format="webp, avif"
-              src="/img/royal/royal_4.png"
-              alt="Аппарат Royal Legacy"
-              class="section-item__img"
-            />
-          </div>
+            <div class="grid-item grid-item--img order-2">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/royal/royal_4.png"
+                alt="Аппарат Royal Legacy"
+                class="grid-item__img"
+              />
+            </div>
 
-          <div class="section-item order-4">
-            <div class="item-header text-nav text-sub">{ 02 }</div>
-            <div class="item-body">
-              <div class="item-title text-h3">Сглаживает проявления целлюлита</div>
-              <div class="item-text">
-                Улучшает микроциркуляцию, снижает отёчность и стимулирует выведение лишней жидкости, что способствует
-                уменьшению выраженности целлюлита и выравниванию текстуры кожи.
+            <div class="grid-item grid-item--text order-4">
+              <div class="grid-item__header text-nav text-sub">{ 02 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">Сглаживает проявления целлюлита</div>
+                <div class="grid-item__text">
+                  Улучшает микроциркуляцию, снижает отёчность и стимулирует выведение лишней жидкости, что способствует
+                  уменьшению выраженности целлюлита и выравниванию текстуры кожи.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="section-item section-item--img order-3">
-            <NuxtImg
-              format="webp, avif"
-              src="/img/royal/royal_5.png"
-              alt="Аппарат Royal Legacy"
-              class="section-item__img"
-            />
-          </div>
+            <div class="grid-item grid-item--img order-3">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/royal/royal_5.png"
+                alt="Аппарат Royal Legacy"
+                class="grid-item__img"
+              />
+            </div>
 
-          <div class="section-item order-5">
-            <div class="item-header text-nav text-sub">{ 03 }</div>
-            <div class="item-body">
-              <div class="item-title text-h3">Снимает ощущение тяжести в ногах</div>
-              <div class="item-text">
-                Активизирует лимфо- и венозный отток, устраняет застойные явления, помогает снять отёки и чувство
-                усталости в нижних конечностях.
+            <div class="grid-item grid-item--text order-5">
+              <div class="grid-item__header text-nav text-sub">{ 03 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">Снимает ощущение тяжести в ногах</div>
+                <div class="grid-item__text">
+                  Активизирует лимфо- и венозный отток, устраняет застойные явления, помогает снять отёки и чувство
+                  усталости в нижних конечностях.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="section-item section-item--img order-6">
-            <NuxtImg
-              format="webp, avif"
-              src="/img/royal/royal_6.png"
-              alt="Аппарат Royal Legacy"
-              class="section-item__img"
-            />
-          </div>
+            <div class="grid-item grid-item--img order-6">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/royal/royal_6.png"
+                alt="Аппарат Royal Legacy"
+                class="grid-item__img"
+              />
+            </div>
 
-          <div class="section-item section-item order-7">
-            <div class="item-header text-nav text-sub">{ 04 }</div>
-            <div class="item-body">
-              <div class="item-title text-h3">Тонизирует кожу</div>
-              <div class="item-text">
-                Стимулирует клеточный метаболизм и укрепляет кожные покровы. Особенно эффективна при потере упругости
-                кожи после похудения или возрастных изменений.
+            <div class="grid-item grid-item--text order-7">
+              <div class="grid-item__header text-nav text-sub">{ 04 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">Тонизирует кожу</div>
+                <div class="grid-item__text">
+                  Стимулирует клеточный метаболизм и укрепляет кожные покровы. Особенно эффективна при потере упругости
+                  кожи после похудения или возрастных изменений.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="section-item section-item--img order-none">
-            <NuxtImg
-              format="webp, avif"
-              src="/img/royal/royal_7.png"
-              alt="Аппарат Royal Legacy"
-              class="section-item__img"
-            />
-          </div>
+            <div class="grid-item grid-item--img order-none">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/royal/royal_7.png"
+                alt="Аппарат Royal Legacy"
+                class="grid-item__img"
+              />
+            </div>
 
-          <div class="section-item order-8">
-            <div class="item-header text-nav text-sub">{ 05 }</div>
-            <div class="item-body">
-              <div class="item-title text-h3">Манипула для лица и шеи</div>
-              <div class="item-text">
-                Манипула для лица и шеи позволяет мягко прорабатывать деликатные зоны, повышая упругость и устраняя
-                признаки возрастных изменений.
+            <div class="grid-item grid-item--text order-8">
+              <div class="grid-item__header text-nav text-sub">{ 05 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">Манипула для лица и шеи</div>
+                <div class="grid-item__text">
+                  Манипула для лица и шеи позволяет мягко прорабатывать деликатные зоны, повышая упругость и устраняя
+                  признаки возрастных изменений.
+                </div>
               </div>
             </div>
           </div>
@@ -224,7 +228,7 @@
           <div class="lead__header text-nav text-sub">
             <span class="lead__index">3.0</span>
             <div class="lead__text">
-              <span class="lead__title">{ Комплектация и характеристики }</span>
+              <span class="lead__title">{ Комплектация и <wbr /> характеристики }</span>
               <span class="lead__subtitle">Legacy Royal</span>
             </div>
           </div>
@@ -260,6 +264,7 @@
                     <span>Роликовая ручка-манипула ENDO (малая)</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
+                  <td>12 месяцев</td>
                 </tr>
                 <tr>
                   <td>
@@ -305,7 +310,7 @@
 
                 <tr>
                   <td>Скорость вращения</td>
-                  <td>Входная мощность</td>
+                  <td>до 1400 об/мин (RPM)</td>
                 </tr>
 
                 <tr>
