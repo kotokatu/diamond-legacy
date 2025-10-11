@@ -12,12 +12,12 @@ body {
   font-family: var(--font-primary);
   min-height: 100dvh;
 
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
 
-  @media (min-width: $breakpoint-md) {
-    font-size: 16px;
-    line-height: 24px;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -170,7 +170,7 @@ a {
   padding-top: 128px;
   padding-bottom: 128px;
 
-  @media (max-width: $breakpoint-xs) {
+  @media (width < $breakpoint-sm) {
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -209,6 +209,11 @@ a {
 
 .lead {
   width: 100%;
+  margin-bottom: 64px;
+
+  @media (width < $breakpoint-sm) {
+    margin-bottom: 0;
+  }
 
   &__header {
     display: flex;
@@ -259,7 +264,7 @@ a {
 }
 
 .section.hero {
-  height: 760px;
+  min-height: 760px;
   color: $base;
 
   .section__content {
@@ -269,8 +274,8 @@ a {
     gap: 16px;
   }
 
-  @media (max-width: $breakpoint-sm) {
-    height: 530px;
+  @media (width < $breakpoint-sm) {
+    min-height: 530px;
   }
 }
 
@@ -279,16 +284,16 @@ a {
 
   .section__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px;
 
-    @media (max-width: $breakpoint-md) {
-      grid-template-columns: repeat(2, 1fr);
+    @media (min-width: $breakpoint-xs) {
       padding-top: 0;
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: $breakpoint-xs) {
-      grid-template-columns: 1fr;
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -297,29 +302,28 @@ a {
     flex-direction: column;
     gap: 16px;
     justify-content: space-between;
-    min-height: 380px;
     width: 100%;
     padding: 32px;
     background-color: $base;
     border-radius: 12px;
     backdrop-filter: blur(12px);
     overflow: hidden;
-
-    @media (max-width: $breakpoint-sm) {
-      min-height: unset;
-    }
+    min-height: 312px;
 
     &--wide {
-      grid-column: span 2;
+      grid-column: span 1;
 
-      @media (max-width: $breakpoint-md) {
-        grid-column: span 1;
+      @media (min-width: $breakpoint-lg) {
+        grid-column: span 2;
       }
     }
 
     &--img {
       padding: 8px;
-      min-height: 312px;
+
+      @media (width < $breakpoint-xs) {
+        max-height: 312px;
+      }
     }
 
     &__img {
@@ -351,20 +355,19 @@ a {
     padding-bottom: 0px;
 
     .section__content {
+      min-height: 760px;
       position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      width: 100%;
-      min-height: 760px;
-      margin-top: 64px;
+      align-items: center;
+      height: 100%;
+      padding: 161px 0;
 
-      @media (max-width: $breakpoint-sm) {
-        align-items: center;
+      @media (width < $breakpoint-sm) {
         min-height: 530px;
-      }
-
-      @media (max-width: $breakpoint-xs) {
         margin-top: 0;
+        padding: 24px 0;
       }
 
       .section__grid {
@@ -372,15 +375,10 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
-        padding: 161px 0;
 
-        @media (max-width: $breakpoint-sm) {
+        @media (width < $breakpoint-md) {
           grid-template-columns: 1fr;
           gap: 0px;
-        }
-
-        @media (max-width: $breakpoint-xs) {
-          padding: 24px 0;
         }
       }
 
@@ -394,7 +392,7 @@ a {
           margin-top: auto;
           transform: translateY(60px);
 
-          @media (max-width: $breakpoint-sm) {
+          @media (width < $breakpoint-md) {
             margin-top: 0;
             order: 3;
             transform: translateY(0);
@@ -418,13 +416,12 @@ a {
   .section.catalog {
     .section__content {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
-      margin: 0 0 64px 0;
+      margin-bottom: 64px;
 
-      @media (min-width: $breakpoint-sm) {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 64px 0;
+      @media (width < $breakpoint-sm) {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -438,18 +435,8 @@ a {
   }
 
   .section.benefits {
-    .section__content {
-      margin-top: 64px;
-
-      @media (max-width: $breakpoint-xs) {
-        margin-top: 0;
-      }
-    }
-
     .grid-item {
-      @media (max-width: $breakpoint-md) {
-        flex-basis: calc(100% / 2 - 16px / 2);
-
+      @media (max-width: $breakpoint-lg) {
         &.delivery {
           order: 1;
         }
@@ -481,6 +468,10 @@ a {
         &.production {
           order: 8;
         }
+      }
+
+      @media (min-width: $breakpoint-sm) {
+        min-height: 380px;
       }
     }
   }
@@ -533,12 +524,14 @@ a {
       }
 
       .section__background-image {
-        object-fit: none;
-        object-position: center 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 53% 80px;
 
-        @media (max-width: $breakpoint-sm) {
-          object-fit: cover;
-          object-position: center 120px;
+        @media (min-width: $breakpoint-sm) {
+          object-fit: none;
+          object-position: 51% 60px;
         }
       }
     }
@@ -570,8 +563,6 @@ a {
 
   .section.description {
     .section__content {
-      padding-top: 64px;
-
       .section__grid {
         display: flex;
         flex-wrap: wrap;
@@ -626,11 +617,8 @@ a {
           padding-top: 144px;
           padding-right: 16px;
 
-          @media (max-width: $breakpoint-sm) {
+          @media (width < $breakpoint-sm) {
             padding-right: 0px;
-          }
-
-          @media (max-width: $breakpoint-xs) {
             padding-top: 48px;
           }
 
@@ -651,7 +639,7 @@ a {
         .grid-item--vid {
           padding-top: 112px;
 
-          @media (max-width: $breakpoint-xs) {
+          @media (width < $breakpoint-sm) {
             padding-top: 24px;
           }
 
@@ -689,7 +677,7 @@ a {
       .section__contact {
         margin-top: 128px;
 
-        @media (max-width: $breakpoint-xs) {
+        @media (width < $breakpoint-sm) {
           margin-top: 64px;
         }
       }
@@ -703,57 +691,54 @@ a {
   }
 
   .section.benefits {
-    .section__content {
-      padding-top: 64px;
-    }
-
     .grid-item {
-      max-height: 380px;
+      height: 380px;
 
-      @media (max-width: $breakpoint-md) {
-        aspect-ratio: 1/1;
-        max-height: 340px;
+      &.order-1 {
+        order: 1;
+      }
 
-        &.order-1 {
-          order: 1;
-        }
+      &.order-2 {
+        order: 2;
+      }
 
-        &.order-2 {
-          order: 2;
-        }
+      &.order-3 {
+        order: 3;
+      }
 
-        &.order-3 {
-          order: 3;
-        }
+      &.order-4 {
+        order: 4;
+      }
 
-        &.order-4 {
-          order: 4;
-        }
+      &.order-5 {
+        order: 5;
+      }
 
-        &.order-5 {
-          order: 5;
-        }
+      &.order-6 {
+        order: 6;
+      }
 
-        &.order-6 {
-          order: 6;
-        }
+      &.order-7 {
+        order: 7;
+      }
 
-        &.order-7 {
-          order: 7;
-        }
+      &.order-8 {
+        order: 8;
+      }
+
+      &.order-9 {
+        order: 9;
+      }
+
+      @media (width < $breakpoint-lg) {
+        height: 340px;
 
         &.order-8 {
-          order: 8;
-        }
-
-        &.order-none {
           display: none;
         }
       }
 
-      @media (max-width: $breakpoint-xs) {
-        aspect-ratio: unset;
-
+      @media (width > $breakpoint-xs) and (width < $breakpoint-lg) {
         &.order-3 {
           order: 4;
         }
@@ -761,6 +746,10 @@ a {
         &.order-4 {
           order: 3;
         }
+      }
+
+      @media (width < $breakpoint-xs) {
+        height: 312px;
       }
     }
   }
@@ -779,7 +768,7 @@ a {
       gap: 32px;
       margin-top: 40px;
 
-      @media (max-width: $breakpoint-md) {
+      @media (width < $breakpoint-lg) {
         flex-direction: column;
       }
     }
@@ -819,6 +808,10 @@ a {
       &--specification {
         span.quantity {
           color: $base-semi;
+
+          @media (max-width: $breakpoint-xs) {
+            display: block;
+          }
         }
       }
 

@@ -4,15 +4,28 @@
       <footer class="footer">
         <div class="footer__block footer__block--logo">
           <div>
-            <LogoImg class="logo-img" alt="Legacy logo" filled :font-controlled="false" />
-            <LogoText class="logo-text" alt="Legacy" filled :font-controlled="false" />
+            <LogoImg
+              class="logo-img"
+              alt="Legacy logo"
+              filled
+              :font-controlled="false"
+            />
+            <LogoText
+              class="logo-text"
+              alt="Legacy"
+              filled
+              :font-controlled="false"
+            />
           </div>
         </div>
 
         <div class="footer__block footer__block--info list">
-          <NuxtLink to="/privacy-policy" class="text-min"> Политика конфиденциальности </NuxtLink>
+          <NuxtLink to="/privacy-policy" class="text-min">
+            Политика конфиденциальности
+          </NuxtLink>
           <div class="text-min">
-            {{ new Date().getFullYear() }} © Продажа профессиональных аппаратов для косметологии
+            {{ new Date().getFullYear() }} © Продажа профессиональных аппаратов
+            для косметологии
           </div>
         </div>
 
@@ -28,7 +41,9 @@
 
             <ul class="list">
               <li>
-                <NuxtLink href="mailto:legacy-info@mail.ru" class="email"> legacy-info@mail.ru </NuxtLink>
+                <NuxtLink href="mailto:legacy-info@mail.ru" class="email">
+                  legacy-info@mail.ru
+                </NuxtLink>
               </li>
             </ul>
           </div>
@@ -100,7 +115,7 @@ import LogoText from "@/assets/svg/logo_text.svg";
   gap: 32px;
   padding: 24px;
 
-  @media (max-width: $breakpoint-sm) {
+  @media (width < $breakpoint-sm) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "logo"

@@ -1,16 +1,16 @@
 <template>
   <div class="contact-card">
     <div class="contact-card__text">
-      <p class="contact-card__title" :class="[type === 'modal' ? 'text-h3' : 'text-h2']">
+      <div class="contact-card__title" :class="[type === 'modal' ? 'text-h3' : 'text-h2']">
         Поможем подобрать аппарат для вашего бизнеса
-      </p>
-      <p class="contact-card__description">
+      </div>
+      <div class="contact-card__description">
         Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты наилучшим образом подходят под ваши задачи
-      </p>
-      <p class="contact-card__caption text-min">
+      </div>
+      <div class="contact-card__caption text-min">
         Заполняя форму, вы подтверждаете согласие на обработку персональных данных лиц из формы в соответствии с
         <NuxtLink to="/privacy-policy">Политикой конфиденциальности</NuxtLink>
-      </p>
+      </div>
     </div>
 
     <div class="contact-card__form form">
@@ -46,10 +46,10 @@
       </q-inner-loading>
     </div>
 
-    <p class="contact-card__caption text-min mobile-show">
+    <div class="contact-card__caption text-min mobile-show">
       Заполняя форму, вы подтверждаете согласие на обработку персональных данных лиц из формы в соответствии с
       <NuxtLink to="/privacy-policy">Политикой конфиденциальности</NuxtLink>
-    </p>
+    </div>
   </div>
 </template>
 
@@ -89,20 +89,23 @@ const sendForm = () => {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 24px;
-  flex-direction: column;
+  padding: 64px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 64px;
   background-color: transparent;
   border-radius: 18px;
 
-  @media (min-width: $breakpoint-md) {
-    flex-direction: row;
+  @media (width <= $breakpoint-md) {
+    flex-direction: column;
   }
 
-  @media (min-width: $breakpoint-sm) {
-    padding: 64px;
+  @media (width < $breakpoint-sm) {
+    padding: 24px;
+  }
+
+  @media (width <= $breakpoint-xs) {
+    gap: 32px;
   }
 }
 
@@ -118,6 +121,11 @@ const sendForm = () => {
   font-family: var(--font-secondary);
   letter-spacing: 0px;
   color: $base;
+  margin-bottom: 16px;
+
+  @media (width <= $breakpoint-sm) {
+    max-width: 100%;
+  }
 }
 
 .contact-card__description {
@@ -166,6 +174,10 @@ const sendForm = () => {
   background-color: $base;
   border-radius: 12px;
   padding: 32px;
+
+  @media (width <= $breakpoint-xs) {
+    padding: 16px;
+  }
 }
 
 .form__input {
