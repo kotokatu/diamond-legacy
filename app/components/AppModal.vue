@@ -9,6 +9,7 @@
 
 <script setup>
 import IconClose from "@/assets/icons/bx-x.svg";
+
 const modalOpen = defineModel({
   type: Boolean,
   default: false,
@@ -27,20 +28,19 @@ const modalOpen = defineModel({
 .modal {
   position: relative;
   width: 864px;
-  max-width: 80vw;
+  max-width: calc(100vw - 40px * 2);
   background-color: $dark;
   border-radius: 18px;
 
-  @media (max-width: $breakpoint-sm) {
-    width: 100%;
-    max-width: 100%;
+  @media (width < $breakpoint-xs) {
+    max-width: calc(100vw - 8px * 2);
   }
 }
 
 .modal__close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 12px;
+  right: 12px;
   cursor: pointer;
 
   :deep(path) {

@@ -1,21 +1,31 @@
 <template>
-  <div class="contact-card">
+  <div class="contact-card" :class="classes">
     <div class="contact-card__text">
-      <div class="contact-card__title" :class="[type === 'modal' ? 'text-h3' : 'text-h2']">
+      <div
+        class="contact-card__title"
+        :class="[type === 'modal' ? 'text-h3' : 'text-h2']"
+      >
         Поможем подобрать аппарат для вашего бизнеса
       </div>
       <div class="contact-card__description">
-        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты наилучшим образом подходят под ваши задачи
+        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты
+        наилучшим образом подходят под ваши задачи
       </div>
       <div class="contact-card__caption text-min">
-        Заполняя форму, вы подтверждаете согласие на обработку персональных данных лиц из формы в соответствии с
+        Заполняя форму, вы подтверждаете согласие на обработку персональных
+        данных лиц из формы в соответствии с
         <NuxtLink to="/privacy-policy">Политикой конфиденциальности</NuxtLink>
       </div>
     </div>
 
     <div class="contact-card__form form">
       <q-form class="column items-center" @submit.prevent="sendForm">
-        <q-input v-model="name" class="form__input" outlined placeholder="Фамилия Имя" />
+        <q-input
+          v-model="name"
+          class="form__input"
+          outlined
+          placeholder="Фамилия Имя"
+        />
 
         <q-input
           v-model="email"
@@ -35,19 +45,24 @@
         />
 
         <div class="form__submit">
-          <AppButton class="full-width" type="submit" :color="type === 'modal' ? 'dark' : 'accent'">
+          <AppButton
+            class="full-width"
+            type="submit"
+            :color="type === 'modal' ? 'dark' : 'accent'"
+          >
             Отправить заявку
           </AppButton>
         </div>
       </q-form>
 
       <q-inner-loading :showing="loading">
-        <q-spinner size="50px" color="accent" />
+        <q-spinner size="50px" :color="type === 'modal' ? 'dark' : 'accent'" />
       </q-inner-loading>
     </div>
 
     <div class="contact-card__caption text-min mobile-show">
-      Заполняя форму, вы подтверждаете согласие на обработку персональных данных лиц из формы в соответствии с
+      Заполняя форму, вы подтверждаете согласие на обработку персональных данных
+      лиц из формы в соответствии с
       <NuxtLink to="/privacy-policy">Политикой конфиденциальности</NuxtLink>
     </div>
   </div>
@@ -56,14 +71,16 @@
 <script setup>
 import { ref } from "vue";
 
-defineProps({
+const props = defineProps({
   type: {
     type: String,
-    default: "",
+    default: "page",
   },
 });
 
 const emit = defineEmits(["submit"]);
+
+const classes = computed(() => ["contact-card--" + props.type]);
 
 const name = ref("");
 const email = ref("");
@@ -87,12 +104,12 @@ const sendForm = () => {
 <style lang="scss" scoped>
 .contact-card {
   display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 64px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 64px;
+  width: 100%;
+  height: 100%;
+  padding: 64px;
   background-color: transparent;
   border-radius: 18px;
 
@@ -100,12 +117,26 @@ const sendForm = () => {
     flex-direction: column;
   }
 
-  @media (width < $breakpoint-sm) {
-    padding: 24px;
+  &--page {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/img/contact_form_bg.png");
+    background-size: cover;
+    background-position: center;
+
+    @media (width <= $breakpoint-sm) {
+      padding: 24px;
+      gap: 32px;
+    }
   }
 
-  @media (width <= $breakpoint-xs) {
-    gap: 32px;
+  &--modal {
+    background-color: $dark;
+
+    @media (width <= $breakpoint-md) {
+      padding: 32px;
+      gap: 32px;
+    }
   }
 }
 
@@ -121,7 +152,6 @@ const sendForm = () => {
   font-family: var(--font-secondary);
   letter-spacing: 0px;
   color: $base;
-  margin-bottom: 16px;
 
   @media (width <= $breakpoint-sm) {
     max-width: 100%;
@@ -147,20 +177,13 @@ const sendForm = () => {
     display: none;
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (width <= $breakpoint-md) {
     display: none;
 
     &.mobile-show {
       display: block;
     }
   }
-}
-
-.contact-card--bg {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/contact_form_bg.png");
-  background-size: cover;
-  background-position: center;
 }
 
 :deep(.q-field--outlined .q-field__control) {

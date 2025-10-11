@@ -1,12 +1,8 @@
-import { ref, onUnmounted, watch } from "vue";
+import { ref, watch } from "vue";
 
 export const useAutoClose = () => {
   const route = useRoute();
   const open = ref(false);
-
-  onUnmounted(() => {
-    open.value = false;
-  });
 
   watch(route, () => {
     open.value = false;

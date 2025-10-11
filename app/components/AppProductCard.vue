@@ -18,7 +18,13 @@
       </div>
 
       <div class="card__img-container">
-        <NuxtImg class="card__img" :alt="data.name" :src="data.image" sizes="700px" loading="lazy" />
+        <NuxtImg
+          class="card__img"
+          :alt="data.name"
+          :src="data.image"
+          sizes="700px"
+          loading="lazy"
+        />
       </div>
 
       <ArrowIcon class="card__arrow" aria-hidden="true" role="presentation" />
@@ -62,63 +68,6 @@ $transition: all 0.2s ease-in-out;
   background-color: #f8f8f8;
   border-radius: 12px;
   transition: $transition;
-
-  &--sm {
-    .card__img-container {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .card__img {
-      object-position: 35px 70px;
-    }
-
-    .card__price {
-      @container (inline-size < 400px) {
-        margin-top: auto;
-      }
-    }
-  }
-
-  &--lg {
-    .card__img {
-      width: 100%;
-      height: 100%;
-      object-position: 110px 70px;
-      transform-origin: bottom right;
-      transition: $transition;
-
-      @container (width < 600px) {
-        object-position: 110px 100px;
-      }
-
-      @container (width < 500px) {
-        object-position: 110px 120px;
-      }
-
-      @container (width < 400px) {
-        object-position: 90px 130px;
-      }
-
-      @container (width < 350px) {
-        object-position: 40px 130px;
-      }
-    }
-
-    @media (hover: hover) {
-      &:hover {
-        background-color: #eaeaea;
-
-        .card__arrow {
-          opacity: 1;
-        }
-
-        .card__img {
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
 }
 
 .card__img-container {
@@ -174,6 +123,69 @@ $transition: all 0.2s ease-in-out;
 
   :deep(path) {
     fill: $accent;
+  }
+}
+
+.card--sm {
+  .card__img-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card__img {
+    object-position: 35px 70px;
+  }
+
+  .card__price {
+    @container (inline-size < 400px) {
+      margin-top: auto;
+    }
+  }
+
+  .card__description {
+    @container (inline-size < 400px) {
+      max-width: 70%;
+    }
+  }
+}
+
+.card--lg {
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-position: 110px 70px;
+    transform-origin: bottom right;
+    transition: $transition;
+
+    @container (width < 600px) {
+      object-position: 110px 100px;
+    }
+
+    @container (width < 500px) {
+      object-position: 110px 120px;
+    }
+
+    @container (width < 400px) {
+      object-position: 90px 130px;
+    }
+
+    @container (width < 350px) {
+      object-position: 40px 130px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #eaeaea;
+
+      .card__arrow {
+        opacity: 1;
+      }
+
+      .card__img {
+        transform: scale(1.1);
+      }
+    }
   }
 }
 </style>
