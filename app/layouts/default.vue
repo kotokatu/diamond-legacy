@@ -6,11 +6,7 @@
 
     <template #catalog-nav>
       <AppTransition>
-        <AppCatalogMenu
-          v-show="catalogMenuOpen"
-          :data="data"
-          @close="closeCatalogMenu"
-        />
+        <AppCatalogMenu v-show="catalogMenuOpen" :data="data" @close="closeCatalogMenu" />
       </AppTransition>
     </template>
   </AppHeader>
@@ -32,12 +28,5 @@ import { useLayout } from "@/composables/useLayout";
 
 const data = inject("data");
 
-const {
-  modalOpen,
-  catalogMenuOpen,
-  openModal,
-  openNavMenu,
-  openCatalogMenu,
-  closeCatalogMenu,
-} = useLayout();
+const { modalOpen, catalogMenuOpen, openModal, openNavMenu, openCatalogMenu, closeCatalogMenu } = useLayout();
 </script>

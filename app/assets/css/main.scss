@@ -831,6 +831,23 @@ a {
   }
 }
 
+.page--privacy-policy {
+  padding-top: 128px;
+
+  h1,
+  h2 {
+    font-family: var(--font-secondary);
+    padding: 32px 0;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    h1,
+    h2 {
+      padding: 16px 0;
+    }
+  }
+}
+
 .nuxt-icon {
   margin-bottom: 0 !important;
 }

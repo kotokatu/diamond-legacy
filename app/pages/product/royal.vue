@@ -237,7 +237,7 @@
         <div class="section__content">
           <div class="section-item">
             <h3 class="section-item__title text-h3">Комплектация</h3>
-            <table class="table table--specification">
+            <table class="section-item__table table table--specification">
               <thead>
                 <tr>
                   <th class="text-min">Наименование</th>

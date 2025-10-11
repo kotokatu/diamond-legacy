@@ -1,7 +1,7 @@
 <template>
   <div class="page-wrapper">
-    <h1 v-if="error.statusCode === 404">404 - Page Not Found</h1>
-    <h1 v-else>An Error Occurred</h1>
+    <h1 v-if="error.statusCode === 404">404 - Страница не найдена</h1>
+    <h1 v-else>Произошла ошибка</h1>
     <NuxtLink to="/">На главную страницу</NuxtLink>
   </div>
 </template>
