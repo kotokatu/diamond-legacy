@@ -384,7 +384,7 @@ a {
         }
       }
 
-      .section-item {
+      .grid-item {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -400,17 +400,17 @@ a {
             transform: translateY(0);
           }
         }
-      }
 
-      .section-item__title {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        color: $base-semi;
-      }
+        &__title {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          color: $base-semi;
+        }
 
-      .section-item__text {
-        color: $base;
+        &__text {
+          color: $base;
+        }
       }
     }
   }

@@ -60,33 +60,33 @@
           </video>
         </div>
 
-        <div class="section__grid contained">
-          <div class="section-item">
-            <div class="section-item__title">
+        <div class="section__grid grid contained">
+          <div class="grid-item">
+            <div class="grid-item__title">
               <AppDots :count="1" />
               <span class="text-nav text-sub">{ Бренд }</span>
             </div>
-            <div class="section-item__text">
+            <div class="grid-item__text">
               Legacy создан Diamond Technology — лидером на рынке косметологического оборудования с 5000 клиник и
               салонов в России и за её пределами
             </div>
           </div>
-          <div class="section-item section-item--last">
-            <div class="section-item__title">
+          <div class="grid-item grid-item--last">
+            <div class="grid-item__title">
               <AppDots :count="3" />
               <span class="text-nav text-sub">{ Подход }</span>
             </div>
-            <div class="section-item__text">
+            <div class="grid-item__text">
               В аппаратах Legacy нет случайных решений: используются только проверенные комплектующие, удобный интерфейс
               и передовые технологии
             </div>
           </div>
-          <div class="section-item">
-            <div class="section-item__title">
+          <div class="grid-item">
+            <div class="grid-item__title">
               <AppDots :count="2" />
               <span class="text-nav text-sub">{ Опыт }</span>
             </div>
-            <div class="section-item__text">
+            <div class="grid-item__text">
               Мы объединили многолетний опыт работы с ведущими заводами Китая, знания собственного сервисного центра и
               обратную связь клиентов
             </div>
