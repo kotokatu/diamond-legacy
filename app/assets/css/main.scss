@@ -489,7 +489,15 @@ a {
       }
 
       &__body {
-        width: 100%;
+        width: 50%;
+
+        @media (width <= $breakpoint-sm) {
+          width: 100%;
+        }
+      }
+
+      @media (width <= $breakpoint-sm) {
+        margin-bottom: 0;
       }
     }
 
@@ -497,18 +505,13 @@ a {
       padding: 0 24px;
     }
 
-    .section-item {
-      display: flex;
+    .section__text {
+      column-count: 2;
       padding: 24px 0;
-      gap: 32px;
+      column-gap: 32px;
 
-      @media (max-width: $breakpoint-sm) {
-        flex-direction: column;
-        gap: 0px;
-      }
-
-      &__text {
-        flex: 1 0 0;
+      @media (width < $breakpoint-md) {
+        column-count: unset;
       }
     }
   }
@@ -774,11 +777,11 @@ a {
       }
     }
 
-    .section-item {
+    .section-block {
       flex-basis: calc(50% - 32px / 2);
     }
 
-    .section-item__title {
+    .section-block__title {
       font-family: var(--font-secondary);
       padding-bottom: 16px;
     }

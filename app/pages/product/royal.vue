@@ -311,18 +311,16 @@
           <div class="lead__header text-nav text-sub">
             <span class="lead__index">3.0</span>
             <div class="lead__text">
-              <span class="lead__title"
-                >{ Комплектация и <wbr /> характеристики }</span
-              >
+              <span class="lead__title">{ Комплектация и характеристики }</span>
               <span class="lead__subtitle">Legacy Royal</span>
             </div>
           </div>
         </div>
 
         <div class="section__content">
-          <div class="section-item">
-            <h3 class="section-item__title text-h3">Комплектация</h3>
-            <table class="section-item__table table table--specification">
+          <div class="section-block">
+            <h3 class="section-block__title text-h3">Комплектация</h3>
+            <table class="section__table table table--specification">
               <thead>
                 <tr>
                   <th class="text-min">Наименование</th>
@@ -373,11 +371,11 @@
             </table>
           </div>
 
-          <div class="section-item">
-            <h3 class="section-item__title font-secondary text-h3">
+          <div class="section-block">
+            <h3 class="section-block__title font-secondary text-h3">
               Технические характеристики
             </h3>
-            <table class="table table--characteristics">
+            <table class="section__table table table--characteristics">
               <thead>
                 <tr>
                   <th class="text-min">Характеристика</th>

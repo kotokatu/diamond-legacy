@@ -8,8 +8,8 @@
         Поможем подобрать аппарат для вашего бизнеса
       </div>
       <div class="contact-card__description">
-        Наш менеджер свяжется с вами <wbr /> и подскажет какие аппараты
-        наилучшим образом подходят под ваши задачи
+        Наш менеджер свяжется с вами и подскажет какие аппараты наилучшим
+        образом подходят под ваши задачи
       </div>
       <div class="contact-card__caption text-min">
         Заполняя форму, вы подтверждаете согласие на обработку персональных
@@ -25,14 +25,19 @@
           class="form__input"
           outlined
           placeholder="Фамилия Имя"
+          :rules="[(val) => !!val]"
+          lazy-rules="ondemand"
+          error-message="Обязательное поле"
         />
 
         <q-input
           v-model="email"
-          type="email"
           class="form__input"
           outlined
           placeholder="Электронная почта, example@mail.ru"
+          :rules="['email']"
+          lazy-rules="ondemand"
+          error-message="Некорректный email"
         />
 
         <q-input
@@ -54,6 +59,18 @@
           </AppButton>
         </div>
       </q-form>
+
+      <div v-show="!!message" class="form__msg">
+        <q-icon
+          :name="error ? 'close' : 'check'"
+          size="22px"
+          :color="error ? 'negative' : 'positive'"
+        />
+        <div class="text-nav">{{ message }}</div>
+        <AppButton :color="type === 'modal' ? 'dark' : 'accent'" @click="clear">
+          Закрыть
+        </AppButton>
+      </div>
 
       <q-inner-loading :showing="loading">
         <q-spinner size="50px" :color="type === 'modal' ? 'dark' : 'accent'" />
@@ -86,23 +103,39 @@ const name = ref("");
 const email = ref("");
 const phone = ref("");
 const loading = ref(false);
-
-const sendForm = () => {
+const error = ref(false);
+const message = ref("");
+const sendForm = async () => {
   const formData = new FormData();
   formData.append("name", name.value);
   formData.append("email", email.value);
   formData.append("phone", phone.value);
-  loading.value = true;
-  setTimeout(() => {
-    formData.entries().forEach((entry) => console.log(entry));
+  message.value = "";
+
+  try {
+    loading.value = true;
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    message.value = "Спасибо! Ваша заявка отправлена";
+  } catch {
+    error.value = true;
+    message.value = "Произошла ошибка при отправке";
+  } finally {
     loading.value = false;
-    emit("submit");
-  }, 5000);
+  }
+};
+
+const clear = () => {
+  name.value = "";
+  email.value = "";
+  phone.value = "";
+  message.value = "";
+  error.value = false;
 };
 </script>
 
 <style lang="scss" scoped>
 .contact-card {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -204,7 +237,7 @@ const sendForm = () => {
 }
 
 .form__input {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   width: 100%;
 
   :deep(.q-field__native::placeholder) {
@@ -219,5 +252,22 @@ const sendForm = () => {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form__msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: nowrap;
+  border-radius: 12px;
+  background-color: $base;
+  border-radius: 12px;
 }
 </style>
