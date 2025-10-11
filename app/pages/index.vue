@@ -5,6 +5,11 @@
       aria-labelledby="hero-title"
       role="banner"
     >
+    <section
+      class="wrapper section hero"
+      aria-labelledby="hero-title"
+      role="banner"
+    >
       <div class="section__background section__background--overlay">
         <video
           class="section__video"

@@ -14,6 +14,20 @@
       Legacy Royal — описание аппарата
     </h1>
 
+    <h1
+      class="sr-only"
+      style="
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      "
+    >
+      Legacy Royal — описание аппарата
+    </h1>
+
     <section class="wrapper section hero">
       <div class="section__background section__background--overlay">
         <NuxtImg
