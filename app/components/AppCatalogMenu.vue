@@ -72,7 +72,7 @@ onClickOutside(
   background-color: $base;
   border-radius: 12px;
   border: 4px solid #f8f8f8;
-  height: 350px;
+  height: 352px;
 
   @media (max-width: $breakpoint-md) {
     flex-direction: column;

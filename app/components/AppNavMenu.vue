@@ -9,7 +9,7 @@
       <ArrowIcon v-if="isMobile" class="icon" />
     </NuxtLink>
     <NuxtLink to="/#distributors" class="nav-item" @click="$emit('close')">
-      <AppNavItem label="Дистрибьюторы" :class="classes" />
+      <AppNavItem label="Для дистрибьюторов" :class="classes" />
       <ArrowIcon v-if="isMobile" class="icon" />
     </NuxtLink>
   </div>

@@ -1,3 +1,3 @@
 <template>
-  <div>Spectre</div>
+  <div class="page-wrapper">Скоро здесь будет описание аппарата Spectre</div>
 </template>

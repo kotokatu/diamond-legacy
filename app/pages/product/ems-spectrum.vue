@@ -1,1 +1,5 @@
-<template><div>Ems Spectrum</div></template>
+<template>
+  <div class="page-wrapper">
+    Скоро здесь будет описание аппарата Ems Spectrum
+  </div>
+</template>

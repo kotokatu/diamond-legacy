@@ -27,7 +27,6 @@ defineProps({
   flex-wrap: nowrap;
   width: fit-content;
   height: 30px;
-  padding: 4px 8px;
   text-decoration: none;
   transition: all 0.2s ease;
 

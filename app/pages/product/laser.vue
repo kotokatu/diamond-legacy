@@ -1,1 +1,3 @@
-<template><div>Laser</div></template>
+<template>
+  <div class="page-wrapper">Скоро здесь будет описание аппарата Laser</div>
+</template>

@@ -1,6 +1,10 @@
 <template>
   <div class="page page--home">
-    <section class="wrapper section hero" aria-labelledby="hero-title" role="banner">
+    <section
+      class="wrapper section hero"
+      aria-labelledby="hero-title"
+      role="banner"
+    >
       <div class="section__background section__background--overlay">
         <video
           class="section__video"
@@ -19,7 +23,9 @@
       </div>
 
       <div class="section__content contained">
-        <h1 id="hero-title" class="font-secondary text-h1">Legacy — косметологические аппараты премиум качества</h1>
+        <h1 id="hero-title" class="font-secondary text-h1">
+          Legacy — косметологические аппараты премиум качества
+        </h1>
         <p class="font-secondary text-h3">
           Уникальный симбиоз многолетнего опыта <br />
           и передовых корейских технологий
@@ -27,7 +33,11 @@
       </div>
     </section>
 
-    <section id="about" class="wrapper section about" aria-labelledby="about-title">
+    <section
+      id="about"
+      class="wrapper section about"
+      aria-labelledby="about-title"
+    >
       <div class="lead contained">
         <div class="lead__header text-nav text-sub">
           <span class="lead__index">1.0</span>
@@ -37,8 +47,9 @@
           </div>
         </div>
         <h2 id="about-title" class="lead__body text-h2">
-          Legacy — это результат реальной практики, экспертизы, стремления дать специалистам лучшее оборудование,
-          которое станет эталоном надёжности и качества
+          Legacy — это результат реальной практики, экспертизы, стремления дать
+          специалистам лучшее оборудование, которое станет эталоном надёжности и
+          качества
         </h2>
       </div>
 
@@ -67,8 +78,9 @@
               <span class="text-nav text-sub">{ Бренд }</span>
             </div>
             <div class="grid-item__text">
-              Legacy создан Diamond Technology — лидером на рынке косметологического оборудования с 5000 клиник и
-              салонов в России и за её пределами
+              Legacy создан Diamond Technology — лидером на рынке
+              косметологического оборудования с 5000 клиник и салонов в России и
+              за её пределами
             </div>
           </div>
           <div class="grid-item grid-item--last">
@@ -77,8 +89,9 @@
               <span class="text-nav text-sub">{ Подход }</span>
             </div>
             <div class="grid-item__text">
-              В аппаратах Legacy нет случайных решений: используются только проверенные комплектующие, удобный интерфейс
-              и передовые технологии
+              В аппаратах Legacy нет случайных решений: используются только
+              проверенные комплектующие, удобный интерфейс и передовые
+              технологии
             </div>
           </div>
           <div class="grid-item">
@@ -87,15 +100,19 @@
               <span class="text-nav text-sub">{ Опыт }</span>
             </div>
             <div class="grid-item__text">
-              Мы объединили многолетний опыт работы с ведущими заводами Китая, знания собственного сервисного центра и
-              обратную связь клиентов
+              Мы объединили многолетний опыт работы с ведущими заводами Китая,
+              знания собственного сервисного центра и обратную связь клиентов
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="catalog" class="wrapper section catalog" aria-labelledby="catalog-title">
+    <section
+      id="catalog"
+      class="wrapper section catalog"
+      aria-labelledby="catalog-title"
+    >
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -107,11 +124,16 @@
           </div>
 
           <h2 id="catalog-title" class="lead__body text-h2">
-            Производим устройства мирового уровня с фокусом на надежность, удобство и технологичность
+            Производим устройства мирового уровня с фокусом на надежность,
+            удобство и технологичность
           </h2>
         </div>
 
-        <div class="section__content" role="grid" aria-label="Каталог косметологических аппаратов">
+        <div
+          class="section__content grid"
+          role="grid"
+          aria-label="Каталог косметологических аппаратов"
+        >
           <AppProductCard
             v-for="item in data.catalog"
             :key="item.id"
@@ -129,7 +151,11 @@
       </div>
     </section>
 
-    <section id="benefits" class="wrapper section benefits" aria-labelledby="benefits-title">
+    <section
+      id="benefits"
+      class="wrapper section benefits"
+      aria-labelledby="benefits-title"
+    >
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -140,20 +166,28 @@
             </div>
           </div>
           <h2 id="benefits-title" class="lead__body text-h2">
-            Берем на себя все этапы — от логистики до настройки оборудования, а также обеспечиваем последующее
-            техническое сопровождение по всей России
+            Берем на себя все этапы — от логистики до настройки оборудования, а
+            также обеспечиваем последующее техническое сопровождение по всей
+            России
           </h2>
         </div>
 
         <div class="section__content">
-          <div class="section__grid grid" role="list" aria-label="Преимущества работы с Legacy">
+          <div
+            class="section__grid grid"
+            role="list"
+            aria-label="Преимущества работы с Legacy"
+          >
             <div class="grid-item delivery" role="listitem">
-              <div class="grid-item__header text-nav text-sub">{ Доставка }</div>
+              <div class="grid-item__header text-nav text-sub">
+                { Доставка }
+              </div>
               <div class="grid-item__body">
                 <h3 class="grid-item__title text-h3">Бесплатная доставка</h3>
                 <div class="grid-item__text">
-                  Доставка оборудования надёжными транспортными компаниями по России, СНГ и Европе. Аппараты упакованы в
-                  алюминиевые кейсы. Сохранность и своевременная доставка гарантированы
+                  Доставка оборудования надёжными транспортными компаниями по
+                  России, СНГ и Европе. Аппараты упакованы в алюминиевые кейсы.
+                  Сохранность и своевременная доставка гарантированы
                 </div>
               </div>
             </div>
@@ -173,31 +207,41 @@
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Оплата при получении</div>
                 <div class="grid-item__text">
-                  Производится только после получения оборудования, что позволит убедиться в качестве товара. Доступны
-                  любые способы: расчётный счёт, наличные, банковский перевод — по удобству клиента
+                  Производится только после получения оборудования, что позволит
+                  убедиться в качестве товара. Доступны любые способы: расчётный
+                  счёт, наличные, банковский перевод — по удобству клиента
                 </div>
               </div>
             </div>
 
             <div class="grid-item warranty">
-              <div class="grid-item__header text-nav text-sub">{ Гарантии }</div>
+              <div class="grid-item__header text-nav text-sub">
+                { Гарантии }
+              </div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Пожизненная гарантия</div>
                 <div class="grid-item__text">
-                  Обслуживание 24/7. Опытные мастера Legacy обеспечивают круглосуточное сопровождение: консультации,
-                  ремонт, гарантийное и постгарантийное обслуживание
+                  Обслуживание 24/7. Опытные мастера Legacy обеспечивают
+                  круглосуточное сопровождение: консультации, ремонт,
+                  гарантийное и постгарантийное обслуживание
                 </div>
               </div>
             </div>
 
             <div class="grid-item grid-item--wide support">
-              <div class="grid-item__header text-nav text-sub">{ Сопровождение }</div>
+              <div class="grid-item__header text-nav text-sub">
+                { Сопровождение }
+              </div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">Помощь в получении соцконтракта под ключ</div>
+                <div class="grid-item__title text-h3">
+                  Помощь в получении соцконтракта под ключ
+                </div>
                 <div class="grid-item__text">
                   <div class="q-pb-sm">
-                    Персональный менеджер Legacy сопровождает весь процесс оформления соцконтракта. Legacy берёт на себя
-                    всю бюрократию и доводит дело до результата. Консультация по условиям получения
+                    Персональный менеджер Legacy сопровождает весь процесс
+                    оформления соцконтракта. Legacy берёт на себя всю бюрократию
+                    и доводит дело до результата. Консультация по условиям
+                    получения
                   </div>
 
                   <ul class="list--disc">
@@ -212,12 +256,15 @@
             </div>
 
             <div class="grid-item training">
-              <div class="grid-item__header text-nav text-sub">{ Обучение }</div>
+              <div class="grid-item__header text-nav text-sub">
+                { Обучение }
+              </div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Бесплатное обучение</div>
                 <div class="grid-item__text">
-                  При покупке аппарата Legacy предоставляется бесплатное обучение в нашем обучающем центре, онлайн и
-                  офлайн. Выдаётся диплом гос. образца или именной сертификат
+                  При покупке аппарата Legacy предоставляется бесплатное
+                  обучение в нашем обучающем центре, онлайн и офлайн. Выдаётся
+                  диплом гос. образца или именной сертификат
                 </div>
               </div>
             </div>
@@ -233,12 +280,17 @@
             </div>
 
             <div class="grid-item production">
-              <div class="grid-item__header text-nav text-sub">{ Производство }</div>
+              <div class="grid-item__header text-nav text-sub">
+                { Производство }
+              </div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">Собственное производство</div>
+                <div class="grid-item__title text-h3">
+                  Собственное производство
+                </div>
                 <div class="grid-item__text">
-                  Аппараты Legacy проходят строгий контроль качества на каждом этапе производства. Оборудование имеет
-                  официальные сертификаты качества и соответствует международным стандартам
+                  Аппараты Legacy проходят строгий контроль качества на каждом
+                  этапе производства. Оборудование имеет официальные сертификаты
+                  качества и соответствует международным стандартам
                 </div>
               </div>
             </div>
@@ -258,31 +310,53 @@
             </div>
           </div>
 
-          <h2 class="lead__body text-h2">Сотрудничество, которое <br />работает</h2>
+          <h2 class="lead__body text-h2">
+            Сотрудничество, которое <br />работает
+          </h2>
         </div>
 
         <div class="section__content">
-          <h3 class="section__title text-h3 font-secondary">Условия сотрудничества</h3>
+          <h3 class="section__title text-h3 font-secondary">
+            Условия сотрудничества
+          </h3>
 
-          <div class="section-item" role="list" aria-label="Условия сотрудничества">
+          <div
+            class="section-item"
+            role="list"
+            aria-label="Условия сотрудничества"
+          >
             <div class="section-item__text">
-              <p>Эксклюзивные цены и специальные условия закупки для официальных дистрибьюторов.</p>
-              <p>Пожизненная гарантия на все аппараты для клиентов через партнёров.</p>
-              <p>Индивидуальная поддержка и консультации на каждом этапе сотрудничества.</p>
               <p>
-                Обучение работе с оборудованием и маркетинговой стратегией продаж, чтобы вы могли эффективно развивать
-                свой бизнес.
+                Эксклюзивные цены и специальные условия закупки для официальных
+                дистрибьюторов.
               </p>
-              <p>Приоритетный доступ к новинкам линейки Legacy и новым технологиям.</p>
+              <p>
+                Пожизненная гарантия на все аппараты для клиентов через
+                партнёров.
+              </p>
+              <p>
+                Индивидуальная поддержка и консультации на каждом этапе
+                сотрудничества.
+              </p>
+              <p>
+                Обучение работе с оборудованием и маркетинговой стратегией
+                продаж, чтобы вы могли эффективно развивать свой бизнес.
+              </p>
             </div>
 
             <div class="section-item__text">
               <p>
-                Полный набор маркетинговых инструментов: готовые инструкции, фото, видео и пошаговые планы продвижения
-                для быстрого старта и успешных продаж.
+                Приоритетный доступ к новинкам линейки Legacy и новым
+                технологиям.
               </p>
               <p>
-                Совместные акции и промо-материалы, которые повышают узнаваемость бренда и привлекают новых покупателей.
+                Полный набор маркетинговых инструментов: готовые инструкции,
+                фото, видео и пошаговые планы продвижения для быстрого старта и
+                успешных продаж.
+              </p>
+              <p>
+                Совместные акции и промо-материалы, которые повышают
+                узнаваемость бренда и привлекают новых покупателей.
               </p>
             </div>
           </div>
