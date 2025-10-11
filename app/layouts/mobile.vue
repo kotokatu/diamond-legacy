@@ -26,7 +26,7 @@
 
     <AppFooter />
 
-    <AppModal v-model="modalOpen" />
+    <AppModal />
 
     <AppContactButton @click="openModal" />
   </q-layout>
@@ -39,7 +39,6 @@ import { useLayout } from "@/composables/useLayout";
 const data = inject("data");
 
 const {
-  modalOpen,
   catalogMenuOpen,
   navMenuOpen,
   openModal,

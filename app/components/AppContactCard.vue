@@ -14,7 +14,9 @@
       <div class="contact-card__caption text-min">
         Заполняя форму, вы подтверждаете согласие на обработку персональных
         данных лиц из формы в соответствии с
-        <NuxtLink to="/privacy-policy">Политикой конфиденциальности</NuxtLink>
+        <NuxtLink to="/privacy-policy" @click="closeModal"
+          >Политикой конфиденциальности</NuxtLink
+        >
       </div>
     </div>
 
@@ -80,13 +82,16 @@
     <div class="contact-card__caption text-min mobile-show">
       Заполняя форму, вы подтверждаете согласие на обработку персональных данных
       лиц из формы в соответствии с
-      <NuxtLink to="/privacy-policy">Политикой конфиденциальности</NuxtLink>
+      <NuxtLink to="/privacy-policy" @click="closeModal"
+        >Политикой конфиденциальности</NuxtLink
+      >
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { useLayout } from "@/composables/useLayout";
 
 const props = defineProps({
   type: {
@@ -96,6 +101,7 @@ const props = defineProps({
 });
 
 const emit = defineEmits(["submit"]);
+const { modalOpen, closeModal } = useLayout();
 
 const classes = computed(() => ["contact-card--" + props.type]);
 

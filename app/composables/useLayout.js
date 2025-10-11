@@ -1,20 +1,23 @@
 import { computed } from "vue";
 import { useQuasar } from "quasar";
-import { useAutoClose } from "./useAutoClose";
+
+const modalOpen = ref(false);
+const catalogMenuOpen = ref(false);
+const navMenuOpen = ref(false);
 
 export function useLayout() {
   const $q = useQuasar();
+  const route = useRoute();
 
   const currentLayout = computed(() => {
     return $q.screen.gt.md ? "default" : "mobile";
   });
 
-  const { open: modalOpen } = useAutoClose();
-  const { open: catalogMenuOpen } = useAutoClose();
-  const { open: navMenuOpen } = useAutoClose();
-
   const openModal = () => {
     modalOpen.value = true;
+  };
+  const closeModal = () => {
+    modalOpen.value = false;
   };
 
   const openNavMenu = () => {
@@ -41,6 +44,13 @@ export function useLayout() {
   const isDefault = computed(() => currentLayout.value === "default");
   const isMobile = computed(() => currentLayout.value === "mobile");
 
+
+  watch(route, () => {
+    modalOpen.value = false;
+    catalogMenuOpen.value = false;
+    navMenuOpen.value = false;
+  });
+
   return {
     currentLayout,
     isDefault,
@@ -51,6 +61,7 @@ export function useLayout() {
     navMenuOpen,
 
     openModal,
+    closeModal,
     openNavMenu,
     closeNavMenu,
     openCatalogMenu,

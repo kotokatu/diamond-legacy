@@ -2,18 +2,16 @@
   <q-dialog v-model="modalOpen">
     <div class="modal">
       <AppContactCard type="modal" />
-      <IconClose class="modal__close icon" @click="modalOpen = false" />
+      <IconClose class="modal__close icon" @click="closeModal" />
     </div>
   </q-dialog>
 </template>
 
 <script setup>
 import IconClose from "@/assets/icons/bx-x.svg";
+import { useLayout } from "@/composables/useLayout";
 
-const modalOpen = defineModel({
-  type: Boolean,
-  default: false,
-});
+const { modalOpen, closeModal } = useLayout();
 </script>
 
 <style lang="scss">
