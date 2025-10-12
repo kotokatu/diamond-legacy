@@ -9,7 +9,7 @@
         <AppCatalogMenu
           v-show="catalogMenuOpen"
           :data="data"
-          @close="closeCatalogMenu"
+          @catalog:close="closeCatalogMenu"
         />
       </AppTransition>
     </template>
@@ -33,7 +33,6 @@ import { useLayout } from "@/composables/useLayout";
 const data = inject("data");
 
 const {
-  modalOpen,
   catalogMenuOpen,
   openModal,
   openNavMenu,

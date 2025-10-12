@@ -19,7 +19,7 @@
       class="nav-item"
       :aria-label="'Преимущества'"
       :aria-current="isActive('#benefits') ? 'page' : null"
-      @click="$emit('close')"
+      @click="$emit('nav:close')"
     >
       <AppNavItem label="Преимущества" :class="classes" />
       <ArrowIcon v-if="isMobile" class="icon" aria-hidden="true" />
@@ -30,7 +30,7 @@
       class="nav-item"
       :aria-label="'Для дистрибьюторов'"
       :aria-current="isActive('#distributors') ? 'page' : null"
-      @click="$emit('close')"
+      @click="$emit('nav:close')"
     >
       <AppNavItem label="Для дистрибьюторов" :class="classes" />
       <ArrowIcon v-if="isMobile" class="icon" />
@@ -42,7 +42,7 @@
 import AppNavItem from "./AppNavItem.vue";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
 
-defineEmits(["catalog:open", "close"]);
+defineEmits(["catalog:open", "nav:close"]);
 
 const { isMobile } = useLayout();
 const route = useRoute();

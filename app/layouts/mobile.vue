@@ -3,7 +3,10 @@
     <AppHeader @modal:open="openModal" @nav:open="openNavMenu">
       <template #page-nav>
         <AppMobileMenu v-model="navMenuOpen">
-          <AppNavMenu @catalog:open="openCatalogMenu" @close="closeNavMenu" />
+          <AppNavMenu
+            @catalog:open="openCatalogMenu"
+            @nav:close="closeNavMenu"
+          />
         </AppMobileMenu>
       </template>
 
@@ -15,7 +18,7 @@
           @close="closeAllMenus"
           @back="closeCatalogMenu"
         >
-          <AppCatalogMenu :data="data" @close="closeAllMenus" />
+          <AppCatalogMenu :data="data" @catalog:close="closeAllMenus" />
         </AppMobileMenu>
       </template>
     </AppHeader>

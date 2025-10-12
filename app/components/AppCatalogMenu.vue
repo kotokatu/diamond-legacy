@@ -31,7 +31,7 @@
 import { onClickOutside } from "@vueuse/core";
 import AppNavItem from "./AppNavItem.vue";
 
-const emit = defineEmits(["close"]);
+const emit = defineEmits(["catalog:close"]);
 
 const props = defineProps({
   data: {
@@ -45,7 +45,7 @@ const catalogCardsRef = useTemplateRef("catalogCardsRef");
 
 const activeCard = ref(props.data.items[0]);
 const close = () => {
-  emit("close");
+  emit("catalog:close");
   catalogCardsRef.value.scrollTop = 0;
   setTimeout(() => {
     setActiveCard(props.data.items[0]);
