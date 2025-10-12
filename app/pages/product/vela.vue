@@ -1,3 +1,3 @@
 <template>
-  <div class="page-wrapper">Скоро здесь будет описание аппарата Vela</div>
+  <div class="layout-center">Скоро здесь будет описание аппарата Vela</div>
 </template>

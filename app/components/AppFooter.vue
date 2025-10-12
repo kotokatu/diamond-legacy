@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper flex-center">
     <div class="contained">
       <footer class="footer">
         <div class="footer__block footer__block--logo">

@@ -1,3 +1,5 @@
 <template>
-  <div class="page-wrapper">Скоро здесь будет описание аппарата Allure Pro</div>
+  <div class="layout-center">
+    Скоро здесь будет описание аппарата Allure Pro
+  </div>
 </template>

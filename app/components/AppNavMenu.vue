@@ -1,18 +1,18 @@
 <template>
   <nav class="nav" role="navigation" aria-label="Главное меню">
-    <div class="nav-item nav-item--catalog">
-      <button
-        class="nav-button"
-        type="button"
-        aria-haspopup="true"
-        aria-expanded="false"
-        aria-label="Открыть меню каталога"
-        @click="$emit('catalog:open')"
-      >
+    <button
+      class="nav-button"
+      type="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      aria-label="Открыть меню каталога"
+      @click="$emit('catalog:open')"
+    >
+      <div class="nav-item nav-item--catalog">
         <AppNavItem label="Каталог" :class="classes" />
         <ArrowIcon v-if="isMobile" class="icon" aria-hidden="true" />
-      </button>
-    </div>
+      </div>
+    </button>
 
     <NuxtLink
       to="/#benefits"
@@ -75,6 +75,7 @@ const classes = computed(() => ({
 }
 
 .nav-item {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

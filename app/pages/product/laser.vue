@@ -1,3 +1,3 @@
 <template>
-  <div class="page-wrapper">Скоро здесь будет описание аппарата Laser</div>
+  <div class="layout-center">Скоро здесь будет описание аппарата Laser</div>
 </template>

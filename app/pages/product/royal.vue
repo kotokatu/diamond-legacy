@@ -2,7 +2,7 @@
   <div class="page page--product">
     <h1 class="sr-only">Legacy Royal — описание аппарата</h1>
 
-    <section class="wrapper section hero">
+    <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
         <NuxtImg
           fit="outside"
@@ -28,7 +28,7 @@
     </section>
 
     <section
-      class="wrapper section description"
+      class="flex-center section description"
       role="region"
       aria-labelledby="lead-title"
     >
@@ -170,7 +170,7 @@
       </div>
     </section>
 
-    <section class="section wrapper benefits">
+    <section class="section flex-center benefits">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -293,7 +293,7 @@
       </div>
     </section>
 
-    <section class="section wrapper specification">
+    <section class="section flex-center specification">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">

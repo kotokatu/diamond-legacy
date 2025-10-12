@@ -15,7 +15,7 @@
 
       <AppContactCard type="modal" />
       <button
-        class="modal__btn--close"
+        class="modal__btn"
         aria-label="Закрыть"
         type="button"
         @click="closeModal"
@@ -58,10 +58,12 @@ const { modalOpen, closeModal } = useLayout();
   }
 }
 
-.modal__btn--close {
+.modal__btn {
   position: absolute;
   top: 12px;
   right: 12px;
+  width: 24px;
+  height: 24px;
   background: transparent;
   border: none;
   padding: 8px;
@@ -71,8 +73,8 @@ const { modalOpen, closeModal } = useLayout();
 
 .icon--close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 0;
+  right: 0;
   cursor: pointer;
 
   :deep(path) {

@@ -10,38 +10,34 @@
     role="dialog"
   >
     <div class="mobile-menu">
-      <div class="mobile-menu__toolbar">
-        <div>
-          <button
-            v-if="arrowIcon"
-            class="mobile-menu__btn mobile-menu__arrow-btn"
-            type="button"
-            aria-label="Назад"
-            @click="back"
-          >
-            <ArrowIcon class="icon icon--arrow" aria-hidden="true" />
-          </button>
-        </div>
-        <div>
-          <span
-            v-if="title"
-            class="mobile-menu__title"
-            role="heading"
-            aria-level="2"
-            >{{ title }}</span
-          >
-        </div>
-        <div>
-          <button
-            v-if="closeIcon"
-            class="mobile-menu__btn mobile-menu__close-btn"
-            type="button"
-            aria-label="Закрыть меню"
-            @click="close"
-          >
-            <CloseIcon class="icon icon--close" aria-hidden="true" />
-          </button>
-        </div>
+      <div class="mobile-menu__header">
+        <button
+          v-if="arrowIcon"
+          class="mobile-menu__btn"
+          type="button"
+          aria-label="Назад"
+          @click="back"
+        >
+          <ArrowIcon class="icon icon--arrow" aria-hidden="true" />
+        </button>
+
+        <span
+          v-if="title"
+          class="mobile-menu__title"
+          role="heading"
+          aria-level="2"
+          >{{ title }}</span
+        >
+
+        <button
+          v-if="closeIcon"
+          class="mobile-menu__btn"
+          type="button"
+          aria-label="Закрыть меню"
+          @click="close"
+        >
+          <CloseIcon class="icon icon--close" aria-hidden="true" />
+        </button>
       </div>
 
       <div class="mobile-menu__inner" aria-label="Мобильная навигация">
@@ -103,34 +99,34 @@ watch(isDefault, (val) => {
   height: 100%;
   background-color: $dark;
   outline: none;
-}
 
-.mobile-menu__toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px;
-  z-index: 1002;
-}
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    z-index: 1002;
+  }
 
-.mobile-menu__inner {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  overflow-y: auto;
-}
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
 
-.mobile-menu__title {
-  font-size: 24px;
-  color: $base;
-}
+  &__title {
+    font-size: 24px;
+    color: $base;
+  }
 
-.mobile-menu__btn {
-  background: transparent;
-  border: none;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
+  &__btn {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 }
 
 .icon--arrow,

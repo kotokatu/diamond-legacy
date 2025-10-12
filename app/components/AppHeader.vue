@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper flex-center">
     <div class="contained">
       <header class="header" role="banner">
         <NuxtLink
@@ -113,11 +113,6 @@ defineEmits(["modal:open", "nav:open"]);
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-
-  &:focus {
-    outline: 2px solid rgba(0, 0, 0, 0.12);
-    outline-offset: 2px;
-  }
 
   @media (max-width: $breakpoint-md) {
     display: flex;

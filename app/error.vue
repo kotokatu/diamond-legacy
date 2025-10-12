@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper">
+  <div class="layout-center">
     <h1 v-if="error.statusCode === 404">404 - Страница не найдена</h1>
     <h1 v-else>Произошла ошибка</h1>
     <NuxtLink to="/">На главную страницу</NuxtLink>

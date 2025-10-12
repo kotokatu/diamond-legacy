@@ -1,7 +1,7 @@
 <template>
   <div class="page page--home">
     <section
-      class="wrapper section hero"
+      class="flex-center section hero"
       aria-labelledby="hero-title"
       role="banner"
     >
@@ -35,7 +35,7 @@
 
     <section
       id="about"
-      class="wrapper section about"
+      class="flex-center section about"
       aria-labelledby="about-title"
     >
       <div class="lead contained">
@@ -110,7 +110,7 @@
 
     <section
       id="catalog"
-      class="wrapper section catalog"
+      class="flex-center section catalog"
       aria-labelledby="catalog-title"
     >
       <div class="contained">
@@ -153,7 +153,7 @@
 
     <section
       id="benefits"
-      class="wrapper section benefits"
+      class="flex-center section benefits"
       aria-labelledby="benefits-title"
     >
       <div class="contained">
@@ -299,7 +299,7 @@
       </div>
     </section>
 
-    <section id="distributors" class="wrapper section distributors">
+    <section id="distributors" class="flex-center section distributors">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
