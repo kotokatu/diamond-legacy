@@ -393,7 +393,7 @@ a {
 
         &--last {
           margin-top: auto;
-          transform: translateY(60px);
+          transform: translateY(100px);
 
           @media (width < $breakpoint-md) {
             margin-top: 0;
