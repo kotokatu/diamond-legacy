@@ -89,7 +89,7 @@ defineEmits(["modal:open", "nav:open"]);
 }
 
 .logo__text {
-  @media (width < $breakpoint-xs) {
+  @media (width <= $breakpoint-xs) {
     display: none;
   }
 }

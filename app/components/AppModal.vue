@@ -53,7 +53,7 @@ const { modalOpen, closeModal } = useLayout();
   background-color: $dark;
   border-radius: 18px;
 
-  @media (width < $breakpoint-xs) {
+  @media (width <= $breakpoint-xs) {
     max-width: calc(100vw - 8px * 2);
   }
 }

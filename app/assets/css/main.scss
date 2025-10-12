@@ -227,7 +227,7 @@ a {
   &__text {
     flex-basis: 50%;
 
-    @media (max-width: $breakpoint-xs) {
+    @media (width < $breakpoint-xs) {
       flex-basis: unset;
     }
   }
@@ -284,16 +284,16 @@ a {
 
   .section__grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 
-    @media (min-width: $breakpoint-xs) {
-      padding-top: 0;
+    @media (width <= $breakpoint-lg) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (min-width: $breakpoint-lg) {
-      grid-template-columns: repeat(3, 1fr);
+    @media (width <= $breakpoint-xs) {
+      padding-top: 0;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -310,10 +310,10 @@ a {
     overflow: hidden;
 
     &--wide {
-      grid-column: span 1;
+      grid-column: span 2;
 
-      @media (min-width: $breakpoint-lg) {
-        grid-column: span 2;
+      @media (width <= $breakpoint-lg) {
+        grid-column: span 1;
       }
     }
 
@@ -321,7 +321,7 @@ a {
       min-height: 312px;
       padding: 8px;
 
-      @media (width < $breakpoint-xs) {
+      @media (width <= $breakpoint-xs) {
         max-height: 312px;
       }
     }
@@ -436,41 +436,61 @@ a {
 
   .section.benefits {
     .grid-item {
+      &.order-1 {
+        order: 1;
+      }
+
+      &.order-2 {
+        order: 2;
+      }
+
+      &.order-3 {
+        order: 3;
+      }
+
+      &.order-4 {
+        order: 4;
+      }
+
+      &.order-5 {
+        order: 5;
+      }
+
+      &.order-6 {
+        order: 6;
+      }
+
+      &.order-7 {
+        order: 7;
+      }
+
+      &.order-8 {
+        order: 8;
+      }
+
       @media (max-width: $breakpoint-lg) {
-        &.delivery {
-          order: 1;
-        }
-
-        &.image-1 {
-          order: 2;
-        }
-
-        &.warranty {
-          order: 3;
-        }
-
-        &.payment {
+        &.order-3 {
           order: 4;
         }
 
-        &.image-2 {
-          order: 5;
+        &.order-4 {
+          order: 3;
         }
 
-        &.support {
+        &.order-5 {
           order: 6;
         }
 
-        &.training {
+        &.order-6 {
           order: 7;
         }
 
-        &.production {
-          order: 8;
+        &.order-7 {
+          order: 5;
         }
       }
 
-      @media (min-width: $breakpoint-sm) {
+      @media (width >= $breakpoint-sm) {
         min-height: 380px;
       }
     }
@@ -685,15 +705,13 @@ a {
         }
       }
     }
-
-    @media (max-width: $breakpoint-xs) {
-      .lead__body {
-        padding-bottom: 0;
-      }
-    }
   }
 
   .section.benefits {
+    .lead {
+      margin-bottom: 48px;
+    }
+
     .grid-item {
       height: 380px;
 
@@ -751,7 +769,7 @@ a {
         }
       }
 
-      @media (width < $breakpoint-xs) {
+      @media (width <= $breakpoint-xs) {
         height: auto;
       }
     }
@@ -812,7 +830,7 @@ a {
         span.quantity {
           color: $base-semi;
 
-          @media (max-width: $breakpoint-xs) {
+          @media (width <= $breakpoint-xs) {
             display: block;
           }
         }

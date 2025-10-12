@@ -178,7 +178,7 @@
             role="list"
             aria-label="Преимущества работы с Legacy"
           >
-            <div class="grid-item delivery" role="listitem">
+            <div class="grid-item order1" role="listitem">
               <div class="grid-item__header text-nav text-sub">
                 { Доставка }
               </div>
@@ -192,7 +192,7 @@
               </div>
             </div>
 
-            <div class="grid-item grid-item--img image-1">
+            <div class="grid-item grid-item--img order-2">
               <NuxtImg
                 format="webp, avif"
                 src="/img/benefits_1.jpg"
@@ -202,7 +202,7 @@
               />
             </div>
 
-            <div class="grid-item payment">
+            <div class="grid-item order-3">
               <div class="grid-item__header text-nav text-sub">{ Оплата }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Оплата при получении</div>
@@ -214,7 +214,7 @@
               </div>
             </div>
 
-            <div class="grid-item warranty">
+            <div class="grid-item order-4">
               <div class="grid-item__header text-nav text-sub">
                 { Гарантии }
               </div>
@@ -228,7 +228,7 @@
               </div>
             </div>
 
-            <div class="grid-item grid-item--wide support">
+            <div class="grid-item grid-item--wide order-5">
               <div class="grid-item__header text-nav text-sub">
                 { Сопровождение }
               </div>
@@ -255,7 +255,7 @@
               </div>
             </div>
 
-            <div class="grid-item training">
+            <div class="grid-item order-6">
               <div class="grid-item__header text-nav text-sub">
                 { Обучение }
               </div>
@@ -269,7 +269,7 @@
               </div>
             </div>
 
-            <div class="grid-item grid-item--img image-2">
+            <div class="grid-item grid-item--img order-7">
               <NuxtImg
                 format="webp, avif"
                 src="/img/benefits_2.jpg"
@@ -279,7 +279,7 @@
               />
             </div>
 
-            <div class="grid-item production">
+            <div class="grid-item order-8">
               <div class="grid-item__header text-nav text-sub">
                 { Производство }
               </div>
