@@ -1,17 +1,21 @@
 <template>
   <div class="wrapper">
     <div class="contained">
-      <header class="header">
-        <NuxtLink to="/">
-          <div class="logo">
+      <header class="header" role="banner">
+        <NuxtLink
+          to="/"
+          class="header__logo"
+          aria-label="Перейти на главную — Legacy"
+        >
+          <div class="logo" aria-hidden="false">
             <LogoImg
-              class="logo-img"
+              class="logo__img"
               alt="Legacy logo"
               filled
               :font-controlled="false"
             />
             <LogoText
-              class="logo-text"
+              class="logo__text"
               alt="Legacy"
               filled
               :font-controlled="false"
@@ -19,20 +23,34 @@
           </div>
         </NuxtLink>
 
-        <slot name="page-nav" />
+        <nav class="header__nav" aria-label="Основная навигация">
+          <slot name="page-nav" />
+        </nav>
 
         <div class="header__right">
-          <AppButton color="accent" @click="$emit('modal:open')">
+          <AppButton
+            color="accent"
+            aria-label="Написать нам — открыть форму связи"
+            @click="$emit('modal:open')"
+          >
             <span>Написать нам</span>
           </AppButton>
 
-          <div class="header__menu-btn">
-            <MenuIcon class="icon" @click="$emit('nav:open')" />
-          </div>
+          <button
+            class="header__menu-btn"
+            type="button"
+            aria-label="Открыть меню"
+            aria-haspopup="true"
+            @click="$emit('nav:open')"
+          >
+            <MenuIcon class="icon" aria-hidden="true" focusable="false" />
+          </button>
         </div>
       </header>
 
-      <slot name="catalog-nav" />
+      <nav class="header__catalog" aria-label="Каталог">
+        <slot name="catalog-nav" />
+      </nav>
     </div>
   </div>
 </template>
@@ -65,10 +83,21 @@ defineEmits(["modal:open", "nav:open"]);
   border: 4px solid #f8f8f8;
 }
 
-.logo-text {
-  @media (max-width: $breakpoint-sm) {
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo__text {
+  @media (width < $breakpoint-xs) {
     display: none;
   }
+}
+
+.header__nav,
+.header__catalog {
+  display: flex;
+  align-items: center;
 }
 
 .header__right {
@@ -79,13 +108,21 @@ defineEmits(["modal:open", "nav:open"]);
 
 .header__menu-btn {
   display: none;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.12);
+    outline-offset: 2px;
+  }
 
   @media (max-width: $breakpoint-md) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
-    cursor: pointer;
   }
 }
 </style>

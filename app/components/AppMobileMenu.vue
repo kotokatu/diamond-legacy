@@ -5,29 +5,46 @@
     :width="$q.screen.width + 1"
     no-swipe-open
     :breakpoint="1024"
+    :aria-hidden="!isOpen"
+    :aria-modal="isOpen"
+    role="dialog"
   >
     <div class="mobile-menu">
       <div class="mobile-menu__toolbar">
         <div>
-          <ArrowIcon
+          <button
             v-if="arrowIcon"
-            class="mobile-menu__arrow icon"
+            class="mobile-menu__btn mobile-menu__arrow-btn"
+            type="button"
+            aria-label="Назад"
             @click="back"
-          />
+          >
+            <ArrowIcon class="icon icon--arrow" aria-hidden="true" />
+          </button>
         </div>
         <div>
-          <span v-if="title" class="mobile-menu__title">{{ title }}</span>
+          <span
+            v-if="title"
+            class="mobile-menu__title"
+            role="heading"
+            aria-level="2"
+            >{{ title }}</span
+          >
         </div>
         <div>
-          <CloseIcon
+          <button
             v-if="closeIcon"
-            class="mobile-menu__close icon"
+            class="mobile-menu__btn mobile-menu__close-btn"
+            type="button"
+            aria-label="Закрыть меню"
             @click="close"
-          />
+          >
+            <CloseIcon class="icon icon--close" aria-hidden="true" />
+          </button>
         </div>
       </div>
 
-      <div class="mobile-menu__inner">
+      <div class="mobile-menu__inner" aria-label="Мобильная навигация">
         <slot />
       </div>
     </div>
@@ -85,6 +102,7 @@ watch(isDefault, (val) => {
   flex-direction: column;
   height: 100%;
   background-color: $dark;
+  outline: none;
 }
 
 .mobile-menu__toolbar {
@@ -107,8 +125,16 @@ watch(isDefault, (val) => {
   color: $base;
 }
 
-.mobile-menu__arrow,
-.mobile-menu__close {
+.mobile-menu__btn {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon--arrow,
+.icon--close {
   width: 22px;
   height: 22px;
 
@@ -117,7 +143,7 @@ watch(isDefault, (val) => {
   }
 }
 
-.mobile-menu__arrow {
+.icon--arrow {
   transform: rotate(180deg);
 }
 </style>

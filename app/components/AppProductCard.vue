@@ -4,7 +4,12 @@
     :aria-labelledby="`product-${data.id}-title`"
     :aria-describedby="`product-${data.id}-desc product-${data.id}-price`"
   >
-    <div class="card" :class="classes">
+    <div
+      class="card"
+      :class="classes"
+      role="group"
+      aria-roledescription="product card"
+    >
       <div class="card__content">
         <h3 :id="`product-${data.id}-title`" class="card__title text-h3">
           {{ data.name }}
@@ -15,9 +20,13 @@
         <p :id="`product-${data.id}-price`" class="card__price text-h3">
           {{ data.price }}
         </p>
+
+        <span :id="`product-${data.id}-action`" class="sr-only">
+          Открыть страницу товара
+        </span>
       </div>
 
-      <div class="card__img-container">
+      <div class="card__img-container" aria-hidden="false">
         <NuxtImg
           class="card__img"
           :alt="data.name"

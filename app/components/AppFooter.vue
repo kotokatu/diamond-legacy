@@ -3,15 +3,15 @@
     <div class="contained">
       <footer class="footer">
         <div class="footer__block footer__block--logo">
-          <div>
+          <div class="logo">
             <LogoImg
-              class="logo-img"
+              class="logo__img"
               alt="Legacy logo"
               filled
               :font-controlled="false"
             />
             <LogoText
-              class="logo-text"
+              class="logo__text"
               alt="Legacy"
               filled
               :font-controlled="false"
@@ -101,7 +101,7 @@ import LogoText from "@/assets/svg/logo_text.svg";
   border-top: 1px solid $base-semi;
   padding-bottom: 140px;
 
-  @media (max-width: $breakpoint-sm) {
+  @media (width < $breakpoint-sm) {
     padding-bottom: 24px;
   }
 }
@@ -186,7 +186,7 @@ import LogoText from "@/assets/svg/logo_text.svg";
   gap: 8px;
 }
 
-.logo-text {
+.logo__text {
   :deep(g) {
     fill: $base-semi;
   }

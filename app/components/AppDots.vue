@@ -4,7 +4,7 @@
       v-for="i in 3"
       :key="i"
       class="dot"
-      :class="{ 'dot-active': i <= count }"
+      :class="{ 'dot--active': i <= count }"
     ></div>
   </div>
 </template>
@@ -32,7 +32,7 @@ defineProps({
   background-color: $base-semi;
 }
 
-.dot-active {
+.dot--active {
   background-color: $base;
 }
 </style>

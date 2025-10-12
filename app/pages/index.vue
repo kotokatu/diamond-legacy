@@ -135,7 +135,7 @@
           aria-label="Каталог косметологических аппаратов"
         >
           <AppProductCard
-            v-for="item in data.catalog"
+            v-for="item in data.items"
             :key="item.id"
             class="catalog__card"
             :data="item"
@@ -146,7 +146,7 @@
         </div>
 
         <div class="section__contact">
-          <AppContactCard class="contact-card--bg" />
+          <AppContactCard aria-label="Форма обратной связи" />
         </div>
       </div>
     </section>

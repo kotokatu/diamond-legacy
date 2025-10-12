@@ -1,30 +1,57 @@
 <template>
-  <div class="nav">
-    <div class="nav-item nav-item--catalog" @click="$emit('catalog:open')">
-      <AppNavItem label="Каталог" role="button" tabindex="0" :class="classes" />
-      <ArrowIcon v-if="isMobile" class="icon" />
+  <nav class="nav" role="navigation" aria-label="Главное меню">
+    <div class="nav-item nav-item--catalog">
+      <button
+        class="nav-button"
+        type="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label="Открыть меню каталога"
+        @click="$emit('catalog:open')"
+      >
+        <AppNavItem label="Каталог" :class="classes" />
+        <ArrowIcon v-if="isMobile" class="icon" aria-hidden="true" />
+      </button>
     </div>
-    <NuxtLink to="/#benefits" class="nav-item" @click="$emit('close')">
+
+    <NuxtLink
+      to="/#benefits"
+      class="nav-item"
+      :aria-label="'Преимущества'"
+      :aria-current="isActive('#benefits') ? 'page' : null"
+      @click="$emit('close')"
+    >
       <AppNavItem label="Преимущества" :class="classes" />
-      <ArrowIcon v-if="isMobile" class="icon" />
+      <ArrowIcon v-if="isMobile" class="icon" aria-hidden="true" />
     </NuxtLink>
-    <NuxtLink to="/#distributors" class="nav-item" @click="$emit('close')">
+
+    <NuxtLink
+      to="/#distributors"
+      class="nav-item"
+      :aria-label="'Для дистрибьюторов'"
+      :aria-current="isActive('#distributors') ? 'page' : null"
+      @click="$emit('close')"
+    >
       <AppNavItem label="Для дистрибьюторов" :class="classes" />
       <ArrowIcon v-if="isMobile" class="icon" />
     </NuxtLink>
-  </div>
+  </nav>
 </template>
 
 <script setup>
 import AppNavItem from "./AppNavItem.vue";
 import ArrowIcon from "@/assets/icons/bx-arrow.svg";
 
+defineEmits(["catalog:open", "close"]);
+
 const { isMobile } = useLayout();
+const route = useRoute();
+const isActive = (hash) => {
+  return route.hash === hash;
+};
 const classes = computed(() => ({
   "no-hover": isMobile.value,
 }));
-
-defineEmits(["catalog:open", "close"]);
 </script>
 
 <style lang="scss" scoped>
@@ -78,5 +105,19 @@ defineEmits(["catalog:open", "close"]);
     line-height: 28px;
     color: $base;
   }
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
 }
 </style>

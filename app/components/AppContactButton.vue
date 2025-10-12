@@ -66,10 +66,10 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .btn {
-  display: none;
   position: fixed;
   bottom: 32px;
   right: 32px;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
@@ -79,12 +79,13 @@ onMounted(() => {
   border-radius: 50%;
   cursor: pointer;
 
-  @media (min-width: $breakpoint-sm) {
-    display: flex;
+  @media (width < $breakpoint-sm) {
+    display: none;
   }
 
-  @media (min-width: $breakpoint-xl) {
-    right: calc((100vw - 1280px) / 2 - 120px);
+  @media (width >= $breakpoint-xl) {
+    right: calc((100vw - 1280px) / 2);
+    transform: translateX(100%);
   }
 
   & > svg {

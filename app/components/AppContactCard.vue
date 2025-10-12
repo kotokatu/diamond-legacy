@@ -53,7 +53,7 @@
 
         <div class="form__submit">
           <AppButton
-            class="full-width"
+            class="form__btn"
             type="submit"
             :color="type === 'modal' ? 'dark' : 'accent'"
           >
@@ -101,7 +101,7 @@ const props = defineProps({
 });
 
 const emit = defineEmits(["submit"]);
-const { modalOpen, closeModal } = useLayout();
+const { closeModal } = useLayout();
 
 const classes = computed(() => ["contact-card--" + props.type]);
 
@@ -121,6 +121,7 @@ const sendForm = async () => {
   try {
     loading.value = true;
     await new Promise((resolve) => setTimeout(resolve, 2000));
+    emit("submit", formData);
     message.value = "Спасибо! Ваша заявка отправлена";
   } catch {
     error.value = true;
@@ -258,6 +259,10 @@ const clear = () => {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form__btn {
+  width: 100%;
 }
 
 .form__msg {

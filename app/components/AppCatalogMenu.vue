@@ -2,7 +2,7 @@
   <div ref="catalogMenuRef" class="menu">
     <ul class="menu__links">
       <NuxtLink
-        v-for="item in data.catalog"
+        v-for="item in data.items"
         :key="item.id"
         :to="item.link"
         class="menu__link"
@@ -15,7 +15,7 @@
 
     <div ref="catalogCardsRef" class="menu__cards">
       <AppProductCard
-        v-for="item in data.catalog"
+        v-for="item in data.items"
         :key="item.id"
         class="menu__card no-hover"
         :data="item"
@@ -31,7 +31,7 @@
 import { onClickOutside } from "@vueuse/core";
 import AppNavItem from "./AppNavItem.vue";
 
-const emit = defineEmits(["close", "card:set-active"]);
+const emit = defineEmits(["close"]);
 
 const props = defineProps({
   data: {
@@ -43,12 +43,12 @@ const props = defineProps({
 const catalogMenuRef = useTemplateRef("catalogMenuRef");
 const catalogCardsRef = useTemplateRef("catalogCardsRef");
 
-const activeCard = ref(props.data.catalog[0]);
+const activeCard = ref(props.data.items[0]);
 const close = () => {
   emit("close");
   catalogCardsRef.value.scrollTop = 0;
   setTimeout(() => {
-    activeCard.value = props.data.catalog[0];
+    setActiveCard(props.data.items[0]);
   }, 300);
 };
 
@@ -121,9 +121,9 @@ onClickOutside(
 
 .menu__links {
   display: flex;
-  gap: 8px;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 8px;
   padding: 24px;
 
   @media (max-width: $breakpoint-md) {

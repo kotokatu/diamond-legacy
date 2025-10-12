@@ -1,8 +1,31 @@
 <template>
   <q-dialog v-model="modalOpen">
-    <div class="modal">
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+      tabindex="-1"
+    >
+      <h2 id="modal-title" class="sr-only">Форма обратной связи</h2>
+      <p id="modal-desc" class="sr-only">
+        Форма для запроса информации и связи с представителем компании.
+      </p>
+
       <AppContactCard type="modal" />
-      <IconClose class="modal__close icon" @click="closeModal" />
+      <button
+        class="modal__btn--close"
+        aria-label="Закрыть"
+        type="button"
+        @click="closeModal"
+      >
+        <IconClose
+          class="icon icon--close"
+          aria-hidden="true"
+          focusable="false"
+        />
+      </button>
     </div>
   </q-dialog>
 </template>
@@ -35,7 +58,18 @@ const { modalOpen, closeModal } = useLayout();
   }
 }
 
-.modal__close {
+.modal__btn--close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon--close {
   position: absolute;
   top: 12px;
   right: 12px;
