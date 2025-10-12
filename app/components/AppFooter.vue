@@ -74,13 +74,20 @@
 
             <ul class="list">
               <li>
-                <NuxtLink to="/" class="text-nav">Telegram</NuxtLink>
+                <NuxtLink
+                  to="https://telegram.me/Diamondbeauty_bot"
+                  class="text-nav"
+                >
+                  Telegram
+                </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/" class="text-nav">Вконтакте</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/" class="text-nav">WhatsApp</NuxtLink>
+                <NuxtLink
+                  to="https://web.whatsapp.com/send?phone=79315005214&text="
+                  class="text-nav"
+                >
+                  WhatsApp
+                </NuxtLink>
               </li>
             </ul>
           </div>
