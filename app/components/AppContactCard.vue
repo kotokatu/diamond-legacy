@@ -100,7 +100,6 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(["submit"]);
 const { closeModal } = useLayout();
 
 const classes = computed(() => ["contact-card--" + props.type]);
@@ -112,16 +111,16 @@ const loading = ref(false);
 const error = ref(false);
 const message = ref("");
 const sendForm = async () => {
+  clearResult();
+
   const formData = new FormData();
   formData.append("name", name.value);
   formData.append("email", email.value);
   formData.append("phone", phone.value);
-  message.value = "";
 
   try {
     loading.value = true;
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    emit("submit", formData);
     message.value = "Спасибо! Ваша заявка отправлена";
   } catch {
     error.value = true;
@@ -135,6 +134,10 @@ const clear = () => {
   name.value = "";
   email.value = "";
   phone.value = "";
+  clearResult();
+};
+
+const clearResult = () => {
   message.value = "";
   error.value = false;
 };
