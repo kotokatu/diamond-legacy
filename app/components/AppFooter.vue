@@ -99,10 +99,10 @@ import LogoText from "@/assets/svg/logo_text.svg";
 .wrapper {
   background-color: $dark;
   border-top: 1px solid $base-semi;
-  padding-bottom: 140px;
+  padding: 40px 0 140px;
 
   @media (width < $breakpoint-sm) {
-    padding-bottom: 24px;
+    padding: 0;
   }
 }
 
