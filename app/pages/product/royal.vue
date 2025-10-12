@@ -56,6 +56,7 @@
                 src="/img/royal/royal_1.png"
                 alt="Legacy Royal"
                 class="grid-item__image"
+                loading="lazy"
               />
             </div>
             <div class="grid-item grid-item--img">
@@ -64,6 +65,7 @@
                 src="/img/royal/royal_2.png"
                 alt="Legacy Royal"
                 class="grid-item__image"
+                loading="lazy"
               />
             </div>
             <div class="grid-item grid-item--img grid-item--wide">
@@ -72,6 +74,7 @@
                 src="/img/royal/royal_3.png"
                 alt="Legacy Royal"
                 class="grid-item__image"
+                loading="lazy"
               />
             </div>
             <div
@@ -148,6 +151,7 @@
                   <NuxtImg
                     src="/img/royal/royal_vid_fallback.png"
                     alt="Legacy Royal — 360° обзор (изображение вместо видео)"
+                    loading="lazy"
                   />
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
                   обновите браузер или скачайте видео.
@@ -205,6 +209,7 @@
                 src="/img/royal/royal_4.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
+                loading="lazy"
               />
             </div>
 
@@ -228,6 +233,7 @@
                 src="/img/royal/royal_5.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
+                loading="lazy"
               />
             </div>
 
@@ -251,6 +257,7 @@
                 src="/img/royal/royal_6.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
+                loading="lazy"
               />
             </div>
 
@@ -272,6 +279,7 @@
                 src="/img/royal/royal_7.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
+                loading="lazy"
               />
             </div>
 
