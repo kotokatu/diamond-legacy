@@ -7,7 +7,7 @@
         <NuxtImg
           fit="outside"
           format="webp, avif"
-          src="/img/royal/royal_hero.png"
+          src="/img/royal/royal_hero2.png"
           alt="Legacy Royal"
           class="section__background-image"
           width="1920"
@@ -429,4 +429,16 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.section.hero {
+  .section__background {
+    .section__background-image {
+      object-position: 51% 60px;
+
+      @media (width < $breakpoint-sm) {
+        object-position: 53% 80px;
+      }
+    }
+  }
+}
+</style>

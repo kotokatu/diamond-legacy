@@ -548,12 +548,10 @@ a {
       .section__background-image {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: 53% 80px;
+        object-fit: none;
 
-        @media (min-width: $breakpoint-sm) {
-          object-fit: none;
-          object-position: 51% 60px;
+        @media (width < $breakpoint-sm) {
+          object-fit: cover;
         }
       }
     }
