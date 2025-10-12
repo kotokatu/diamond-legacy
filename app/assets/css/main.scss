@@ -308,7 +308,6 @@ a {
     border-radius: 12px;
     backdrop-filter: blur(12px);
     overflow: hidden;
-    min-height: 312px;
 
     &--wide {
       grid-column: span 1;
@@ -319,6 +318,7 @@ a {
     }
 
     &--img {
+      min-height: 312px;
       padding: 8px;
 
       @media (width < $breakpoint-xs) {
@@ -752,7 +752,7 @@ a {
       }
 
       @media (width < $breakpoint-xs) {
-        height: 312px;
+        height: auto;
       }
     }
   }
