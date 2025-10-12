@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper flex-center">
+  <div class="flex-center flex-center">
     <div class="contained">
       <footer class="footer">
         <div class="footer__block footer__block--logo">
@@ -96,7 +96,7 @@ import LogoText from "@/assets/svg/logo_text.svg";
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
+.flex-center {
   background-color: $dark;
   border-top: 1px solid $base-semi;
   padding: 40px 0 140px;

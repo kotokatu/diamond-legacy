@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper flex-center">
+  <div class="flex-center flex-center">
     <div class="contained">
       <header class="header" role="banner">
         <NuxtLink
@@ -64,7 +64,7 @@ defineEmits(["modal:open", "nav:open"]);
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
+.flex-center {
   position: fixed;
   z-index: 1000;
   top: 20px;
