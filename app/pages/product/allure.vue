@@ -6,7 +6,7 @@
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
-          src="/img/allure/allure_hero4.png"
+          src="/img/allure/allure_hero5.png"
           alt="Legacy Royal"
           class="section__background-image"
           width="1920"
@@ -42,8 +42,9 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Royal — многофункциональный аппарат для улучшения качества
-            кожи, коррекции целлюлита и моделирования контуров тела и лица
+            Legacy Allure — высокотехнологичный медицинский малоинвазивный
+            инструмент для красоты кожи, сочетающий RF- микроиглы и фракционную
+            технологию
           </div>
         </div>
 
@@ -51,28 +52,32 @@
           <div class="section__grid grid">
             <div class="grid-item grid-item--img">
               <NuxtImg
-                src="/img/allure/allure_3.png"
+                src="/img/allure/allure_9.png"
                 format="webp, avif"
                 alt="Legacy Royal"
                 class="grid-item__image"
+                style="object-position: 15% 40px"
+                sizes="100vw sm:50vw md:1000px lg:1600px"
               />
             </div>
             <div class="grid-item grid-item--img">
               <NuxtImg
                 format="webp, avif"
-                src="/img/allure/allure_8.png"
+                src="/img/allure/allure_3.png"
                 alt="Legacy Royal"
                 class="grid-item__image"
-                style="object-position: center 0%"
+                style="object-position: 40% 0%"
+                sizes="100vw sm:50vw md:1000px lg:1600px"
               />
             </div>
             <div class="grid-item grid-item--img grid-item--wide">
               <NuxtImg
                 format="webp, avif"
-                src="/img/allure/allure_9.png"
+                src="/img/allure/allure_8.png"
                 alt="Legacy Royal"
                 class="grid-item__image"
                 style="object-position: 10% center"
+                sizes="100vw sm:50vw md:1000px lg:1600px"
               />
             </div>
             <div
@@ -144,8 +149,11 @@
                   preload="metadata"
                   aria-label="360° обзор аппарата Legacy Royal"
                 >
-                  <source src="/video/royal/royal_360.webm" type="video/webm" />
-                  <source src="/video/royal/royal_360.mp4" type="video/mp4" />
+                  <source
+                    src="/video/allure/allure_360.webm"
+                    type="video/webm"
+                  />
+                  <source src="/video/allure/allure_360.mp4" type="video/mp4" />
                   <NuxtImg
                     src="/img/royal/royal_vid_fallback.png"
                     alt="Legacy Royal — 360° обзор (изображение вместо видео)"
@@ -204,10 +212,12 @@
             <div class="grid-item grid-item--img order-2">
               <NuxtImg
                 format="webp, avif"
-                src="/img/royal/royal_4.png"
+                src="/img/allure/allure_3.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
                 loading="lazy"
+                width="700"
+                style="object-fit: none; object-position: 40% 20%"
               />
             </div>
 
@@ -228,10 +238,12 @@
             <div class="grid-item grid-item--img order-4">
               <NuxtImg
                 format="webp, avif"
-                src="/img/royal/royal_5.png"
+                src="/img/allure/allure_9.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
                 loading="lazy"
+                width="1100"
+                style="object-fit: none; object-position: 65% 15%"
               />
             </div>
 
@@ -252,10 +264,12 @@
             <div class="grid-item grid-item--img order-6">
               <NuxtImg
                 format="webp, avif"
-                src="/img/royal/royal_6.png"
+                src="/img/allure/allure_8.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
                 loading="lazy"
+                width="2000"
+                style="object-fit: none; object-position: 55% 10%"
               />
             </div>
 
@@ -274,10 +288,12 @@
             <div class="grid-item grid-item--img order-8">
               <NuxtImg
                 format="webp, avif"
-                src="/img/royal/royal_7.png"
+                src="/img/allure/allure_9.png"
                 alt="Аппарат Royal Legacy"
                 class="grid-item__img"
                 loading="lazy"
+                width="1100"
+                style="object-fit: none; object-position: 34% 84%"
               />
             </div>
 

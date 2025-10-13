@@ -322,7 +322,9 @@ a {
 
     &--img {
       min-height: 312px;
-      padding: 8px;
+      background-color: #f5f6fb;
+      border: 8px solid $base;
+      padding: 0;
 
       @media (width <= $breakpoint-xs) {
         max-height: 312px;
@@ -335,7 +337,6 @@ a {
       object-fit: cover;
       object-position: center;
       border-radius: 8px;
-      background-color: #f5f6fb;
     }
 
     &__header {
@@ -669,6 +670,7 @@ a {
             top: 90px;
             max-height: 800px;
             width: 100%;
+            overflow: hidden;
 
             @media (max-width: $breakpoint-md) {
               max-height: 480px;
