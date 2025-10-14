@@ -117,7 +117,7 @@
                   muted
                   autoplay
                   loop
-                  class="grid-item__video"
+                  class="grid-item__video grid-item__video--default"
                   preload="metadata"
                   aria-label="Заставка Legacy"
                   src="/video/product_default.mp4"
