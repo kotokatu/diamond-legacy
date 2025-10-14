@@ -635,7 +635,7 @@ a {
         }
 
         .grid-item.features {
-          padding-top: 144px;
+          // padding-top: 144px;
           padding-right: 16px;
 
           @media (width < $breakpoint-sm) {
@@ -658,7 +658,7 @@ a {
           }
         }
         .grid-item--vid {
-          padding-top: 112px;
+          // padding-top: 112px;
 
           @media (width < $breakpoint-sm) {
             padding-top: 24px;

@@ -31,7 +31,11 @@
           class="card__img"
           :alt="data.name"
           :src="data.image"
-          sizes="700px"
+          :sizes="
+            size === 'sm'
+              ? '200px md:300px'
+              : '350px sm:500px md:600px lg:700px'
+          "
           loading="lazy"
         />
       </div>

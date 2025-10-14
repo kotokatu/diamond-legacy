@@ -42,15 +42,14 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Allure — высокотехнологичный медицинский малоинвазивный
-            инструмент для красоты кожи, сочетающий RF- микроиглы и фракционную
-            технологию
+            Legacy Royal — многофункциональный аппарат для улучшения качества
+            кожи, коррекции целлюлита и моделирования контуров тела и лица
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div class="grid-item grid-item--img">
+            <!-- <div class="grid-item grid-item--img">
               <NuxtImg
                 src="/img/allure/allure_9.png"
                 format="webp, avif"
@@ -79,7 +78,7 @@
                 style="object-position: 10% center"
                 sizes="100vw sm:50vw md:1000px lg:1600px"
               />
-            </div>
+            </div> -->
             <div
               class="grid-item grid-item--text features"
               role="region"
@@ -187,7 +186,7 @@
             <span class="lead__index">2.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Преимущества }</span>
-              <span class="lead__subtitle">Legacy</span>
+              <span class="lead__subtitle">Legacy Allure</span>
             </div>
           </div>
         </div>

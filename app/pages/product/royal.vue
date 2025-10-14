@@ -181,7 +181,7 @@
             <span class="lead__index">2.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Преимущества }</span>
-              <span class="lead__subtitle">Legacy</span>
+              <span class="lead__subtitle">Legacy Royal</span>
             </div>
           </div>
         </div>
