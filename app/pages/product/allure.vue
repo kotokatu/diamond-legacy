@@ -161,11 +161,11 @@
                     type="video/webm"
                   />
                   <source src="/video/allure/allure_360.mp4" type="video/mp4" />
-                  <NuxtImg
+                  <!-- <NuxtImg
                     src="/img/Allure/Allure_vid_fallback.png"
                     alt="Legacy Allure — 360° обзор (изображение вместо видео)"
                     loading="lazy"
-                  />
+                  /> -->
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
                   обновите браузер или скачайте видео.
                 </video>
