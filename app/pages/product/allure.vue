@@ -205,7 +205,7 @@
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
                 <!--
-                <div class="griditem__title text-h3">
+                <div class="grid-item__title text-h3">
                   Глубокое проникновение RF-энергии
                 </div>
                 -->

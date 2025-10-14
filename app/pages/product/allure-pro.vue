@@ -129,7 +129,7 @@
                   class="grid-item__video grid-item__video--default"
                   preload="metadata"
                   aria-label="Заставка Legacy"
-                  src="/video/product_default.MP4"
+                  src="/video/product_default.mp4"
                   type="video/mp4"
                 >
                   <!-- <NuxtImg
@@ -176,7 +176,7 @@
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
                 <!--
-                <div class="griditem__title text-h3">
+                <div class="grid-item__title text-h3">
                   Формирует контуры тела
                 </div>
                 -->

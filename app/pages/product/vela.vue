@@ -189,7 +189,7 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="griditem__title text-h3">
+                <div class="grid-item__title text-h3">
                   Манипула Legacy 360 InnerSphere Roller
                 </div>
                 <div class="grid-item__text">
