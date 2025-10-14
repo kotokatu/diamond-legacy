@@ -120,25 +120,25 @@
             </div>
 
             <div class="grid-item grid-item--vid">
-              <div class="video-container--rounded">
-                <!-- <video
+              <div class="video-container">
+                <video
                   muted
                   autoplay
                   loop
-                  class="grid-item__video grid-item__video--default"
+                  class="grid-item__video"
                   preload="metadata"
                   aria-label="Заставка Legacy"
                   src="/video/form/form_360.webm"
                   type="video/webm"
-                > -->
-                <!-- <NuxtImg
+                >
+                  <!-- <NuxtImg
                     src="/img/royal/royal_vid_fallback.png"
                     alt="Legacy Royal — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
                   обновите браузер или скачайте видео. -->
-                <!-- </video> -->
+                </video>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
                 alt="Аппарат Spectre Spectre"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center top"
+                style="object-fit: cover; object-position: center 15%"
               />
             </div>
 

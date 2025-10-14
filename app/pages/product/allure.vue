@@ -147,7 +147,7 @@
             --></div>
 
             <div class="grid-item grid-item--vid">
-              <div class="video-container--rounded">
+              <div class="video-container">
                 <video
                   muted
                   autoplay
