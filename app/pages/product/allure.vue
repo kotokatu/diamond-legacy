@@ -48,36 +48,6 @@
 
         <div class="section__content">
           <div class="section__grid grid">
-            <!-- <div class="grid-item grid-item--img">
-              <NuxtImg
-                src="/img/allure/allure_9.png"
-                format="webp, avif"
-                alt="Legacy Royal"
-                class="grid-item__image"
-                style="object-position: 15% 40px"
-                sizes="100vw sm:50vw md:1000px lg:1600px"
-              />
-            </div>
-            <div class="grid-item grid-item--img">
-              <NuxtImg
-                format="webp, avif"
-                src="/img/allure/allure_3.png"
-                alt="Legacy Royal"
-                class="grid-item__image"
-                style="object-position: 40% 0%"
-                sizes="100vw sm:50vw md:1000px lg:1600px"
-              />
-            </div>
-            <div class="grid-item grid-item--img grid-item--wide">
-              <NuxtImg
-                format="webp, avif"
-                src="/img/allure/allure_8.png"
-                alt="Legacy Royal"
-                class="grid-item__image"
-                style="object-position: 10% center"
-                sizes="100vw sm:50vw md:1000px lg:1600px"
-              />
-            </div> -->
             <div
               class="grid-item grid-item--text features"
               role="region"
@@ -445,7 +415,8 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: none;
+      width: 100%;
+      object-fit: cover;
       object-position: 49% 30%;
 
       @media (width < $breakpoint-sm) {

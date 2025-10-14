@@ -433,9 +433,13 @@
 .section.hero {
   .section__background {
     .section__background-image {
+      height: 100%;
+      width: 100%;
+      object-fit: none;
       object-position: 51% 60px;
 
       @media (width < $breakpoint-sm) {
+        object-fit: cover;
         object-position: 53% 80px;
       }
     }
