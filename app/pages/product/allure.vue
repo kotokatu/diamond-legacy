@@ -9,7 +9,6 @@
           src="/img/allure/allure_hero5.png"
           alt="Legacy Royal"
           class="section__background-image"
-          width="1920"
         />
       </div>
 
@@ -450,6 +449,7 @@
       object-position: 49% 30%;
 
       @media (width < $breakpoint-sm) {
+        object-fit: cover;
         object-position: 49% 10px;
       }
     }
