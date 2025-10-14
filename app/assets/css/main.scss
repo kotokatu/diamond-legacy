@@ -307,9 +307,9 @@ a {
     justify-content: space-between;
     width: 100%;
     padding: 32px;
+    border: 8px solid $base;
     background-color: $base;
     border-radius: 12px;
-    backdrop-filter: blur(12px);
     overflow: hidden;
 
     &--wide {
@@ -321,8 +321,9 @@ a {
     }
 
     &--img {
+      background-color: #f5f6fb;
       min-height: 312px;
-      padding: 8px;
+      padding: 0;
 
       @media (width <= $breakpoint-xs) {
         max-height: 312px;
@@ -335,7 +336,6 @@ a {
       object-fit: cover;
       object-position: center;
       border-radius: 8px;
-      background-color: #f5f6fb;
     }
 
     &__header {
@@ -636,7 +636,7 @@ a {
         }
 
         .grid-item.features {
-          padding-top: 144px;
+          padding-top: 64px;
           padding-right: 16px;
 
           @media (width < $breakpoint-sm) {
@@ -658,8 +658,9 @@ a {
             margin-bottom: 32px;
           }
         }
+
         .grid-item--vid {
-          padding-top: 112px;
+          padding-top: 64px;
 
           @media (width < $breakpoint-sm) {
             padding-top: 24px;
