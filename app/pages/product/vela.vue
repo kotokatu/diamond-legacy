@@ -1,13 +1,13 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Spectre — описание аппарата</h1>
+    <h1 class="sr-only">Legacy Vela — описание аппарата</h1>
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
           src="/img/vela/vela_hero.png"
-          alt="Legacy Spectre"
+          alt="Legacy Vela"
           class="section__background-image"
           width="1920"
         />
@@ -17,12 +17,12 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Spectre</h1>
+        <h1 class="title text-h1">Legacy Vela</h1>
         <p class="description">
-          Для моделирования тела, укрепления мышц
-          <br />и омоложения кожи тела и лица.
+          для лифтинга кожи, коррекции контуров тела,
+          <br /> лимфодренажа и борьбы с целлюлитом.
         </p>
-        <p class="price text-h2">480 000 ₽</p>
+        <p class="price text-h2">435 000 ₽</p>
       </div>
     </section>
 
@@ -37,13 +37,12 @@
             <span class="lead__index">1.0</span>
             <div class="lead__text">
               <span id="lead-title" class="lead__title">{ Описание }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Vela</span>
             </div>
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Spectre — Многофункциональный аппарат для моделирования тела,
-            укрепления мышц и омоложения кожи тела и лица.
+            Legacy Vela — многофункциональное оборудование предназначено для лифтинга кожи, коррекции контуров тела, лимфодренажа и борьбы с целлюлитом. Инновационный 2-в-1 аппарат нового поколения, сочетающий технологии ENDO и VLASHAPE.
           </div>
         </div>
 
@@ -55,17 +54,10 @@
               aria-labelledby="features-title"
             >
               <h2 class="features__title text-h2">Особенности</h2>
-              <h3 class="feature__title text-h3">Технология HIEMT</h3>
+
+              <h3 class="feature__title text-h3">Технологии ENDO и VLASHAPE</h3>
               <div class="feature__text">
-                Высокоинтенсивные электромагнитные импульсы вызывают глубокие
-                мышечные сокращения, которые невозможно достичь обычной
-                тренировкой. Результат:
-                <br />
-                – активация мышечного роста
-                <br />
-                – сжигание подкожного жира
-                <br />
-                – улучшение тонуса и рельефа тела
+                Аппарат сочетает в себе глубокий микробаллонный массаж сжатия (ENDO) и тепловое воздействие инфракрасных волн и радиочастоты (VLASHAPE), обеспечивая выраженный эффект подтяжки, упругости и омоложения кожи уже после первых процедур.
               </div>
               <h3 class="feature__title text-h3">Технология ENDO</h3>
               <div class="feature__text">
@@ -82,6 +74,7 @@
                 <br />
                 – запускает процессы регенерации и омоложения
               </div>
+              <!--
               <h3 class="feature__title text-h3">
                 Аппарат оснащён тремя манипулами ENDO
               </h3>
@@ -96,26 +89,21 @@
                 зонах тела и лица, обеспечивая индивидуальный подход к каждой
                 области и максимальную эффективность процедур.
               </div>
+            -->
+              <h3 class="feature__title text-h3">Технология VLASHAPE</h3>
+              <div class="feature__text">
+                <ul class="list--disc">
+                  <li>Сочетает инфракрасный свет (IR), радиочастотные волны (RF) и вакуумное всасывание, что позволяет эффективно подтягивать кожу, уменьшать жировые отложения и формировать контуры тела.</li>
+                  <li>Инфракрасный свет (IR) создаёт тепловой эффект, ускоряя кровообращение, стимулирует обменные процессы и расщепление жиров.</li>
+                  <li>Радиочастотные волны (RF) прогревают глубокие слои кожи, стимулируют ремоделирование коллагена и повышают упругость, уменьшая дряблость кожи.</li>
+                  <li>Вакуумное всасывание усиливает доставку тепловой энергии и лимфодренаж, способствуя коррекции контуров тела и уменьшению отечности.</li>
+                </ul>
+              </div>
               <h3 class="feature__title text-h3">
                 Интеллектуальный пользовательский интерфейс
               </h3>
               <div class="feature__text">
-                Аппарат оснащён интуитивно понятной сенсорной панелью и
-                предлагает гибкую настройку под индивидуальные потребности
-                каждого клиента.
-              </div>
-              <h3 class="feature__title text-h3">Применение</h3>
-              <div class="feature__text">
-                Аппарат рекомендуется для:
-                <ul class="list--disc">
-                  <li>укрепления мышц и формирования рельефа тела</li>
-                  <li>устранения локальных жировых отложений</li>
-                  <li>снижения выраженности целлюлита</li>
-                  <li>повышения упругости и тонуса кожи</li>
-                  <li>коррекции контуров лица, шеи и тела</li>
-                  <li>восстановления после родов</li>
-                  <li>устранения дряблости и снижения тургора тканей</li>
-                </ul>
+                Благодаря эргономичной конструкции, большому сенсорному экрану и трем видам силиконовых роликов, LEGACY VELA обеспечивает безопасное, комфортное и результативное проведение процедур как по телу, так и по лицу.
               </div>
             </div>
 
@@ -127,13 +115,13 @@
                   loop
                   class="grid-item__video"
                   preload="metadata"
-                  aria-label="360° обзор аппарата Legacy Spectre"
+                  aria-label="360° обзор аппарата Legacy Vela"
                   src="/video/vela/vela_360.webm"
                   type="video/webm"
                 >
                   <!-- <NuxtImg
-                    src="/img/Spectre/Spectre_vid_fallback.png"
-                    alt="Legacy Spectre — 360° обзор (изображение вместо видео)"
+                    src="/img/Vela/Vela_vid_fallback.png"
+                    alt="Legacy Vela — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
@@ -164,7 +152,7 @@
             <span class="lead__index">2.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Преимущества }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Vela</span>
             </div>
           </div>
         </div>
@@ -175,11 +163,10 @@
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
                 <div class="griditem__title text-h3">
-                  Автономная работа манипул HIEMT
+                  Манипула Legacy 360 InnerSphere Roller
                 </div>
                 <div class="grid-item__text">
-                  Каждая манипула может работать отдельно или синхронно для
-                  прицельного воздействия на разные зоны тела
+                  обеспечивает глубокое и точное воздействие на кожу и ткани.
                 </div>
               </div>
             </div>
@@ -188,7 +175,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/vela/vela_1.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Vela Vela"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: center top"
@@ -198,10 +185,9 @@
             <div class="grid-item grid-item--text order-3">
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">Система охлаждения</div>
+                <div class="grid-item__title text-h3">Технология VLASHAPE</div>
                 <div class="grid-item__text">
-                  Активное охлаждение манипул HIEMT обеспечивает комфорт и
-                  безопасность даже при высокой мощности
+                  сочетает инфракрасный свет, радиочастотные волны и вакуумное всасывание для подтяжки кожи и коррекции контуров тела.
                 </div>
               </div>
             </div>
@@ -210,7 +196,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/vela/vela_2.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Vela Vela"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -221,12 +207,10 @@
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Три манипулы эндосфера Legacy 360 Inner Sphere Roller
+                  Комбинированное действие ENDO + VLASHAPE
                 </div>
                 <div class="grid-item__text">
-                  Малая для лица и шеи (60 силиконовых шариков); средняя для
-                  мелких участков тела (55 силиконовых шариков); большая для
-                  больших зон тела (50 силиконовых шариков)
+                  позволяет уменьшать локальные жировые отложения и повышать тонус кожи.
                 </div>
               </div>
             </div>
@@ -235,7 +219,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/vela/vela_4.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Vela Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: center 75%"
@@ -245,11 +229,11 @@
             <div class="grid-item grid-item--text order-7">
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
+                <!--div class="grid-item__title text-h3">
                   Регулируемая скорость вращения роликов до 2300 об/мин
-                </div>
+                </div-->
                 <div class="grid-item__text">
-                  Для комфортного и эффективного воздействия
+                  Подходит для всех типов кожи и любых зон тела, включая лицо, шею, руки и крупные зоны тела. Процедура комфортная, безболезненная и не требует реабилитации.
                 </div>
               </div>
             </div>
@@ -258,7 +242,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/vela/vela_3.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Vela Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -268,12 +252,12 @@
             <div class="grid-item grid-item--text order-9">
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
+                <!--div class="grid-item__title text-h3">
                   Компрессионная микровибрация с равномерным пульсирующим
                   давлением, безопасная для кожи и тканей
-                </div>
+                </div-->
                 <div class="grid-item__text">
-                  Подходит для всего тела и лица, включая чувствительные зоны.
+                  Сенсорный экран 15,6" с удобным управлением режимами, скоростью и интенсивностью процедур. Надёжная система охлаждения и защиты обеспечивает стабильную работу аппарата.
                 </div>
               </div>
             </div>
@@ -289,7 +273,7 @@
             <span class="lead__index">3.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Комплектация и характеристики }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Vela</span>
             </div>
           </div>
         </div>
@@ -314,35 +298,17 @@
                 </tr>
                 <tr>
                   <td>
-                    <span>Манипула EMS</span>
+                    <span>Манипула ENDO</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                   <td>12 месяцев</td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Роликовая ручка-манипула ENDO (малая)</span>
+                    <span>Манипула VLA</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                   <td>12 месяцев</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Манипула ENDO</span>
-                    <span class="quantity"> 1 шт</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Манипула ENDO</span>
-                    <span class="quantity"> 1 шт</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Набор поясов</span>
-                    <span class="quantity"> 8*80 CM 8*90 CM 8*100 CM</span>
-                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -385,17 +351,22 @@
 
                 <tr>
                   <td>Выходная мощность</td>
-                  <td>2000 Вт</td>
-                </tr>
-
-                <tr>
-                  <td>Рабочая частота</td>
-                  <td>от 5 до 100 Гц</td>
+                  <td>1000 Вт</td>
                 </tr>
 
                 <tr>
                   <td>Скорость вращения</td>
                   <td>до 2300 об/мин (RPM)</td>
+                </tr>
+
+                <tr>
+                  <td>Диапазон вакуумного давления</td>
+                  <td>10–80 KPa</td>
+                </tr>
+
+                <tr>
+                  <td>Мощность RF</td>
+                  <td>20–300 W</td>
                 </tr>
 
                 <tr>
@@ -405,26 +376,22 @@
 
                 <tr>
                   <td>Размер аппарата</td>
-                  <td>50 × 60 × 130 см</td>
+                  <td>41 × 50 × 108 см</td>
                 </tr>
 
                 <tr>
                   <td>Вес (нетто)</td>
-                  <td>59 кг</td>
+                  <td>45 кг</td>
                 </tr>
 
                 <tr>
                   <td>Размер упаковки</td>
-                  <td>65 × 46,7 × 120 см</td>
+                  <td>55 × 65 × 116 см</td>
                 </tr>
 
                 <tr>
                   <td>Вес (брутто)</td>
-                  <td>86.5 кг</td>
-                </tr>
-                <tr>
-                  <td>Габариты упаковки</td>
-                  <td>61,5 × 53,5 × 103 см.</td>
+                  <td>72 кг</td>
                 </tr>
               </tbody>
             </table>
