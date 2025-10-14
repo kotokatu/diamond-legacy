@@ -18,10 +18,10 @@
         </p>
         <h1 class="title text-h1">Legacy Allure Pro</h1>
         <p class="description">
-          Для коррекции фигуры, омоложения
-          <br />кожи лица и тела
+          для улучшения качества кожи, коррекции целлюлита
+          <br />и моделирования контуров тела и лица
         </p>
-        <p class="price text-h2">345 000 ₽</p>
+        <p class="price text-h2">465 000 ₽</p>
       </div>
     </section>
 
@@ -41,8 +41,7 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Royal — многофункциональный аппарат для улучшения качества
-            кожи, коррекции целлюлита и моделирования контуров тела и лица
+            Legacy Allure Pro — Фракционный RF микроигольчатый аппарат Аппарат Legacy Allure сочетает преимущества микроигольчатой терапии с радиочастотной энергией (RF).
           </div>
         </div>
 
@@ -54,27 +53,31 @@
               aria-labelledby="features-title"
             >
               <h2 class="features__title text-h2">Особенности</h2>
+              <!--
               <h3 class="feature__title text-h3">
                 Технология компрессионной микровибрации
               </h3>
+              -->
               <div class="feature__text">
-                Работа аппарата основана на создании пульсирующего давления с
-                помощью силиконовых шариков, вращающихся по оси ролика на
-                360°.Такая технология обеспечивает равномерное и глубокое
-                механическое воздействие без травмирования тканей.Она активно
-                стимулирует кровообращение, лимфоток и обменные процессы,
-                способствуя оздоровлению и омоложению кожи.
+                Он предлагает регулируемую глубину игл от 0,2 мм до 7 мм для точного воздействия на эпидермис и дерму. Стимулируя выработку коллагена и эластина, аппарат эффективно улучшает состояние рубцов, подтягивает кожу и уменьшает морщины безопасным и эффективным способом. Это неинвазивное решение для различных кожных проблем, делая его идеальным выбором для улучшения текстуры, упругости и эластичности кожи.
               </div>
+
+              <div class="feature__text">
+                <ul class="list--disc">
+                  <li>Тип игл: биполярный</li>
+                  <li>Область применения: лечение всего тела</li>
+                </ul>
+
+              </div>
+              <!--
               <h3 class="feature__title text-h3">
                 Интеллектуальная цилиндрическая роликовая ручка
               </h3>
+              -->
               <div class="feature__text">
-                Манипула позволяет точно адаптировать интенсивность и
-                направление воздействия, обеспечивая полный контроль специалиста
-                и максимальный комфорт клиента. Подходит как для интенсивной
-                проработки крупных зон тела, так и для чувствительных участков
-                лица и шеи.
+                Аппарат оснащён сенсорным дисплеем, различными насадками и рукоятками, системой активации через QR-коды и возможностью работы в ручном и автоматическом режимах.              
               </div>
+              <!--
               <h3 class="feature__title text-h3">Насадки для разных зон</h3>
               <div class="feature__text">
                 В комплект входят:
@@ -105,6 +108,7 @@
                   <li>общего оздоровления тканей</li>
                 </ul>
               </div>
+              -->
             </div>
 
             <div class="grid-item grid-item--vid">
@@ -120,8 +124,8 @@
                   type="video/mp4"
                 >
                   <!-- <NuxtImg
-                    src="/img/royal/royal_vid_fallback.png"
-                    alt="Legacy Royal — 360° обзор (изображение вместо видео)"
+                    src="/img/Allure Pro/Allure Pro_vid_fallback.png"
+                    alt="Legacy Allure Pro — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
@@ -162,14 +166,15 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
+                <!--
                 <div class="griditem__title text-h3">
                   Формирует контуры тела
                 </div>
+                -->
                 <div class="grid-item__text">
-                  Эффективно корректирует фигуру, воздействуя на локальные
-                  жировые отложения в проблемных зонах: руки, спина, живот,
-                  бедра, ягодицы. Помогает достичь более стройного и подтянутого
-                  силуэта.
+                  Многофункциональность: включает микронидлинг, крио- и термотерапию, вакуумную терапию. 
+                  Универсальность насадок: WZ, NV, IC, IS и HR насадки для разных зон и типов процедур. 
+                  Регулируемые параметры: глубина вылета игл, мощность (1–47 Вт), время воздействия (50–600 мс), уровень вакуума.
                 </div>
               </div>
             </div>
@@ -178,7 +183,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_1.png"
-                alt="Аппарат Royal Allure Pro"
+                alt="Аппарат Allure Pro Allure Pro"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: center 20%"
@@ -188,13 +193,14 @@
             <div class="grid-item grid-item--text order-3">
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
+                <!--
                 <div class="grid-item__title text-h3">
                   Сглаживает проявления целлюлита
                 </div>
+                -->
                 <div class="grid-item__text">
-                  Улучшает микроциркуляцию, снижает отёчность и стимулирует
-                  выведение лишней жидкости, что способствует уменьшению
-                  выраженности целлюлита и выравниванию текстуры кожи.
+                  Режимы работы: ручной и автоматический, позволяющие контролировать интенсивность и последовательность процедуры. 
+                  Высокая безопасность: каждая насадка предназначена для одного клиента, минимизация риска перекрёстного заражения.
                 </div>
               </div>
             </div>
@@ -203,7 +209,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_2.png"
-                alt="Аппарат Royal Allure Pro"
+                alt="Аппарат Allure Pro Allure Pro"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: -40px 40%"
@@ -213,13 +219,15 @@
             <div class="grid-item grid-item--text order-5">
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
+                <!--
                 <div class="grid-item__title text-h3">
                   Снимает ощущение тяжести в ногах
                 </div>
+                -->
                 <div class="grid-item__text">
-                  Активизирует лимфо- и венозный отток, устраняет застойные
-                  явления, помогает снять отёки и чувство усталости в нижних
-                  конечностях.
+                  <b>Простота эксплуатации:</b> сенсорный дисплей и QR-коды для активации насадок. 
+                  <br />
+                  <b>Эффективность:</b> процедуры дают видимый эффект уже через несколько дней; для максимального результата рекомендуется курс 2–3 сеанса с интервалом около месяца.
                 </div>
               </div>
             </div>
@@ -228,13 +236,13 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_3.png"
-                alt="Аппарат Royal Legacy"
+                alt="Аппарат Allure Pro Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: center 10%"
               />
             </div>
-
+<!--
             <div class="grid-item grid-item--text order-7">
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
@@ -251,7 +259,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_4.png"
-                alt="Аппарат Royal Legacy"
+                alt="Аппарат Allure Pro Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -271,6 +279,7 @@
                 </div>
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>
@@ -283,7 +292,7 @@
             <span class="lead__index">3.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Комплектация и характеристики }</span>
-              <span class="lead__subtitle">Legacy Royal</span>
+              <span class="lead__subtitle">Legacy Allure Pro</span>
             </div>
           </div>
         </div>
@@ -308,33 +317,48 @@
                 </tr>
                 <tr>
                   <td>
-                    <span>Роликовая ручка-манипула ENDO (большая)</span>
+                    <span>Ручка WZ</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                   <td>12 месяцев</td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Роликовая ручка-манипула ENDO (малая)</span>
-                    <span class="quantity"> 1 шт</span>
+                    <span>Насадки NV36, NV49, NV64, NV9</span>
+                    <span class="quantity"> по 1 шт</span>
                   </td>
                   <td>12 месяцев</td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Замена шариков для обеих манипул</span>
-                    <span class="quantity"> 1 компллект</span>
+                    <span>Насадки IC12, IC24, IC40</span>
+                    <span class="quantity"> по 1 шт</span>
+                  </td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Насадки IS5, IS25, IS49</span>
+                    <span class="quantity"> по 1 шт</span>
+                  </td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Насадки HR1, HR2, HR3 </span>
+                    <span class="quantity"> по 1 шт</span>
+                  </td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Педаль включения/выключения</span>
+                    <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Набор инструментов для подключения</span>
-                    <span class="quantity"> 1 компллект</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Силовой кабель</span>
+                    <span>Кабель питания</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
@@ -355,44 +379,35 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Входная мощность</td>
-                  <td>110–220 В / 50–60 Гц</td>
+                  <td>Напряжение питания</td>
+                  <td>AC 100–240 В, 50/60 Гц</td>
                 </tr>
 
                 <tr>
-                  <td>Выходная мощность</td>
-                  <td>3000 Вт</td>
+                  <td>Потребляемая мощность</td>
+                  <td>≤115 ВА</td>
                 </tr>
 
                 <tr>
-                  <td>Скорость вращения</td>
-                  <td>до 1400 об/мин (RPM)</td>
+                  <td>Плавкий предохранитель</td>
+                  <td>FL5X20\3.15A</td>
                 </tr>
 
                 <tr>
-                  <td>Размер экрана</td>
-                  <td>15,6 дюйма (сенсорный LCD)</td>
+                  <td>Срок службы насадок (холодные, тепловые, микропроцессорные термонасадки)</td>
+                  <td>500 часов</td>
                 </tr>
 
                 <tr>
-                  <td>Размер аппарата</td>
-                  <td>29 × 29 × 107 см</td>
+                  <td>Управление</td>
+                  <td>сенсорный дисплей, QR-коды для активации насадок</td>
                 </tr>
 
                 <tr>
-                  <td>Вес (нетто)</td>
-                  <td>27 кг</td>
+                  <td>Параметры процедур</td>
+                  <td>глубина игл 0,5–4,5 мм, мощность 1–47 Вт, время импульса 50–600 мс, температура крио -5°C–20°C, термо 37°C–55°C</td>
                 </tr>
 
-                <tr>
-                  <td>Размер упаковки</td>
-                  <td>65 × 46,7 × 120 см</td>
-                </tr>
-
-                <tr>
-                  <td>Вес (брутто)</td>
-                  <td>40 кг</td>
-                </tr>
               </tbody>
             </table>
           </div>
