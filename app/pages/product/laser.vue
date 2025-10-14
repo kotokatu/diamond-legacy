@@ -1,13 +1,13 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Spectre — описание аппарата</h1>
+    <h1 class="sr-only">Legacy Laser — описание аппарата</h1>
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
           src="/img/laser/laser_hero.png"
-          alt="Legacy Spectre"
+          alt="Legacy Laser"
           class="section__background-image"
           width="1920"
         />
@@ -17,12 +17,12 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Spectre</h1>
+        <h1 class="title text-h1">Legacy Laser</h1>
         <p class="description">
-          Для моделирования тела, укрепления мышц
-          <br />и омоложения кожи тела и лица.
+          для эпиляци
+          <br />
         </p>
-        <p class="price text-h2">480 000 ₽</p>
+        <p class="price text-h2">645 000 ₽</p>
       </div>
     </section>
 
@@ -37,13 +37,12 @@
             <span class="lead__index">1.0</span>
             <div class="lead__text">
               <span id="lead-title" class="lead__title">{ Описание }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Laser</span>
             </div>
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Spectre — Многофункциональный аппарат для моделирования тела,
-            укрепления мышц и омоложения кожи тела и лица.
+            Legacy Laser — это высокотехнологичный аппарат, преобразующий электрическую энергию в непрерывный высокоэнергетический лазерный луч. В основе работы сочетаются лазерные, электронные и компьютерные технологии, что делает аппарат одним из наиболее безопасных и быстрых решений для эпиляции на сегодняшний день.
           </div>
         </div>
 
@@ -55,67 +54,34 @@
               aria-labelledby="features-title"
             >
               <h2 class="features__title text-h2">Особенности</h2>
-              <h3 class="feature__title text-h3">Технология HIEMT</h3>
+              <!--h3 class="feature__title text-h3">Технология HIEMT</h3-->
               <div class="feature__text">
-                Высокоинтенсивные электромагнитные импульсы вызывают глубокие
-                мышечные сокращения, которые невозможно достичь обычной
-                тренировкой. Результат:
-                <br />
-                – активация мышечного роста
-                <br />
-                – сжигание подкожного жира
-                <br />
-                – улучшение тонуса и рельефа тела
-              </div>
-              <h3 class="feature__title text-h3">Технология ENDO</h3>
-              <div class="feature__text">
-                Компрессионная микровибрация воздействует на поверхностные и
-                глубокие ткани:
-                <br />
-                – усиливает кровообращение
-                <br />
-                – активизирует лимфоотток
-                <br />
-                – способствует выведению лишней жидкости
-                <br />
-                – улучшает тонус кожи и уменьшает проявления целлюлита
-                <br />
-                – запускает процессы регенерации и омоложения
-              </div>
-              <h3 class="feature__title text-h3">
-                Аппарат оснащён тремя манипулами ENDO
-              </h3>
-              <div class="feature__text">
-                В комплект входят:
+                Эффект достигается за счёт поглощения меланином в волосяных фолликулах лазерной энергии, что приводит к их разрушению, при этом:
                 <ul class="list--disc">
-                  <li>малая манипула — для лица</li>
-                  <li>средняя манипула — для мелких участков тела</li>
-                  <li>большая манипула — для больших зон тела</li>
+                  <li>окружающие ткани не повреждаются;</li>
+                  <li>удаление нежелательных волос проходит практически безболезненно;</li>
+                  <li>удаление нежелательных волос проходит практически безболезненно;</li>
                 </ul>
-                Три манипулы позволяют проводить комплексную работу на всех
-                зонах тела и лица, обеспечивая индивидуальный подход к каждой
-                области и максимальную эффективность процедур.
               </div>
-              <h3 class="feature__title text-h3">
-                Интеллектуальный пользовательский интерфейс
-              </h3>
+              <!--h3 class="feature__title text-h3">Технология ENDO</h3-->
               <div class="feature__text">
-                Аппарат оснащён интуитивно понятной сенсорной панелью и
-                предлагает гибкую настройку под индивидуальные потребности
-                каждого клиента.
+                Многоуровневая система безопасности с функцией самодиагностики. Сенсорный дисплей 15,6" с интуитивным интерфейсом. 
+                <br />
+                Возможность работы с тремя длинами волн: 755 нм, 808 нм, 1064 нм. 
+                <br />
+                Встроенная система водяного и компрессорного охлаждения (до -25°C). 
+                <br />
+                Высокая мощность до 3000 Вт для быстрой обработки больших зон. 
+                <br />
+                Плавная регулировка параметров процедуры под индивидуальные особенности клиента. 
+                <br />
+                Аварийная кнопка мгновенной остановки работы.
+                <br />
+                Конструкция, обеспечивающая долгую непрерывную работу без перегрева.
               </div>
-              <h3 class="feature__title text-h3">Применение</h3>
+              <h3 class="feature__title text-h3">Принцип работы</h3>
               <div class="feature__text">
-                Аппарат рекомендуется для:
-                <ul class="list--disc">
-                  <li>укрепления мышц и формирования рельефа тела</li>
-                  <li>устранения локальных жировых отложений</li>
-                  <li>снижения выраженности целлюлита</li>
-                  <li>повышения упругости и тонуса кожи</li>
-                  <li>коррекции контуров лица, шеи и тела</li>
-                  <li>восстановления после родов</li>
-                  <li>устранения дряблости и снижения тургора тканей</li>
-                </ul>
+                Аппарат Legacy Laser работает на основе технологии селективного фототермолиза — лазерный луч с длиной волны 755 нм, 808 нм или 1064 нм направленно воздействует на меланин, содержащийся в волосяных фолликулах. Поглощая лазерную энергию, меланин превращает её в тепловую, что приводит к разрушению фолликула и предотвращает дальнейший рост волос. Благодаря высокой точности настройки параметров (мощность, длительность импульса, размер пятна и частота) достигается максимальная эффективность при минимальном воздействии на окружающие ткани. Встроенная система охлаждения защищает кожу от перегрева, что снижает болевые ощущения и риск побочных эффектов.                
               </div>
             </div>
 
@@ -164,7 +130,7 @@
             <span class="lead__index">2.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Преимущества }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Laser</span>
             </div>
           </div>
         </div>
@@ -175,11 +141,10 @@
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
                 <div class="griditem__title text-h3">
-                  Автономная работа манипул HIEMT
+                  Максимальная эффективность
                 </div>
                 <div class="grid-item__text">
-                  Каждая манипула может работать отдельно или синхронно для
-                  прицельного воздействия на разные зоны тела
+                  высокая плотность энергии для быстрого результата.
                 </div>
               </div>
             </div>
@@ -188,7 +153,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_1.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Laser Laser"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: center top"
@@ -198,10 +163,9 @@
             <div class="grid-item grid-item--text order-3">
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">Система охлаждения</div>
+                <div class="grid-item__title text-h3">Универсальность</div>
                 <div class="grid-item__text">
-                  Активное охлаждение манипул HIEMT обеспечивает комфорт и
-                  безопасность даже при высокой мощности
+                  подходит для всех фототипов кожи и типов волос.
                 </div>
               </div>
             </div>
@@ -210,7 +174,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_2.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Laser Laser"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -221,12 +185,10 @@
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Три манипулы эндосфера Legacy 360 Inner Sphere Roller
+                  Комфорт клиента
                 </div>
                 <div class="grid-item__text">
-                  Малая для лица и шеи (60 силиконовых шариков); средняя для
-                  мелких участков тела (55 силиконовых шариков); большая для
-                  больших зон тела (50 силиконовых шариков)
+                  встроенное охлаждение снижает болевые ощущения.
                 </div>
               </div>
             </div>
@@ -235,7 +197,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_3.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Laser Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: contain; transform: scale(0.9)"
@@ -246,10 +208,10 @@
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Регулируемая скорость вращения роликов до 2300 об/мин
+                  Долговечность
                 </div>
                 <div class="grid-item__text">
-                  Для комфортного и эффективного воздействия
+                  рассчитан на интенсивную профессиональную эксплуатацию.
                 </div>
               </div>
             </div>
@@ -258,7 +220,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_5.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Laser Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -269,11 +231,10 @@
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Компрессионная микровибрация с равномерным пульсирующим
-                  давлением, безопасная для кожи и тканей
+                  Экономичность
                 </div>
                 <div class="grid-item__text">
-                  Подходит для всего тела и лица, включая чувствительные зоны.
+                  долговечный ресурс ручки – до 50 000 импульсов.
                 </div>
               </div>
             </div>
@@ -289,7 +250,7 @@
             <span class="lead__index">3.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Комплектация и характеристики }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Laser</span>
             </div>
           </div>
         </div>
@@ -314,46 +275,32 @@
                 </tr>
                 <tr>
                   <td>
-                    <span>Манипула EMS</span>
-                    <span class="quantity"> 1 шт</span>
-                  </td>
-                  <td>12 месяцев</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Роликовая ручка-манипула ENDO (малая)</span>
-                    <span class="quantity"> 1 шт</span>
-                  </td>
-                  <td>12 месяцев</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Манипула ENDO</span>
+                    <span>Защитные очки</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Манипула ENDO</span>
+                    <span>Маска для глаз</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Набор поясов</span>
-                    <span class="quantity"> 8*80 CM 8*90 CM 8*100 CM</span>
+                    <span>Комплект рукоятки 808 нм</span>
+                    <span class="quantity"> 1 набор</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Замена шариков для обеих манипул</span>
-                    <span class="quantity"> 1 компллект</span>
+                    <span>Воронка с водяным шлангом </span>
+                    <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Набор инструментов для подключения</span>
-                    <span class="quantity"> 1 компллект</span>
+                    <span>Педаль управления</span>
+                    <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
@@ -379,23 +326,38 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Входная мощность</td>
-                  <td>110–220 В / 50–60 Гц</td>
+                  <td>Питание</td>
+                  <td>200–260 В / 50–60 Гц– 90–130 В / 50–60 Гц</td>
                 </tr>
 
                 <tr>
-                  <td>Выходная мощность</td>
-                  <td>2000 Вт</td>
+                  <td>Мощность устройства</td>
+                  <td>до 3000 Вт</td>
                 </tr>
 
                 <tr>
-                  <td>Рабочая частота</td>
-                  <td>от 5 до 100 Гц</td>
+                  <td>Плотность энергии</td>
+                  <td>
+                    – 600 Вт: 1–62 Дж/см²
+                    <br />
+                    – 800 Вт: 1–81 Дж/см²
+                    <br />
+                    – 1000 Вт: 1–75 Дж/см²
+                    <br />
+                    – 1200 Вт: 1–92 Дж/см²
+                    <br />
+                    – 1800 Вт: 1–156 Дж/см²
+                  </td>
                 </tr>
 
                 <tr>
-                  <td>Скорость вращения</td>
+                  <td>Длительность импульса</td>
                   <td>до 2300 об/мин (RPM)</td>
+                </tr>
+
+                <tr>
+                  <td>Размер пятна</td>
+                  <td>13×13 мм, 13×24 мм, 13×28 мм, Ø6 мм.</td>
                 </tr>
 
                 <tr>
@@ -404,27 +366,8 @@
                 </tr>
 
                 <tr>
-                  <td>Размер аппарата</td>
-                  <td>50 × 60 × 130 см</td>
-                </tr>
-
-                <tr>
-                  <td>Вес (нетто)</td>
-                  <td>59 кг</td>
-                </tr>
-
-                <tr>
-                  <td>Размер упаковки</td>
-                  <td>65 × 46,7 × 120 см</td>
-                </tr>
-
-                <tr>
-                  <td>Вес (брутто)</td>
-                  <td>86.5 кг</td>
-                </tr>
-                <tr>
-                  <td>Габариты упаковки</td>
-                  <td>61,5 × 53,5 × 103 см.</td>
+                  <td>Система охлаждения</td>
+                  <td> до –25°C (водяное + компрессор постоянного тока)</td>
                 </tr>
               </tbody>
             </table>
