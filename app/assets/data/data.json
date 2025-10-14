@@ -6,7 +6,7 @@
       "link": "/product/royal",
       "image": "/img/royal/royal_card.png",
       "description": "Аппарат для коррекции фигуры с функцией эндосфера для тела и лица",
-      "price": "345 000 ₽"
+      "price": "380 000 ₽"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "link": "/product/spectre",
       "image": "/img/spectre/spectre_card.png",
       "description": "Аппарат для коррекции фигуры с функциями EMS (две манипулы) и эндосфера для лица и тела",
-      "price": "345 000 ₽"
+      "price": "480 000 ₽"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "link": "/product/allure-pro",
       "image": "/img/allure-pro/allure-pro_card.png",
       "description": "Аппарат для омоложения кожи RF (профессиональная версия)",
-      "price": "345 000 ₽"
+      "price": "465 000 ₽"
     },
 
     {
@@ -31,7 +31,7 @@
       "link": "/product/allure",
       "image": "/img/allure/allure_card.png",
       "description": "Аппарат для омоложения кожи RF (базовая версия)",
-      "price": "345 000 ₽"
+      "price": "315 000 ₽"
     },
     {
       "id": 5,
@@ -39,7 +39,7 @@
       "link": "/product/ems-spectrum",
       "image": "/img/ems-spectrum/ems-spectrum_card.png",
       "description": "Аппарат для коррекции фигуры с функцией EMS (4 манипулы)",
-      "price": "345 000 ₽"
+      "price": "375 000 ₽"
     },
     {
       "id": 6,
@@ -47,7 +47,7 @@
       "link": "/product/vela",
       "image": "/img/vela/vela_card.png",
       "description": "Аппарат для коррекции фигуры с функциями LPG и ENDO",
-      "price": "345 000 ₽"
+      "price": "435 000 ₽"
     },
     {
       "id": 7,
@@ -55,7 +55,7 @@
       "link": "/product/laser",
       "image": "/img/laser/laser_card.png",
       "description": "Аппарат для лазерной эпиляции",
-      "price": "345 000 ₽"
+      "price": "645 000 ₽"
     },
     {
       "id": 8,
@@ -63,7 +63,7 @@
       "link": "/product/form",
       "image": "/img/form/form_card.png",
       "description": "Аппарат для коррекции фигуры с функцией вибромассаж",
-      "price": "345 000 ₽"
+      "price": "275 000 ₽"
     }
   ]
 }

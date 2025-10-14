@@ -1,13 +1,13 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Spectre — описание аппарата</h1>
+    <h1 class="sr-only">Legacy Form — описание аппарата</h1>
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
           src="/img/form/form_hero.png"
-          alt="Legacy Spectre"
+          alt="Legacy Form"
           class="section__background-image"
           width="1280"
         />
@@ -17,12 +17,12 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Spectre</h1>
+        <h1 class="title text-h1">Legacy Form</h1>
         <p class="description">
-          Для моделирования тела, укрепления мышц
-          <br />и омоложения кожи тела и лица.
+          Для профессионального массажа, 
+          <br />моделирования тела и лифтинга кожи.
         </p>
-        <p class="price text-h2">480 000 ₽</p>
+        <p class="price text-h2">275 000 ₽</p>
       </div>
     </section>
 
@@ -37,13 +37,12 @@
             <span class="lead__index">1.0</span>
             <div class="lead__text">
               <span id="lead-title" class="lead__title">{ Описание }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Form</span>
             </div>
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Spectre — Многофункциональный аппарат для моделирования тела,
-            укрепления мышц и омоложения кожи тела и лица.
+            Legacy Form — Инновационный аппарат нового поколения для профессионального массажа, моделирования тела и лифтинга кожи.
           </div>
         </div>
 
@@ -55,47 +54,31 @@
               aria-labelledby="features-title"
             >
               <h2 class="features__title text-h2">Особенности</h2>
-              <h3 class="feature__title text-h3">Технология HIEMT</h3>
+              <h3 class="feature__title text-h3">5 в 1</h3>
               <div class="feature__text">
-                Высокоинтенсивные электромагнитные импульсы вызывают глубокие
-                мышечные сокращения, которые невозможно достичь обычной
-                тренировкой. Результат:
-                <br />
-                – активация мышечного роста
-                <br />
-                – сжигание подкожного жира
-                <br />
-                – улучшение тонуса и рельефа тела
-              </div>
-              <h3 class="feature__title text-h3">Технология ENDO</h3>
-              <div class="feature__text">
-                Компрессионная микровибрация воздействует на поверхностные и
-                глубокие ткани:
-                <br />
-                – усиливает кровообращение
-                <br />
-                – активизирует лимфоотток
-                <br />
-                – способствует выведению лишней жидкости
-                <br />
-                – улучшает тонус кожи и уменьшает проявления целлюлита
-                <br />
-                – запускает процессы регенерации и омоложения
-              </div>
-              <h3 class="feature__title text-h3">
-                Аппарат оснащён тремя манипулами ENDO
-              </h3>
-              <div class="feature__text">
-                В комплект входят:
                 <ul class="list--disc">
-                  <li>малая манипула — для лица</li>
-                  <li>средняя манипула — для мелких участков тела</li>
-                  <li>большая манипула — для больших зон тела</li>
+                  <li>механического массажа</li>
+                  <li>LED-терапии, лимфодренажа</li>
+                  <li>энергомассажа</li>
+                  <li>глубокого 3D-воздействия</li>
                 </ul>
-                Три манипулы позволяют проводить комплексную работу на всех
-                зонах тела и лица, обеспечивая индивидуальный подход к каждой
-                области и максимальную эффективность процедур.
               </div>
+              <div class="feature__text">
+                Оснащён пятью рабочими манипулами, которые могут работать одновременно, позволяя обрабатывать несколько зон тела.
+                <br />
+                Сенсорный интерфейс с выбором языка, регулировкой времени, мощности, силы воздействия и длины световой волны. 
+                <br />
+                Возможность работы одной или двумя манипулами одновременно. 
+                <br />
+                Каждая манипула оснащена 12 массажными звёздами, каждая из которых состоит из 16 элементов — в сумме 192 активных "пальца", создающих эффект профессионального массажа. 
+                <br />
+                Угол наклона массажных элементов обеспечивает 3D-волну и глубокое воздействие на каждый миллиметр тела. Один сеанс (40 минут) эквивалентен 3,5 часам ручного массажа.
+                <br />
+                Комплексное LED-воздействие с красным спектром (625–740 нм) активизирует синтез коллагена, улучшает плотность и эластичность кожи. 
+                <br />
+                Современная система энергомассажа воздействует на меридианы, улучшая циркуляцию энергии «Ци» и обмен веществ.              
+              </div>
+
               <h3 class="feature__title text-h3">
                 Интеллектуальный пользовательский интерфейс
               </h3>
@@ -106,16 +89,7 @@
               </div>
               <h3 class="feature__title text-h3">Применение</h3>
               <div class="feature__text">
-                Аппарат рекомендуется для:
-                <ul class="list--disc">
-                  <li>укрепления мышц и формирования рельефа тела</li>
-                  <li>устранения локальных жировых отложений</li>
-                  <li>снижения выраженности целлюлита</li>
-                  <li>повышения упругости и тонуса кожи</li>
-                  <li>коррекции контуров лица, шеи и тела</li>
-                  <li>восстановления после родов</li>
-                  <li>устранения дряблости и снижения тургора тканей</li>
-                </ul>
+                Устройство предназначено для коррекции фигуры, устранения целлюлита, повышения тонуса кожи и мышц, а также для общего оздоровления организма.
               </div>
             </div>
 
@@ -164,7 +138,7 @@
             <span class="lead__index">2.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Преимущества }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Form</span>
             </div>
           </div>
         </div>
@@ -175,11 +149,10 @@
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
                 <div class="griditem__title text-h3">
-                  Автономная работа манипул HIEMT
+                  5 технологий в одном устройстве
                 </div>
                 <div class="grid-item__text">
-                  Каждая манипула может работать отдельно или синхронно для
-                  прицельного воздействия на разные зоны тела
+                  механический массаж, LEDтерапия, энергомассаж, лимфодренаж и глубокое вибрационное воздействие.
                 </div>
               </div>
             </div>
@@ -188,7 +161,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_1.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Form Form"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover; object-position: center 15%"
@@ -198,10 +171,9 @@
             <div class="grid-item grid-item--text order-3">
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">Система охлаждения</div>
+                <div class="grid-item__title text-h3">Потеря веса</div>
                 <div class="grid-item__text">
-                  Активное охлаждение манипул HIEMT обеспечивает комфорт и
-                  безопасность даже при высокой мощности
+                  до 950 г за один сеанс.
                 </div>
               </div>
             </div>
@@ -210,7 +182,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_2.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Form Form"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -221,12 +193,10 @@
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Три манипулы эндосфера Legacy 360 Inner Sphere Roller
+                  Безопасность и щадящее воздействие
                 </div>
                 <div class="grid-item__text">
-                  Малая для лица и шеи (60 силиконовых шариков); средняя для
-                  мелких участков тела (55 силиконовых шариков); большая для
-                  больших зон тела (50 силиконовых шариков)
+                  подходит для чувствительных зон.
                 </div>
               </div>
             </div>
@@ -235,7 +205,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_3.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Form Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -246,10 +216,10 @@
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Регулируемая скорость вращения роликов до 2300 об/мин
+                  Эффект после первой процедуры
                 </div>
                 <div class="grid-item__text">
-                  Для комфортного и эффективного воздействия
+                  кожа становится более плотной и гладкой, улучшается рельеф и тонус.
                 </div>
               </div>
             </div>
@@ -258,7 +228,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_4.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Form Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 style="object-fit: cover"
@@ -269,11 +239,10 @@
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Компрессионная микровибрация с равномерным пульсирующим
-                  давлением, безопасная для кожи и тканей
+                  Омолаживающее действие
                 </div>
                 <div class="grid-item__text">
-                  Подходит для всего тела и лица, включая чувствительные зоны.
+                  визуально уменьшает возраст кожи, делает её упругой и эластичной.
                 </div>
               </div>
             </div>
@@ -289,7 +258,7 @@
             <span class="lead__index">3.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Комплектация и характеристики }</span>
-              <span class="lead__subtitle">Legacy Spectre</span>
+              <span class="lead__subtitle">Legacy Form</span>
             </div>
           </div>
         </div>
@@ -310,50 +279,37 @@
                     <span>Основной блок</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
-                  <td>Бессрочная</td>
+                  <!--td>Бессрочная</td-->
                 </tr>
                 <tr>
                   <td>
-                    <span>Манипула EMS</span>
+                    <span>5 манипул различного диаметра для работы с большими и малыми зонами</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
-                  <td>12 месяцев</td>
+                  <!--td>12 месяцев</td-->
                 </tr>
                 <tr>
                   <td>
-                    <span>Роликовая ручка-манипула ENDO (малая)</span>
-                    <span class="quantity"> 1 шт</span>
-                  </td>
-                  <td>12 месяцев</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Манипула ENDO</span>
+                    <span>Инструкция по эксплуатации</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Манипула ENDO</span>
+                    <span>Защитный аксессуар для головы</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Набор поясов</span>
-                    <span class="quantity"> 8*80 CM 8*90 CM 8*100 CM</span>
+                    <span>Защитный аксессуар для головы</span>
+                    <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Замена шариков для обеих манипул</span>
-                    <span class="quantity"> 1 компллект</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>Набор инструментов для подключения</span>
-                    <span class="quantity"> 1 компллект</span>
+                    <span>Защитный аксессуар для головы</span>
+                    <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
                 <tr>
@@ -379,52 +335,47 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Входная мощность</td>
-                  <td>110–220 В / 50–60 Гц</td>
+                  <td>Крутящий момент</td>
+                  <td>
+                    50 кг·см, с функцией автоматического контроля.                
+                  </td>
+                </tr>
+                <tr>
+                  <td>Напряжение</td>
+                  <td>12 В (безопасное)</td>
+                </tr>
+                <tr>
+                  <td>Mощность</td>
+                  <td>300 Вт</td>
+                </tr>
+                <tr>
+                  <td>Ток</td>
+                  <td>5–12 А.</td>
                 </tr>
 
                 <tr>
-                  <td>Выходная мощность</td>
-                  <td>2000 Вт</td>
-                </tr>
-
-                <tr>
-                  <td>Рабочая частота</td>
-                  <td>от 5 до 100 Гц</td>
-                </tr>
-
-                <tr>
-                  <td>Скорость вращения</td>
-                  <td>до 2300 об/мин (RPM)</td>
-                </tr>
-
-                <tr>
-                  <td>Размер экрана</td>
-                  <td>15,6 дюйма (сенсорный LCD)</td>
-                </tr>
-
-                <tr>
-                  <td>Размер аппарата</td>
-                  <td>50 × 60 × 130 см</td>
-                </tr>
-
-                <tr>
-                  <td>Вес (нетто)</td>
-                  <td>59 кг</td>
-                </tr>
-
-                <tr>
-                  <td>Размер упаковки</td>
-                  <td>65 × 46,7 × 120 см</td>
-                </tr>
-
-                <tr>
-                  <td>Вес (брутто)</td>
-                  <td>86.5 кг</td>
+                  <td>Скорость двигателя</td>
+                  <td>50–600 об/мин, с плавной регулировкой и реверсом</td>
                 </tr>
                 <tr>
-                  <td>Габариты упаковки</td>
-                  <td>61,5 × 53,5 × 103 см.</td>
+                  <td>Количество скоростей</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Глубина воздействия</td>
+                  <td>4–8 мм</td>
+                </tr>
+                <tr>
+                  <td>Количество активных зон</td>
+                  <td>до 12 одновременно</td>
+                </tr>
+                <tr>
+                  <td>Площадь воздействия</td>
+                  <td>20 000 мм² (большая манипула) и 5 000 мм² (малая)</td>
+                </tr>
+                <tr>
+                  <td>Материалы</td>
+                  <td>Ось рычага — из нержавеющей стали; Подшипник — из медного сплава с низким коэффициентом трения, не требует смазки</td>
                 </tr>
               </tbody>
             </table>
