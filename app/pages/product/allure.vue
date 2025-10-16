@@ -7,7 +7,7 @@
         <NuxtImg
           format="webp, avif"
           src="/img/allure/allure_hero5.png"
-          alt="Legacy Royal"
+          alt="Legacy Allure"
           class="section__background-image"
         />
       </div>
@@ -21,7 +21,7 @@
           Для коррекции фигуры, омоложения
           <br />кожи лица и тела
         </p>
-        <p class="price text-h2">345 000 ₽</p>
+        <p class="price text-h2">315 000 ₽</p>
       </div>
     </section>
 
@@ -41,8 +41,9 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Royal — многофункциональный аппарат для улучшения качества
-            кожи, коррекции целлюлита и моделирования контуров тела и лица
+            Legacy Allure — это высокотехнологичный медицинский малоинвазивный
+            инструмент для красоты кожи, сочетающий RF- микроиглы и фракционную
+            технологию.
           </div>
         </div>
 
@@ -52,7 +53,7 @@
               <NuxtImg
                 src="/img/allure/allure_9.png"
                 format="webp, avif"
-                alt="Legacy Royal"
+                alt="Legacy Allure"
                 class="grid-item__image"
                 style="object-position: 15% 40px"
                 sizes="100vw sm:50vw md:1000px lg:1600px"
@@ -62,7 +63,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure/allure_3.png"
-                alt="Legacy Royal"
+                alt="Legacy Allure"
                 class="grid-item__image"
                 style="object-position: 40% 0%"
                 sizes="100vw sm:50vw md:1000px lg:1600px"
@@ -72,7 +73,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure/allure_8.png"
-                alt="Legacy Royal"
+                alt="Legacy Allure"
                 class="grid-item__image"
                 style="object-position: 10% center"
                 sizes="100vw sm:50vw md:1000px lg:1600px"
@@ -84,17 +85,25 @@
               aria-labelledby="features-title"
             >
               <h2 class="features__title text-h2">Особенности</h2>
+
+              <!--
               <h3 class="feature__title text-h3">
                 Технология компрессионной микровибрации
               </h3>
+              -->
               <div class="feature__text">
-                Работа аппарата основана на создании пульсирующего давления с
-                помощью силиконовых шариков, вращающихся по оси ролика на
-                360°.Такая технология обеспечивает равномерное и глубокое
-                механическое воздействие без травмирования тканей.Она активно
-                стимулирует кровообращение, лимфоток и обменные процессы,
-                способствуя оздоровлению и омоложению кожи.
+                Аппарат Legacy Allure оснащен сменными насадками с 4 различными
+                конфигурациями (12P, 24P, 40P, нанозонд), а система позволяет
+                свободно регулировать установку изолирующей головки.
+                Кристаллитовая головка проникает в кожу на глубину 0,5–7 мм,
+                обеспечивая минимально инвазивное лечение и моделирование тканей
+                до 8 мм, с направленным термоэффектом для восстановления и
+                ремоделирования кожи. Аппарат включает функцию Ледяной молоток
+                для холодного компресса, который снижает температуру кожи,
+                успокаивает покраснения, отёки и зуд, а также способствует
+                сужению пор.
               </div>
+              <!--
               <h3 class="feature__title text-h3">
                 Интеллектуальная цилиндрическая роликовая ручка
               </h3>
@@ -135,28 +144,28 @@
                   <li>общего оздоровления тканей</li>
                 </ul>
               </div>
-            </div>
+            --></div>
 
             <div class="grid-item grid-item--vid">
-              <div class="video-container--rounded">
+              <div class="video-container">
                 <video
                   muted
                   autoplay
                   loop
                   class="grid-item__video"
                   preload="metadata"
-                  aria-label="360° обзор аппарата Legacy Royal"
+                  aria-label="360° обзор аппарата Legacy Allure"
                 >
                   <source
                     src="/video/allure/allure_360.webm"
                     type="video/webm"
                   />
                   <source src="/video/allure/allure_360.mp4" type="video/mp4" />
-                  <NuxtImg
-                    src="/img/royal/royal_vid_fallback.png"
-                    alt="Legacy Royal — 360° обзор (изображение вместо видео)"
+                  <!-- <NuxtImg
+                    src="/img/Allure/Allure_vid_fallback.png"
+                    alt="Legacy Allure — 360° обзор (изображение вместо видео)"
                     loading="lazy"
-                  />
+                  /> -->
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
                   обновите браузер или скачайте видео.
                 </video>
@@ -195,14 +204,17 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="griditem__title text-h3">
-                  Формирует контуры тела
+                <!--
+                <div class="grid-item__title text-h3">
+                  Глубокое проникновение RF-энергии
                 </div>
+                -->
                 <div class="grid-item__text">
-                  Эффективно корректирует фигуру, воздействуя на локальные
-                  жировые отложения в проблемных зонах: руки, спина, живот,
-                  бедра, ягодицы. Помогает достичь более стройного и подтянутого
-                  силуэта.
+                  Глубокое проникновение RF-энергии - до 8 мм в подкожную
+                  клетчатку. Регулируемая глубина иглы - от 0,5 до 7 мм,
+                  подходит для кожи любой толщины. Многоуровневая RF-технология
+                  — обработка трёх слоев кожи одновременно, сокращает время
+                  процедуры и повышает однородность результата.
                 </div>
               </div>
             </div>
@@ -211,7 +223,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure/allure_3.png"
-                alt="Аппарат Royal Legacy"
+                alt="Аппарат Allure Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 width="700"
@@ -222,13 +234,18 @@
             <div class="grid-item grid-item--text order-3">
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
+                <!--
                 <div class="grid-item__title text-h3">
                   Сглаживает проявления целлюлита
                 </div>
+                -->
                 <div class="grid-item__text">
-                  Улучшает микроциркуляцию, снижает отёчность и стимулирует
-                  выведение лишней жидкости, что способствует уменьшению
-                  выраженности целлюлита и выравниванию текстуры кожи.
+                  Изолированные конусные иглы с золотым покрытием — минимизируют
+                  повреждение эпидермиса, предотвращают ожоги, гиперпигментацию,
+                  боль и кровотечение. Разнообразие насадок — 12P, 24P, 40P и
+                  нанозонд для индивидуального подхода и безопасности. Ледяной
+                  молоток — мгновенное охлаждение, снижение воспалительной
+                  реакции, сужение пор и ускоренное восстановление кожи.
                 </div>
               </div>
             </div>
@@ -237,7 +254,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure/allure_9.png"
-                alt="Аппарат Royal Legacy"
+                alt="Аппарат Allure Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 width="1100"
@@ -248,22 +265,27 @@
             <div class="grid-item grid-item--text order-5">
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
+                <!--
                 <div class="grid-item__title text-h3">
                   Снимает ощущение тяжести в ногах
                 </div>
+                -->
                 <div class="grid-item__text">
-                  Активизирует лимфо- и венозный отток, устраняет застойные
-                  явления, помогает снять отёки и чувство усталости в нижних
-                  конечностях.
+                  Интерфейс и дисплей 10,4 дюйма удобны в использовании,
+                  параметры процедуры легко регулируются в соответствии с
+                  индивидуальными особенностями кожи. Аппарат подходит для
+                  обработки различных зон: область вокруг глаз, подбородок, лоб,
+                  шея, лицо, тело. Мощный лимфодренажный и антицеллюлитный
+                  эффект. Стимуляция выработки коллагена и эластина, улучшение
+                  тонуса и упругости кожи.
                 </div>
               </div>
             </div>
-
             <div class="grid-item grid-item--img order-6">
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure/allure_8.png"
-                alt="Аппарат Royal Legacy"
+                alt="Аппарат Allure Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 width="2000"
@@ -274,11 +296,11 @@
             <div class="grid-item grid-item--text order-7">
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">Тонизирует кожу</div>
+                <div class="grid-item__title text-h3">Показания</div>
                 <div class="grid-item__text">
-                  Стимулирует клеточный метаболизм и укрепляет кожные покровы.
-                  Особенно эффективна при потере упругости кожи после похудения
-                  или возрастных изменений.
+                  Дряблость кожи и снижение упругости Морщины и тонкие линии
+                  Следы и рубцы от акне Расширенные поры Растяжки Целлюлит и
+                  локальные жировые отложения Неравномерная текстура кожи
                 </div>
               </div>
             </div>
@@ -287,7 +309,7 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure/allure_9.png"
-                alt="Аппарат Royal Legacy"
+                alt="Аппарат Allure Legacy"
                 class="grid-item__img"
                 loading="lazy"
                 width="1100"
@@ -298,13 +320,11 @@
             <div class="grid-item grid-item--text order-9">
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Манипула для лица и шеи
-                </div>
+                <div class="grid-item__title text-h3">Принцип действия</div>
                 <div class="grid-item__text">
-                  Манипула для лица и шеи позволяет мягко прорабатывать
-                  деликатные зоны, повышая упругость и устраняя признаки
-                  возрастных изменений.
+                  Многоуровневая система позволяет одновременно воздействовать
+                  на несколько слоев кожи с миллисекундными интервалами,
+                  обеспечивая эффективное и безопасное лечение всего тела.
                 </div>
               </div>
             </div>
@@ -320,7 +340,7 @@
             <span class="lead__index">3.0</span>
             <div class="lead__text">
               <span class="lead__title">{ Комплектация и характеристики }</span>
-              <span class="lead__subtitle">Legacy Royal</span>
+              <span class="lead__subtitle">Legacy Allure</span>
             </div>
           </div>
         </div>
@@ -345,33 +365,45 @@
                 </tr>
                 <tr>
                   <td>
-                    <span>Роликовая ручка-манипула ENDO (большая)</span>
+                    <span>Ручка с микроиглами</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                   <td>12 месяцев</td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Роликовая ручка-манипула ENDO (малая)</span>
+                    <span>Насадки: 12P, 24P, 40P, нанозонд</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                   <td>12 месяцев</td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Замена шариков для обеих манипул</span>
+                    <span>Ледяной молоток</span>
                     <span class="quantity"> 1 компллект</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Набор инструментов для подключения</span>
+                    <span>Ножной переключатель</span>
                     <span class="quantity"> 1 компллект</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <span>Силовой кабель</span>
+                    <span>Кабели питания и соединения</span>
+                    <span class="quantity"> 1 шт</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Инструкция по эксплуатации</span>
+                    <span class="quantity"> 1 шт</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Карта активации</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                 </tr>
@@ -392,43 +424,44 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Входная мощность</td>
-                  <td>110–220 В / 50–60 Гц</td>
+                  <td>Глубина проникновения игл</td>
+                  <td>0,5–7 мм</td>
                 </tr>
 
                 <tr>
-                  <td>Выходная мощность</td>
-                  <td>3000 Вт</td>
+                  <td>Максимальная глубина воздействия</td>
+                  <td>8 мм</td>
                 </tr>
 
                 <tr>
-                  <td>Скорость вращения</td>
-                  <td>до 1400 об/мин (RPM)</td>
+                  <td>Насадки</td>
+                  <td>12P, 24P, 40P, нанозонд</td>
                 </tr>
 
                 <tr>
-                  <td>Размер экрана</td>
-                  <td>15,6 дюйма (сенсорный LCD)</td>
+                  <td>Диапазон мощности</td>
+                  <td>20–300 Вт в зависимости от насадки</td>
                 </tr>
 
                 <tr>
-                  <td>Размер аппарата</td>
-                  <td>29 × 29 × 107 см</td>
+                  <td>Тип игл</td>
+                  <td>
+                    конусные с золотым покрытием, диаметр иглы 0,22 мм, кончик
+                    0,1 мм
+                  </td>
                 </tr>
 
                 <tr>
-                  <td>Вес (нетто)</td>
-                  <td>27 кг</td>
+                  <td>Режимы работы</td>
+                  <td>
+                    одиночный выстрел, двойной выстрел, фиксированная точка,
+                    всплеск
+                  </td>
                 </tr>
 
                 <tr>
-                  <td>Размер упаковки</td>
-                  <td>65 × 46,7 × 120 см</td>
-                </tr>
-
-                <tr>
-                  <td>Вес (брутто)</td>
-                  <td>40 кг</td>
+                  <td>Охлаждение</td>
+                  <td>ледяной молоток для холодного компресса</td>
                 </tr>
               </tbody>
             </table>
@@ -445,7 +478,7 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: none;
+      object-fit: cover;
       object-position: 49% 30%;
 
       @media (width < $breakpoint-sm) {

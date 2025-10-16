@@ -1,5 +1,406 @@
 <template>
-  <div class="layout-center">
-    Скоро здесь будет описание аппарата Ems Spectrum
+  <div class="page page--product">
+    <h1 class="sr-only">Legacy Spectrum — описание аппарата</h1>
+
+    <section class="flex-center section hero">
+      <div class="section__background section__background--overlay">
+        <NuxtImg
+          format="webp, avif"
+          src="/img/spectre/spectre_hero.png"
+          alt="Legacy Spectrum"
+          class="section__background-image"
+        />
+      </div>
+
+      <div class="section__content contained">
+        <p class="category text-nav text-sub">
+          { Многофункциональный аппарат }
+        </p>
+        <h1 class="title text-h1">Legacy Spectrum</h1>
+        <p class="description">
+          для моделирования фигуры, укрепления мышц
+          <br />и улучшения тонуса кожи.
+        </p>
+        <p class="price text-h2">375 000 ₽</p>
+      </div>
+    </section>
+
+    <section
+      class="flex-center section description"
+      role="region"
+      aria-labelledby="lead-title"
+    >
+      <div class="contained">
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">1.0</span>
+            <div class="lead__text">
+              <span id="lead-title" class="lead__title">{ Описание }</span>
+              <span class="lead__subtitle">Legacy Spectrum</span>
+            </div>
+          </div>
+
+          <div class="lead__body text-h2">
+            Legacy Spectrum — профессиональный аппарат нового поколения для
+            моделирования фигуры, укрепления мышц и улучшения тонуса кожи.
+          </div>
+        </div>
+
+        <div class="section__content">
+          <div class="section__grid grid">
+            <div
+              class="grid-item grid-item--text features"
+              role="region"
+              aria-labelledby="features-title"
+            >
+              <h2 class="features__title text-h2">Особенности</h2>
+              <h3 class="feature__title text-h3">Технология HI-EMT</h3>
+              <div class="feature__text">
+                Технология HI-EMT (High-Energy Magnetic Therapy) основана на
+                действии высокоинтенсивного электромагнитного поля, которое
+                вызывает глубокие мышечные сокращения и активизирует обменные
+                процессы.
+              </div>
+              <h3 class="feature__title text-h3">Насадки для разных зон</h3>
+              <div class="feature__text">
+                Аппарат оснащён четырьмя независимыми манипулами, каждая из
+                которых может работать на отдельной зоне или синхронно — в
+                зависимости от выбранной программы. Встроенная система
+                охлаждения поддерживает комфортную температуру, предотвращая
+                перегрев тканей даже при длительных сеансах.
+              </div>
+              <h3 class="feature__title text-h3">
+                Безопасность и неинвазивность
+              </h3>
+              <div class="feature__text">
+                Процедура не требует восстановления, не вызывает боли и подходит
+                для клиентов любого возраста и уровня физической подготовки.
+              </div>
+              <!--
+              <h3 class="feature__title text-h3">Применение</h3>
+              <div class="feature__text">
+                Аппарат рекомендуется для:
+                <ul class="list--disc">
+                  <li>моделирования контуров тела</li>
+                  <li>коррекции целлюлита</li>
+                  <li>лифтинга кожи лица и тела</li>
+                  <li>улучшения лимфо- и кровообращения</li>
+                  <li>общего оздоровления тканей</li>
+                </ul>
+              </div>
+            --></div>
+
+            <div class="grid-item grid-item--vid">
+              <div class="video-container">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  class="grid-item__video"
+                  preload="metadata"
+                  aria-label="360° обзор аппарата Legacy Spectrum"
+                  src="/video/ems-spectrum/spectrum.webm"
+                  type="video/webm"
+                >
+                  <!-- <NuxtImg
+                    src="/img/ Spectrum/ Spectrum_vid_fallback.png"
+                    alt="Legacy  Spectrum — 360° обзор (изображение вместо видео)"
+                    loading="lazy"
+                  />
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
+                  обновите браузер или скачайте видео. -->
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section__contact"
+            role="region"
+            aria-label="Форма обратной связи"
+          >
+            <AppContactCard
+              class="contact-card--bg"
+              aria-label="Форма обратной связи для запроса"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flex-center benefits">
+      <div class="contained">
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">2.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Преимущества }</span>
+              <span class="lead__subtitle">Legacy Spectrum</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <div class="section__grid grid">
+            <div class="grid-item grid-item--text order-1">
+              <div class="grid-item__header text-nav text-sub">{ 01 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">
+                  Современная технология HI-EMT
+                </div>
+                <div class="grid-item__text">
+                  Аппарат основан на действии технологии High-Intensity
+                  Electromagnetic Therapy — высокоинтенсивной электромагнитной
+                  стимуляции, вызывающий сверхмаксимальные мышечные сокращения.
+                  Такие сокращения невозможно достичь даже при интенсивной
+                  тренировке, что обеспечивает выраженный эффект укрепления и
+                  тонизирования мышц.
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item grid-item--img order-2">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/ems-spectrum/spectrum_4.png"
+                alt="Аппарат  Spectrum Spectrum"
+                class="grid-item__img"
+                loading="lazy"
+                style="object-fit: cover; object-position: left 70%"
+              />
+            </div>
+
+            <div class="grid-item grid-item--text order-3">
+              <div class="grid-item__header text-nav text-sub">{ 02 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">
+                  Четыре автономные манипулы
+                </div>
+                <div class="grid-item__text">
+                  Каждая манипула работает независимо, что позволяет
+                  одновременно воздействовать на разные зоны тела (например,
+                  живот, ягодицы, бёдра, руки). Это сокращает общее время
+                  процедуры и повышает эффективность работы специалиста.
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item grid-item--img order-4">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/ems-spectrum/spectrum_2.png"
+                alt="Аппарат  Spectrum Spectrum"
+                class="grid-item__img"
+                loading="lazy"
+                style="object-fit: cover"
+              />
+            </div>
+
+            <div class="grid-item grid-item--text order-5">
+              <div class="grid-item__header text-nav text-sub">{ 03 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">
+                  Интеллектуальная система охлаждения
+                </div>
+                <div class="grid-item__text">
+                  Встроенное активное охлаждение защищает кожу от перегрева,
+                  поддерживает стабильную температуру манипул и делает процедуру
+                  максимально комфортной. Благодаря этому сеанс проходит без
+                  боли, ожогов и ощущения жара даже при высокой мощности
+                  воздействия.
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item grid-item--img order-6">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/ems-spectrum/spectrum_3.png"
+                alt="Аппарат  Spectrum Legacy"
+                class="grid-item__img"
+                loading="lazy"
+                style="object-fit: cover"
+              />
+            </div>
+
+            <div class="grid-item grid-item--text order-7">
+              <div class="grid-item__header text-nav text-sub">{ 04 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">
+                  Высокая эффективность за короткое время
+                </div>
+                <div class="grid-item__text">
+                  Один сеанс вызывает до 20 000 сверхмаксимальных сокращений в
+                  целевой зоне. Уже после нескольких процедур наблюдается
+                  уменьшение жировых отложений, повышение тонуса мышц и
+                  улучшение контуров тела.
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item grid-item--img order-8">
+              <NuxtImg
+                format="webp, avif"
+                src="/img/ems-spectrum/spectrum_6.png"
+                alt="Аппарат  Spectrum Legacy"
+                class="grid-item__img"
+                loading="lazy"
+                style="object-fit: cover"
+              />
+            </div>
+
+            <div class="grid-item grid-item--text order-9">
+              <div class="grid-item__header text-nav text-sub">{ 05 }</div>
+              <div class="grid-item__body">
+                <div class="grid-item__title text-h3">
+                  Персонализированные программы
+                </div>
+                <div class="grid-item__text">
+                  Специалист может настраивать интенсивность, частоту и
+                  длительность импульсов под индивидуальные особенности каждого
+                  клиента. Это обеспечивает точную адаптацию процедуры и
+                  максимальный результат.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flex-center specification">
+      <div class="contained">
+        <div class="lead">
+          <div class="lead__header text-nav text-sub">
+            <span class="lead__index">3.0</span>
+            <div class="lead__text">
+              <span class="lead__title">{ Комплектация и характеристики }</span>
+              <span class="lead__subtitle">Legacy Spectrum</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <div class="section-block">
+            <h3 class="section-block__title text-h3">Комплектация</h3>
+            <table class="section__table table table--specification">
+              <thead>
+                <tr>
+                  <th class="text-min">Наименование</th>
+                  <th class="text-min">Гарантия</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>Основной блок</span>
+                    <span class="quantity"> 1 шт</span>
+                  </td>
+                  <td>Пожизненная</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Манипула HI-EMT)</span>
+                    <span class="quantity"> 4 шт</span>
+                  </td>
+                  <td>12 месяцев</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Набор поясов</span>
+                    <span class="quantity"> 8*80 CM 8*90 CM 8*100 CM</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Набор инструментов для подключения</span>
+                    <span class="quantity"> 1 компллект</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Силовой кабель</span>
+                    <span class="quantity"> 1 шт</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="section-block">
+            <h3 class="section-block__title font-secondary text-h3">
+              Технические характеристики
+            </h3>
+            <table class="section__table table table--characteristics">
+              <thead>
+                <tr>
+                  <th class="text-min">Характеристика</th>
+                  <th class="text-min">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Входная мощность</td>
+                  <td>110–220 В / 50–60 Гц</td>
+                </tr>
+
+                <tr>
+                  <td>Выходная мощность</td>
+                  <td>2000 Вт</td>
+                </tr>
+
+                <tr>
+                  <td>Рабочая частота</td>
+                  <td>от 5 до 100 Гц</td>
+                </tr>
+
+                <tr>
+                  <td>Размер экрана</td>
+                  <td>15,6 дюйма (сенсорный LCD)</td>
+                </tr>
+
+                <tr>
+                  <td>Размер аппарата</td>
+                  <td>50 × 60 × 130 см</td>
+                </tr>
+
+                <tr>
+                  <td>Вес (нетто)</td>
+                  <td>59 кг</td>
+                </tr>
+
+                <tr>
+                  <td>Размер упаковки</td>
+                  <td>61,5 × 53,5 × 103 см</td>
+                </tr>
+
+                <tr>
+                  <td>Вес (брутто)</td>
+                  <td>86,5 кг</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
+
+<script setup></script>
+
+<style lang="scss" scoped>
+.section.hero {
+  .section__background {
+    .section__background-image {
+      object-fit: cover;
+      object-position: center 30%;
+
+      @media (width < $breakpoint-sm) {
+        object-fit: cover;
+        object-position: center 10px;
+      }
+    }
+  }
+}
+</style>

@@ -137,7 +137,7 @@
             </div>
 
             <div class="grid-item grid-item--vid">
-              <div class="video-container--rounded">
+              <div class="video-container">
                 <video
                   muted
                   autoplay
@@ -191,7 +191,7 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="griditem__title text-h3">
+                <div class="grid-item__title text-h3">
                   Формирует контуры тела
                 </div>
                 <div class="grid-item__text">
@@ -433,9 +433,13 @@
 .section.hero {
   .section__background {
     .section__background-image {
+      height: 100%;
+      width: 100%;
+      object-fit: none;
       object-position: 51% 60px;
 
       @media (width < $breakpoint-sm) {
+        object-fit: cover;
         object-position: 53% 80px;
       }
     }
