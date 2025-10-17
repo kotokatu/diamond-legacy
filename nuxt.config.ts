@@ -14,13 +14,13 @@ export default defineNuxtConfig({
   image: {
     format: ["webp"],
     screens: {
-      xs: 360,
-      sm: 768,
-      md: 1024,
-      lg: 1280,
-      xl: 1536,
-      xxl: 1536,
-      "2xl": 1536,
+      xs: 359,
+      sm: 767,
+      md: 1023,
+      lg: 1279,
+      xl: 1535,
+      xxl: 1535,
+      "2xl": 1535,
     },
   },
 });

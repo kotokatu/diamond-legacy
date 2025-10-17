@@ -5,12 +5,11 @@
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
         <NuxtImg
-          fit="outside"
           format="webp, avif"
-          src="/img/royal/royal_hero2.png"
+          src="/img/royal/royal_hero.png"
           alt="Legacy Royal"
           class="section__background-image"
-          width="1920"
+          sizes="640px sm:1920px"
         />
       </div>
 
@@ -433,10 +432,8 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      height: 100%;
-      width: 100%;
       object-fit: none;
-      object-position: 51% 60px;
+      object-position: 51.5% 60px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;

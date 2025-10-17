@@ -9,6 +9,7 @@
           src="/img/allure/allure_hero5.png"
           alt="Legacy Allure"
           class="section__background-image"
+          sizes="640px sm:1920px"
         />
       </div>
 
@@ -478,8 +479,9 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: 49% 30%;
+      width: 100%;
+      object-fit: none;
+      // object-position: 49% 30%;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
