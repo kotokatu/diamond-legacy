@@ -9,6 +9,7 @@
           src="/img/allure-pro/allure-pro_hero.png"
           alt="Legacy Allure Pro"
           class="section__background-image"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -444,12 +445,11 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: center 30%;
+      object-fit: none;
+      object-position: center 40px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: center 10px;
       }
     }
   }

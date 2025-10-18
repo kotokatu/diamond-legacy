@@ -6,9 +6,10 @@
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
-          src="/img/spectre/spectre_hero.png"
+          src="/img/ems-spectrum/spectrum_hero.png"
           alt="Legacy Spectrum"
           class="section__background-image"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -241,7 +242,7 @@
             <div class="grid-item grid-item--img order-8">
               <NuxtImg
                 format="webp, avif"
-                src="/img/ems-spectrum/spectrum_6.png"
+                src="/img/ems-spectrum/spectrum_1.png"
                 alt="Аппарат  Spectrum Legacy"
                 class="grid-item__img"
                 loading="lazy"
@@ -393,12 +394,12 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: center 30%;
+      object-fit: none;
+      object-position: center 10px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: center 10px;
+        object-position: center 40px;
       }
     }
   }

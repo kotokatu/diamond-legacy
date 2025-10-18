@@ -9,7 +9,7 @@
           src="/img/laser/laser_hero.png"
           alt="Legacy Laser"
           class="section__background-image"
-          width="1920"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -405,12 +405,12 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: center 25%;
+      object-fit: none;
+      object-position: center -30px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: center 10px;
+        object-position: center 40px;
       }
     }
   }

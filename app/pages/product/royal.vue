@@ -9,7 +9,7 @@
           src="/img/royal/royal_hero.png"
           alt="Legacy Royal"
           class="section__background-image"
-          sizes="640px sm:1920px"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -433,11 +433,10 @@
   .section__background {
     .section__background-image {
       object-fit: none;
-      object-position: 51.5% 60px;
+      object-position: center 40px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: 53% 80px;
       }
     }
   }

@@ -9,7 +9,7 @@
           src="/img/form/form_hero.png"
           alt="Legacy Form"
           class="section__background-image"
-          width="1280"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -409,12 +409,11 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: center 25%;
+      object-fit: none;
+      object-position: center 40px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: 48% 20px;
       }
     }
   }

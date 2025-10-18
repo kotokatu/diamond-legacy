@@ -6,10 +6,10 @@
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
-          src="/img/allure/allure_hero5.png"
+          src="/img/allure/allure_hero.png"
           alt="Legacy Allure"
           class="section__background-image"
-          sizes="640px sm:1920px"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -227,8 +227,7 @@
                 alt="Аппарат Allure Legacy"
                 class="grid-item__img"
                 loading="lazy"
-                width="700"
-                style="object-fit: none; object-position: 40% 20%"
+                sizes=""
               />
             </div>
 
@@ -479,13 +478,11 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      width: 100%;
       object-fit: none;
-      // object-position: 49% 30%;
+      object-position: center 40px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: 49% 10px;
       }
     }
   }

@@ -9,7 +9,7 @@
           src="/img/vela/vela_hero.png"
           alt="Legacy Vela"
           class="section__background-image"
-          width="1920"
+          sizes="640px sm:1280px"
         />
       </div>
 
@@ -441,11 +441,12 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: center 25%;
+      object-fit: none;
+      object-position: center 10px;
 
       @media (width < $breakpoint-sm) {
-        object-position: center 10px;
+        object-fit: cover;
+        object-position: center 40px;
       }
     }
   }
