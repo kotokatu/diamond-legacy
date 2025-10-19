@@ -35,9 +35,9 @@
     },
     {
       "id": 5,
-      "name": "Legacy EMS Spectrum",
-      "link": "/product/ems-spectrum",
-      "image": "/img/ems-spectrum/ems-spectrum_card.png",
+      "name": "Legacy Spectrum",
+      "link": "/product/spectrum",
+      "image": "/img/spectrum/spectrum_card.png",
       "description": "Аппарат для коррекции фигуры с функцией EMS (4 манипулы)",
       "price": "375 000 ₽"
     },

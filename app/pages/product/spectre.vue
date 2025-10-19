@@ -7,16 +7,14 @@
         <NuxtImg
           format="webp, avif"
           src="/img/spectre/spectre_hero.png"
-          alt="Legacy Spectre"
+          alt="Аппарат Legacy Spectre"
           class="section__background-image"
           sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Spectre</h1>
         <p class="description">
           Для моделирования тела, укрепления мышц
@@ -26,11 +24,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -42,24 +36,19 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Spectre — Многофункциональный аппарат для моделирования тела,
-            укрепления мышц и омоложения кожи тела и лица.
+            Legacy Spectre — Многофункциональный аппарат для моделирования тела, укрепления мышц и омоложения кожи тела
+            и лица.
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
               <h3 class="feature__title text-h3">Технология HIEMT</h3>
               <div class="feature__text">
-                Высокоинтенсивные электромагнитные импульсы вызывают глубокие
-                мышечные сокращения, которые невозможно достичь обычной
-                тренировкой. Результат:
+                Высокоинтенсивные электромагнитные импульсы вызывают глубокие мышечные сокращения, которые невозможно
+                достичь обычной тренировкой. Результат:
                 <br />
                 – активация мышечного роста
                 <br />
@@ -69,8 +58,7 @@
               </div>
               <h3 class="feature__title text-h3">Технология ENDO</h3>
               <div class="feature__text">
-                Компрессионная микровибрация воздействует на поверхностные и
-                глубокие ткани:
+                Компрессионная микровибрация воздействует на поверхностные и глубокие ткани:
                 <br />
                 – усиливает кровообращение
                 <br />
@@ -82,9 +70,7 @@
                 <br />
                 – запускает процессы регенерации и омоложения
               </div>
-              <h3 class="feature__title text-h3">
-                Аппарат оснащён тремя манипулами ENDO
-              </h3>
+              <h3 class="feature__title text-h3">Аппарат оснащён тремя манипулами ENDO</h3>
               <div class="feature__text">
                 В комплект входят:
                 <ul class="list--disc">
@@ -92,17 +78,13 @@
                   <li>средняя манипула — для мелких участков тела</li>
                   <li>большая манипула — для больших зон тела</li>
                 </ul>
-                Три манипулы позволяют проводить комплексную работу на всех
-                зонах тела и лица, обеспечивая индивидуальный подход к каждой
-                области и максимальную эффективность процедур.
+                Три манипулы позволяют проводить комплексную работу на всех зонах тела и лица, обеспечивая
+                индивидуальный подход к каждой области и максимальную эффективность процедур.
               </div>
-              <h3 class="feature__title text-h3">
-                Интеллектуальный пользовательский интерфейс
-              </h3>
+              <h3 class="feature__title text-h3">Интеллектуальный пользовательский интерфейс</h3>
               <div class="feature__text">
-                Аппарат оснащён интуитивно понятной сенсорной панелью и
-                предлагает гибкую настройку под индивидуальные потребности
-                каждого клиента.
+                Аппарат оснащён интуитивно понятной сенсорной панелью и предлагает гибкую настройку под индивидуальные
+                потребности каждого клиента.
               </div>
               <h3 class="feature__title text-h3">Применение</h3>
               <div class="feature__text">
@@ -130,28 +112,21 @@
                   aria-label="360° обзор аппарата Legacy Spectre"
                   src="/video/spectre/spectre.webm"
                   type="video/webm"
+                  poster="/img/spectre/spectre_vid_fallback.png"
                 >
-                  <!-- <NuxtImg
-                    src="/img/Spectre/Spectre_vid_fallback.png"
+                  <NuxtImg
+                    src="/img/spectre/spectre_vid_fallback.png"
                     alt="Legacy Spectre — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео. -->
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -174,12 +149,9 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Автономная работа манипул HIEMT
-                </div>
+                <div class="grid-item__title text-h3">Автономная работа манипул HIEMT</div>
                 <div class="grid-item__text">
-                  Каждая манипула может работать отдельно или синхронно для
-                  прицельного воздействия на разные зоны тела
+                  Каждая манипула может работать отдельно или синхронно для прицельного воздействия на разные зоны тела
                 </div>
               </div>
             </div>
@@ -188,10 +160,11 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/spectre/spectre_1.png"
-                alt="Аппарат Spectre Spectre"
+                alt="Аппарат Legacy Spectre"
                 class="grid-item__img"
+                style="object-position: center"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -200,8 +173,7 @@
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Система охлаждения</div>
                 <div class="grid-item__text">
-                  Активное охлаждение манипул HIEMT обеспечивает комфорт и
-                  безопасность даже при высокой мощности
+                  Активное охлаждение манипул HIEMT обеспечивает комфорт и безопасность даже при высокой мощности
                 </div>
               </div>
             </div>
@@ -209,24 +181,22 @@
             <div class="grid-item grid-item--img order-4">
               <NuxtImg
                 format="webp, avif"
-                src="/img/spectre/spectre_5.png"
-                alt="Аппарат Spectre Spectre"
+                src="/img/spectre/spectre_2.png"
+                alt="Аппарат Legacy Spectre"
                 class="grid-item__img"
+                style="object-position: center"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-5">
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Три манипулы эндосфера Legacy 360 Inner Sphere Roller
-                </div>
+                <div class="grid-item__title text-h3">Три манипулы эндосфера Legacy 360 Inner Sphere Roller</div>
                 <div class="grid-item__text">
-                  Малая для лица и шеи (60 силиконовых шариков); средняя для
-                  мелких участков тела (55 силиконовых шариков); большая для
-                  больших зон тела (50 силиконовых шариков)
+                  Малая для лица и шеи (60 силиконовых шариков); средняя для мелких участков тела (55 силиконовых
+                  шариков); большая для больших зон тела (50 силиконовых шариков)
                 </div>
               </div>
             </div>
@@ -235,22 +205,19 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/spectre/spectre_3.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Legacy Spectre"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                style="object-position: center"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-7">
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Регулируемая скорость вращения роликов до 2300 об/мин
-                </div>
-                <div class="grid-item__text">
-                  Для комфортного и эффективного воздействия
-                </div>
+                <div class="grid-item__title text-h3">Регулируемая скорость вращения роликов до 2300 об/мин</div>
+                <div class="grid-item__text">Для комфортного и эффективного воздействия</div>
               </div>
             </div>
 
@@ -258,10 +225,11 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/spectre/spectre_4.png"
-                alt="Аппарат Spectre Legacy"
+                alt="Аппарат Legacy Spectre"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                style="object-position: center"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -269,12 +237,9 @@
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">
-                  Компрессионная микровибрация с равномерным пульсирующим
-                  давлением, безопасная для кожи и тканей
+                  Компрессионная микровибрация с равномерным пульсирующим давлением, безопасная для кожи и тканей
                 </div>
-                <div class="grid-item__text">
-                  Подходит для всего тела и лица, включая чувствительные зоны.
-                </div>
+                <div class="grid-item__text">Подходит для всего тела и лица, включая чувствительные зоны.</div>
               </div>
             </div>
           </div>
@@ -367,9 +332,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>

@@ -7,16 +7,14 @@
         <NuxtImg
           format="webp, avif"
           src="/img/laser/laser_hero.png"
-          alt="Legacy Laser"
+          alt="Аппарат Legacy Laser"
           class="section__background-image"
           sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Laser</h1>
         <p class="description">
           для эпиляци
@@ -26,11 +24,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -42,73 +36,53 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Laser — это высокотехнологичный аппарат, преобразующий
-            электрическую энергию в непрерывный высокоэнергетический лазерный
-            луч. В основе работы сочетаются лазерные, электронные и компьютерные
-            технологии, что делает аппарат одним из наиболее безопасных и
-            быстрых решений для эпиляции на сегодняшний день.
+            Legacy Laser — это высокотехнологичный аппарат, преобразующий электрическую энергию в непрерывный
+            высокоэнергетический лазерный луч. В основе работы сочетаются лазерные, электронные и компьютерные
+            технологии, что делает аппарат одним из наиболее безопасных и быстрых решений для эпиляции на сегодняшний
+            день.
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
               <!--h3 class="feature__title text-h3">Технология HIEMT</h3-->
               <div class="feature__text">
-                Эффект достигается за счёт поглощения меланином в волосяных
-                фолликулах лазерной энергии, что приводит к их разрушению, при
-                этом:
+                Эффект достигается за счёт поглощения меланином в волосяных фолликулах лазерной энергии, что приводит к
+                их разрушению, при этом:
                 <ul class="list--disc">
                   <li>окружающие ткани не повреждаются;</li>
-                  <li>
-                    удаление нежелательных волос проходит практически
-                    безболезненно;
-                  </li>
-                  <li>
-                    удаление нежелательных волос проходит практически
-                    безболезненно;
-                  </li>
+                  <li>удаление нежелательных волос проходит практически безболезненно;</li>
+                  <li>удаление нежелательных волос проходит практически безболезненно;</li>
                 </ul>
               </div>
               <!--h3 class="feature__title text-h3">Технология ENDO</h3-->
               <div class="feature__text">
-                Многоуровневая система безопасности с функцией самодиагностики.
-                Сенсорный дисплей 15,6" с интуитивным интерфейсом.
+                Многоуровневая система безопасности с функцией самодиагностики. Сенсорный дисплей 15,6" с интуитивным
+                интерфейсом.
                 <br />
-                Возможность работы с тремя длинами волн: 755 нм, 808 нм, 1064
-                нм.
+                Возможность работы с тремя длинами волн: 755 нм, 808 нм, 1064 нм.
                 <br />
-                Встроенная система водяного и компрессорного охлаждения (до
-                -25°C).
+                Встроенная система водяного и компрессорного охлаждения (до -25°C).
                 <br />
                 Высокая мощность до 3000 Вт для быстрой обработки больших зон.
                 <br />
-                Плавная регулировка параметров процедуры под индивидуальные
-                особенности клиента.
+                Плавная регулировка параметров процедуры под индивидуальные особенности клиента.
                 <br />
                 Аварийная кнопка мгновенной остановки работы.
                 <br />
-                Конструкция, обеспечивающая долгую непрерывную работу без
-                перегрева.
+                Конструкция, обеспечивающая долгую непрерывную работу без перегрева.
               </div>
               <h3 class="feature__title text-h3">Принцип работы</h3>
               <div class="feature__text">
-                Аппарат Legacy Laser работает на основе технологии селективного
-                фототермолиза — лазерный луч с длиной волны 755 нм, 808 нм или
-                1064 нм направленно воздействует на меланин, содержащийся в
-                волосяных фолликулах. Поглощая лазерную энергию, меланин
-                превращает её в тепловую, что приводит к разрушению фолликула и
-                предотвращает дальнейший рост волос. Благодаря высокой точности
-                настройки параметров (мощность, длительность импульса, размер
-                пятна и частота) достигается максимальная эффективность при
-                минимальном воздействии на окружающие ткани. Встроенная система
-                охлаждения защищает кожу от перегрева, что снижает болевые
-                ощущения и риск побочных эффектов.
+                Аппарат Legacy Laser работает на основе технологии селективного фототермолиза — лазерный луч с длиной
+                волны 755 нм, 808 нм или 1064 нм направленно воздействует на меланин, содержащийся в волосяных
+                фолликулах. Поглощая лазерную энергию, меланин превращает её в тепловую, что приводит к разрушению
+                фолликула и предотвращает дальнейший рост волос. Благодаря высокой точности настройки параметров
+                (мощность, длительность импульса, размер пятна и частота) достигается максимальная эффективность при
+                минимальном воздействии на окружающие ткани. Встроенная система охлаждения защищает кожу от перегрева,
+                что снижает болевые ощущения и риск побочных эффектов.
               </div>
             </div>
 
@@ -123,28 +97,17 @@
                   aria-label="Заставка Legacy"
                   src="/video/product_default.mp4"
                   type="video/mp4"
+                  poster="/img/default_vid_fallback.png"
                 >
-                  <!-- <NuxtImg
-                    src="/img/royal/royal_vid_fallback.png"
-                    alt="Legacy Royal — 360° обзор (изображение вместо видео)"
-                    loading="lazy"
-                  />
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео. -->
+                  <NuxtImg src="/img/default_vid_fallback.png" alt="Заставка Legacy" loading="lazy" />
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -167,12 +130,8 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Максимальная эффективность
-                </div>
-                <div class="grid-item__text">
-                  высокая плотность энергии для быстрого результата.
-                </div>
+                <div class="grid-item__title text-h3">Максимальная эффективность</div>
+                <div class="grid-item__text">высокая плотность энергии для быстрого результата.</div>
               </div>
             </div>
 
@@ -180,10 +139,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_1.png"
-                alt="Аппарат Laser Laser"
+                alt="Аппарат Legacy Laser"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center top"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -191,9 +150,7 @@
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Универсальность</div>
-                <div class="grid-item__text">
-                  подходит для всех фототипов кожи и типов волос.
-                </div>
+                <div class="grid-item__text">подходит для всех фототипов кожи и типов волос.</div>
               </div>
             </div>
 
@@ -201,10 +158,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_2.png"
-                alt="Аппарат Laser Laser"
+                alt="Аппарат Legacy Laser"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -212,9 +169,7 @@
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Комфорт клиента</div>
-                <div class="grid-item__text">
-                  встроенное охлаждение снижает болевые ощущения.
-                </div>
+                <div class="grid-item__text">встроенное охлаждение снижает болевые ощущения.</div>
               </div>
             </div>
 
@@ -222,10 +177,11 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/laser/laser_3.png"
-                alt="Аппарат Laser Legacy"
+                alt="Аппарат Legacy Laser"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: contain; transform: scale(0.9)"
+                style="object-fit: contain"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -233,20 +189,18 @@
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Долговечность</div>
-                <div class="grid-item__text">
-                  рассчитан на интенсивную профессиональную эксплуатацию.
-                </div>
+                <div class="grid-item__text">рассчитан на интенсивную профессиональную эксплуатацию.</div>
               </div>
             </div>
 
             <div class="grid-item grid-item--img order-8">
               <NuxtImg
                 format="webp, avif"
-                src="/img/laser/laser_5.png"
-                alt="Аппарат Laser Legacy"
+                src="/img/laser/laser_4.png"
+                alt="Аппарат Legacy Laser"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -254,9 +208,7 @@
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Экономичность</div>
-                <div class="grid-item__text">
-                  долговечный ресурс ручки – до 50 000 импульсов.
-                </div>
+                <div class="grid-item__text">долговечный ресурс ручки – до 50 000 импульсов.</div>
               </div>
             </div>
           </div>
@@ -335,9 +287,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>

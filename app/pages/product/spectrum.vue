@@ -6,17 +6,15 @@
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
-          src="/img/ems-spectrum/spectrum_hero.png"
-          alt="Legacy Spectrum"
+          src="/img/spectrum/spectrum_hero.png"
+          alt="Аппарат Legacy Spectrum"
           class="section__background-image"
           sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Spectrum</h1>
         <p class="description">
           для моделирования фигуры, укрепления мышц
@@ -26,11 +24,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -42,40 +36,30 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Spectrum — профессиональный аппарат нового поколения для
-            моделирования фигуры, укрепления мышц и улучшения тонуса кожи.
+            Legacy Spectrum — профессиональный аппарат нового поколения для моделирования фигуры, укрепления мышц и
+            улучшения тонуса кожи.
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
               <h3 class="feature__title text-h3">Технология HI-EMT</h3>
               <div class="feature__text">
-                Технология HI-EMT (High-Energy Magnetic Therapy) основана на
-                действии высокоинтенсивного электромагнитного поля, которое
-                вызывает глубокие мышечные сокращения и активизирует обменные
-                процессы.
+                Технология HI-EMT (High-Energy Magnetic Therapy) основана на действии высокоинтенсивного
+                электромагнитного поля, которое вызывает глубокие мышечные сокращения и активизирует обменные процессы.
               </div>
               <h3 class="feature__title text-h3">Насадки для разных зон</h3>
               <div class="feature__text">
-                Аппарат оснащён четырьмя независимыми манипулами, каждая из
-                которых может работать на отдельной зоне или синхронно — в
-                зависимости от выбранной программы. Встроенная система
-                охлаждения поддерживает комфортную температуру, предотвращая
-                перегрев тканей даже при длительных сеансах.
+                Аппарат оснащён четырьмя независимыми манипулами, каждая из которых может работать на отдельной зоне или
+                синхронно — в зависимости от выбранной программы. Встроенная система охлаждения поддерживает комфортную
+                температуру, предотвращая перегрев тканей даже при длительных сеансах.
               </div>
-              <h3 class="feature__title text-h3">
-                Безопасность и неинвазивность
-              </h3>
+              <h3 class="feature__title text-h3">Безопасность и неинвазивность</h3>
               <div class="feature__text">
-                Процедура не требует восстановления, не вызывает боли и подходит
-                для клиентов любого возраста и уровня физической подготовки.
+                Процедура не требует восстановления, не вызывает боли и подходит для клиентов любого возраста и уровня
+                физической подготовки.
               </div>
               <!--
               <h3 class="feature__title text-h3">Применение</h3>
@@ -100,30 +84,23 @@
                   class="grid-item__video"
                   preload="metadata"
                   aria-label="360° обзор аппарата Legacy Spectrum"
-                  src="/video/ems-spectrum/spectrum.webm"
+                  src="/video/spectrum/spectrum.webm"
                   type="video/webm"
+                  poster="/img/spectrum/spectrum_vid_fallback.png"
                 >
-                  <!-- <NuxtImg
-                    src="/img/ Spectrum/ Spectrum_vid_fallback.png"
-                    alt="Legacy  Spectrum — 360° обзор (изображение вместо видео)"
+                  <NuxtImg
+                    src="/img/spectrum/spectrum_vid_fallback.png"
+                    alt="Legacy Spectrum — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео. -->
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -146,15 +123,11 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Современная технология HI-EMT
-                </div>
+                <div class="grid-item__title text-h3">Современная технология HI-EMT</div>
                 <div class="grid-item__text">
-                  Аппарат основан на действии технологии High-Intensity
-                  Electromagnetic Therapy — высокоинтенсивной электромагнитной
-                  стимуляции, вызывающий сверхмаксимальные мышечные сокращения.
-                  Такие сокращения невозможно достичь даже при интенсивной
-                  тренировке, что обеспечивает выраженный эффект укрепления и
+                  Аппарат основан на действии технологии High-Intensity Electromagnetic Therapy — высокоинтенсивной
+                  электромагнитной стимуляции, вызывающий сверхмаксимальные мышечные сокращения. Такие сокращения
+                  невозможно достичь даже при интенсивной тренировке, что обеспечивает выраженный эффект укрепления и
                   тонизирования мышц.
                 </div>
               </div>
@@ -163,25 +136,22 @@
             <div class="grid-item grid-item--img order-2">
               <NuxtImg
                 format="webp, avif"
-                src="/img/ems-spectrum/spectrum_4.png"
-                alt="Аппарат  Spectrum Spectrum"
+                src="/img/spectrum/spectrum_1.png"
+                alt="Аппарат Legacy Spectrum"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: left 70%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-3">
               <div class="grid-item__header text-nav text-sub">{ 02 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Четыре автономные манипулы
-                </div>
+                <div class="grid-item__title text-h3">Четыре автономные манипулы</div>
                 <div class="grid-item__text">
-                  Каждая манипула работает независимо, что позволяет
-                  одновременно воздействовать на разные зоны тела (например,
-                  живот, ягодицы, бёдра, руки). Это сокращает общее время
-                  процедуры и повышает эффективность работы специалиста.
+                  Каждая манипула работает независимо, что позволяет одновременно воздействовать на разные зоны тела
+                  (например, живот, ягодицы, бёдра, руки). Это сокращает общее время процедуры и повышает эффективность
+                  работы специалиста.
                 </div>
               </div>
             </div>
@@ -189,26 +159,22 @@
             <div class="grid-item grid-item--img order-4">
               <NuxtImg
                 format="webp, avif"
-                src="/img/ems-spectrum/spectrum_2.png"
-                alt="Аппарат  Spectrum Spectrum"
+                src="/img/spectrum/spectrum_2.png"
+                alt="Аппарат Legacy Spectrum"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-5">
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Интеллектуальная система охлаждения
-                </div>
+                <div class="grid-item__title text-h3">Интеллектуальная система охлаждения</div>
                 <div class="grid-item__text">
-                  Встроенное активное охлаждение защищает кожу от перегрева,
-                  поддерживает стабильную температуру манипул и делает процедуру
-                  максимально комфортной. Благодаря этому сеанс проходит без
-                  боли, ожогов и ощущения жара даже при высокой мощности
-                  воздействия.
+                  Встроенное активное охлаждение защищает кожу от перегрева, поддерживает стабильную температуру манипул
+                  и делает процедуру максимально комфортной. Благодаря этому сеанс проходит без боли, ожогов и ощущения
+                  жара даже при высокой мощности воздействия.
                 </div>
               </div>
             </div>
@@ -216,25 +182,21 @@
             <div class="grid-item grid-item--img order-6">
               <NuxtImg
                 format="webp, avif"
-                src="/img/ems-spectrum/spectrum_3.png"
-                alt="Аппарат  Spectrum Legacy"
+                src="/img/spectrum/spectrum_3.png"
+                alt="Аппарат Legacy Spectrum"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-7">
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Высокая эффективность за короткое время
-                </div>
+                <div class="grid-item__title text-h3">Высокая эффективность за короткое время</div>
                 <div class="grid-item__text">
-                  Один сеанс вызывает до 20 000 сверхмаксимальных сокращений в
-                  целевой зоне. Уже после нескольких процедур наблюдается
-                  уменьшение жировых отложений, повышение тонуса мышц и
-                  улучшение контуров тела.
+                  Один сеанс вызывает до 20 000 сверхмаксимальных сокращений в целевой зоне. Уже после нескольких
+                  процедур наблюдается уменьшение жировых отложений, повышение тонуса мышц и улучшение контуров тела.
                 </div>
               </div>
             </div>
@@ -242,25 +204,21 @@
             <div class="grid-item grid-item--img order-8">
               <NuxtImg
                 format="webp, avif"
-                src="/img/ems-spectrum/spectrum_1.png"
-                alt="Аппарат  Spectrum Legacy"
+                src="/img/spectrum/spectrum_4.png"
+                alt="Аппарат Legacy Spectrum"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-9">
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Персонализированные программы
-                </div>
+                <div class="grid-item__title text-h3">Персонализированные программы</div>
                 <div class="grid-item__text">
-                  Специалист может настраивать интенсивность, частоту и
-                  длительность импульсов под индивидуальные особенности каждого
-                  клиента. Это обеспечивает точную адаптацию процедуры и
-                  максимальный результат.
+                  Специалист может настраивать интенсивность, частоту и длительность импульсов под индивидуальные
+                  особенности каждого клиента. Это обеспечивает точную адаптацию процедуры и максимальный результат.
                 </div>
               </div>
             </div>
@@ -329,9 +287,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>

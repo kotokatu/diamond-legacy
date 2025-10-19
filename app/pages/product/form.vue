@@ -7,16 +7,14 @@
         <NuxtImg
           format="webp, avif"
           src="/img/form/form_hero.png"
-          alt="Legacy Form"
+          alt="Аппарат Legacy Form"
           class="section__background-image"
           sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Form</h1>
         <p class="description">
           Для профессионального массажа,
@@ -26,11 +24,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -42,18 +36,14 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Form — Инновационный аппарат нового поколения для
-            профессионального массажа, моделирования тела и лифтинга кожи.
+            Legacy Form — Инновационный аппарат нового поколения для профессионального массажа, моделирования тела и
+            лифтинга кожи.
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
               <h3 class="feature__title text-h3">5 в 1</h3>
               <div class="feature__text">
@@ -65,43 +55,36 @@
                 </ul>
               </div>
               <div class="feature__text">
-                Оснащён пятью рабочими манипулами, которые могут работать
-                одновременно, позволяя обрабатывать несколько зон тела.
+                Оснащён пятью рабочими манипулами, которые могут работать одновременно, позволяя обрабатывать несколько
+                зон тела.
                 <br />
-                Сенсорный интерфейс с выбором языка, регулировкой времени,
-                мощности, силы воздействия и длины световой волны.
+                Сенсорный интерфейс с выбором языка, регулировкой времени, мощности, силы воздействия и длины световой
+                волны.
                 <br />
                 Возможность работы одной или двумя манипулами одновременно.
                 <br />
-                Каждая манипула оснащена 12 массажными звёздами, каждая из
-                которых состоит из 16 элементов — в сумме 192 активных "пальца",
-                создающих эффект профессионального массажа.
+                Каждая манипула оснащена 12 массажными звёздами, каждая из которых состоит из 16 элементов — в сумме 192
+                активных "пальца", создающих эффект профессионального массажа.
                 <br />
-                Угол наклона массажных элементов обеспечивает 3D-волну и
-                глубокое воздействие на каждый миллиметр тела. Один сеанс (40
-                минут) эквивалентен 3,5 часам ручного массажа.
+                Угол наклона массажных элементов обеспечивает 3D-волну и глубокое воздействие на каждый миллиметр тела.
+                Один сеанс (40 минут) эквивалентен 3,5 часам ручного массажа.
                 <br />
-                Комплексное LED-воздействие с красным спектром (625–740 нм)
-                активизирует синтез коллагена, улучшает плотность и эластичность
-                кожи.
+                Комплексное LED-воздействие с красным спектром (625–740 нм) активизирует синтез коллагена, улучшает
+                плотность и эластичность кожи.
                 <br />
-                Современная система энергомассажа воздействует на меридианы,
-                улучшая циркуляцию энергии «Ци» и обмен веществ.
+                Современная система энергомассажа воздействует на меридианы, улучшая циркуляцию энергии «Ци» и обмен
+                веществ.
               </div>
 
-              <h3 class="feature__title text-h3">
-                Интеллектуальный пользовательский интерфейс
-              </h3>
+              <h3 class="feature__title text-h3">Интеллектуальный пользовательский интерфейс</h3>
               <div class="feature__text">
-                Аппарат оснащён интуитивно понятной сенсорной панелью и
-                предлагает гибкую настройку под индивидуальные потребности
-                каждого клиента.
+                Аппарат оснащён интуитивно понятной сенсорной панелью и предлагает гибкую настройку под индивидуальные
+                потребности каждого клиента.
               </div>
               <h3 class="feature__title text-h3">Применение</h3>
               <div class="feature__text">
-                Устройство предназначено для коррекции фигуры, устранения
-                целлюлита, повышения тонуса кожи и мышц, а также для общего
-                оздоровления организма.
+                Устройство предназначено для коррекции фигуры, устранения целлюлита, повышения тонуса кожи и мышц, а
+                также для общего оздоровления организма.
               </div>
             </div>
 
@@ -116,28 +99,21 @@
                   aria-label="Заставка Legacy"
                   src="/video/form/form_360.webm"
                   type="video/webm"
+                  poster="/img/form/form_vid_fallback.png"
                 >
-                  <!-- <NuxtImg
-                    src="/img/royal/royal_vid_fallback.png"
-                    alt="Legacy Royal — 360° обзор (изображение вместо видео)"
+                  <NuxtImg
+                    src="/img/form/form_vid_fallback.png"
+                    alt="Legacy Form — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео. -->
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -160,12 +136,9 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  5 технологий в одном устройстве
-                </div>
+                <div class="grid-item__title text-h3">5 технологий в одном устройстве</div>
                 <div class="grid-item__text">
-                  механический массаж, LEDтерапия, энергомассаж, лимфодренаж и
-                  глубокое вибрационное воздействие.
+                  механический массаж, LEDтерапия, энергомассаж, лимфодренаж и глубокое вибрационное воздействие.
                 </div>
               </div>
             </div>
@@ -174,10 +147,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_1.png"
-                alt="Аппарат Form Form"
+                alt="Аппарат Legacy Form"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center 15%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -193,22 +166,18 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_2.png"
-                alt="Аппарат Form Form"
+                alt="Аппарат Legacy Form"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-5">
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Безопасность и щадящее воздействие
-                </div>
-                <div class="grid-item__text">
-                  подходит для чувствительных зон.
-                </div>
+                <div class="grid-item__title text-h3">Безопасность и щадящее воздействие</div>
+                <div class="grid-item__text">подходит для чувствительных зон.</div>
               </div>
             </div>
 
@@ -216,23 +185,18 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_3.png"
-                alt="Аппарат Form Legacy"
+                alt="Аппарат Legacy Form"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-7">
               <div class="grid-item__header text-nav text-sub">{ 04 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Эффект после первой процедуры
-                </div>
-                <div class="grid-item__text">
-                  кожа становится более плотной и гладкой, улучшается рельеф и
-                  тонус.
-                </div>
+                <div class="grid-item__title text-h3">Эффект после первой процедуры</div>
+                <div class="grid-item__text">кожа становится более плотной и гладкой, улучшается рельеф и тонус.</div>
               </div>
             </div>
 
@@ -240,23 +204,18 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/form/form_4.png"
-                alt="Аппарат Form Legacy"
+                alt="Аппарат Legacy Form"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-9">
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Омолаживающее действие
-                </div>
-                <div class="grid-item__text">
-                  визуально уменьшает возраст кожи, делает её упругой и
-                  эластичной.
-                </div>
+                <div class="grid-item__title text-h3">Омолаживающее действие</div>
+                <div class="grid-item__text">визуально уменьшает возраст кожи, делает её упругой и эластичной.</div>
               </div>
             </div>
           </div>
@@ -296,10 +255,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <span
-                      >5 манипул различного диаметра для работы с большими и
-                      малыми зонами</span
-                    >
+                    <span>5 манипул различного диаметра для работы с большими и малыми зонами</span>
                     <span class="quantity"> 1 шт</span>
                   </td>
                   <!--td>12 месяцев</td-->
@@ -339,9 +295,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>
@@ -390,8 +344,8 @@
                 <tr>
                   <td>Материалы</td>
                   <td>
-                    Ось рычага — из нержавеющей стали; Подшипник — из медного
-                    сплава с низким коэффициентом трения, не требует смазки
+                    Ось рычага — из нержавеющей стали; Подшипник — из медного сплава с низким коэффициентом трения, не
+                    требует смазки
                   </td>
                 </tr>
               </tbody>

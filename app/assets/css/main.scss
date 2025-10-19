@@ -471,7 +471,7 @@ a {
         order: 8;
       }
 
-      @media (max-width: $breakpoint-lg) {
+      @media (width <= $breakpoint-lg) {
         &.order-3 {
           order: 4;
         }
@@ -747,7 +747,7 @@ a {
         order: 9;
       }
 
-      @media (width < $breakpoint-lg) {
+      @media (width <= $breakpoint-lg) {
         height: 340px;
 
         &.order-8 {
@@ -755,7 +755,7 @@ a {
         }
       }
 
-      @media (width > $breakpoint-xs) and (width < $breakpoint-lg) {
+      @media (width > $breakpoint-xs) and (width <= $breakpoint-lg) {
         &.order-3 {
           order: 4;
         }

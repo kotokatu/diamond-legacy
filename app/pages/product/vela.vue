@@ -7,16 +7,14 @@
         <NuxtImg
           format="webp, avif"
           src="/img/vela/vela_hero.png"
-          alt="Legacy Vela"
+          alt="Аппарат Legacy Vela"
           class="section__background-image"
           sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Vela</h1>
         <p class="description">
           для лифтинга кожи, коррекции контуров тела,
@@ -27,11 +25,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -43,33 +37,26 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Vela — многофункциональное оборудование предназначено для
-            лифтинга кожи, коррекции контуров тела, лимфодренажа и борьбы с
-            целлюлитом. Инновационный 2-в-1 аппарат нового поколения, сочетающий
-            технологии ENDO и VLASHAPE.
+            Legacy Vela — многофункциональное оборудование предназначено для лифтинга кожи, коррекции контуров тела,
+            лимфодренажа и борьбы с целлюлитом. Инновационный 2-в-1 аппарат нового поколения, сочетающий технологии ENDO
+            и VLASHAPE.
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
 
               <h3 class="feature__title text-h3">Технологии ENDO и VLASHAPE</h3>
               <div class="feature__text">
-                Аппарат сочетает в себе глубокий микробаллонный массаж сжатия
-                (ENDO) и тепловое воздействие инфракрасных волн и радиочастоты
-                (VLASHAPE), обеспечивая выраженный эффект подтяжки, упругости и
-                омоложения кожи уже после первых процедур.
+                Аппарат сочетает в себе глубокий микробаллонный массаж сжатия (ENDO) и тепловое воздействие инфракрасных
+                волн и радиочастоты (VLASHAPE), обеспечивая выраженный эффект подтяжки, упругости и омоложения кожи уже
+                после первых процедур.
               </div>
               <h3 class="feature__title text-h3">Технология ENDO</h3>
               <div class="feature__text">
-                Компрессионная микровибрация воздействует на поверхностные и
-                глубокие ткани:
+                Компрессионная микровибрация воздействует на поверхностные и глубокие ткани:
                 <br />
                 – усиливает кровообращение
                 <br />
@@ -101,36 +88,28 @@
               <div class="feature__text">
                 <ul class="list--disc">
                   <li>
-                    Сочетает инфракрасный свет (IR), радиочастотные волны (RF) и
-                    вакуумное всасывание, что позволяет эффективно подтягивать
-                    кожу, уменьшать жировые отложения и формировать контуры
-                    тела.
+                    Сочетает инфракрасный свет (IR), радиочастотные волны (RF) и вакуумное всасывание, что позволяет
+                    эффективно подтягивать кожу, уменьшать жировые отложения и формировать контуры тела.
                   </li>
                   <li>
-                    Инфракрасный свет (IR) создаёт тепловой эффект, ускоряя
-                    кровообращение, стимулирует обменные процессы и расщепление
-                    жиров.
+                    Инфракрасный свет (IR) создаёт тепловой эффект, ускоряя кровообращение, стимулирует обменные
+                    процессы и расщепление жиров.
                   </li>
                   <li>
-                    Радиочастотные волны (RF) прогревают глубокие слои кожи,
-                    стимулируют ремоделирование коллагена и повышают упругость,
-                    уменьшая дряблость кожи.
+                    Радиочастотные волны (RF) прогревают глубокие слои кожи, стимулируют ремоделирование коллагена и
+                    повышают упругость, уменьшая дряблость кожи.
                   </li>
                   <li>
-                    Вакуумное всасывание усиливает доставку тепловой энергии и
-                    лимфодренаж, способствуя коррекции контуров тела и
-                    уменьшению отечности.
+                    Вакуумное всасывание усиливает доставку тепловой энергии и лимфодренаж, способствуя коррекции
+                    контуров тела и уменьшению отечности.
                   </li>
                 </ul>
               </div>
-              <h3 class="feature__title text-h3">
-                Интеллектуальный пользовательский интерфейс
-              </h3>
+              <h3 class="feature__title text-h3">Интеллектуальный пользовательский интерфейс</h3>
               <div class="feature__text">
-                Благодаря эргономичной конструкции, большому сенсорному экрану и
-                трем видам силиконовых роликов, LEGACY VELA обеспечивает
-                безопасное, комфортное и результативное проведение процедур как
-                по телу, так и по лицу.
+                Благодаря эргономичной конструкции, большому сенсорному экрану и трем видам силиконовых роликов, LEGACY
+                VELA обеспечивает безопасное, комфортное и результативное проведение процедур как по телу, так и по
+                лицу.
               </div>
             </div>
 
@@ -145,28 +124,21 @@
                   aria-label="360° обзор аппарата Legacy Vela"
                   src="/video/vela/vela_360.webm"
                   type="video/webm"
+                  poster="/img/vela/vela_vid_fallback.png"
                 >
-                  <!-- <NuxtImg
-                    src="/img/Vela/Vela_vid_fallback.png"
+                  <NuxtImg
+                    src="/img/vela/vela_vid_fallback.png"
                     alt="Legacy Vela — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео. -->
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -189,12 +161,8 @@
             <div class="grid-item grid-item--text order-1">
               <div class="grid-item__header text-nav text-sub">{ 01 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Манипула Legacy 360 InnerSphere Roller
-                </div>
-                <div class="grid-item__text">
-                  обеспечивает глубокое и точное воздействие на кожу и ткани.
-                </div>
+                <div class="grid-item__title text-h3">Манипула Legacy 360 InnerSphere Roller</div>
+                <div class="grid-item__text">обеспечивает глубокое и точное воздействие на кожу и ткани.</div>
               </div>
             </div>
 
@@ -202,10 +170,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/vela/vela_1.png"
-                alt="Аппарат Vela Vela"
+                alt="Аппарат Legacy Vela"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center top"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -214,8 +182,8 @@
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Технология VLASHAPE</div>
                 <div class="grid-item__text">
-                  сочетает инфракрасный свет, радиочастотные волны и вакуумное
-                  всасывание для подтяжки кожи и коррекции контуров тела.
+                  сочетает инфракрасный свет, радиочастотные волны и вакуумное всасывание для подтяжки кожи и коррекции
+                  контуров тела.
                 </div>
               </div>
             </div>
@@ -224,22 +192,19 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/vela/vela_2.png"
-                alt="Аппарат Vela Vela"
+                alt="Аппарат Legacy Vela"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
             <div class="grid-item grid-item--text order-5">
               <div class="grid-item__header text-nav text-sub">{ 03 }</div>
               <div class="grid-item__body">
-                <div class="grid-item__title text-h3">
-                  Комбинированное действие ENDO + VLASHAPE
-                </div>
+                <div class="grid-item__title text-h3">Комбинированное действие ENDO + VLASHAPE</div>
                 <div class="grid-item__text">
-                  позволяет уменьшать локальные жировые отложения и повышать
-                  тонус кожи.
+                  позволяет уменьшать локальные жировые отложения и повышать тонус кожи.
                 </div>
               </div>
             </div>
@@ -247,11 +212,11 @@
             <div class="grid-item grid-item--img order-6">
               <NuxtImg
                 format="webp, avif"
-                src="/img/vela/vela_4.png"
-                alt="Аппарат Vela Legacy"
+                src="/img/vela/vela_3.png"
+                alt="Аппарат Legacy Vela"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center 75%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -262,9 +227,8 @@
                   Регулируемая скорость вращения роликов до 2300 об/мин
                 </div-->
                 <div class="grid-item__text">
-                  Подходит для всех типов кожи и любых зон тела, включая лицо,
-                  шею, руки и крупные зоны тела. Процедура комфортная,
-                  безболезненная и не требует реабилитации.
+                  Подходит для всех типов кожи и любых зон тела, включая лицо, шею, руки и крупные зоны тела. Процедура
+                  комфортная, безболезненная и не требует реабилитации.
                 </div>
               </div>
             </div>
@@ -272,11 +236,11 @@
             <div class="grid-item grid-item--img order-8">
               <NuxtImg
                 format="webp, avif"
-                src="/img/vela/vela_3.png"
-                alt="Аппарат Vela Legacy"
+                src="/img/vela/vela_4.png"
+                alt="Аппарат Legacy Vela"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -288,9 +252,8 @@
                   давлением, безопасная для кожи и тканей
                 </div-->
                 <div class="grid-item__text">
-                  Сенсорный экран 15,6" с удобным управлением режимами,
-                  скоростью и интенсивностью процедур. Надёжная система
-                  охлаждения и защиты обеспечивает стабильную работу аппарата.
+                  Сенсорный экран 15,6" с удобным управлением режимами, скоростью и интенсивностью процедур. Надёжная
+                  система охлаждения и защиты обеспечивает стабильную работу аппарата.
                 </div>
               </div>
             </div>
@@ -366,9 +329,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>
