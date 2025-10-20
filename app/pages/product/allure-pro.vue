@@ -7,15 +7,14 @@
         <NuxtImg
           format="webp, avif"
           src="/img/allure-pro/allure-pro_hero.png"
-          alt="Legacy Allure Pro"
+          alt="Аппарат Legacy Allure Pro"
           class="section__background-image"
+          sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Allure Pro</h1>
         <p class="description">
           для улучшения качества кожи, коррекции целлюлита
@@ -25,11 +24,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -41,19 +36,14 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Allure Pro — Фракционный RF микроигольчатый аппарат Аппарат
-            Legacy Allure сочетает преимущества микроигольчатой терапии с
-            радиочастотной энергией (RF).
+            Legacy Allure Pro — Фракционный RF микроигольчатый аппарат Аппарат Legacy Allure сочетает преимущества
+            микроигольчатой терапии с радиочастотной энергией (RF).
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
               <!--
               <h3 class="feature__title text-h3">
@@ -61,13 +51,10 @@
               </h3>
               -->
               <div class="feature__text">
-                Он предлагает регулируемую глубину игл от 0,2 мм до 7 мм для
-                точного воздействия на эпидермис и дерму. Стимулируя выработку
-                коллагена и эластина, аппарат эффективно улучшает состояние
-                рубцов, подтягивает кожу и уменьшает морщины безопасным и
-                эффективным способом. Это неинвазивное решение для различных
-                кожных проблем, делая его идеальным выбором для улучшения
-                текстуры, упругости и эластичности кожи.
+                Он предлагает регулируемую глубину игл от 0,2 мм до 7 мм для точного воздействия на эпидермис и дерму.
+                Стимулируя выработку коллагена и эластина, аппарат эффективно улучшает состояние рубцов, подтягивает
+                кожу и уменьшает морщины безопасным и эффективным способом. Это неинвазивное решение для различных
+                кожных проблем, делая его идеальным выбором для улучшения текстуры, упругости и эластичности кожи.
               </div>
 
               <div class="feature__text">
@@ -82,9 +69,8 @@
               </h3>
               -->
               <div class="feature__text">
-                Аппарат оснащён сенсорным дисплеем, различными насадками и
-                рукоятками, системой активации через QR-коды и возможностью
-                работы в ручном и автоматическом режимах.
+                Аппарат оснащён сенсорным дисплеем, различными насадками и рукоятками, системой активации через QR-коды
+                и возможностью работы в ручном и автоматическом режимах.
               </div>
               <!--
               <h3 class="feature__title text-h3">Насадки для разных зон</h3>
@@ -131,28 +117,17 @@
                   aria-label="Заставка Legacy"
                   src="/video/product_default.mp4"
                   type="video/mp4"
+                  poster="/img/default_vid_fallback.png"
                 >
-                  <!-- <NuxtImg
-                    src="/img/Allure Pro/Allure Pro_vid_fallback.png"
-                    alt="Legacy Allure Pro — 360° обзор (изображение вместо видео)"
-                    loading="lazy"
-                  />
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео. -->
+                  <NuxtImg src="/img/default_vid_fallback.png" alt="Заставка Legacy" loading="lazy" />
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -181,11 +156,9 @@
                 </div>
                 -->
                 <div class="grid-item__text">
-                  Многофункциональность: включает микронидлинг, крио- и
-                  термотерапию, вакуумную терапию. Универсальность насадок: WZ,
-                  NV, IC, IS и HR насадки для разных зон и типов процедур.
-                  Регулируемые параметры: глубина вылета игл, мощность (1–47
-                  Вт), время воздействия (50–600 мс), уровень вакуума.
+                  Многофункциональность: включает микронидлинг, крио- и термотерапию, вакуумную терапию. Универсальность
+                  насадок: WZ, NV, IC, IS и HR насадки для разных зон и типов процедур. Регулируемые параметры: глубина
+                  вылета игл, мощность (1–47 Вт), время воздействия (50–600 мс), уровень вакуума.
                 </div>
               </div>
             </div>
@@ -194,10 +167,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_1.png"
-                alt="Аппарат Allure Pro Allure Pro"
+                alt="Аппарат Legacy Allure Pro"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center 20%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -210,10 +183,9 @@
                 </div>
                 -->
                 <div class="grid-item__text">
-                  Режимы работы: ручной и автоматический, позволяющие
-                  контролировать интенсивность и последовательность процедуры.
-                  Высокая безопасность: каждая насадка предназначена для одного
-                  клиента, минимизация риска перекрёстного заражения.
+                  Режимы работы: ручной и автоматический, позволяющие контролировать интенсивность и последовательность
+                  процедуры. Высокая безопасность: каждая насадка предназначена для одного клиента, минимизация риска
+                  перекрёстного заражения.
                 </div>
               </div>
             </div>
@@ -222,10 +194,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_2.png"
-                alt="Аппарат Allure Pro Allure Pro"
+                alt="Аппарат Legacy Allure Pro"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: -40px 40%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -238,12 +210,10 @@
                 </div>
                 -->
                 <div class="grid-item__text">
-                  <b>Простота эксплуатации:</b> сенсорный дисплей и QR-коды для
-                  активации насадок.
+                  <b>Простота эксплуатации:</b> сенсорный дисплей и QR-коды для активации насадок.
                   <br />
-                  <b>Эффективность:</b> процедуры дают видимый эффект уже через
-                  несколько дней; для максимального результата рекомендуется
-                  курс 2–3 сеанса с интервалом около месяца.
+                  <b>Эффективность:</b> процедуры дают видимый эффект уже через несколько дней; для максимального
+                  результата рекомендуется курс 2–3 сеанса с интервалом около месяца.
                 </div>
               </div>
             </div>
@@ -252,10 +222,10 @@
               <NuxtImg
                 format="webp, avif"
                 src="/img/allure-pro/allure-pro_3.png"
-                alt="Аппарат Allure Pro Legacy"
+                alt="Аппарат Legacy Allure Pro"
                 class="grid-item__img"
                 loading="lazy"
-                style="object-fit: cover; object-position: center 10%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
             <!--
@@ -383,9 +353,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>
@@ -410,10 +378,7 @@
                 </tr>
 
                 <tr>
-                  <td>
-                    Срок службы насадок (холодные, тепловые, микропроцессорные
-                    термонасадки)
-                  </td>
+                  <td>Срок службы насадок (холодные, тепловые, микропроцессорные термонасадки)</td>
                   <td>500 часов</td>
                 </tr>
 
@@ -425,8 +390,8 @@
                 <tr>
                   <td>Параметры процедур</td>
                   <td>
-                    глубина игл 0,5–4,5 мм, мощность 1–47 Вт, время импульса
-                    50–600 мс, температура крио -5°C–20°C, термо 37°C–55°C
+                    глубина игл 0,5–4,5 мм, мощность 1–47 Вт, время импульса 50–600 мс, температура крио -5°C–20°C,
+                    термо 37°C–55°C
                   </td>
                 </tr>
               </tbody>
@@ -444,12 +409,11 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: center 30%;
+      object-fit: none;
+      object-position: center 40px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: center 10px;
       }
     }
   }

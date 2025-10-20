@@ -6,16 +6,15 @@
       <div class="section__background section__background--overlay">
         <NuxtImg
           format="webp, avif"
-          src="/img/allure/allure_hero5.png"
-          alt="Legacy Allure"
+          src="/img/allure/allure_hero.png"
+          alt="Аппарат Legacy Allure"
           class="section__background-image"
+          sizes="640px sm:1280px"
         />
       </div>
 
       <div class="section__content contained">
-        <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
-        </p>
+        <p class="category text-nav text-sub">{ Многофункциональный аппарат }</p>
         <h1 class="title text-h1">Legacy Allure</h1>
         <p class="description">
           Для коррекции фигуры, омоложения
@@ -25,11 +24,7 @@
       </div>
     </section>
 
-    <section
-      class="flex-center section description"
-      role="region"
-      aria-labelledby="lead-title"
-    >
+    <section class="flex-center section description" role="region" aria-labelledby="lead-title">
       <div class="contained">
         <div class="lead">
           <div class="lead__header text-nav text-sub">
@@ -41,67 +36,27 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Allure — это высокотехнологичный медицинский малоинвазивный
-            инструмент для красоты кожи, сочетающий RF- микроиглы и фракционную
-            технологию.
+            Legacy Allure — это высокотехнологичный медицинский малоинвазивный инструмент для красоты кожи, сочетающий
+            RF- микроиглы и фракционную технологию.
           </div>
         </div>
 
         <div class="section__content">
           <div class="section__grid grid">
-            <!-- <div class="grid-item grid-item--img">
-              <NuxtImg
-                src="/img/allure/allure_9.png"
-                format="webp, avif"
-                alt="Legacy Allure"
-                class="grid-item__image"
-                style="object-position: 15% 40px"
-                sizes="100vw sm:50vw md:1000px lg:1600px"
-              />
-            </div>
-            <div class="grid-item grid-item--img">
-              <NuxtImg
-                format="webp, avif"
-                src="/img/allure/allure_3.png"
-                alt="Legacy Allure"
-                class="grid-item__image"
-                style="object-position: 40% 0%"
-                sizes="100vw sm:50vw md:1000px lg:1600px"
-              />
-            </div>
-            <div class="grid-item grid-item--img grid-item--wide">
-              <NuxtImg
-                format="webp, avif"
-                src="/img/allure/allure_8.png"
-                alt="Legacy Allure"
-                class="grid-item__image"
-                style="object-position: 10% center"
-                sizes="100vw sm:50vw md:1000px lg:1600px"
-              />
-            </div> -->
-            <div
-              class="grid-item grid-item--text features"
-              role="region"
-              aria-labelledby="features-title"
-            >
+            <div class="grid-item grid-item--text features" role="region" aria-labelledby="features-title">
               <h2 class="features__title text-h2">Особенности</h2>
-
               <!--
               <h3 class="feature__title text-h3">
                 Технология компрессионной микровибрации
               </h3>
               -->
               <div class="feature__text">
-                Аппарат Legacy Allure оснащен сменными насадками с 4 различными
-                конфигурациями (12P, 24P, 40P, нанозонд), а система позволяет
-                свободно регулировать установку изолирующей головки.
-                Кристаллитовая головка проникает в кожу на глубину 0,5–7 мм,
-                обеспечивая минимально инвазивное лечение и моделирование тканей
-                до 8 мм, с направленным термоэффектом для восстановления и
-                ремоделирования кожи. Аппарат включает функцию Ледяной молоток
-                для холодного компресса, который снижает температуру кожи,
-                успокаивает покраснения, отёки и зуд, а также способствует
-                сужению пор.
+                Аппарат Legacy Allure оснащен сменными насадками с 4 различными конфигурациями (12P, 24P, 40P,
+                нанозонд), а система позволяет свободно регулировать установку изолирующей головки. Кристаллитовая
+                головка проникает в кожу на глубину 0,5–7 мм, обеспечивая минимально инвазивное лечение и моделирование
+                тканей до 8 мм, с направленным термоэффектом для восстановления и ремоделирования кожи. Аппарат включает
+                функцию Ледяной молоток для холодного компресса, который снижает температуру кожи, успокаивает
+                покраснения, отёки и зуд, а также способствует сужению пор.
               </div>
               <!--
               <h3 class="feature__title text-h3">
@@ -155,33 +110,23 @@
                   class="grid-item__video"
                   preload="metadata"
                   aria-label="360° обзор аппарата Legacy Allure"
+                  poster="/img/allure/allure_vid_fallback.png"
                 >
-                  <source
-                    src="/video/allure/allure_360.webm"
-                    type="video/webm"
-                  />
+                  <source src="/video/allure/allure_360.webm" type="video/webm" />
                   <source src="/video/allure/allure_360.mp4" type="video/mp4" />
-                  <!-- <NuxtImg
-                    src="/img/Allure/Allure_vid_fallback.png"
+                  <NuxtImg
+                    src="/img/allure/allure_vid_fallback.png"
                     alt="Legacy Allure — 360° обзор (изображение вместо видео)"
                     loading="lazy"
-                  /> -->
-                  Ваш браузер не поддерживает встроенное видео. Пожалуйста,
-                  обновите браузер или скачайте видео.
+                  />
+                  Ваш браузер не поддерживает встроенное видео. Пожалуйста, обновите браузер или скачайте видео.
                 </video>
               </div>
             </div>
           </div>
 
-          <div
-            class="section__contact"
-            role="region"
-            aria-label="Форма обратной связи"
-          >
-            <AppContactCard
-              class="contact-card--bg"
-              aria-label="Форма обратной связи для запроса"
-            />
+          <div class="section__contact" role="region" aria-label="Форма обратной связи">
+            <AppContactCard class="contact-card--bg" aria-label="Форма обратной связи для запроса" />
           </div>
         </div>
       </div>
@@ -210,11 +155,9 @@
                 </div>
                 -->
                 <div class="grid-item__text">
-                  Глубокое проникновение RF-энергии - до 8 мм в подкожную
-                  клетчатку. Регулируемая глубина иглы - от 0,5 до 7 мм,
-                  подходит для кожи любой толщины. Многоуровневая RF-технология
-                  — обработка трёх слоев кожи одновременно, сокращает время
-                  процедуры и повышает однородность результата.
+                  Глубокое проникновение RF-энергии - до 8 мм в подкожную клетчатку. Регулируемая глубина иглы - от 0,5
+                  до 7 мм, подходит для кожи любой толщины. Многоуровневая RF-технология — обработка трёх слоев кожи
+                  одновременно, сокращает время процедуры и повышает однородность результата.
                 </div>
               </div>
             </div>
@@ -222,12 +165,11 @@
             <div class="grid-item grid-item--img order-2">
               <NuxtImg
                 format="webp, avif"
-                src="/img/allure/allure_3.png"
-                alt="Аппарат Allure Legacy"
+                src="/img/allure/allure_1.png"
+                alt="Аппарат Legacy Allure"
                 class="grid-item__img"
                 loading="lazy"
-                width="700"
-                style="object-fit: none; object-position: 40% 20%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -240,12 +182,10 @@
                 </div>
                 -->
                 <div class="grid-item__text">
-                  Изолированные конусные иглы с золотым покрытием — минимизируют
-                  повреждение эпидермиса, предотвращают ожоги, гиперпигментацию,
-                  боль и кровотечение. Разнообразие насадок — 12P, 24P, 40P и
-                  нанозонд для индивидуального подхода и безопасности. Ледяной
-                  молоток — мгновенное охлаждение, снижение воспалительной
-                  реакции, сужение пор и ускоренное восстановление кожи.
+                  Изолированные конусные иглы с золотым покрытием — минимизируют повреждение эпидермиса, предотвращают
+                  ожоги, гиперпигментацию, боль и кровотечение. Разнообразие насадок — 12P, 24P, 40P и нанозонд для
+                  индивидуального подхода и безопасности. Ледяной молоток — мгновенное охлаждение, снижение
+                  воспалительной реакции, сужение пор и ускоренное восстановление кожи.
                 </div>
               </div>
             </div>
@@ -253,12 +193,11 @@
             <div class="grid-item grid-item--img order-4">
               <NuxtImg
                 format="webp, avif"
-                src="/img/allure/allure_9.png"
-                alt="Аппарат Allure Legacy"
+                src="/img/allure/allure_2.png"
+                alt="Аппарат Legacy Allure"
                 class="grid-item__img"
                 loading="lazy"
-                width="1100"
-                style="object-fit: none; object-position: 65% 15%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -271,25 +210,21 @@
                 </div>
                 -->
                 <div class="grid-item__text">
-                  Интерфейс и дисплей 10,4 дюйма удобны в использовании,
-                  параметры процедуры легко регулируются в соответствии с
-                  индивидуальными особенностями кожи. Аппарат подходит для
-                  обработки различных зон: область вокруг глаз, подбородок, лоб,
-                  шея, лицо, тело. Мощный лимфодренажный и антицеллюлитный
-                  эффект. Стимуляция выработки коллагена и эластина, улучшение
-                  тонуса и упругости кожи.
+                  Интерфейс и дисплей 10,4 дюйма удобны в использовании, параметры процедуры легко регулируются в
+                  соответствии с индивидуальными особенностями кожи. Аппарат подходит для обработки различных зон:
+                  область вокруг глаз, подбородок, лоб, шея, лицо, тело. Мощный лимфодренажный и антицеллюлитный эффект.
+                  Стимуляция выработки коллагена и эластина, улучшение тонуса и упругости кожи.
                 </div>
               </div>
             </div>
             <div class="grid-item grid-item--img order-6">
               <NuxtImg
                 format="webp, avif"
-                src="/img/allure/allure_8.png"
-                alt="Аппарат Allure Legacy"
+                src="/img/allure/allure_3.png"
+                alt="Аппарат Legacy Allure"
                 class="grid-item__img"
                 loading="lazy"
-                width="2000"
-                style="object-fit: none; object-position: 55% 10%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -298,9 +233,8 @@
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Показания</div>
                 <div class="grid-item__text">
-                  Дряблость кожи и снижение упругости Морщины и тонкие линии
-                  Следы и рубцы от акне Расширенные поры Растяжки Целлюлит и
-                  локальные жировые отложения Неравномерная текстура кожи
+                  Дряблость кожи и снижение упругости Морщины и тонкие линии Следы и рубцы от акне Расширенные поры
+                  Растяжки Целлюлит и локальные жировые отложения Неравномерная текстура кожи
                 </div>
               </div>
             </div>
@@ -308,12 +242,11 @@
             <div class="grid-item grid-item--img order-8">
               <NuxtImg
                 format="webp, avif"
-                src="/img/allure/allure_9.png"
-                alt="Аппарат Allure Legacy"
+                src="/img/allure/allure_4.png"
+                alt="Аппарат Legacy Allure"
                 class="grid-item__img"
                 loading="lazy"
-                width="1100"
-                style="object-fit: none; object-position: 34% 84%"
+                sizes="500px xs:800px sm:700px md:800px lg:700px"
               />
             </div>
 
@@ -322,9 +255,8 @@
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Принцип действия</div>
                 <div class="grid-item__text">
-                  Многоуровневая система позволяет одновременно воздействовать
-                  на несколько слоев кожи с миллисекундными интервалами,
-                  обеспечивая эффективное и безопасное лечение всего тела.
+                  Многоуровневая система позволяет одновременно воздействовать на несколько слоев кожи с миллисекундными
+                  интервалами, обеспечивая эффективное и безопасное лечение всего тела.
                 </div>
               </div>
             </div>
@@ -412,9 +344,7 @@
           </div>
 
           <div class="section-block">
-            <h3 class="section-block__title font-secondary text-h3">
-              Технические характеристики
-            </h3>
+            <h3 class="section-block__title font-secondary text-h3">Технические характеристики</h3>
             <table class="section__table table table--characteristics">
               <thead>
                 <tr>
@@ -445,18 +375,12 @@
 
                 <tr>
                   <td>Тип игл</td>
-                  <td>
-                    конусные с золотым покрытием, диаметр иглы 0,22 мм, кончик
-                    0,1 мм
-                  </td>
+                  <td>конусные с золотым покрытием, диаметр иглы 0,22 мм, кончик 0,1 мм</td>
                 </tr>
 
                 <tr>
                   <td>Режимы работы</td>
-                  <td>
-                    одиночный выстрел, двойной выстрел, фиксированная точка,
-                    всплеск
-                  </td>
+                  <td>одиночный выстрел, двойной выстрел, фиксированная точка, всплеск</td>
                 </tr>
 
                 <tr>
@@ -478,12 +402,11 @@
 .section.hero {
   .section__background {
     .section__background-image {
-      object-fit: cover;
-      object-position: 49% 30%;
+      object-fit: none;
+      object-position: center 40px;
 
       @media (width < $breakpoint-sm) {
         object-fit: cover;
-        object-position: 49% 10px;
       }
     }
   }

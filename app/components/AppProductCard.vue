@@ -4,12 +4,7 @@
     :aria-labelledby="`product-${data.id}-title`"
     :aria-describedby="`product-${data.id}-desc product-${data.id}-price`"
   >
-    <div
-      class="card"
-      :class="classes"
-      role="group"
-      aria-roledescription="product card"
-    >
+    <div class="card" :class="classes" role="group" aria-roledescription="product card">
       <div class="card__content">
         <h3 :id="`product-${data.id}-title`" class="card__title text-h3">
           {{ data.name }}
@@ -21,9 +16,7 @@
           {{ data.price }}
         </p>
 
-        <span :id="`product-${data.id}-action`" class="sr-only">
-          Открыть страницу товара
-        </span>
+        <span :id="`product-${data.id}-action`" class="sr-only"> Открыть страницу товара </span>
       </div>
 
       <div class="card__img-container" aria-hidden="false">
@@ -31,11 +24,7 @@
           class="card__img"
           :alt="data.name"
           :src="data.image"
-          :sizes="
-            size === 'sm'
-              ? '200px md:300px'
-              : '350px sm:500px md:600px lg:700px'
-          "
+          :sizes="size === 'sm' ? '200px md:300px' : '700px'"
           loading="lazy"
         />
       </div>
