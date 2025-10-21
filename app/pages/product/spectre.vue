@@ -398,7 +398,14 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: 'Legacy — косметологические аппараты премиум качества',
+  meta: [
+    { name: 'description', content: 'Legacy Spectre - Для моделирования тела, укрепления мышц и омоложения кожи тела и лица.' }
+  ],
+})
+</script>
 
 <style lang="scss" scoped>
 .section.hero {
