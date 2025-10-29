@@ -120,7 +120,20 @@ const sendForm = async () => {
 
   try {
     loading.value = true;
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    //await new Promise((resolve) => setTimeout(resolve, 2000));
+    await $fetch('https://core.emfy.com/widgets/webhooks/?module=site_integration&amo_account_id=31483598&hook_id=MTczMzk4Nzk0NjU0MDEwNTAwODkw',
+                  { 
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                    },
+                    method: 'POST',
+                    body: {
+                        'your-name': name.value,
+                        'your-email': email.value,
+                        'tel-173': phone.value
+                    }
+                  }
+                 );
     message.value = "Спасибо! Ваша заявка отправлена";
   } catch {
     error.value = true;
