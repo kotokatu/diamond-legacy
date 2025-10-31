@@ -23,4 +23,11 @@ export default defineNuxtConfig({
       "2xl": 1535,
     },
   },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  }  
 });

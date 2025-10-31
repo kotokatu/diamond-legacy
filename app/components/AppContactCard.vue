@@ -121,7 +121,7 @@ const sendForm = async () => {
   try {
     loading.value = true;
     //await new Promise((resolve) => setTimeout(resolve, 2000));
-    await $fetch('https://core.emfy.com/widgets/webhooks/?module=site_integration&amo_account_id=31483598&hook_id=MTczMzk4Nzk0NjU0MDEwNTAwODkw',
+    const response = await $fetch('https://core.emfy.com/widgets/webhooks/?module=site_integration&amo_account_id=31483598&hook_id=MTczMzk4Nzk0NjU0MDEwNTAwODkw',
                   { 
                     headers: {
                         "Content-Type": "multipart/form-data",
@@ -134,7 +134,12 @@ const sendForm = async () => {
                     }
                   }
                  );
-    message.value = "Спасибо! Ваша заявка отправлена";
+    if (response.status == 200) {
+      message.value = "Спасибо! Ваша заявка отправлена";
+    } else {
+      error.value = true;
+      message.value = "Произошла ошибка при отправке";
+    }
   } catch {
     error.value = true;
     message.value = "Произошла ошибка при отправке";
