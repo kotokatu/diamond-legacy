@@ -36,7 +36,6 @@ useHead({
   }
   */
   ],
-  
 
   noscript: [{
     innerHTML: '<div><img src="https://mc.yandex.ru/watch/104765634" style="position:absolute; left:-9999px;" alt="" /></div>',
