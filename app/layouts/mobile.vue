@@ -29,6 +29,8 @@
 
     <AppFooter />
 
+    <AppCookieConsent />
+
     <AppModal />
 
     <AppContactButton @click="openModal" />
