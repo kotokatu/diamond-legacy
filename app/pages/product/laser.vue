@@ -208,7 +208,7 @@
               <div class="grid-item__header text-nav text-sub">{ 05 }</div>
               <div class="grid-item__body">
                 <div class="grid-item__title text-h3">Экономичность</div>
-                <div class="grid-item__text">долговечный ресурс ручки – до 50 000 импульсов.</div>
+                <div class="grid-item__text">долговечный ресурс ручки – до 100 000 000 импульсов.</div>
               </div>
             </div>
           </div>
