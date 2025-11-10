@@ -20,7 +20,7 @@
           Для коррекции фигуры, омоложения
           <br />кожи лица и тела
         </p>
-        <p class="price text-h2">345 000 ₽</p>
+        <p class="price text-h2">380 000 ₽</p>
       </div>
     </section>
 
