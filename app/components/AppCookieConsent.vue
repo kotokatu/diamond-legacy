@@ -19,7 +19,7 @@
         <slot name="message">
           Мы обрабатываем cookies, чтобы пользоваться веб-сайтом было удобнее. Вы можете запретить обработку сookies в
           настройках браузера. Пожалуйста, ознакомьтесь с
-          <NuxtLink to="/privacy-policy" target="_blank" class="cookie__floating__link"
+          <NuxtLink to="/privacy-policy" target="_blank" class="cookie__floating__link" rel="nofollow"
             >политикой конфиденциальности</NuxtLink
           >
         </slot>

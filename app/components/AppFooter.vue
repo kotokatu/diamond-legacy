@@ -20,7 +20,7 @@
         </div>
 
         <div class="footer__block footer__block--info list">
-          <NuxtLink to="/privacy-policy" class="text-min">
+          <NuxtLink to="/privacy-policy" class="text-min"  rel="nofollow">
             Политика конфиденциальности
           </NuxtLink>
           <div class="text-min">
