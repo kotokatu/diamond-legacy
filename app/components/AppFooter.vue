@@ -77,6 +77,7 @@
                 <NuxtLink
                   to="https://telegram.me/Diamondbeauty_bot"
                   class="text-nav"
+                  rel="nofollow sponsored"
                 >
                   Telegram
                 </NuxtLink>
@@ -85,6 +86,7 @@
                 <NuxtLink
                   to="https://web.whatsapp.com/send?phone=79315005214&text="
                   class="text-nav"
+                  rel="nofollow sponsored"
                 >
                   WhatsApp
                 </NuxtLink>
