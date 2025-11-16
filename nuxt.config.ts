@@ -1,7 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { visualizer } from "rollup-plugin-visualizer";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   typescript: { strict: false },
   css: ["~/assets/css/normalize.css", "~/assets/css/reset.css", "quasar/css", "~/assets/css/main.scss"],
   modules: ["@nuxt/eslint", "nuxt-quasar-ui", "@vueuse/nuxt", "@nuxt/fonts", "nuxt-svgo", "@nuxt/image"],
@@ -24,6 +32,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    buildAssetsDir: '_assets',
     head: {
       link: [
         //{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -35,24 +44,28 @@ export default defineNuxtConfig({
       ]
     }
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        plugins: [
+          visualizer({ open: true }) // Открывает анализатор после production-сборки
+        ]
+      }
+    }
+  },  
+  $production: {
+    nitro: {
+      esbuild: {
+        options: {
+          drop: ['console'],
+        },
+      },
+    },
+    vite: {
+      esbuild: {
+        legalComments: 'none',
+        drop: ['console'],      
+      },
+    },
+  },   
 });
-
-  /*
-  {
-    src: 'https://www.googletagmanager.com/gtag/js?id=G-YQNXXY3EBS',
-    tagPosition: 'head',
-  },
-  {
-    innerHTML:'window.dataLayer = window.dataLayer || [];'+
-              'function gtag(){dataLayer.push(arguments);}'+
-              'gtag(\'js\', new Date());'+
-              'gtag(\'config\', \'G-YQNXXY3EBS\');',
-    tagPosition: 'head',
-  }
-  */
-
-  /*
-  gtag('consent', 'default', {'analytics_storage': 'denied'});
-  */
-
-  

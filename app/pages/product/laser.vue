@@ -17,11 +17,11 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Laser</h1>
-        <p class="description">
+        <h2 class="title text-h1">Legacy Laser</h2>
+        <h1 class="description">
           Аппарат для лазерной эпиляции
           <br />
-        </p>
+        </h1>
         <p class="price text-h2">645 000 ₽</p>
       </div>
     </section>
