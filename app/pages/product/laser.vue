@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Laser"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -124,10 +125,10 @@
                   aria-label="Заставка Legacy"
                   src="/video/product_default.mp4"
                   type="video/mp4"
-                  poster="/img/default_vid_fallback.png"
+                  :poster="defaultVidFallback"
                 >
-                  <NuxtImg
-                    src="/img/default_vid_fallback.png"
+                  <img
+                    :src="defaultVidFallback"
                     alt="Заставка Legacy"
                     loading="lazy"
                   />
@@ -445,8 +446,15 @@
 </template>
 
 <script setup>
+const img = useImage();
+const defaultVidFallback = img("/img/default_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
-  title: "Аппарат для лазерной эпиляции волос — профессиональное оборудование, цена",
+  title:
+    "Аппарат для лазерной эпиляции волос — профессиональное оборудование, цена",
   meta: [
     {
       name: "description",

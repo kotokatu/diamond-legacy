@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Allure Pro"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -133,11 +134,11 @@
                   aria-label="Заставка Legacy"
                   src="/video/product_default.mp4"
                   type="video/mp4"
-                  poster="/img/default_vid_fallback.png"
+                  :poster="defaultVidFallback"
                 >
-                  <NuxtImg
-                    src="/img/default_vid_fallback.png"
-                    alt="Заставка Legacy"
+                  <img
+                    :src="defaultVidFallback"
+                    alt="Заставка Legacy Allure Pro"
                     loading="lazy"
                   />
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
@@ -442,6 +443,12 @@
 </template>
 
 <script setup>
+const img = useImage();
+const defaultVidFallback = img("/img/default_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
   title:
     "Аппарат для омоложения кожи Legacy Allure Pro с функцией RF микроигольчатого воздействия",

@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Vela"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -146,10 +147,10 @@
                   aria-label="360° обзор аппарата Legacy Vela"
                   src="/video/vela/vela_360.webm"
                   type="video/webm"
-                  poster="/img/vela/vela_vid_fallback.png"
+                  :poster="velaVidFallback"
                 >
-                  <NuxtImg
-                    src="/img/vela/vela_vid_fallback.png"
+                  <img
+                    :src="velaVidFallback"
                     alt="Legacy Vela — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
@@ -438,6 +439,12 @@
 </template>
 
 <script setup>
+const img = useImage();
+const velaVidFallback = img("/img/vela/vela_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
   title:
     "Аппарат для коррекции фигуры Legacy Vela с технологиями ENDO и VLA Shape",

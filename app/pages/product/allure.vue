@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Allure"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -126,18 +127,19 @@
                   class="grid-item__video"
                   preload="metadata"
                   aria-label="360° обзор аппарата Legacy Allure"
-                  poster="/img/allure/allure_vid_fallback.png"
+                  :poster="allureVidFallback"
                 >
                   <source
                     src="/video/allure/allure_360.webm"
                     type="video/webm"
                   />
                   <source src="/video/allure/allure_360.mp4" type="video/mp4" />
-                  <NuxtImg
-                    src="/img/allure/allure_vid_fallback.png"
+                  <img
+                    :src="allureVidFallback"
                     alt="Legacy Allure — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
+
                   Ваш браузер не поддерживает встроенное видео. Пожалуйста,
                   обновите браузер или скачайте видео.
                 </video>
@@ -441,6 +443,12 @@
 </template>
 
 <script setup>
+const img = useImage();
+const allureVidFallback = img("/img/allure/allure_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
   title: "Аппарат для омоложения кожи Legacy Allure с функцией RF Lifting",
   meta: [

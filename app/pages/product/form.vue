@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Form"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -117,10 +118,10 @@
                   aria-label="Заставка Legacy"
                   src="/video/form/form_360.webm"
                   type="video/webm"
-                  poster="/img/form/form_vid_fallback.png"
+                  :poster="formVidFallback"
                 >
-                  <NuxtImg
-                    src="/img/form/form_vid_fallback.png"
+                  <img
+                    :src="formVidFallback"
                     alt="Legacy Form — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
@@ -406,6 +407,12 @@
 </template>
 
 <script setup>
+const img = useImage();
+const formVidFallback = img("/img/form/form_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
   title:
     "Аппарат для коррекции фигуры Legacy Form с функциями вибрационно-роликового массажа и LED-воздействия (5 в 1)",

@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Spectre"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -131,10 +132,10 @@
                   aria-label="360° обзор аппарата Legacy Spectre"
                   src="/video/spectre/spectre.webm"
                   type="video/webm"
-                  poster="/img/spectre/spectre_vid_fallback.png"
+                  :poster="spectreVidFallback"
                 >
-                  <NuxtImg
-                    src="/img/spectre/spectre_vid_fallback.png"
+                  <img
+                    :src="spectreVidFallback"
                     alt="Legacy Spectre — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
@@ -442,6 +443,12 @@
 </template>
 
 <script setup>
+const img = useImage();
+const spectreVidFallback = img("/img/spectre/spectre_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
   title:
     "Аппарат для коррекции фигуры Legacy Spectre с функцией компрессионной микровибрации и HI-EMT",

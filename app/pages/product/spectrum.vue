@@ -10,6 +10,7 @@
           alt="Аппарат Legacy Spectrum"
           class="section__background-image"
           sizes="640px sm:1280px"
+          fetchpriority="high"
         />
       </div>
 
@@ -103,10 +104,10 @@
                   aria-label="360° обзор аппарата Legacy Spectrum"
                   src="/video/spectrum/spectrum.webm"
                   type="video/webm"
-                  poster="/img/spectrum/spectrum_vid_fallback.png"
+                  :poster="spectrumVidFallback"
                 >
-                  <NuxtImg
-                    src="/img/spectrum/spectrum_vid_fallback.png"
+                  <img
+                    :src="spectrumVidFallback"
                     alt="Legacy Spectrum — 360° обзор (изображение вместо видео)"
                     loading="lazy"
                   />
@@ -391,6 +392,12 @@
 </template>
 
 <script setup>
+const img = useImage();
+const spectrumVidFallback = img("/img/spectrum/spectrum_vid_fallback.png", {
+  format: "webp, avif",
+  quality: 80,
+});
+
 useHead({
   title:
     "Аппарат для коррекции фигуры Legacy Spectrum с функцией высокоинтенсивной электромагнитной стимуляции (HI-EMT)",

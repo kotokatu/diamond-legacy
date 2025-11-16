@@ -4,8 +4,7 @@ import { inject } from "vue";
 const data = inject("data");
 
 useHead({
-  title:
-    "Косметологическое оборудование для салонов красоты купить | legacy",
+  title: "Косметологическое оборудование для салонов красоты купить | legacy",
   meta: [
     {
       name: "description",
@@ -18,7 +17,7 @@ useHead({
 
 <template>
   <div class="page page--privacy-policy">
-    <div class="flex-center">
+    <section class="flex-center">
       <div class="contained">
         <h1 class="text-h2">Политика конфиденциальности</h1>
         <h2 class="text-h3">1. Общие положения</h2>
@@ -571,34 +570,14 @@ useHead({
           без согласия субъекта персональных данных, если иное не предусмотрено
           федеральным законом.
         </p>
-        <h2 class="text-h3">Косметологическое оборудование для салонов</h2>
-
-        <section id="catalog" class="flex-center section catalog" aria-labelledby="catalog-title">
-          <div class="contained">
-            <div class="lead">
-              <div class="lead__header text-nav text-sub">
-                <span class="lead__index">2.0</span>
-                <div class="lead__text">
-                  <span class="lead__title">{ Каталог }</span>
-                  <span class="lead__subtitle">Legacy</span>
-                </div>
-              </div>
-            </div>
-            <div class="section__content grid" role="grid" aria-label="Каталог косметологических аппаратов">
-              <AppProductCard
-                v-for="item in data.items"
-                :key="item.id"
-                class="catalog__card"
-                :data="item"
-                size="lg"
-                role="gridcell"
-                :aria-label="item.name"
-              />
-            </div>
-          </div>
-        </section>
-
       </div>
-    </div>
+    </section>
+
+    <section class="flex-center">
+      <div class="contained">
+        <h2 class="text-h3">Косметологическое оборудование для салонов</h2>
+        <AppCatalog :items="data.items" />
+      </div>
+    </section>
   </div>
 </template>

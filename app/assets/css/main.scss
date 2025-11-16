@@ -1,4 +1,4 @@
-@import "quasar/src/css/variables";
+@use "quasar/src/css/variables";
 
 :root {
   font-family: "Nunito Sans", "Roboto", Helvetica, Arial;
@@ -30,14 +30,6 @@ a {
   &:visited {
     color: inherit;
   }
-}
-
-.layout-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100dvh;
 }
 
 .flex-center {
@@ -167,6 +159,10 @@ a {
 
 .main {
   flex-grow: 1;
+}
+
+.link--underline {
+  text-decoration: underline;
 }
 
 .section {
@@ -412,27 +408,6 @@ a {
         &__text {
           color: $base;
         }
-      }
-    }
-  }
-
-  .section.catalog {
-    .section__content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-bottom: 64px;
-
-      @media (width < $breakpoint-sm) {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .catalog__card {
-      height: 540px;
-
-      @media (min-width: $breakpoint-lg) {
-        height: 600px;
       }
     }
   }
@@ -841,7 +816,8 @@ a {
   }
 }
 
-.page--privacy-policy {
+.page--privacy-policy,
+.page--error {
   padding: 128px 0 64px 0;
 
   h1,
