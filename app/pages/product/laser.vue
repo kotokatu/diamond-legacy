@@ -19,7 +19,7 @@
           { Многофункциональный аппарат }
         </p>
         <h2 class="title text-h1">Legacy Laser</h2>
-        <h1 class="description">
+        <h1 class="description text-body">
           Аппарат для лазерной эпиляции
           <br />
         </h1>
