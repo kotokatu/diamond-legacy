@@ -1,6 +1,6 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Allure Pro — описание аппарата</h1>
+    <!--h1 class="sr-only">Legacy Allure Pro — описание аппарата</h1-->
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
@@ -18,11 +18,11 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Allure Pro</h1>
-        <p class="description">
+        <h2 class="title text-h1">Legacy Allure Pro</h2>
+        <h1 class="description text-body">
           Для омоложения кожи,включает микронидлинг, крио- и
           <br />термотерапию, вакуумную терапию.
-        </p>
+        </h1>
         <p class="price text-h2">465 000 ₽</p>
       </div>
     </section>

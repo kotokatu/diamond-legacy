@@ -1,4 +1,5 @@
 User-Agent: *
 Allow: /
 Disallow: /_nuxt/
+Disallow: /_assets/
 Disallow: /_payload.json

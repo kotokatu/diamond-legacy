@@ -1,6 +1,6 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Spectrum — описание аппарата</h1>
+    <!--h1 class="sr-only">Legacy Spectrum — описание аппарата</h1-->
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
@@ -18,11 +18,11 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Spectrum</h1>
-        <p class="description">
+        <h2 class="title text-h1">Legacy Spectrum</h2>
+        <h1 class="description text-body">
           для моделирования фигуры, укрепления мышц
           <br />и улучшения тонуса кожи.
-        </p>
+        </h1>
         <p class="price text-h2">375 000 ₽</p>
       </div>
     </section>

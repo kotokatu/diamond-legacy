@@ -75,7 +75,6 @@ export default defineNuxtConfig({
     buildAssetsDir: "_assets",
     head: {
       link: [
-        //{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         {
           rel: "icon",
           type: "image/png",
@@ -90,6 +89,18 @@ export default defineNuxtConfig({
           href: "/apple-touch-icon.png",
         },
         { rel: "manifest", href: "/site.webmanifest" },
+      ],
+      script: [
+        { 
+          src: '/js/yandex_metrics.js',
+          async: true
+        },
+      ],
+      noscript: [
+        { 
+          innerHTML: '<div><img src="https://mc.yandex.ru/watch/104765634" style="position:absolute; left:-9999px;" alt="" /></div>',
+          tagPosition: 'head',
+        },
       ],
     },
   },

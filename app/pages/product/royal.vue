@@ -1,6 +1,6 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Royal — описание аппарата</h1>
+    <!--h1 class="sr-only">Legacy Royal — описание аппарата</h1-->
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
@@ -19,7 +19,9 @@
           { Многофункциональный аппарат }
         </p>
         <h1 class="title text-h1">Legacy Royal</h1>
-        <p class="description">Аппарат эндосфера для коррекции фигуры</p>
+        <h1 class="description text-body">
+          Аппарат эндосфера для коррекции фигуры
+        </h1>
         <p class="price text-h2">380 000 ₽</p>
       </div>
     </section>

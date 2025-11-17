@@ -1,6 +1,6 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Laser — описание аппарата</h1>
+    <!--h1 class="sr-only">Legacy Laser — описание аппарата</h1-->
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
@@ -21,7 +21,6 @@
         <h2 class="title text-h1">Legacy Laser</h2>
         <h1 class="description text-body">
           Аппарат для лазерной эпиляции
-          <br />
         </h1>
         <p class="price text-h2">645 000 ₽</p>
       </div>

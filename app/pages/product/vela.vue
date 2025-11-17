@@ -1,6 +1,6 @@
 <template>
   <div class="page page--product">
-    <h1 class="sr-only">Legacy Vela — описание аппарата</h1>
+    <!--h1 class="sr-only">Legacy Vela — описание аппарата</h1-->
 
     <section class="flex-center section hero">
       <div class="section__background section__background--overlay">
@@ -18,12 +18,12 @@
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Vela</h1>
-        <p class="description">
+        <h2 class="title text-h1">Legacy Vela</h2>
+        <h1 class="description text-body">
           для лифтинга кожи, коррекции контуров тела,
           <br />
           лимфодренажа и борьбы с целлюлитом.
-        </p>
+        </h1>
         <p class="price text-h2">435 000 ₽</p>
       </div>
     </section>

@@ -134,7 +134,7 @@ const sendForm = async () => {
                     }
                   }
                  );
-    if (response.status == 200) {
+    if (response.send_to_queue == "success") {
       message.value = "Спасибо! Ваша заявка отправлена";
     } else {
       error.value = true;
