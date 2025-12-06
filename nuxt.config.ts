@@ -74,6 +74,9 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: "_assets",
     head: {
+      htmlAttrs: {
+        lang: 'ru',
+      },      
       link: [
         {
           rel: "icon",
@@ -93,13 +96,14 @@ export default defineNuxtConfig({
       script: [
         { 
           src: '/js/yandex_metrics.js',
+          tagPosition: 'bodyClose', // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
           async: true
         },
       ],
       noscript: [
         { 
           innerHTML: '<div><img src="https://mc.yandex.ru/watch/104765634" style="position:absolute; left:-9999px;" alt="" /></div>',
-          tagPosition: 'head',
+          tagPosition: 'head', // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
         },
       ],
     },

@@ -18,5 +18,8 @@ useHead({
   meta: [
     { name: 'description', content: 'Legacy — косметологические аппараты премиум качества.' }
   ],
+  htmlAttrs: {
+    lang: 'ru',
+  },  
 })
 </script>

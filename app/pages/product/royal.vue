@@ -455,7 +455,7 @@ const royalVidFallback = img("/img/royal/royal_vid_fallback.png", {
   quality: 80,
 });
 useHead({
-  title: "Аппарат эндосфера для коррекции фигуры — купить оригинал",
+  title: "Аппарат эндосфера для коррекции фигуры — купить",
   meta: [
     {
       name: "description",
