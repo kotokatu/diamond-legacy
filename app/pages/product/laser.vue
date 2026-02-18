@@ -7,22 +7,25 @@
         <NuxtImg
           format="webp, avif"
           src="/img/laser/laser_hero.png"
-          alt="Аппарат Legacy Laser"
+          alt="Диодный лазер для эпилции Legacy Laser"
           class="section__background-image"
           sizes="640px sm:1280px"
           fetchpriority="high"
         />
       </div>
 
-      <div class="section__content contained">
+      <div class="section__content contained"  itemscope itemtype="http://schema.org/Product">
         <p class="category text-nav text-sub">
-          { Многофункциональный аппарат }
+          { Диодный лазер }
         </p>
-        <h2 class="title text-h1">Legacy Laser</h2>
-        <h1 class="description text-body">
+        <h2 class="title text-h1" itemprop="name">Legacy Laser</h2>
+        <h1 class="description text-body"  itemprop="description">
           Аппарат для лазерной эпиляции
         </h1>
-        <p class="price text-h2">645 000 ₽</p>
+        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <p class="price text-h2" itemprop="price">645 000 ₽</p>
+          <meta itemprop="priceCurrency" content="RUB" />
+        </span>
       </div>
     </section>
 
@@ -42,7 +45,7 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Laser — это высокотехнологичный аппарат, преобразующий
+            Legacy Laser — диодный лазер для эпиляции, преобразующий
             электрическую энергию в непрерывный высокоэнергетический лазерный
             луч. В основе работы сочетаются лазерные, электронные и компьютерные
             технологии, что делает аппарат одним из наиболее безопасных и

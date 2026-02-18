@@ -7,7 +7,7 @@
         <NuxtImg
           format="webp, avif"
           src="/img/allure-pro/allure-pro_hero.png"
-          alt="Аппарат Legacy Allure Pro"
+          alt="Аппарат RF‑лифтинг Legacy Allure Pro"
           class="section__background-image"
           sizes="640px sm:1280px"
           fetchpriority="high"
@@ -20,8 +20,7 @@
         </p>
         <h2 class="title text-h1">Legacy Allure Pro</h2>
         <h1 class="description text-body">
-          Для омоложения кожи,включает микронидлинг, крио- и
-          <br />термотерапию, вакуумную терапию.
+          аппарат для микроигольчатого RF лифтинга
         </h1>
         <p class="price text-h2">465 000 ₽</p>
       </div>
@@ -43,9 +42,9 @@
           </div>
 
           <div class="lead__body text-h2">
-            Legacy Allure Pro — Фракционный RF микроигольчатый аппарат Аппарат
-            Legacy Allure сочетает преимущества микроигольчатой терапии с
-            радиочастотной энергией (RF).
+            Legacy Allure Pro — радиочастотный аппарат с микроигольчатым воздействием для процедур RF‑лифтинга. 
+            Принцип работы: микроиглы проникают в кожу, передавая RF‑энергию для нагрева дермы и стимуляции коллагена. 
+            Предназначен для профессиональной подтяжки лица и тела в салонах и клиниках.
           </div>
         </div>
 
@@ -449,16 +448,85 @@ const defaultVidFallback = img("/img/default_vid_fallback.png", {
   quality: 80,
 });
 
+const product = {
+  name: 'Legacy Allure Pro — микроигольчатый RF‑аппарат',
+  description: 'Профессиональный аппарат для микроигольчатого RF‑лифтинга. Сочетает микроиглы и радиочастотную энергию для подтяжки кожи лица и тела, стимуляции коллагена и омоложения.',
+  sku: 'LR-ALLURE‑PRO',
+  mpn: 'Legacy-Allure‑Pro',
+  price: '465000',
+  availability: 'https://schema.org/InStock',
+  imageUrls: [
+    'https://legacy-russia.ru/img/allure-pro/allure-pro_hero.png',
+  ],
+  //reviewCount: 12,
+  //ratingValue: 4.8
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  description: product.description,
+  sku: product.sku,
+  mpn: product.mpn,
+  image: product.imageUrls,
+  brand: {
+    '@type': 'Brand',
+    name: 'Legacy'
+  },
+  offers: {
+    '@type': 'Offer',
+    priceCurrency: 'RUB',
+    price: product.price,
+    availability: product.availability,
+    url: window?.location?.href, // Текущий URL страницы
+    seller: {
+      '@type': 'Organization',
+      name: 'Legacy'
+    }
+  },
+  /*
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: product.ratingValue,
+    reviewCount: product.reviewCount,
+    bestRating: 5,
+    worstRating: 1
+  },
+  */
+  category: 'Косметологическое оборудование',
+  additionalProperty: [
+    {
+      '@type': 'PropertyValue',
+      name: 'Тип аппарата',
+      value: 'Микроигольчатый RF‑аппарат'
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Назначение',
+      value: 'RF‑Лифтинг, омоложение кожи'
+    }
+  ]
+}
+
 useHead({
   title:
-    "Аппарат для омоложения кожи Legacy Allure Pro с функцией RF микроигольчатого воздействия",
+    //"Аппарат для омоложения кожи Legacy Allure Pro с функцией RF микроигольчатого воздействия",
+    "Микроигольчатый RF‑лифтинг: профессиональный аппарат для омоложения кожи лица",
   meta: [
     {
       name: "description",
       content:
-        "Фракционный RF-аппарат для омоложения кожи, включающий функции микронидлинга, крио- и термотерапии, а также вакуумной терапии. Работает в ручном и автоматическом режимах, обеспечивая точное и контролируемое воздействие на разные уровни кожи, улучшая её тонус, плотность и текстуру.",
+        "Аппарат для микроигольчатого RF лифтинга и омоложения кожи. Купить профессиональный аппарат для рф лифтинга лица по выгодной цене. Эффективный лифтинг и омоложение.",
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify(jsonLd),
+      serverOnly: true
+    }
+  ]  
 });
 </script>
 

@@ -44,7 +44,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ["~/assets/css/reset.css", "~/assets/css/main.scss"],
+  css: ["~/assets/css/reset.css", "~/assets/css/main.scss"/*, '~/assets/css/MoonAIChat.css'*/],
   modules: [
     "@nuxt/eslint",
     "nuxt-quasar-ui",
@@ -99,6 +99,16 @@ export default defineNuxtConfig({
           tagPosition: 'bodyClose', // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
           async: true
         },
+        { 
+          src: "https://dashboard.mooonai.com/cdn/moon-ai-chat-plugin/v1.0.0/moon-ai-site-chat.min.js",
+          tagPosition: 'head', 
+          async: true
+        },
+        { 
+          src: '/js/MoonAIChat.js',
+          tagPosition: 'bodyClose', // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
+          async: true
+        },
       ],
       noscript: [
         { 
@@ -106,6 +116,13 @@ export default defineNuxtConfig({
           tagPosition: 'head', // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
         },
       ],
+      
     },
   },
+  //  iOS 15 (iPhone 7)  https://nuxt.com/blog/v4-1
+  /*
+  experimental: {
+    entryImportMap: false
+  } 
+    */ 
 });

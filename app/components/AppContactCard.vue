@@ -135,12 +135,13 @@ const sendForm = async () => {
                     }
                   }
                  );
-    if (response.send_to_queue == "success") {
+    //console.log(response);
+    //if (response.send_to_queue == "success") {
       message.value = "Спасибо! Ваша заявка отправлена";
-    } else {
-      error.value = true;
-      message.value = "Произошла ошибка при отправке";
-    }
+    //} else {
+//      error.value = true;
+//      message.value = "Произошла ошибка при отправке";
+//    }
   } catch {
     error.value = true;
     message.value = "Произошла ошибка при отправке";

@@ -7,22 +7,25 @@
         <NuxtImg
           format="webp, avif"
           src="/img/royal/royal_hero.png"
-          alt="Аппарат Legacy Royal"
+          alt="Аппарат эндосфера Legacy Royal"
           class="section__background-image"
           sizes="640px sm:1280px"
           fetchpriority="high"
         />
       </div>
 
-      <div class="section__content contained">
+      <div class="section__content contained" itemscope itemtype="http://schema.org/Product">
         <p class="category text-nav text-sub">
           { Многофункциональный аппарат }
         </p>
-        <h1 class="title text-h1">Legacy Royal</h1>
-        <h1 class="description text-body">
+        <h2 class="title text-h1" itemprop="name">Legacy Royal</h2>
+        <h1 class="description text-body" itemprop="description">
           Аппарат эндосфера для коррекции фигуры
         </h1>
-        <p class="price text-h2">380 000 ₽</p>
+        <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <p class="price text-h2" itemprop="price">380 000 ₽</p>
+          <meta itemprop="priceCurrency" content="RUB" />
+        </span>
       </div>
     </section>
 
@@ -454,7 +457,16 @@ const royalVidFallback = img("/img/royal/royal_vid_fallback.png", {
   format: "webp, avif",
   quality: 80,
 });
+const route = useRoute()
 useHead({
+/*
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://legacy-russia.ru' + route.path,
+    },
+  ],      
+*/
   title: "Аппарат эндосфера для коррекции фигуры — купить",
   meta: [
     {
@@ -462,6 +474,27 @@ useHead({
       content:
         "Аппарат эндосфера для коррекции фигуры и тела: как работает, цена, где купить оригинальный массажный аппарат. Эндосфера — стоимость, отзывы, доставка по России.",
     },
+    /* ozon Open Graph
+    <meta data-hid="property::og:image" property="og:image" content="https://ir.ozone.ru/s3/multimedia-1-1/c600/8053020865.jpg">    
+    <meta data-hid="property::og:type" property="og:type" content="website">    
+    <meta data-hid="property::og:site_name" property="og:site_name" content="OZON">    
+    <meta data-hid="name::msapplication-config" name="msapplication-config" content="https://ir.ozone.ru/multimedia/xml/browserconfig.xml">    
+    <meta data-hid="name::application-name" name="application-name" content="OZON">
+    <meta data-hid="name::msapplication-starturl" name="msapplication-starturl" content="https://www.ozon.ru/">    
+    <meta data-hid="name::msapplication-tooltip" name="msapplication-tooltip" content="Интернет-магазин OZON">
+    <meta data-hid="property::og:url" property="og:url" content="https://www.ozon.ru/product/alerkon-domashnyaya-endosfera-espher-massazher-dlya-litsa-nagrev-i-mikrotoki-adm995-2900200575/">
+    <meta data-hid="property::og:title" property="og:title" content="ALERKON, домашняя эндосфера espher массажер для лица, нагрев и микротоки,ADM995 купить на OZON по низкой цене (2900200575)">
+    <meta data-hid="name::description" name="description" content="ALERKON, домашняя эндосфера espher массажер для лица, нагрев и микротоки,ADM995 – покупайте на OZON по выгодным ценам! Быстрая и бесплатная доставка, большой ассортимент, бонусы, рассрочка и кэшбэк. Распродажи, скидки и акции. Реальные отзывы покупателей. (2900200575)">    
+    <meta data-hid="property::fb:app_id" property="fb:app_id" content="1211635852237386">
+    */
+    // Open Graph
+    { hid: 'og:type', property: 'og:type', content: 'website'},
+    { hid: 'og:site_name', property: 'og:site_name', content: 'Legacy Russia'},
+    { hid: 'og:url', property: 'og:url', content: 'https://legacy-russia.ru' + route.path },
+    { hid: 'og:title', property: 'og:title', content: 'Аппарат эндосфера для коррекции фигуры — Legacy Royal' },
+    { hid: 'og:description', property: 'og:description', content: 'Аппарат эндосфера для коррекции фигуры и тела: как работает, цена, где купить оригинальный массажный аппарат. Эндосфера — стоимость, отзывы, доставка по России.' },
+    { hid: 'og:image', property: 'og:image', content: 'https://legacy-russia.ru/img/royal/royal_hero.png' },
+    //<meta property="og:image:type" content="image/png">    
   ],
 });
 </script>
