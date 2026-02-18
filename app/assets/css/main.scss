@@ -884,5 +884,7 @@ a {
 }
 
 .moon-ai-chat-assistant {
-    right: 15% !important;
- }
+  right: 50% !important;
+  transform: translateX(50%) !important;
+  z-index: 300 !important;
+}

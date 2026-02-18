@@ -20,7 +20,7 @@
         </div>
 
         <div class="footer__block footer__block--info list">
-          <NuxtLink to="/privacy-policy" class="text-min"  rel="nofollow">
+          <NuxtLink to="/privacy-policy" class="text-min" rel="nofollow">
             Политика конфиденциальности
           </NuxtLink>
           <div class="text-min">
@@ -130,7 +130,7 @@ import LogoText from "@/assets/svg/logo_text.svg";
       "logo"
       "contacts"
       "info";
-    padding: 24px 0;
+    padding: 24px 0 48px 0;
   }
 }
 
